@@ -1,0 +1,177 @@
+{
+  "home": {
+    "hero": {
+      "image": "",
+      "imageAlt": "A connected aerial composition of Helsinki and Beijing",
+      "eyebrow": "Finland ↔ China / 芬兰 ↔ 中国",
+      "titleEn": "Design across cultures.",
+      "titleZh": "设计连接文化。",
+      "introEn": "We build identities, places and meaningful connections between Finland and China.",
+      "introZh": "连接芬兰与中国的品牌、空间与文化体验。",
+      "cityline": "BEIJING ↔ HELSINKI"
+    },
+    "selectedWork": {
+      "eyebrow": "Selected Work / 精选项目",
+      "titleEn": "Work shaped by identity, place and exchange.",
+      "titleZh": "由品牌、空间与文化交流共同塑造的设计实践。",
+      "archiveLabel": "View all projects / 查看全部项目 →"
+    },
+    "practice": {
+      "eyebrow": "Practice / 业务领域",
+      "titleEn": "Three disciplines. One cross-cultural perspective.",
+      "titleZh": "三类设计实践，由同一种跨文化视角贯穿。",
+      "areas": [
+        {
+          "number": "01",
+          "titleEn": "Brand Identity",
+          "titleZh": "品牌与视觉识别"
+        },
+        {
+          "number": "02",
+          "titleEn": "Place & Wayfinding",
+          "titleZh": "空间与导视"
+        },
+        {
+          "number": "03",
+          "titleEn": "Cross-cultural Strategy",
+          "titleZh": "跨文化策略"
+        }
+      ]
+    },
+    "approach": {
+      "eyebrow": "Approach / 方法",
+      "titleEn": "We translate context, not only words.",
+      "bodyEn": "HÄN Design connects research, visual systems and spatial experience across Finland and China.",
+      "bodyZh": "汉符设计连接芬兰与中国，以研究、视觉系统与空间体验回应不同文化语境。"
+    }
+  },
+  "projects": [
+    {
+      "id": "only-henan-theatre-city",
+      "titleEn": "Only Henan Theatre City",
+      "titleZh": "只有河南·戏剧幻城",
+      "summaryEn": "A large-scale wayfinding and environmental graphics system for an immersive cultural destination where performance, hospitality and visitor movement meet.",
+      "summaryZh": "为沉浸式文化景区建立大尺度导视与环境图形系统，在演出、商业、餐饮、酒店与游客动线之间形成清晰秩序。",
+      "locationEn": "China",
+      "locationZh": "中国",
+      "scopeEn": "Wayfinding strategy and environmental graphics",
+      "scopeZh": "导视策略、环境图形设计",
+      "categories": [
+        "place-wayfinding",
+        "cross-cultural"
+      ],
+      "leadImage": "https://user-assets.sxlcdn.com/images/64359/FqnllKP7viO8Cf3kD3MK4TnsIDdH.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg",
+      "images": [
+        "https://user-assets.sxlcdn.com/images/64359/FqnllKP7viO8Cf3kD3MK4TnsIDdH.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg"
+      ],
+      "featured": true,
+      "order": 1
+    },
+    {
+      "id": "perfect-world-headquarters",
+      "titleEn": "Perfect World Headquarters",
+      "titleZh": "完美世界总部大楼",
+      "summaryEn": "Environmental graphics and signage for a multi-building entertainment and technology headquarters, connecting brand energy with daily navigation.",
+      "summaryZh": "为影游综合企业总部建立环境图形与标识系统，将品牌个性、办公动线与多楼宇信息组织连接起来。",
+      "locationEn": "Beijing, China",
+      "locationZh": "中国北京",
+      "scopeEn": "Environmental graphics, signage and wayfinding",
+      "scopeZh": "环境图形、标识与导视设计",
+      "categories": [
+        "place-wayfinding"
+      ],
+      "leadImage": "https://user-assets.sxlcdn.com/images/64359/FgohFY2LEFYE6HI4lC5tCbmsrTa1.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg",
+      "images": [
+        "https://user-assets.sxlcdn.com/images/64359/FgohFY2LEFYE6HI4lC5tCbmsrTa1.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg"
+      ],
+      "featured": true,
+      "order": 2
+    },
+    {
+      "id": "qinhuangdao-women-childrens-hospital",
+      "titleEn": "Qinhuangdao Women & Children’s Hospital",
+      "titleZh": "秦皇岛妇幼保健院",
+      "summaryEn": "A hospital identity, wayfinding and environmental graphics system shaped around care, clarity and a warmer public-service experience.",
+      "summaryZh": "为妇幼保健院建立视觉形象、导视系统与楼层环境图形，让公共医疗空间更清晰、更亲和。",
+      "locationEn": "Qinhuangdao, China",
+      "locationZh": "中国秦皇岛",
+      "scopeEn": "Spatial identity, wayfinding and environmental graphics",
+      "scopeZh": "空间识别、导视系统、环境图形",
+      "year": 2018,
+      "categories": [
+        "place-wayfinding",
+        "brand-identity"
+      ],
+      "leadImage": "https://user-assets.sxlcdn.com/images/64359/FpMBCTT2onfE8boriX09FkCN2ilW.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg",
+      "images": [
+        "https://user-assets.sxlcdn.com/images/64359/FpMBCTT2onfE8boriX09FkCN2ilW.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg"
+      ],
+      "featured": true,
+      "order": 3
+    },
+    {
+      "id": "china-life-airport-experience-center",
+      "titleEn": "China Life Airport Experience Center",
+      "titleZh": "空港国寿展陈空间",
+      "summaryEn": "A marketing and exhibition environment integrating display planning, atmosphere, interaction, soft furnishing and visitor guidance.",
+      "summaryZh": "整合展示陈列、环境氛围、互动体验、软装设施、景观小品与导视系统，形成完整的营销体验空间。",
+      "locationEn": "Tianjin, China",
+      "locationZh": "中国天津",
+      "scopeEn": "Exhibition environment, soft furnishing and wayfinding",
+      "scopeZh": "展陈空间、软装、环境图形与导视",
+      "year": 2018,
+      "categories": [
+        "place-wayfinding",
+        "brand-identity"
+      ],
+      "leadImage": "https://user-assets.sxlcdn.com/images/64359/Fg5RFiWrmZWlKlQfY5CvS6mSaImn.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg",
+      "images": [
+        "https://user-assets.sxlcdn.com/images/64359/Fg5RFiWrmZWlKlQfY5CvS6mSaImn.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg"
+      ],
+      "featured": true,
+      "order": 4
+    },
+    {
+      "id": "didi-workplace",
+      "titleEn": "Didi Workplace Graphics",
+      "titleZh": "滴滴出行办公空间",
+      "summaryEn": "A scalable workplace graphics and wayfinding language for a fast-changing technology company, designed for clarity, repetition and internal maintenance.",
+      "summaryZh": "为快速变化的移动互联网企业建立可复制、可维护的办公空间环境图形与导视语言。",
+      "locationEn": "Beijing, China",
+      "locationZh": "中国北京",
+      "scopeEn": "Workplace graphics, illustration and wayfinding",
+      "scopeZh": "办公环境图形、插画与导视设计",
+      "categories": [
+        "place-wayfinding",
+        "brand-identity"
+      ],
+      "leadImage": "https://user-assets.sxlcdn.com/images/64359/FmCU82Uwq9Qch_sHe5BtSaybbWAp.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg",
+      "images": [
+        "https://user-assets.sxlcdn.com/images/64359/FmCU82Uwq9Qch_sHe5BtSaybbWAp.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg"
+      ],
+      "featured": true,
+      "order": 5
+    },
+    {
+      "id": "xiamen-humanity-hospital",
+      "titleEn": "Xiamen Humanity Hospital",
+      "titleZh": "厦门弘爱国际医院",
+      "summaryEn": "A wayfinding and environmental graphics system for a large medical campus, balancing functional clarity with a calm, humane spatial experience.",
+      "summaryZh": "为大型医疗园区建立导视与环境图形系统，在复杂功能组织与温和的人性化体验之间取得平衡。",
+      "locationEn": "Xiamen, China",
+      "locationZh": "中国厦门",
+      "scopeEn": "Wayfinding and environmental graphic design",
+      "scopeZh": "导视系统与环境图形设计",
+      "categories": [
+        "place-wayfinding",
+        "cross-cultural"
+      ],
+      "leadImage": "https://user-assets.sxlcdn.com/images/64359/Fu4NZVys-ji_9hIY_Yb7P4fLinnQ.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpg",
+      "images": [
+        "https://user-assets.sxlcdn.com/images/64359/Fu4NZVys-ji_9hIY_Yb7P4fLinnQ.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpg"
+      ],
+      "featured": true,
+      "order": 6
+    }
+  ]
+}
