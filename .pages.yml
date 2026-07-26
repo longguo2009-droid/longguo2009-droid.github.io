@@ -1,98 +1,45 @@
 media:
   - name: project_images
     label: Project images / 项目图片
-    input: public/images/projects
+    input: images/projects
     output: /images/projects
     categories: [image]
     extensions: [jpg, jpeg, png, webp]
     rename: safe
   - name: hero_images
     label: Hero images / 首页背景
-    input: public/images/hero
+    input: images/hero
     output: /images/hero
     categories: [image]
     extensions: [jpg, jpeg, png, webp]
     rename: safe
 
 content:
-  - name: homepage
-    label: Homepage / 首页
+  - name: site_content
+    label: Website content / 网站内容
     type: file
-    path: src/data/home.json
+    path: site-content.json
     format: json
     fields:
-      - name: hero
-        label: Hero / 首屏
+      - name: home
+        label: Homepage / 首页
         type: object
         fields:
-          - name: image
-            label: Background image / 背景图片
-            type: image
-            options:
-              media: hero_images
-              path: public/images/hero
-          - name: imageAlt
-            label: Image description / 图片描述
-            type: string
-          - name: eyebrow
-            label: Eyebrow / 小标题
-            type: string
-          - name: titleEn
-            label: English title / 英文标题
-            type: string
-          - name: titleZh
-            label: Chinese title / 中文标题
-            type: string
-          - name: introEn
-            label: English intro / 英文介绍
-            type: text
-          - name: introZh
-            label: Chinese intro / 中文介绍
-            type: text
-          - name: cityline
-            label: City line / 城市标识
-            type: string
-      - name: selectedWork
-        label: Selected work / 精选项目区
-        type: object
-        fields:
-          - name: eyebrow
-            label: Eyebrow / 小标题
-            type: string
-          - name: titleEn
-            label: English title / 英文标题
-            type: string
-          - name: titleZh
-            label: Chinese title / 中文标题
-            type: string
-          - name: archiveLabel
-            label: Archive link / 查看全部链接
-            type: string
-      - name: practice
-        label: Practice / 业务领域
-        type: object
-        fields:
-          - name: eyebrow
-            label: Eyebrow / 小标题
-            type: string
-          - name: titleEn
-            label: English title / 英文标题
-            type: string
-          - name: titleZh
-            label: Chinese title / 中文标题
-            type: string
-          - name: areas
-            label: Areas / 三类业务
+          - name: hero
+            label: Hero / 首屏
             type: object
-            list:
-              min: 1
-              max: 6
-              collapsible:
-                collapsed: true
-                summary: "{number} {titleEn}"
             fields:
-              - name: number
-                label: Number / 编号
+              - name: image
+                label: Background image / 背景图片
+                type: image
+                options:
+                  media: hero_images
+                  path: images/hero
+              - name: imageAlt
+                label: Image description / 图片描述
+                type: string
+              - name: eyebrow
+                label: Eyebrow / 小标题
                 type: string
               - name: titleEn
                 label: English title / 英文标题
@@ -100,104 +47,161 @@ content:
               - name: titleZh
                 label: Chinese title / 中文标题
                 type: string
-      - name: approach
-        label: Approach / 方法
+              - name: introEn
+                label: English intro / 英文介绍
+                type: text
+              - name: introZh
+                label: Chinese intro / 中文介绍
+                type: text
+              - name: cityline
+                label: City line / 城市标识
+                type: string
+          - name: selectedWork
+            label: Selected work / 精选项目区
+            type: object
+            fields:
+              - name: eyebrow
+                label: Eyebrow / 小标题
+                type: string
+              - name: titleEn
+                label: English title / 英文标题
+                type: string
+              - name: titleZh
+                label: Chinese title / 中文标题
+                type: string
+              - name: archiveLabel
+                label: Archive link / 查看全部链接
+                type: string
+          - name: practice
+            label: Practice / 业务领域
+            type: object
+            fields:
+              - name: eyebrow
+                label: Eyebrow / 小标题
+                type: string
+              - name: titleEn
+                label: English title / 英文标题
+                type: string
+              - name: titleZh
+                label: Chinese title / 中文标题
+                type: string
+              - name: areas
+                label: Areas / 业务方向
+                type: object
+                list:
+                  min: 1
+                  max: 6
+                  collapsible:
+                    collapsed: true
+                    summary: "{number} {titleEn}"
+                fields:
+                  - name: number
+                    label: Number / 编号
+                    type: string
+                  - name: titleEn
+                    label: English title / 英文标题
+                    type: string
+                  - name: titleZh
+                    label: Chinese title / 中文标题
+                    type: string
+          - name: approach
+            label: Approach / 方法
+            type: object
+            fields:
+              - name: eyebrow
+                label: Eyebrow / 小标题
+                type: string
+              - name: titleEn
+                label: English title / 英文标题
+                type: string
+              - name: bodyEn
+                label: English body / 英文正文
+                type: text
+              - name: bodyZh
+                label: Chinese body / 中文正文
+                type: text
+      - name: projects
+        label: Projects / 项目
         type: object
+        list:
+          min: 1
+          collapsible:
+            collapsed: true
+            summary: "{order}. {titleEn} / {titleZh}"
         fields:
-          - name: eyebrow
-            label: Eyebrow / 小标题
+          - name: id
+            label: Slug / 链接名
             type: string
+            required: true
+            pattern:
+              regex: "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+              message: "Use lowercase letters, numbers and hyphens only."
           - name: titleEn
             label: English title / 英文标题
             type: string
-          - name: bodyEn
-            label: English body / 英文正文
+            required: true
+          - name: titleZh
+            label: Chinese title / 中文标题
+            type: string
+            required: true
+          - name: summaryEn
+            label: English summary / 英文介绍
             type: text
-          - name: bodyZh
-            label: Chinese body / 中文正文
+            required: true
+          - name: summaryZh
+            label: Chinese summary / 中文介绍
             type: text
-
-  - name: projects
-    label: Projects / 项目
-    type: file
-    path: src/data/projects.json
-    format: json
-    list: true
-    fields:
-      - name: id
-        label: Slug / 链接名
-        type: string
-        required: true
-        pattern:
-          regex: "^[a-z0-9]+(?:-[a-z0-9]+)*$"
-          message: "Use lowercase letters, numbers and hyphens only."
-        description: "Used in the project URL. Example: didi-workplace"
-      - name: titleEn
-        label: English title / 英文标题
-        type: string
-        required: true
-      - name: titleZh
-        label: Chinese title / 中文标题
-        type: string
-        required: true
-      - name: summaryEn
-        label: English summary / 英文介绍
-        type: text
-        required: true
-      - name: summaryZh
-        label: Chinese summary / 中文介绍
-        type: text
-        required: true
-      - name: locationEn
-        label: English location / 英文地点
-        type: string
-      - name: locationZh
-        label: Chinese location / 中文地点
-        type: string
-      - name: scopeEn
-        label: English scope / 英文服务
-        type: string
-        required: true
-      - name: scopeZh
-        label: Chinese scope / 中文服务
-        type: string
-        required: true
-      - name: year
-        label: Year / 年份
-        type: number
-      - name: categories
-        label: Categories / 分类
-        type: select
-        required: true
-        options:
-          multiple: true
-          min: 1
-          values:
-            - name: brand-identity
-              label: Brand Identity / 品牌识别
-            - name: place-wayfinding
-              label: Place & Wayfinding / 空间导视
-            - name: cross-cultural
-              label: Cross-cultural Strategy / 跨文化策略
-      - name: leadImage
-        label: Cover image / 封面图
-        type: image
-        required: true
-        options:
-          media: project_images
-          path: public/images/projects
-      - name: images
-        label: Gallery images / 项目图片
-        type: image
-        required: true
-        options:
-          media: project_images
-          path: public/images/projects
-          multiple: true
-          unique: true
-      - name: featured
-        label: Show on homepage / 首页展示
-        type: boolean
-      - name: order
-        label: Order / 排序
-        type: number
+            required: true
+          - name: locationEn
+            label: English location / 英文地点
+            type: string
+          - name: locationZh
+            label: Chinese location / 中文地点
+            type: string
+          - name: scopeEn
+            label: English scope / 英文服务
+            type: string
+            required: true
+          - name: scopeZh
+            label: Chinese scope / 中文服务
+            type: string
+            required: true
+          - name: year
+            label: Year / 年份
+            type: number
+          - name: categories
+            label: Categories / 分类
+            type: select
+            required: true
+            options:
+              multiple: true
+              min: 1
+              values:
+                - name: brand-identity
+                  label: Brand Identity / 品牌识别
+                - name: place-wayfinding
+                  label: Place & Wayfinding / 空间导视
+                - name: cross-cultural
+                  label: Cross-cultural Strategy / 跨文化策略
+          - name: leadImage
+            label: Cover image / 封面图
+            type: image
+            required: true
+            options:
+              media: project_images
+              path: images/projects
+          - name: images
+            label: Gallery images / 项目图片
+            type: image
+            required: true
+            options:
+              media: project_images
+              path: images/projects
+              multiple: true
+              unique: true
+          - name: featured
+            label: Show on homepage / 首页展示
+            type: boolean
+          - name: order
+            label: Order / 排序
+            type: number
