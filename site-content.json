@@ -3,12 +3,12 @@
     "hero": {
       "image": "",
       "imageAlt": "A connected aerial composition of Helsinki and Beijing",
-      "eyebrow": "Finland ↔ China / 芬兰 ↔ 中国",
-      "titleEn": "Design across cultures.",
-      "titleZh": "设计连接文化。",
-      "introEn": "We build identities, places and meaningful connections between Finland and China.",
-      "introZh": "连接芬兰与中国的品牌、空间与文化体验。",
-      "cityline": "BEIJING ↔ HELSINKI"
+      "eyebrow": "Beijing registered / Finland design team",
+      "titleEn": "Studio Signo shapes identity and place.",
+      "titleZh": "Studio Signo 塑造品牌与空间。",
+      "introEn": "Studio Signo is registered in Beijing and works with a design team in Finland to build identities, places and meaningful cross-cultural experiences.",
+      "introZh": "Studio Signo 主体注册在北京，并在芬兰设有设计团队，专注品牌、空间与跨文化体验。",
+      "cityline": "BEIJING + FINLAND"
     },
     "selectedWork": {
       "eyebrow": "Selected Work / 精选项目",
@@ -41,8 +41,8 @@
     "approach": {
       "eyebrow": "Approach / 方法",
       "titleEn": "We translate context, not only words.",
-      "bodyEn": "HÄN Design connects research, visual systems and spatial experience across Finland and China.",
-      "bodyZh": "汉符设计连接芬兰与中国，以研究、视觉系统与空间体验回应不同文化语境。"
+      "bodyEn": "Studio Signo connects research, visual systems and spatial experience through a Beijing-registered practice and a Finland-based design team.",
+      "bodyZh": "Studio Signo 以北京注册主体为基础，并结合芬兰设计团队的视角，以研究、视觉系统与空间体验回应不同文化语境。"
     }
   },
   "projects": [
