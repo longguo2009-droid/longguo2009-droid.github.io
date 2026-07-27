@@ -3,11 +3,11 @@
     "hero": {
       "image": "",
       "imageAlt": "A connected aerial composition of Helsinki and Beijing",
-      "eyebrow": "Beijing registered / Finland design team",
+      "eyebrow": "Identity / Place / Culture",
       "titleEn": "Studio Signo shapes identity and place.",
       "titleZh": "Studio Signo 塑造品牌与空间。",
-      "introEn": "Studio Signo is registered in Beijing and works with a design team in Finland to build identities, places and meaningful cross-cultural experiences.",
-      "introZh": "Studio Signo 主体注册在北京，并在芬兰设有设计团队，专注品牌、空间与跨文化体验。",
+      "introEn": "Studio Signo creates identities, spatial systems and cultural experiences with clarity, restraint and emotional intelligence.",
+      "introZh": "Studio Signo 以清晰、克制而有温度的设计方式，塑造品牌、空间系统与文化体验。",
       "cityline": "BEIJING + FINLAND"
     },
     "selectedWork": {
@@ -41,8 +41,8 @@
     "approach": {
       "eyebrow": "Approach / 方法",
       "titleEn": "We translate context, not only words.",
-      "bodyEn": "Studio Signo connects research, visual systems and spatial experience through a Beijing-registered practice and a Finland-based design team.",
-      "bodyZh": "Studio Signo 以北京注册主体为基础，并结合芬兰设计团队的视角，以研究、视觉系统与空间体验回应不同文化语境。"
+      "bodyEn": "Studio Signo connects research, visual systems and spatial experience to make complex contexts feel legible, memorable and humane.",
+      "bodyZh": "Studio Signo 以研究、视觉系统与空间体验回应复杂语境，让信息清晰可读，也让体验被记住。"
     }
   },
   "projects": [
