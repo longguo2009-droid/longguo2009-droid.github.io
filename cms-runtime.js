@@ -50,6 +50,52 @@
     }
   };
 
+  const renderHeroSlides = (projects) => {
+    const selectedProjects = projects
+      .filter((project) => project.featured && project.leadImage)
+      .sort((a, b) => Number(a.order || 0) - Number(b.order || 0));
+    const slides = document.querySelector("[data-hero-slides]");
+    const captions = document.querySelector("[data-hero-projects]");
+    if (!slides || !captions || !selectedProjects.length) return;
+
+    const duration = Math.max(selectedProjects.length * 7, 28);
+    slides.setAttribute("style", `--slide-count: ${selectedProjects.length}; --duration: ${duration}s;`);
+    slides.innerHTML = selectedProjects
+      .map(
+        (project, index) => `
+          <a
+            class="hero-slide${index === 0 ? " active" : ""}"
+            href="/projects/${escapeHtml(project.id)}/"
+            style="--index: ${index}; --duration: ${duration}s;"
+            aria-label="${escapeHtml(project.titleEn)} — ${escapeHtml(project.titleZh)}"
+          >
+            <img
+              src="${escapeHtml(project.leadImage)}"
+              alt="${index === 0 ? "Featured Studio Signo project" : ""}"
+              width="1600"
+              height="900"
+              ${index === 0 ? 'fetchpriority="high" loading="eager"' : 'loading="lazy"'}
+            />
+          </a>
+        `,
+      )
+      .join("");
+    captions.innerHTML = selectedProjects
+      .map(
+        (project, index) => `
+          <a
+            class="hero-project${index === 0 ? " active" : ""}"
+            href="/projects/${escapeHtml(project.id)}/"
+            style="--index: ${index}; --duration: ${duration}s;"
+          >
+            <span>${escapeHtml(project.titleEn)}</span>
+            <span class="zh">${escapeHtml(project.titleZh)}</span>
+          </a>
+        `,
+      )
+      .join("");
+  };
+
   const updateProjectDetail = (project) => {
     const header = document.querySelector(".project-header");
     if (!header || !project) return;
@@ -118,6 +164,7 @@
       setText(".intro[lang='en']", hero.introEn, heroSection);
       setText(".intro.zh", hero.introZh, heroSection);
       setText(".cityline", hero.cityline, heroSection);
+      renderHeroSlides(projects);
     }
 
     const selectedSection = document.querySelector("section[aria-labelledby='selected-work']");
