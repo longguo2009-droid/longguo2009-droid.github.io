@@ -184,14 +184,14 @@ content:
                 - name: cross-cultural
                   label: Cross-cultural Strategy / 跨文化策略
           - name: leadImage
-            label: Cover image / 封面图
+            label: 01 Homepage + list cover image / 01 首页轮播与项目列表封面图
             type: image
             required: true
             options:
               media: project_images
               path: images/projects
           - name: images
-            label: Gallery images / 项目图片
+            label: 02 Project detail gallery images / 02 二级页面项目图片（可多张）
             type: image
             required: true
             options:
@@ -200,8 +200,8 @@ content:
               multiple: true
               unique: true
           - name: featured
-            label: Show on homepage / 首页展示
+            label: Show on homepage carousel/list / 是否显示在首页轮播与精选项目
             type: boolean
           - name: order
-            label: Order / 排序
+            label: Display order / 显示排序
             type: number
