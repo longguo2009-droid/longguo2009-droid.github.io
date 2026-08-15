@@ -1,7 +1,6 @@
 {
   "home": {
     "hero": {
-      "image": "",
       "imageAlt": "A connected aerial composition of Helsinki and Beijing",
       "eyebrow": "China + Finland",
       "titleEn": "Studio Signo shapes identity and place.",
@@ -47,8 +46,8 @@
   },
   "projects": [
     {
-      "id": "only-henan-theatre-city",
-      "titleEn": "Only Henan Theatre City",
+      "id": "only-henan-drama-fantasy-city",
+      "titleEn": "Only Henan · Drama Fantasy City ",
       "titleZh": "只有河南·戏剧幻城",
       "summaryEn": "A large-scale wayfinding and environmental graphics system for an immersive cultural destination where performance, hospitality and visitor movement meet.",
       "summaryZh": "为沉浸式文化景区建立大尺度导视与环境图形系统，在演出、商业、餐饮、酒店与游客动线之间形成清晰秩序。",
@@ -56,13 +55,14 @@
       "locationZh": "中国",
       "scopeEn": "Wayfinding strategy and environmental graphics",
       "scopeZh": "导视策略、环境图形设计",
+      "year": 2021,
       "categories": [
         "place-wayfinding",
         "cross-cultural"
       ],
-      "leadImage": "https://user-assets.sxlcdn.com/images/64359/FqnllKP7viO8Cf3kD3MK4TnsIDdH.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg",
+      "leadImage": "/images/projects/3001.png",
       "images": [
-        "https://user-assets.sxlcdn.com/images/64359/FqnllKP7viO8Cf3kD3MK4TnsIDdH.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg"
+        "/images/projects/3002.png"
       ],
       "featured": true,
       "order": 1
@@ -80,9 +80,9 @@
       "categories": [
         "place-wayfinding"
       ],
-      "leadImage": "https://user-assets.sxlcdn.com/images/64359/FgohFY2LEFYE6HI4lC5tCbmsrTa1.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg",
+      "leadImage": "/images/projects/3001.png",
       "images": [
-        "https://user-assets.sxlcdn.com/images/64359/FgohFY2LEFYE6HI4lC5tCbmsrTa1.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg"
+        "/images/projects/3002.png"
       ],
       "featured": true,
       "order": 2
@@ -102,9 +102,9 @@
         "place-wayfinding",
         "brand-identity"
       ],
-      "leadImage": "https://user-assets.sxlcdn.com/images/64359/FpMBCTT2onfE8boriX09FkCN2ilW.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg",
+      "leadImage": "/images/projects/3001.png",
       "images": [
-        "https://user-assets.sxlcdn.com/images/64359/FpMBCTT2onfE8boriX09FkCN2ilW.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg"
+        "/images/projects/3002.png"
       ],
       "featured": true,
       "order": 3
@@ -124,9 +124,9 @@
         "place-wayfinding",
         "brand-identity"
       ],
-      "leadImage": "https://user-assets.sxlcdn.com/images/64359/Fg5RFiWrmZWlKlQfY5CvS6mSaImn.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg",
+      "leadImage": "/images/projects/3001.png",
       "images": [
-        "https://user-assets.sxlcdn.com/images/64359/Fg5RFiWrmZWlKlQfY5CvS6mSaImn.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg"
+        "/images/projects/3002.png"
       ],
       "featured": true,
       "order": 4
@@ -145,9 +145,9 @@
         "place-wayfinding",
         "brand-identity"
       ],
-      "leadImage": "https://user-assets.sxlcdn.com/images/64359/FmCU82Uwq9Qch_sHe5BtSaybbWAp.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg",
+      "leadImage": "/images/projects/3001.png",
       "images": [
-        "https://user-assets.sxlcdn.com/images/64359/FmCU82Uwq9Qch_sHe5BtSaybbWAp.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg"
+        "/images/projects/3002.png"
       ],
       "featured": true,
       "order": 5
@@ -166,12 +166,33 @@
         "place-wayfinding",
         "cross-cultural"
       ],
-      "leadImage": "https://user-assets.sxlcdn.com/images/64359/Fu4NZVys-ji_9hIY_Yb7P4fLinnQ.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpg",
+      "leadImage": "/images/projects/3001.png",
       "images": [
-        "https://user-assets.sxlcdn.com/images/64359/Fu4NZVys-ji_9hIY_Yb7P4fLinnQ.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpg"
+        "/images/projects/3002.png"
       ],
       "featured": true,
       "order": 6
+    },
+    {
+      "id": "only-a-dream-of-red-mansions",
+      "titleEn": "Only A Dream of Red Mansions · Drama Fantasy City",
+      "titleZh": "只有红楼梦·戏剧幻城",
+      "summaryEn": "STUDIOSIGNO provided spatial wayfinding planning, signage system design, and custom typeface design for Only A Dream of Red Mansions | Drama Fantasy City. Based on the project’s theatrical spatial experience, the design clarifies audience circulation, scene transitions, and visitor flow through a systematic visual wayfinding language, helping visitors navigate the immersive park and enter the cultural narrative of Dream of the Red Chamber.",
+      "summaryZh": "汉符设计为「只有红楼梦 | 戏剧幻城」提供空间导引规划、导示系统及字体设计服务。项目以戏剧化空间体验为基础，梳理观演动线、场景转换与人流组织，通过系统化的视觉导引语言，帮助观众在沉浸式园区中清晰识别方向、理解空间层级，并进入《红楼梦》所营造的文化叙事氛围。",
+      "locationEn": "China",
+      "locationZh": "中国",
+      "scopeEn": "Wayfinding strategy and environmental graphics",
+      "scopeZh": "环境图形设计、空间导引规划及字体设计服务",
+      "year": 2026,
+      "categories": [
+        "place-wayfinding"
+      ],
+      "leadImage": "/images/projects/3001.png",
+      "images": [
+        "/images/projects/3002.png"
+      ],
+      "featured": true,
+      "order": 0
     }
   ]
 }
