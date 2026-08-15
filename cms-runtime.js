@@ -11,6 +11,10 @@
       .replaceAll(">", "&gt;")
       .replaceAll('"', "&quot;")
       .replaceAll("'", "&#39;");
+  const assetPath = (value) => {
+    const path = text(value);
+    return path.startsWith("images/") ? `/${path}` : path;
+  };
 
   const renderProjectCard = (project) => {
     const categories = Array.isArray(project.categories) ? project.categories.join(" ") : "";
@@ -19,7 +23,7 @@
       <article class="project-card" data-categories="${escapeHtml(categories)}">
         <a href="/projects/${escapeHtml(project.id)}/">
           <img
-            src="${escapeHtml(project.leadImage)}"
+            src="${escapeHtml(assetPath(project.leadImage))}"
             alt="${escapeHtml(project.titleEn)} — ${escapeHtml(project.titleZh)}"
             width="1600"
             height="900"
@@ -38,6 +42,92 @@
     const match = window.location.pathname.match(/^\/projects\/([^/]+)\/?$/);
     if (!match) return null;
     return projects.find((project) => project.id === match[1]) || null;
+  };
+
+  const ensureProjectDetailScaffold = (project) => {
+    if (document.querySelector(".project-header") || !project) return;
+    const main = document.querySelector("main");
+    if (!main) return;
+
+    document.title = `${project.titleEn} — Studio Signo`;
+    main.innerHTML = `
+      <article>
+        <header class="project-header shell section">
+          <p class="eyebrow">Project / 项目</p>
+          <h1 class="display"></h1>
+          <p class="zh"></p>
+          <dl></dl>
+        </header>
+        <figure class="lead">
+          <img alt="" width="1600" height="900" />
+        </figure>
+        <section class="narrative shell section">
+          <p></p>
+          <p class="zh"></p>
+        </section>
+        <section class="project-gallery shell section" aria-label="Project detail gallery / 项目详情图片" data-project-gallery></section>
+      </article>
+    `;
+
+    if (!document.querySelector("[data-runtime-project-style]")) {
+      const style = document.createElement("style");
+      style.setAttribute("data-runtime-project-style", "true");
+      style.textContent = `
+        .project-header h1 {
+          max-width: 14ch;
+          margin: 0.8rem 0;
+          font-size: clamp(3rem, 8vw, 8rem);
+          line-height: 0.88;
+        }
+        .project-header dl {
+          margin: 4rem 0 0 auto;
+          max-width: 42rem;
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          gap: 0.75rem 1rem;
+        }
+        .project-header dt {
+          color: var(--muted);
+        }
+        .project-header dd,
+        .lead,
+        .project-gallery figure {
+          margin: 0;
+        }
+        .lead img {
+          width: 100%;
+          max-height: 90svh;
+          object-fit: cover;
+        }
+        .narrative {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+          font-size: clamp(1.25rem, 2.5vw, 2.25rem);
+          line-height: 1.45;
+        }
+        .narrative p {
+          margin: 0;
+        }
+        .project-gallery {
+          display: grid;
+          gap: clamp(1rem, 2vw, 2rem);
+        }
+        .project-gallery img {
+          width: 100%;
+          height: auto;
+          display: block;
+          background: #d8d8d4;
+        }
+        @media (max-width: 700px) {
+          .project-header dl,
+          .narrative {
+            grid-template-columns: 1fr;
+          }
+        }
+      `;
+      document.head.appendChild(style);
+    }
   };
 
   const updateProjectsGrid = (projects, root = document, onlyFeatured = false) => {
@@ -70,7 +160,7 @@
             aria-label="${escapeHtml(project.titleEn)} — ${escapeHtml(project.titleZh)}"
           >
             <img
-              src="${escapeHtml(project.leadImage)}"
+              src="${escapeHtml(assetPath(project.leadImage))}"
               alt="${index === 0 ? "Featured Studio Signo project" : ""}"
               width="1600"
               height="900"
@@ -97,6 +187,7 @@
   };
 
   const updateProjectDetail = (project) => {
+    ensureProjectDetailScaffold(project);
     const header = document.querySelector(".project-header");
     if (!header || !project) return;
 
@@ -125,7 +216,7 @@
 
     const leadImage = document.querySelector(".lead img");
     if (leadImage && project.leadImage) {
-      leadImage.src = project.leadImage;
+      leadImage.src = assetPath(project.leadImage);
       leadImage.alt = `${project.titleEn} project overview`;
     }
 
@@ -134,6 +225,33 @@
       const paragraphs = narrative.querySelectorAll("p");
       if (paragraphs[0]) paragraphs[0].textContent = text(project.summaryEn);
       if (paragraphs[1]) paragraphs[1].textContent = text(project.summaryZh);
+    }
+
+    let gallery = document.querySelector("[data-project-gallery]");
+    if (!gallery && narrative) {
+      gallery = document.createElement("section");
+      gallery.className = "project-gallery shell section";
+      gallery.setAttribute("aria-label", "Project detail gallery / 项目详情图片");
+      gallery.setAttribute("data-project-gallery", "");
+      narrative.insertAdjacentElement("afterend", gallery);
+    }
+    const images = Array.isArray(project.images) ? project.images : [];
+    if (gallery && images.length) {
+      gallery.innerHTML = images
+        .map(
+          (image, index) => `
+            <figure>
+              <img
+                src="${escapeHtml(assetPath(image))}"
+                alt="${escapeHtml(project.titleEn)} detail image ${index + 1}"
+                width="1600"
+                height="900"
+                loading="${index === 0 ? "eager" : "lazy"}"
+              />
+            </figure>
+          `,
+        )
+        .join("");
     }
   };
 
@@ -155,7 +273,7 @@
     if (heroSection) {
       const heroImage = heroSection.querySelector("img");
       if (heroImage && hero.image) {
-        heroImage.src = hero.image;
+        heroImage.src = assetPath(hero.image);
         heroImage.alt = hero.imageAlt || heroImage.alt;
       }
       setText(".eyebrow", hero.eyebrow, heroSection);
