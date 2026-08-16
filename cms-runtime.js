@@ -58,6 +58,15 @@
       html[data-lang="zh"] .project-header dl{max-width:34rem;font-family:var(--font-zh);font-size:.95rem;line-height:1.85}
       html[data-lang="zh"] .project-card h3{font-family:var(--font-zh);font-weight:500}
       html[data-lang="zh"] .hero-project .zh{font-family:var(--font-zh);font-size:clamp(1.25rem,2.5vw,2.4rem);line-height:1.1;letter-spacing:-.03em}
+      .hero-slides{overflow:hidden}
+      .hero-slide{opacity:0!important;animation:studio-signo-hero-slide var(--duration) cubic-bezier(.76,0,.24,1) infinite!important;animation-delay:calc(var(--index) * var(--step, 6s))!important;transform:translateX(100%);will-change:transform,opacity;pointer-events:auto}
+      .hero-slide.active{opacity:1!important}
+      .hero-slide img{animation:studio-signo-hero-image var(--duration) ease-in-out infinite!important;animation-delay:inherit!important;transform:scale(1.035);will-change:transform}
+      .hero-project{animation:studio-signo-hero-caption var(--duration) ease-in-out infinite!important;animation-delay:calc(var(--index) * var(--step, 6s))!important}
+      @keyframes studio-signo-hero-slide{0%{opacity:0;transform:translateX(100%)}2.8%,11.5%{opacity:1;transform:translateX(0)}14.25%,100%{opacity:0;transform:translateX(-100%)}}
+      @keyframes studio-signo-hero-image{0%{transform:scale(1.035)}50%{transform:scale(1.075)}100%{transform:scale(1.035)}}
+      @keyframes studio-signo-hero-caption{0%{opacity:0;transform:translateX(1rem)}3%,11.5%{opacity:1;transform:translateX(0)}14.25%,100%{opacity:0;transform:translateX(-1rem)}}
+      @media (prefers-reduced-motion:reduce){.hero-slide,.hero-project,.hero-slide img{animation:none!important}.hero-slide:not(.active),.hero-project:not(.active){display:none!important}}
     `;
     document.head.append(style);
   };
@@ -367,15 +376,16 @@
     const captions = document.querySelector("[data-hero-projects]");
     if (!slides || !captions || !selectedProjects.length) return;
 
-    const duration = Math.max(selectedProjects.length * 7, 28);
-    slides.setAttribute("style", `--slide-count: ${selectedProjects.length}; --duration: ${duration}s;`);
+    const step = 6;
+    const duration = Math.max(selectedProjects.length * step, 28);
+    slides.setAttribute("style", `--slide-count: ${selectedProjects.length}; --step: ${step}s; --duration: ${duration}s;`);
     slides.innerHTML = selectedProjects
       .map(
         (project, index) => `
           <a
             class="hero-slide${index === 0 ? " active" : ""}"
             href="/projects/${escapeHtml(project.id)}/"
-            style="--index: ${index}; --duration: ${duration}s;"
+            style="--index: ${index}; --step: ${step}s; --duration: ${duration}s;"
             aria-label="${escapeHtml(project.titleEn)} — ${escapeHtml(project.titleZh)}"
           >
             <img
@@ -395,7 +405,7 @@
           <a
             class="hero-project${index === 0 ? " active" : ""}"
             href="/projects/${escapeHtml(project.id)}/"
-            style="--index: ${index}; --duration: ${duration}s;"
+            style="--index: ${index}; --step: ${step}s; --duration: ${duration}s;"
           >
             <span>${escapeHtml(project.titleEn)}</span>
             <span data-lang="fi">${escapeHtml(project.titleFi || project.titleEn)}</span>
