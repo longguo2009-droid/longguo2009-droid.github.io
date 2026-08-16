@@ -704,7 +704,9 @@
       <div class="hero-slide active" aria-hidden="false">
         <img
           src="/images/hero/beijing-helsinki-connected-aerial-ai-1920.jpg"
-          alt="Studio Signo China Finland visual background"
+          alt=""
+          aria-hidden="true"
+          onerror="this.style.display='none'"
           width="1920"
           height="1080"
           fetchpriority="high"
@@ -1016,7 +1018,11 @@
       const heroImage = heroSection.querySelector("img");
       if (heroImage && hero.image) {
         heroImage.src = assetPath(hero.image);
-        heroImage.alt = hero.imageAlt || heroImage.alt;
+        heroImage.alt = "";
+        heroImage.setAttribute("aria-hidden", "true");
+        heroImage.onerror = () => {
+          heroImage.style.display = "none";
+        };
       }
       setText(".eyebrow", hero.eyebrow, heroSection);
       setText("#hero-title", HOME_HERO_COPY.titleEn, heroSection);
