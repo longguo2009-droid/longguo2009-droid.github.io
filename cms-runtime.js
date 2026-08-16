@@ -43,16 +43,18 @@
       .hero-project span:first-child{letter-spacing:-0.055em!important}
       .narrative p,.intro,dd,p{font-weight:300}
       strong,b{font-weight:600}
-      .language-switch{display:flex;gap:.35rem;align-items:center;margin-left:clamp(.8rem,2vw,1.5rem)}
+      .site-header .language-switch{display:flex;gap:.35rem;align-items:center;margin-left:auto;margin-right:clamp(.9rem,2.4vw,1.8rem)}
       .language-switch button{border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--muted);padding:.35rem .6rem;font:600 .68rem/1 var(--sans);letter-spacing:.08em;cursor:pointer}
       .language-switch button[aria-pressed="true"]{background:var(--blue);border-color:var(--blue);color:#fff}
-      html[data-lang="en"] [data-lang="zh"],html[data-lang="zh"] [data-lang="en"]{display:none!important}
+      html:not([data-lang]) [data-lang]:not([data-lang="en"]),html[data-lang="en"] [data-lang]:not([data-lang="en"]),html[data-lang="zh"] [data-lang]:not([data-lang="zh"]),html[data-lang="fi"] [data-lang]:not([data-lang="fi"]){display:none!important}
       html[data-lang="zh"] .hero-title-zh,html[data-lang="zh"] .section-title-zh,html[data-lang="zh"] .project-title-zh{display:block!important;color:var(--blue);font-family:var(--font-zh)!important;font-weight:500!important;letter-spacing:-.04em!important}
-      html[data-lang="zh"] .hero-title-zh{max-width:11ch;margin:.6rem 0 2rem;font-size:clamp(3.2rem,8.5vw,8.5rem);line-height:.92}
-      html[data-lang="zh"] .section-title-zh,html[data-lang="zh"] .project-title-zh{max-width:14ch;margin:.8rem 0;font-size:clamp(2.4rem,5.4vw,5.8rem);line-height:1.02}
-      html[data-lang="en"] .narrative,html[data-lang="zh"] .narrative{grid-template-columns:minmax(0,68rem);justify-content:start}
+      html[data-lang="fi"] .hero-title-fi,html[data-lang="fi"] .section-title-fi,html[data-lang="fi"] .project-title-fi{display:block!important;color:var(--blue);font-family:var(--font-en)!important;font-weight:600!important;letter-spacing:-.055em!important}
+      html[data-lang="zh"] .hero-title-zh,html[data-lang="fi"] .hero-title-fi{max-width:11ch;margin:.6rem 0 2rem;font-size:clamp(3.2rem,8.5vw,8.5rem);line-height:.92}
+      html[data-lang="zh"] .section-title-zh,html[data-lang="zh"] .project-title-zh,html[data-lang="fi"] .section-title-fi,html[data-lang="fi"] .project-title-fi{max-width:14ch;margin:.8rem 0;font-size:clamp(2.4rem,5.4vw,5.8rem);line-height:1.02}
+      html[data-lang="en"] .narrative,html[data-lang="zh"] .narrative,html[data-lang="fi"] .narrative{grid-template-columns:minmax(0,68rem);justify-content:start}
       html[data-lang="zh"] .narrative{font-family:var(--font-zh);font-size:clamp(1rem,1.18vw,1.18rem)!important;line-height:2.05!important;letter-spacing:.01em}
       html[data-lang="zh"] .narrative p{max-width:52rem;color:var(--ink);font-size:clamp(1rem,1.18vw,1.18rem)!important;line-height:2.05!important;font-weight:400}
+      html[data-lang="fi"] .narrative p{max-width:52rem;color:var(--ink);font-size:clamp(1rem,1.18vw,1.18rem)!important;line-height:2.05!important;font-weight:300}
       html[data-lang="zh"] .project-header dl{max-width:34rem;font-family:var(--font-zh);font-size:.95rem;line-height:1.85}
       html[data-lang="zh"] .project-card h3{font-family:var(--font-zh);font-weight:500}
       html[data-lang="zh"] .hero-project .zh{font-family:var(--font-zh);font-size:clamp(1.25rem,2.5vw,2.4rem);line-height:1.1;letter-spacing:-.03em}
@@ -60,26 +62,80 @@
     document.head.append(style);
   };
   injectTypography();
+  const NAV_LABELS = {
+    "/projects/": { en: "Projects", zh: "项目", fi: "Projektit" },
+    "/studio/": { en: "About", zh: "关于", fi: "Tietoa" },
+    "/contact/": { en: "Contact", zh: "联系", fi: "Yhteys" },
+  };
+  const LABEL_FI = {
+    Project: "Projekti",
+    Projects: "Projektit",
+    "Selected Work": "Valitut projektit",
+    Practice: "Osaaminen",
+    Approach: "Lähestymistapa",
+    Team: "Tiimi",
+    Recognition: "Tunnustukset",
+    "Selected Clients": "Asiakkaita",
+    Year: "Vuosi",
+    Location: "Sijainti",
+    Scope: "Palvelut",
+    "View all projects": "Katso kaikki projektit →",
+    "Return home": "Takaisin etusivulle →",
+  };
+  const HOME_FI = {
+    heroTitle: "Studio Signo muotoilee identiteettiä ja paikkoja.",
+    heroIntro:
+      "Studio Signo luo identiteettejä, tilajärjestelmiä ja kulttuurisia kokemuksia selkeästi, harkitusti ja inhimillisesti.",
+    selectedTitle: "Identiteetin, paikan ja kulttuurienvälisen vuoropuhelun muotoilemaa työtä.",
+    practiceTitle: "Kolme osa-aluetta. Yksi kulttuurienvälinen näkökulma.",
+    practiceAreas: ["Brändi-identiteetti", "Paikka ja opastus", "Kulttuurienvälinen strategia"],
+    approachTitle: "Käännämme kontekstia, emme vain sanoja.",
+    approachBody:
+      "Studio Signo yhdistää tutkimuksen, visuaaliset järjestelmät ja tilallisen kokemuksen, jotta monimutkaiset ympäristöt tuntuvat selkeiltä, muistettavilta ja inhimillisiltä.",
+  };
   const getLanguage = () => {
     const param = new URLSearchParams(window.location.search).get("lang");
     if (param === "zh" || param === "cn") return "zh";
+    if (param === "fi" || param === "fin" || param === "suomi") return "fi";
     if (param === "en") return "en";
     try {
-      return localStorage.getItem("studio-signo-language") === "zh" ? "zh" : "en";
+      const stored = localStorage.getItem("studio-signo-language");
+      return stored === "zh" || stored === "fi" ? stored : "en";
     } catch {
       return "en";
     }
   };
   let currentLanguage = getLanguage();
+  const normalizeLanguage = (language) => (language === "zh" || language === "fi" ? language : "en");
+  const langValue = (en, zh, fi, lang = currentLanguage) => {
+    if (lang === "zh") return text(zh || en || fi);
+    if (lang === "fi") return text(fi || en || zh);
+    return text(en || fi || zh);
+  };
   const splitBilingual = (value, lang = currentLanguage) => {
     const parts = text(value).split(/\s*\/\s*/);
     if (parts.length < 2) return text(value);
+    if (lang === "fi") return LABEL_FI[parts[0]] || parts[0];
     return lang === "zh" ? parts.slice(1).join(" / ") : parts[0];
   };
+  const ensureLangElement = (afterElement, lang, value, className = "") => {
+    if (!afterElement) return null;
+    const parent = afterElement.parentElement;
+    if (!parent) return null;
+    let element = parent.querySelector(`[data-lang="${lang}"]`);
+    if (!element) {
+      element = document.createElement(afterElement.tagName.toLowerCase());
+      element.dataset.lang = lang;
+      if (className) element.className = className;
+      afterElement.insertAdjacentElement("afterend", element);
+    }
+    element.textContent = text(value);
+    return element;
+  };
   const setLanguage = (language, persist = true) => {
-    currentLanguage = language === "zh" ? "zh" : "en";
+    currentLanguage = normalizeLanguage(language);
     document.documentElement.dataset.lang = currentLanguage;
-    document.documentElement.lang = currentLanguage === "zh" ? "zh-CN" : "en";
+    document.documentElement.lang = currentLanguage === "zh" ? "zh-CN" : currentLanguage === "fi" ? "fi" : "en";
     if (persist) {
       try {
         localStorage.setItem("studio-signo-language", currentLanguage);
@@ -97,9 +153,23 @@
       element.dataset.lang ||= "zh";
     });
     document.querySelectorAll("nav a").forEach((link) => {
+      const labels = NAV_LABELS[link.getAttribute("href")] || {};
       const spans = link.querySelectorAll("span");
-      if (spans[0]) spans[0].dataset.lang = "en";
-      if (spans[1]) spans[1].dataset.lang = "zh";
+      if (spans[0]) {
+        spans[0].dataset.lang = "en";
+        if (labels.en) spans[0].textContent = labels.en;
+      }
+      if (spans[1]) {
+        spans[1].dataset.lang = "zh";
+        if (labels.zh) spans[1].textContent = labels.zh;
+      }
+      if (labels.fi && !link.querySelector('[data-lang="fi"]')) {
+        const span = document.createElement("span");
+        span.dataset.lang = "fi";
+        span.lang = "fi";
+        span.textContent = labels.fi;
+        link.append(span);
+      }
     });
     document.querySelectorAll(".project-card .meta > div").forEach((group) => {
       const title = group.querySelector("h3");
@@ -111,8 +181,13 @@
     });
     const heroTitle = document.querySelector("#hero-title");
     if (heroTitle) heroTitle.dataset.lang = "en";
+    document.querySelectorAll("#selected-work, #practice-title, .approach h2").forEach((element) => {
+      element.dataset.lang ||= "en";
+    });
     const heroTitleZh = document.querySelector(".overlay > div > .zh");
     if (heroTitleZh) heroTitleZh.classList.add("display", "hero-title-zh");
+    const heroTitleFi = ensureLangElement(heroTitleZh, "fi", HOME_FI.heroTitle, "display hero-title-fi");
+    if (heroTitleFi) heroTitleFi.lang = "fi";
     document.querySelectorAll(".display + .zh").forEach((title) => {
       title.classList.add("display", "section-title-zh");
     });
@@ -132,14 +207,15 @@
     switcher.dataset.languageSwitch = "";
     switcher.setAttribute("aria-label", "Language");
     switcher.innerHTML = `
+      <button type="button" data-set-language="zh">中</button>
       <button type="button" data-set-language="en">EN</button>
-      <button type="button" data-set-language="zh">CN</button>
+      <button type="button" data-set-language="fi">FI</button>
     `;
     switcher.addEventListener("click", (event) => {
       const button = event.target.closest("button[data-set-language]");
       if (button) setLanguage(button.dataset.setLanguage);
     });
-    nav.insertAdjacentElement("afterend", switcher);
+    header.insertBefore(switcher, nav);
   };
   const refreshLanguage = () => {
     injectLanguageSwitch();
@@ -165,7 +241,11 @@
             loading="lazy"
           />
           <div class="meta">
-            <div><h3 data-lang="en">${escapeHtml(project.titleEn)}</h3><p class="zh" data-lang="zh">${escapeHtml(project.titleZh)}</p></div>
+            <div>
+              <h3 data-lang="en">${escapeHtml(project.titleEn)}</h3>
+              <h3 data-lang="fi">${escapeHtml(project.titleFi || project.titleEn)}</h3>
+              <p class="zh" data-lang="zh">${escapeHtml(project.titleZh)}</p>
+            </div>
             ${year}
           </div>
         </a>
@@ -191,6 +271,7 @@
           <p class="eyebrow" data-bilingual-label="Project / 项目">Project</p>
           <h1 class="display" data-lang="en"></h1>
           <h1 class="display zh project-title-zh" data-lang="zh"></h1>
+          <h1 class="display project-title-fi" data-lang="fi"></h1>
           <dl></dl>
         </header>
         <figure class="lead">
@@ -199,6 +280,7 @@
         <section class="narrative shell section">
           <p data-lang="en"></p>
           <p class="zh" data-lang="zh"></p>
+          <p data-lang="fi"></p>
         </section>
         <section class="project-gallery shell section" aria-label="Project detail gallery / 项目详情图片" data-project-gallery></section>
       </article>
@@ -316,6 +398,7 @@
             style="--index: ${index}; --duration: ${duration}s;"
           >
             <span>${escapeHtml(project.titleEn)}</span>
+            <span data-lang="fi">${escapeHtml(project.titleFi || project.titleEn)}</span>
             <span class="zh">${escapeHtml(project.titleZh)}</span>
           </a>
         `,
@@ -345,6 +428,14 @@
       header.querySelector("h1")?.insertAdjacentElement("afterend", titleZh);
     }
     titleZh.textContent = text(project.titleZh);
+    let titleFi = header.querySelector(".project-title-fi");
+    if (!titleFi) {
+      titleFi = document.createElement("h1");
+      titleFi.className = "display project-title-fi";
+      titleFi.dataset.lang = "fi";
+      titleZh.insertAdjacentElement("afterend", titleFi);
+    }
+    titleFi.textContent = text(project.titleFi || project.titleEn);
     const eyebrow = header.querySelector(".eyebrow");
     if (eyebrow) {
       eyebrow.dataset.bilingualLabel = "Project / 项目";
@@ -352,27 +443,29 @@
     }
 
     const details = [];
-    if (project.year) details.push(["Year / 年份", escapeHtml(project.year), escapeHtml(project.year)]);
+    if (project.year) details.push(["Year / 年份", escapeHtml(project.year), escapeHtml(project.year), escapeHtml(project.year)]);
     if (project.locationEn || project.locationZh) {
       details.push([
         "Location / 地点",
         escapeHtml(project.locationEn),
         escapeHtml(project.locationZh),
+        escapeHtml(project.locationFi || project.locationEn),
       ]);
     }
     details.push([
       "Scope / 服务",
       escapeHtml(project.scopeEn),
       escapeHtml(project.scopeZh),
+      escapeHtml(project.scopeFi || project.scopeEn),
     ]);
 
     const dl = header.querySelector("dl");
     if (dl) {
       dl.innerHTML = details
         .map(
-          ([label, valueEn, valueZh]) => `
+          ([label, valueEn, valueZh, valueFi]) => `
             <dt data-bilingual-label="${escapeHtml(label)}">${escapeHtml(splitBilingual(label))}</dt>
-            <dd><span data-lang="en">${valueEn}</span><span class="zh" data-lang="zh">${valueZh}</span></dd>
+            <dd><span data-lang="en">${valueEn}</span><span class="zh" data-lang="zh">${valueZh}</span><span data-lang="fi">${valueFi || valueEn}</span></dd>
           `,
         )
         .join("");
@@ -386,6 +479,11 @@
 
     const narrative = document.querySelector(".narrative");
     if (narrative) {
+      if (!narrative.querySelector('[data-lang="fi"]')) {
+        const fiParagraph = document.createElement("p");
+        fiParagraph.dataset.lang = "fi";
+        narrative.append(fiParagraph);
+      }
       const paragraphs = narrative.querySelectorAll("p");
       if (paragraphs[0]) {
         paragraphs[0].textContent = text(project.summaryEn);
@@ -394,6 +492,10 @@
       if (paragraphs[1]) {
         paragraphs[1].textContent = text(project.summaryZh);
         paragraphs[1].dataset.lang = "zh";
+      }
+      if (paragraphs[2]) {
+        paragraphs[2].textContent = text(project.summaryFi || project.summaryEn);
+        paragraphs[2].dataset.lang = "fi";
       }
     }
 
@@ -451,6 +553,7 @@
       setText(".overlay > div > .zh", hero.titleZh, heroSection);
       setText(".intro[lang='en']", hero.introEn, heroSection);
       setText(".intro.zh", hero.introZh, heroSection);
+      ensureLangElement(heroSection.querySelector(".intro.zh"), "fi", hero.introFi || HOME_FI.heroIntro, "intro");
       setText(".cityline", hero.cityline, heroSection);
       renderHeroSlides(projects);
     }
@@ -460,7 +563,9 @@
       setText(".eyebrow", selectedWork.eyebrow, selectedSection);
       selectedSection.querySelector(".eyebrow")?.setAttribute("data-bilingual-label", selectedWork.eyebrow || "");
       setText("#selected-work", selectedWork.titleEn, selectedSection);
+      selectedSection.querySelector("#selected-work")?.setAttribute("data-lang", "en");
       setText("#selected-work + .zh", selectedWork.titleZh, selectedSection);
+      ensureLangElement(selectedSection.querySelector("#selected-work + .zh"), "fi", selectedWork.titleFi || HOME_FI.selectedTitle, "display section-title-fi");
       setText(".archive-link", selectedWork.archiveLabel, selectedSection);
       selectedSection.querySelector(".archive-link")?.setAttribute("data-bilingual-label", selectedWork.archiveLabel || "");
 
@@ -477,13 +582,15 @@
       setText(".eyebrow", practice.eyebrow, practiceSection);
       practiceSection.querySelector(".eyebrow")?.setAttribute("data-bilingual-label", practice.eyebrow || "");
       setText("#practice-title", practice.titleEn, practiceSection);
+      practiceSection.querySelector("#practice-title")?.setAttribute("data-lang", "en");
       setText("#practice-title + .zh", practice.titleZh, practiceSection);
+      ensureLangElement(practiceSection.querySelector("#practice-title + .zh"), "fi", practice.titleFi || HOME_FI.practiceTitle, "display section-title-fi");
       const list = practiceSection.querySelector("ol");
       if (list && Array.isArray(practice.areas) && practice.areas.length) {
         list.innerHTML = practice.areas
           .map(
             (area) =>
-              `<li><span>${escapeHtml(area.number)}</span><h3>${escapeHtml(area.titleEn)}</h3><p class="zh">${escapeHtml(area.titleZh)}</p></li>`,
+              `<li><span>${escapeHtml(area.number)}</span><h3 data-lang="en">${escapeHtml(area.titleEn)}</h3><h3 data-lang="fi">${escapeHtml(area.titleFi || HOME_FI.practiceAreas[Number(area.number) - 1] || area.titleEn)}</h3><p class="zh" data-lang="zh">${escapeHtml(area.titleZh)}</p></li>`,
           )
           .join("");
       }
@@ -494,9 +601,12 @@
       setText(".eyebrow", approach.eyebrow, approachSection);
       approachSection.querySelector(".eyebrow")?.setAttribute("data-bilingual-label", approach.eyebrow || "");
       setText("h2", approach.titleEn, approachSection);
+      approachSection.querySelector("h2")?.setAttribute("data-lang", "en");
+      ensureLangElement(approachSection.querySelector("h2"), "fi", approach.titleFi || HOME_FI.approachTitle, "display section-title-fi");
       const paragraphs = approachSection.querySelectorAll(".approach-copy p");
       if (paragraphs[0] && approach.bodyEn != null) paragraphs[0].textContent = text(approach.bodyEn);
       if (paragraphs[1] && approach.bodyZh != null) paragraphs[1].textContent = text(approach.bodyZh);
+      ensureLangElement(paragraphs[1] || paragraphs[0], "fi", approach.bodyFi || HOME_FI.approachBody, "");
     }
     refreshLanguage();
   } catch {
