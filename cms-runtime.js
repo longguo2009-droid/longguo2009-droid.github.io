@@ -34,7 +34,7 @@
       @font-face{font-family:"Silka Local";src:local("Silka Medium"),local("Silka-Medium");font-weight:500;font-style:normal}
       @font-face{font-family:"Silka Local";src:local("Silka SemiBold"),local("Silka-SemiBold");font-weight:600;font-style:normal}
       @font-face{font-family:"Silka Local";src:local("Silka Bold"),local("Silka-Bold");font-weight:700;font-style:normal}
-      :root{--font-en:"Silka Local","Silka","Helvetica Neue",Arial;--font-zh:"PingFang SC","Hiragino Sans GB","Microsoft YaHei";--sans:var(--font-en),var(--font-zh),sans-serif}
+      :root{--font-en:"Silka Local","Silka","DIN Pro","DINPro","FF DIN","DIN 2014","Clan Pro","Clan","Zurich","Helvetica Neue",Arial,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI";--font-zh:"Source Han Sans SC","Source Han Sans CN","Noto Sans CJK SC","Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Microsoft JhengHei","Heiti SC","Adobe Heiti Std","Adobe 黑体 Std";--sans:var(--font-en),var(--font-zh),sans-serif}
       body{font-family:var(--sans);font-weight:300}
       .display{font-family:var(--font-en),var(--font-zh)!important;font-weight:600!important;letter-spacing:-0.06em!important}
       .eyebrow{font-weight:600}
