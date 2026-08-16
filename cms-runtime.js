@@ -74,6 +74,26 @@
       .hero-project:hover .hero-project-cta,.hero-project:focus-visible .hero-project-cta{background:var(--blue);color:#fff;transform:translateX(.2rem)}
       .hero-slide{cursor:pointer}
       .hero-project{cursor:pointer}
+      .floating-contact{position:fixed;right:clamp(1rem,2.6vw,2rem);bottom:clamp(1rem,2.6vw,2rem);z-index:90;font-family:var(--sans);color:var(--ink)}
+      .floating-contact *{box-sizing:border-box}
+      .floating-contact-toggle{border:1px solid color-mix(in srgb,var(--blue) 88%,#fff);border-radius:999px;background:var(--blue);color:#fff;box-shadow:0 1rem 2.5rem color-mix(in srgb,var(--blue) 22%,transparent);padding:.8rem 1rem;font:600 .82rem/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+      .floating-contact-toggle:hover,.floating-contact-toggle:focus-visible{transform:translateY(-1px);box-shadow:0 1.2rem 3rem color-mix(in srgb,var(--blue) 28%,transparent)}
+      .floating-contact-panel{position:absolute;right:0;bottom:calc(100% + .75rem);width:min(24rem,calc(100vw - 2rem));border:1px solid var(--line);background:color-mix(in srgb,var(--paper-light) 96%,#fff);box-shadow:0 1.6rem 4rem color-mix(in srgb,#000 18%,transparent);padding:1rem;display:none}
+      .floating-contact.is-open .floating-contact-panel{display:block}
+      .floating-contact-head{display:flex;justify-content:space-between;gap:1rem;align-items:flex-start;margin-bottom:.85rem}
+      .floating-contact-title{margin:0;color:var(--blue);font:600 1.25rem/1.05 var(--sans);letter-spacing:-.04em}
+      .floating-contact-note{margin:.35rem 0 0;color:var(--muted);font-size:.78rem;line-height:1.45}
+      .floating-contact-close{border:0;background:transparent;color:var(--muted);font-size:1.35rem;line-height:1;cursor:pointer;padding:.1rem}
+      .floating-contact form{display:grid;gap:.7rem}
+      .floating-contact label{display:grid;gap:.25rem;color:var(--muted);font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+      .floating-contact input,.floating-contact textarea{width:100%;border:1px solid color-mix(in srgb,var(--ink) 18%,transparent);border-radius:0;background:#fff;color:var(--ink);padding:.72rem .75rem;font:400 .9rem/1.4 var(--sans)}
+      .floating-contact textarea{min-height:7.5rem;resize:vertical}
+      .floating-contact-actions{display:flex;flex-wrap:wrap;gap:.55rem;align-items:center;margin-top:.2rem}
+      .floating-contact-submit,.floating-contact-copy{border:1px solid var(--blue);border-radius:999px;padding:.66rem .82rem;font:600 .72rem/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+      .floating-contact-submit{background:var(--blue);color:#fff}
+      .floating-contact-copy{background:transparent;color:var(--blue)}
+      .floating-contact-status{min-height:1rem;margin:0;color:var(--muted);font-size:.72rem;line-height:1.4}
+      @media (max-width:700px){.floating-contact{right:1rem;bottom:1rem}.floating-contact-panel{width:calc(100vw - 2rem);max-height:calc(100vh - 7rem);overflow:auto}.floating-contact-toggle{padding:.72rem .86rem;font-size:.72rem}}
       img{user-select:none;-webkit-user-select:none;-webkit-user-drag:none;-webkit-touch-callout:none}
       .hero-slide img,.project-card img,.lead img,.project-gallery img{pointer-events:none}
       @keyframes studio-signo-hero-slide{0%{opacity:0;transform:translateX(100%)}2.8%,11.5%{opacity:1;transform:translateX(0)}14.25%,100%{opacity:0;transform:translateX(-100%)}}
@@ -117,6 +137,7 @@
     "/studio/": { en: "About", zh: "关于", fi: "Tietoa" },
     "/contact/": { en: "Contact", zh: "联系", fi: "Yhteys" },
   };
+  const CONTACT_RECIPIENT = "longguo2009@gmail.com";
   const LABEL_FI = {
     Project: "Projekti",
     Projects: "Projektit",
@@ -298,15 +319,138 @@
     });
     header.insertBefore(switcher, nav);
   };
+  const buildContactMessage = (form) => {
+    const data = new FormData(form);
+    const name = text(data.get("name")).trim();
+    const email = text(data.get("email")).trim();
+    const organization = text(data.get("organization")).trim();
+    const need = text(data.get("need")).trim();
+    return [
+      "New design inquiry from Studio Signo website",
+      "",
+      `Name: ${name}`,
+      `Email: ${email}`,
+      `Organization / Project: ${organization || "-"}`,
+      "",
+      "Design need:",
+      need,
+      "",
+      `Page: ${window.location.href}`,
+    ].join("\n");
+  };
+  const injectContactWidget = () => {
+    if (document.querySelector("[data-floating-contact]")) return;
+    const widget = document.createElement("aside");
+    widget.className = "floating-contact";
+    widget.dataset.floatingContact = "";
+    widget.innerHTML = `
+      <button class="floating-contact-toggle" type="button" aria-expanded="false" aria-controls="floating-contact-panel">
+        <span data-lang="en">Contact</span>
+        <span data-lang="zh">联系</span>
+        <span data-lang="fi">Yhteys</span>
+      </button>
+      <div class="floating-contact-panel" id="floating-contact-panel" role="dialog" aria-modal="false" aria-labelledby="floating-contact-title">
+        <div class="floating-contact-head">
+          <div>
+            <p class="floating-contact-title" id="floating-contact-title">
+              <span data-lang="en">Start a conversation</span>
+              <span data-lang="zh">开始咨询</span>
+              <span data-lang="fi">Aloita keskustelu</span>
+            </p>
+            <p class="floating-contact-note">
+              <span data-lang="en">Tell us your email and design need. A ready-to-send email will open.</span>
+              <span data-lang="zh">留下邮箱和设计需求，系统会自动生成一封待发送邮件。</span>
+              <span data-lang="fi">Jätä sähköpostisi ja tarpeesi. Valmis sähköpostiluonnos avautuu.</span>
+            </p>
+          </div>
+          <button class="floating-contact-close" type="button" aria-label="Close">×</button>
+        </div>
+        <form>
+          <label>
+            <span data-lang="en">Name</span>
+            <span data-lang="zh">姓名</span>
+            <span data-lang="fi">Nimi</span>
+            <input name="name" autocomplete="name" required>
+          </label>
+          <label>
+            <span data-lang="en">Email</span>
+            <span data-lang="zh">邮箱</span>
+            <span data-lang="fi">Sähköposti</span>
+            <input name="email" type="email" autocomplete="email" required>
+          </label>
+          <label>
+            <span data-lang="en">Project / Organization</span>
+            <span data-lang="zh">项目 / 公司</span>
+            <span data-lang="fi">Projekti / Organisaatio</span>
+            <input name="organization" autocomplete="organization">
+          </label>
+          <label>
+            <span data-lang="en">Design need</span>
+            <span data-lang="zh">设计需求</span>
+            <span data-lang="fi">Suunnittelutarve</span>
+            <textarea name="need" required></textarea>
+          </label>
+          <div class="floating-contact-actions">
+            <button class="floating-contact-submit" type="submit">
+              <span data-lang="en">Send email</span>
+              <span data-lang="zh">发送邮件</span>
+              <span data-lang="fi">Lähetä</span>
+            </button>
+            <button class="floating-contact-copy" type="button">
+              <span data-lang="en">Copy text</span>
+              <span data-lang="zh">复制内容</span>
+              <span data-lang="fi">Kopioi</span>
+            </button>
+          </div>
+          <p class="floating-contact-status" aria-live="polite"></p>
+        </form>
+      </div>
+    `;
+    const toggle = widget.querySelector(".floating-contact-toggle");
+    const close = widget.querySelector(".floating-contact-close");
+    const form = widget.querySelector("form");
+    const copy = widget.querySelector(".floating-contact-copy");
+    const status = widget.querySelector(".floating-contact-status");
+    const setOpen = (open) => {
+      widget.classList.toggle("is-open", open);
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      if (open) widget.querySelector("input")?.focus();
+    };
+    toggle.addEventListener("click", () => setOpen(!widget.classList.contains("is-open")));
+    close.addEventListener("click", () => setOpen(false));
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") setOpen(false);
+    });
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      const message = buildContactMessage(form);
+      const subject = encodeURIComponent("Studio Signo design inquiry");
+      const body = encodeURIComponent(message);
+      window.location.href = `mailto:${CONTACT_RECIPIENT}?subject=${subject}&body=${body}`;
+      status.textContent = langValue("Opening your email app…", "正在打开邮件应用…", "Avataan sähköpostia…");
+    });
+    copy.addEventListener("click", async () => {
+      const message = buildContactMessage(form);
+      try {
+        await navigator.clipboard.writeText(message);
+        status.textContent = langValue("Copied. You can paste it into email or WeChat.", "已复制，可粘贴到邮件或微信。", "Kopioitu. Voit liittää sen sähköpostiin tai WeChatiin.");
+      } catch {
+        status.textContent = langValue("Please select and copy the text manually.", "请手动选择并复制内容。", "Valitse ja kopioi teksti käsin.");
+      }
+    });
+    document.body.append(widget);
+  };
   const refreshLanguage = () => {
     injectLanguageSwitch();
+    injectContactWidget();
     markLanguagePairs();
     document.querySelectorAll("[data-bilingual-label]").forEach((element) => {
       element.textContent = splitBilingual(element.dataset.bilingualLabel);
     });
     setLanguage(currentLanguage, false);
   };
-  setLanguage(currentLanguage, false);
+  refreshLanguage();
 
   const renderProjectCard = (project) => {
     const categories = Array.isArray(project.categories) ? project.categories.join(" ") : "";
