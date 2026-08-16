@@ -62,7 +62,15 @@
       .hero-slide{opacity:0;animation:studio-signo-hero-slide var(--duration) cubic-bezier(.76,0,.24,1) infinite!important;animation-delay:calc(var(--index) * var(--step, 6s))!important;transform:translateX(100%);will-change:transform,opacity;pointer-events:auto}
       .hero-slide.active{pointer-events:auto}
       .hero-slide img{animation:studio-signo-hero-image var(--duration) ease-in-out infinite!important;animation-delay:inherit!important;transform:scale(1.035);will-change:transform}
-      .hero-project{animation:studio-signo-hero-caption var(--duration) ease-in-out infinite!important;animation-delay:calc(var(--index) * var(--step, 6s))!important}
+      .hero-projects{position:relative;min-height:7.4rem;overflow:hidden}
+      .hero-project{position:absolute;inset:auto 0 0 auto;display:block;max-width:min(34rem,100%);color:var(--blue);text-align:right;text-decoration:none;opacity:0;pointer-events:auto;animation:studio-signo-hero-caption var(--duration) ease-in-out infinite!important;animation-delay:calc(var(--index) * var(--step, 6s))!important}
+      .hero-project span{display:block}
+      .hero-project span:first-child,.hero-project span[data-lang="fi"]{color:var(--blue);font-size:clamp(1.6rem,3vw,3rem);line-height:.95;letter-spacing:-.055em}
+      .hero-project .zh{display:block;margin-top:.35rem;color:var(--blue)}
+      .hero-project-cta{display:inline-flex!important;align-items:center;gap:.45rem;margin-top:.85rem;border:1px solid color-mix(in srgb,var(--blue) 55%,transparent);border-radius:999px;padding:.42rem .7rem;color:var(--blue);font-size:.68rem;font-style:normal;font-weight:600;letter-spacing:.1em;text-transform:uppercase;background:color-mix(in srgb,var(--paper-light) 65%,transparent);transition:background .25s ease,color .25s ease,transform .25s ease}
+      .hero-project:hover .hero-project-cta,.hero-project:focus-visible .hero-project-cta{background:var(--blue);color:#fff;transform:translateX(.2rem)}
+      .hero-slide{cursor:pointer}
+      .hero-project{cursor:pointer}
       @keyframes studio-signo-hero-slide{0%{opacity:0;transform:translateX(100%)}2.8%,11.5%{opacity:1;transform:translateX(0)}14.25%,100%{opacity:0;transform:translateX(-100%)}}
       @keyframes studio-signo-hero-image{0%{transform:scale(1.035)}50%{transform:scale(1.075)}100%{transform:scale(1.035)}}
       @keyframes studio-signo-hero-caption{0%{opacity:0;transform:translateX(1rem)}3%,11.5%{opacity:1;transform:translateX(0)}14.25%,100%{opacity:0;transform:translateX(-1rem)}}
@@ -410,6 +418,9 @@
             <span>${escapeHtml(project.titleEn)}</span>
             <span data-lang="fi">${escapeHtml(project.titleFi || project.titleEn)}</span>
             <span class="zh">${escapeHtml(project.titleZh)}</span>
+            <em class="hero-project-cta" data-lang="en">View project →</em>
+            <em class="hero-project-cta" data-lang="zh">进入项目 →</em>
+            <em class="hero-project-cta" data-lang="fi">Katso projekti →</em>
           </a>
         `,
       )
