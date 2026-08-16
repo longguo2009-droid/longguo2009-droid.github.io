@@ -125,7 +125,7 @@
     switcher.setAttribute("aria-label", "Language");
     switcher.innerHTML = `
       <button type="button" data-set-language="en">EN</button>
-      <button type="button" data-set-language="zh">中</button>
+      <button type="button" data-set-language="zh">CN</button>
     `;
     switcher.addEventListener("click", (event) => {
       const button = event.target.closest("button[data-set-language]");
