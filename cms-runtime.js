@@ -233,7 +233,7 @@
     document.querySelectorAll(".zh").forEach((element) => {
       element.dataset.lang ||= "zh";
     });
-    document.querySelectorAll("nav a").forEach((link) => {
+    document.querySelectorAll(".site-header nav a").forEach((link) => {
       const labels = NAV_LABELS[link.getAttribute("href")] || {};
       const spans = link.querySelectorAll("span");
       if (spans[0]) {
