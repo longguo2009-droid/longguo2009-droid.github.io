@@ -71,6 +71,8 @@
       .hero-project:hover .hero-project-cta,.hero-project:focus-visible .hero-project-cta{background:var(--blue);color:#fff;transform:translateX(.2rem)}
       .hero-slide{cursor:pointer}
       .hero-project{cursor:pointer}
+      img{user-select:none;-webkit-user-select:none;-webkit-user-drag:none;-webkit-touch-callout:none}
+      .hero-slide img,.project-card img,.lead img,.project-gallery img{pointer-events:none}
       @keyframes studio-signo-hero-slide{0%{opacity:0;transform:translateX(100%)}2.8%,11.5%{opacity:1;transform:translateX(0)}14.25%,100%{opacity:0;transform:translateX(-100%)}}
       @keyframes studio-signo-hero-image{0%{transform:scale(1.035)}50%{transform:scale(1.075)}100%{transform:scale(1.035)}}
       @keyframes studio-signo-hero-caption{0%{opacity:0;transform:translateX(1rem)}3%,11.5%{opacity:1;transform:translateX(0)}14.25%,100%{opacity:0;transform:translateX(-1rem)}}
@@ -79,6 +81,33 @@
     document.head.append(style);
   };
   injectTypography();
+  const protectImages = () => {
+    document.querySelectorAll("img").forEach((image) => {
+      image.setAttribute("draggable", "false");
+      image.setAttribute("oncontextmenu", "return false");
+    });
+  };
+  const isProtectedImageArea = (target) =>
+    target?.closest?.("img, .hero-slide, .project-card, .lead, .project-gallery figure");
+  protectImages();
+  document.addEventListener(
+    "contextmenu",
+    (event) => {
+      if (isProtectedImageArea(event.target)) event.preventDefault();
+    },
+    true,
+  );
+  document.addEventListener(
+    "dragstart",
+    (event) => {
+      if (isProtectedImageArea(event.target)) event.preventDefault();
+    },
+    true,
+  );
+  new MutationObserver(protectImages).observe(document.documentElement, {
+    childList: true,
+    subtree: true,
+  });
   const NAV_LABELS = {
     "/projects/": { en: "Projects", zh: "项目", fi: "Projektit" },
     "/studio/": { en: "About", zh: "关于", fi: "Tietoa" },
