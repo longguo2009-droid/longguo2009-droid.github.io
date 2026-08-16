@@ -52,6 +52,8 @@
       html:not([data-lang]) [data-lang]:not([data-lang="en"]),html[data-lang="en"] [data-lang]:not([data-lang="en"]),html[data-lang="zh"] [data-lang]:not([data-lang="zh"]),html[data-lang="fi"] [data-lang]:not([data-lang="fi"]){display:none!important}
       html[data-lang="zh"] .hero-title-zh,html[data-lang="zh"] .section-title-zh,html[data-lang="zh"] .project-title-zh{display:block!important;color:var(--blue);font-family:var(--font-zh)!important;font-weight:500!important;letter-spacing:-.04em!important}
       html[data-lang="fi"] .hero-title-fi,html[data-lang="fi"] .section-title-fi,html[data-lang="fi"] .project-title-fi{display:block!important;color:var(--blue);font-family:var(--font-en)!important;font-weight:600!important;letter-spacing:-.055em!important}
+      html[data-lang="zh"] .display{color:var(--blue)!important}
+      html[data-lang="zh"] .display[data-lang="en"]{display:block!important;color:var(--blue)!important}
       html[data-lang="zh"] .hero-title-zh,html[data-lang="fi"] .hero-title-fi{max-width:11ch;margin:.6rem 0 2rem;font-size:clamp(3.2rem,8.5vw,8.5rem);line-height:.92}
       html[data-lang="zh"] .section-title-zh,html[data-lang="zh"] .project-title-zh,html[data-lang="fi"] .section-title-fi,html[data-lang="fi"] .project-title-fi{max-width:14ch;margin:.8rem 0;font-size:clamp(2.4rem,5.4vw,5.8rem);line-height:1.02}
       html[data-lang="en"] .narrative,html[data-lang="zh"] .narrative,html[data-lang="fi"] .narrative{grid-template-columns:minmax(0,68rem);justify-content:start}
@@ -213,6 +215,11 @@
     if (lang === "fi") return LABEL_FI[parts[0]] || parts[0];
     return lang === "zh" ? parts.slice(1).join(" / ") : parts[0];
   };
+  const updateBilingualLabels = () => {
+    document.querySelectorAll("[data-bilingual-label]").forEach((element) => {
+      element.textContent = splitBilingual(element.dataset.bilingualLabel);
+    });
+  };
   const ensureLangElement = (afterElement, lang, value, className = "") => {
     if (!afterElement) return null;
     const parent = afterElement.parentElement;
@@ -242,6 +249,7 @@
     document.querySelectorAll("[data-language-switch] button").forEach((button) => {
       button.setAttribute("aria-pressed", button.dataset.setLanguage === currentLanguage ? "true" : "false");
     });
+    updateBilingualLabels();
   };
   const markLanguagePairs = () => {
     const primaryNav = document.querySelector(".site-header nav");
@@ -297,6 +305,12 @@
         link.append(span);
       }
     });
+    document
+      .querySelectorAll(".eyebrow, .filters button, .views button, .archive-link, .project-header dt, main section > a")
+      .forEach((element) => {
+        const label = text(element.dataset.bilingualLabel || element.textContent).trim();
+        if (label.includes(" / ")) element.dataset.bilingualLabel = label;
+      });
     document.querySelectorAll(".project-card .meta > div").forEach((group) => {
       const title = group.querySelector("h3");
       if (title) title.dataset.lang = "en";
@@ -469,9 +483,7 @@
     injectLanguageSwitch();
     injectContactWidget();
     markLanguagePairs();
-    document.querySelectorAll("[data-bilingual-label]").forEach((element) => {
-      element.textContent = splitBilingual(element.dataset.bilingualLabel);
-    });
+    updateBilingualLabels();
     setLanguage(currentLanguage, false);
   };
   refreshLanguage();
