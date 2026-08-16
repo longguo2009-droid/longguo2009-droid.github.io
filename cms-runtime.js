@@ -68,6 +68,16 @@
       .hero-slide.active{opacity:1!important;pointer-events:auto!important;z-index:1}
       .hero-slide img{animation:none!important;transform:scale(1.035);transition:transform 6.2s ease!important;will-change:transform}
       .hero-slide.active img{transform:scale(1.065)}
+      .hero.is-static{min-height:min(76rem,calc(100svh - 4.5rem));background:var(--paper);border-bottom:1px solid var(--line)}
+      .hero.is-static::after{background:linear-gradient(180deg,rgba(241,245,248,.08),rgba(241,245,248,.28) 52%,var(--paper) 76%)!important;pointer-events:none}
+      .hero.is-static .hero-slides{inset:0 0 auto 0!important;height:clamp(24rem,58svh,44rem)!important;overflow:hidden;background:var(--blue)}
+      .hero.is-static .hero-slide{height:100%!important;opacity:1!important;pointer-events:none!important}
+      .hero.is-static .hero-slide img{height:100%!important;object-fit:cover!important;object-position:center 48%;filter:saturate(.82) contrast(1.02);transform:scale(1.01)!important}
+      .hero.is-static .overlay{justify-content:flex-end!important;min-height:inherit!important;padding-top:clamp(24rem,58svh,44rem)!important;padding-bottom:clamp(2rem,5vw,5rem)!important}
+      .hero.is-static .overlay > div:first-child{max-width:min(70rem,100%)}
+      .hero.is-static h1{max-width:15ch!important;color:var(--blue)!important;font-size:clamp(3.2rem,7.4vw,8.8rem)!important;line-height:.88!important;letter-spacing:-.065em!important}
+      .hero.is-static .intro{max-width:58rem!important;color:var(--blue)!important;font-size:clamp(1.2rem,2vw,2.15rem)!important;line-height:1.38!important}
+      .hero.is-static .overlay > div > .zh{color:var(--blue)!important}
       .hero-projects{position:relative;min-height:7.4rem;overflow:hidden}
       .hero-project{position:absolute;inset:auto 0 0 auto;display:block;max-width:min(34rem,100%);color:var(--blue);text-align:right;text-decoration:none;opacity:0!important;pointer-events:none!important;animation:none!important;transform:translateY(.35rem);transition:opacity .45s ease,transform .45s ease}
       .hero-project.active{opacity:1!important;pointer-events:auto!important;transform:translateY(0)}
@@ -78,7 +88,6 @@
       .hero-project:hover .hero-project-cta,.hero-project:focus-visible .hero-project-cta{background:var(--blue);color:#fff;transform:translateX(.2rem)}
       .hero-slide{cursor:pointer}
       .hero-project{cursor:pointer}
-      .hero.is-static .hero-slide{opacity:1!important;pointer-events:none!important}
       .hero.is-static .hero-bottom{grid-template-columns:1fr}
       .hero.is-static .hero-projects{display:none!important}
       .featured-work-slider{margin-top:clamp(2rem,5vw,4.5rem);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -180,9 +189,9 @@
     "Return home": "Takaisin etusivulle →",
   };
   const HOME_FI = {
-    heroTitle: "Studio Signo muotoilee identiteettiä ja paikkoja.",
+    heroTitle: "Muotoilutoimisto identiteetille, paikalle ja kulttuuriselle vuoropuhelulle.",
     heroIntro:
-      "Studio Signo luo identiteettejä, tilajärjestelmiä ja kulttuurisia kokemuksia selkeästi, harkitusti ja inhimillisesti.",
+      "Studio Signo työskentelee brändi-identiteetin, opastuksen ja kulttuurienvälisen strategian parissa, jotta ideat hahmottuvat eri yhteyksissä.",
     selectedTitle: "Identiteetin, paikan ja kulttuurienvälisen vuoropuhelun muotoilemaa työtä.",
     practiceTitle: "Kolme osa-aluetta. Yksi kulttuurienvälinen näkökulma.",
     practiceAreas: ["Brändi-identiteetti", "Paikka ja opastus", "Kulttuurienvälinen strategia"],
@@ -674,6 +683,19 @@
     if (captions) captions.innerHTML = "";
   };
 
+  const HOME_HERO_COPY = {
+    titleEn: "A design practice for identity, place and cultural exchange.",
+    titleZh: "面向品牌、空间与文化交流的设计实践。",
+    titleFi: HOME_FI.heroTitle,
+    introEn:
+      "Studio Signo works across brand identity, place and wayfinding, and cross-cultural strategy to make ideas legible across contexts.",
+    introZh:
+      "Studio Signo 横跨品牌识别、空间与导视、跨文化策略，让想法在不同语境中清晰可读。",
+    introFi: HOME_FI.heroIntro,
+    eyebrow: "China + Finland",
+    cityline: "CHINA + FINLAND",
+  };
+
   const projectSummary = (project, lang) => {
     if (lang === "zh") return project.summaryZh || project.summaryEn || "";
     if (lang === "fi") return project.summaryFi || project.summaryEn || "";
@@ -967,11 +989,12 @@
         heroImage.alt = hero.imageAlt || heroImage.alt;
       }
       setText(".eyebrow", hero.eyebrow, heroSection);
-      setText("#hero-title", hero.titleEn, heroSection);
-      setText(".overlay > div > .zh", hero.titleZh, heroSection);
-      setText(".intro[lang='en']", hero.introEn, heroSection);
-      setText(".intro.zh", hero.introZh, heroSection);
-      ensureLangElement(heroSection.querySelector(".intro.zh"), "fi", hero.introFi || HOME_FI.heroIntro, "intro");
+      setText("#hero-title", HOME_HERO_COPY.titleEn, heroSection);
+      setText(".overlay > div > .zh", HOME_HERO_COPY.titleZh, heroSection);
+      ensureLangElement(heroSection.querySelector(".overlay > div > .zh"), "fi", HOME_HERO_COPY.titleFi, "display hero-title-fi");
+      setText(".intro[lang='en']", HOME_HERO_COPY.introEn, heroSection);
+      setText(".intro.zh", HOME_HERO_COPY.introZh, heroSection);
+      ensureLangElement(heroSection.querySelector(".intro.zh"), "fi", HOME_HERO_COPY.introFi, "intro");
       setText(".cityline", hero.cityline, heroSection);
       renderHeroSlides(projects);
     }
