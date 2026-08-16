@@ -347,7 +347,7 @@
     switcher.dataset.languageSwitch = "";
     switcher.setAttribute("aria-label", "Language");
     switcher.innerHTML = `
-      <button type="button" data-set-language="zh">中</button>
+      <button type="button" data-set-language="zh">CN</button>
       <button type="button" data-set-language="en">EN</button>
       <button type="button" data-set-language="fi">FI</button>
     `;
