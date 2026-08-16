@@ -772,6 +772,19 @@
     };
     prev?.addEventListener("click", () => show(index - 1));
     next?.addEventListener("click", () => show(index + 1));
+    let paused = false;
+    slider.addEventListener("mouseenter", () => {
+      paused = true;
+    });
+    slider.addEventListener("mouseleave", () => {
+      paused = false;
+    });
+    slider.addEventListener("focusin", () => {
+      paused = true;
+    });
+    slider.addEventListener("focusout", () => {
+      paused = false;
+    });
     let touchStartX = null;
     slider.addEventListener(
       "pointerdown",
@@ -791,6 +804,12 @@
       { passive: true },
     );
     show(index);
+    if (slider.__studioSignoFeaturedTimer) clearInterval(slider.__studioSignoFeaturedTimer);
+    if (total > 1 && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      slider.__studioSignoFeaturedTimer = setInterval(() => {
+        if (!paused && !document.hidden) show(index + 1);
+      }, 6800);
+    }
   };
 
   const updateProjectDetail = (project) => {
