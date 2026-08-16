@@ -76,6 +76,31 @@
       .hero-project:hover .hero-project-cta,.hero-project:focus-visible .hero-project-cta{background:var(--blue);color:#fff;transform:translateX(.2rem)}
       .hero-slide{cursor:pointer}
       .hero-project{cursor:pointer}
+      .hero.is-static .hero-slide{opacity:1!important;pointer-events:none!important}
+      .hero.is-static .hero-bottom{grid-template-columns:1fr}
+      .hero.is-static .hero-projects{display:none!important}
+      .featured-work-slider{margin-top:clamp(2rem,5vw,4.5rem);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+      .featured-work-stage{position:relative;min-height:clamp(34rem,62vw,47rem);overflow:hidden}
+      .featured-work-slide{position:absolute;inset:0;display:grid;grid-template-columns:minmax(0,1.28fr) minmax(22rem,.72fr);gap:clamp(1.2rem,3vw,3rem);align-items:stretch;padding-block:clamp(1rem,2vw,1.5rem);opacity:0;pointer-events:none;transform:translateX(1.2rem);transition:opacity .55s ease,transform .55s ease}
+      .featured-work-slide.active{opacity:1;pointer-events:auto;transform:translateX(0)}
+      .featured-work-media{position:relative;display:block;min-height:clamp(20rem,42vw,36rem);overflow:hidden;background:color-mix(in srgb,var(--blue) 8%,var(--paper))}
+      .featured-work-media img{width:100%;height:100%;object-fit:cover;filter:saturate(.92) contrast(1.02);transform:scale(1.01);transition:transform 5.5s ease}
+      .featured-work-slide.active .featured-work-media img{transform:scale(1.045)}
+      .featured-work-copy{display:flex;flex-direction:column;justify-content:space-between;gap:1.5rem;padding-block:.4rem}
+      .featured-work-count{color:var(--muted);font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+      .featured-work-title{margin:.65rem 0 1rem;color:var(--blue);font-family:var(--font-en),var(--font-zh);font-size:clamp(2.3rem,5vw,5.6rem);font-weight:600;line-height:.9;letter-spacing:-.065em}
+      html[data-lang="zh"] .featured-work-title{font-family:var(--font-zh)!important;font-size:clamp(2.6rem,5.2vw,5.8rem);letter-spacing:-.05em}
+      .featured-work-summary{max-width:34rem;margin:0;color:var(--ink);font-size:clamp(.98rem,1.08vw,1.15rem);line-height:1.85}
+      html[data-lang="zh"] .featured-work-summary{font-family:var(--font-zh);line-height:2.05}
+      .featured-work-meta{display:grid;gap:.4rem;margin:1.2rem 0 0;color:var(--muted);font-size:.8rem;line-height:1.55}
+      .featured-work-cta{display:inline-flex;align-items:center;gap:.45rem;width:max-content;margin-top:1.4rem;border:1px solid color-mix(in srgb,var(--blue) 62%,transparent);border-radius:999px;padding:.64rem .85rem;color:var(--blue);font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase}
+      .featured-work-cta:hover,.featured-work-cta:focus-visible{background:var(--blue);color:#fff}
+      .featured-work-controls{display:flex;align-items:center;justify-content:space-between;gap:1rem;border-top:1px solid var(--line);padding-block:1rem}
+      .featured-work-buttons{display:flex;gap:.5rem}
+      .featured-work-control{width:2.45rem;height:2.45rem;border:1px solid var(--blue);border-radius:999px;background:transparent;color:var(--blue);font-size:1.05rem;line-height:1;cursor:pointer}
+      .featured-work-control:hover,.featured-work-control:focus-visible{background:var(--blue);color:#fff}
+      .featured-work-progress{color:var(--muted);font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+      @media (max-width:900px){.featured-work-stage{min-height:44rem}.featured-work-slide{grid-template-columns:1fr;align-content:start}.featured-work-media{min-height:19rem}.featured-work-copy{padding-bottom:1rem}.featured-work-title{font-size:clamp(2.2rem,12vw,4.2rem)}}
       .floating-contact{position:fixed;right:clamp(1rem,2.6vw,2rem);bottom:clamp(1rem,2.6vw,2rem);z-index:90;font-family:var(--sans);color:var(--ink)}
       .floating-contact *{box-sizing:border-box}
       .floating-contact-toggle{border:1px solid color-mix(in srgb,var(--blue) 88%,#fff);border-radius:999px;background:var(--blue);color:#fff;box-shadow:0 1rem 2.5rem color-mix(in srgb,var(--blue) 22%,transparent);padding:.8rem 1rem;font:600 .82rem/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
@@ -110,7 +135,7 @@
     });
   };
   const isProtectedImageArea = (target) =>
-    target?.closest?.("img, .hero-slide, .project-card, .lead, .project-gallery figure");
+    target?.closest?.("img, .hero-slide, .project-card, .featured-work-media, .lead, .project-gallery figure");
   protectImages();
   document.addEventListener(
     "contextmenu",
@@ -615,55 +640,157 @@
   };
 
   const renderHeroSlides = (projects) => {
+    const hero = document.querySelector(".hero");
+    const slides = document.querySelector("[data-hero-slides]");
+    const captions = document.querySelector("[data-hero-projects]");
+    if (!hero || !slides) return;
+    if (window.studioSignoHeroTimer) clearInterval(window.studioSignoHeroTimer);
+    hero.classList.add("is-static");
+    slides.setAttribute("style", "--slide-count: 1;");
+    slides.innerHTML = `
+      <div class="hero-slide active" aria-hidden="false">
+        <img
+          src="/images/hero/beijing-helsinki-connected-aerial-ai-1920.jpg"
+          alt="Studio Signo China Finland visual background"
+          width="1920"
+          height="1080"
+          fetchpriority="high"
+          loading="eager"
+        />
+      </div>
+    `;
+    if (captions) captions.innerHTML = "";
+  };
+
+  const projectSummary = (project, lang) => {
+    if (lang === "zh") return project.summaryZh || project.summaryEn || "";
+    if (lang === "fi") return project.summaryFi || project.summaryEn || "";
+    return project.summaryEn || "";
+  };
+
+  const projectLocation = (project, lang) => {
+    if (lang === "zh") return project.locationZh || project.locationEn || "";
+    if (lang === "fi") return project.locationFi || project.locationEn || "";
+    return project.locationEn || "";
+  };
+
+  const projectScope = (project, lang) => {
+    if (lang === "zh") return project.scopeZh || project.scopeEn || "";
+    if (lang === "fi") return project.scopeFi || project.scopeEn || "";
+    return project.scopeEn || "";
+  };
+
+  const renderFeaturedWorkSlider = (projects, selectedSection) => {
+    if (!selectedSection) return;
+    const grid = selectedSection.querySelector(".project-grid");
     const selectedProjects = projects
       .filter((project) => project.featured && project.leadImage)
       .sort((a, b) => Number(a.order || 0) - Number(b.order || 0));
-    const slides = document.querySelector("[data-hero-slides]");
-    const captions = document.querySelector("[data-hero-projects]");
-    if (!slides || !captions || !selectedProjects.length) return;
+    if (!grid || !selectedProjects.length) return;
+    const slideCount = selectedProjects.length;
+    grid.innerHTML = `
+      <div class="featured-work-slider" data-featured-work-slider aria-label="Selected projects">
+        <div class="featured-work-stage">
+          ${selectedProjects
+            .map((project, index) => {
+              const number = String(index + 1).padStart(2, "0");
+              const total = String(slideCount).padStart(2, "0");
+              return `
+                <article class="featured-work-slide${index === 0 ? " active" : ""}" aria-hidden="${index === 0 ? "false" : "true"}">
+                  <a class="featured-work-media" href="/projects/${escapeHtml(project.id)}/" aria-label="${escapeHtml(project.titleEn)}">
+                    <img
+                      src="${escapeHtml(assetPath(project.leadImage))}"
+                      alt="${escapeHtml(project.titleEn)}"
+                      width="1600"
+                      height="900"
+                      ${index === 0 ? 'fetchpriority="high" loading="eager"' : 'loading="lazy"'}
+                    />
+                  </a>
+                  <div class="featured-work-copy">
+                    <div>
+                      <p class="featured-work-count">${number} / ${total}</p>
+                      <h3 class="featured-work-title" data-lang="en">${escapeHtml(project.titleEn)}</h3>
+                      <h3 class="featured-work-title" data-lang="fi">${escapeHtml(project.titleFi || project.titleEn)}</h3>
+                      <h3 class="featured-work-title" data-lang="zh">${escapeHtml(project.titleZh)}</h3>
+                      <p class="featured-work-summary" data-lang="en">${escapeHtml(projectSummary(project, "en"))}</p>
+                      <p class="featured-work-summary" data-lang="fi">${escapeHtml(projectSummary(project, "fi"))}</p>
+                      <p class="featured-work-summary" data-lang="zh">${escapeHtml(projectSummary(project, "zh"))}</p>
+                      <div class="featured-work-meta">
+                        <span data-lang="en">${escapeHtml(projectLocation(project, "en"))}</span>
+                        <span data-lang="fi">${escapeHtml(projectLocation(project, "fi"))}</span>
+                        <span data-lang="zh">${escapeHtml(projectLocation(project, "zh"))}</span>
+                        <span data-lang="en">${escapeHtml(projectScope(project, "en"))}</span>
+                        <span data-lang="fi">${escapeHtml(projectScope(project, "fi"))}</span>
+                        <span data-lang="zh">${escapeHtml(projectScope(project, "zh"))}</span>
+                      </div>
+                    </div>
+                    <a class="featured-work-cta" href="/projects/${escapeHtml(project.id)}/">
+                      <span data-lang="en">View project →</span>
+                      <span data-lang="fi">Katso projekti →</span>
+                      <span data-lang="zh">进入项目 →</span>
+                    </a>
+                  </div>
+                </article>
+              `;
+            })
+            .join("")}
+        </div>
+        <div class="featured-work-controls">
+          <span class="featured-work-progress" data-featured-progress>01 / ${String(slideCount).padStart(2, "0")}</span>
+          <div class="featured-work-buttons">
+            <button class="featured-work-control" type="button" data-featured-prev aria-label="Previous project">←</button>
+            <button class="featured-work-control" type="button" data-featured-next aria-label="Next project">→</button>
+          </div>
+        </div>
+      </div>
+    `;
+    startFeaturedWorkSlider(grid.querySelector("[data-featured-work-slider]"));
+  };
 
-    const step = 6;
-    const duration = Math.max(selectedProjects.length * step, 28);
-    slides.setAttribute("style", `--slide-count: ${selectedProjects.length}; --step: ${step}s; --duration: ${duration}s;`);
-    slides.innerHTML = selectedProjects
-      .map(
-        (project, index) => `
-          <a
-            class="hero-slide${index === 0 ? " active" : ""}"
-            href="/projects/${escapeHtml(project.id)}/"
-            style="--index: ${index}; --step: ${step}s; --duration: ${duration}s;"
-            aria-label="${escapeHtml(project.titleEn)} — ${escapeHtml(project.titleZh)}"
-          >
-            <img
-              src="${escapeHtml(assetPath(project.leadImage))}"
-              alt="${index === 0 ? "Featured Studio Signo project" : ""}"
-              width="1600"
-              height="900"
-              ${index === 0 ? 'fetchpriority="high" loading="eager"' : 'loading="lazy"'}
-            />
-          </a>
-        `,
-      )
-      .join("");
-    captions.innerHTML = selectedProjects
-      .map(
-        (project, index) => `
-          <a
-            class="hero-project${index === 0 ? " active" : ""}"
-            href="/projects/${escapeHtml(project.id)}/"
-            style="--index: ${index}; --step: ${step}s; --duration: ${duration}s;"
-          >
-            <span>${escapeHtml(project.titleEn)}</span>
-            <span data-lang="fi">${escapeHtml(project.titleFi || project.titleEn)}</span>
-            <span class="zh">${escapeHtml(project.titleZh)}</span>
-            <em class="hero-project-cta" data-lang="en">View project →</em>
-            <em class="hero-project-cta" data-lang="zh">进入项目 →</em>
-            <em class="hero-project-cta" data-lang="fi">Katso projekti →</em>
-          </a>
-        `,
-      )
-      .join("");
-    startHeroCarousel();
+  const startFeaturedWorkSlider = (slider) => {
+    if (!slider) return;
+    const slides = Array.from(slider.querySelectorAll(".featured-work-slide"));
+    const progress = slider.querySelector("[data-featured-progress]");
+    const prev = slider.querySelector("[data-featured-prev]");
+    const next = slider.querySelector("[data-featured-next]");
+    if (!slides.length) return;
+    let index = Math.max(0, slides.findIndex((slide) => slide.classList.contains("active")));
+    const total = slides.length;
+    const show = (nextIndex) => {
+      index = ((nextIndex % total) + total) % total;
+      slides.forEach((slide, slideIndex) => {
+        const active = slideIndex === index;
+        slide.classList.toggle("active", active);
+        slide.setAttribute("aria-hidden", active ? "false" : "true");
+        slide.querySelectorAll("a,button").forEach((interactive) => {
+          interactive.tabIndex = active ? 0 : -1;
+        });
+      });
+      if (progress) {
+        progress.textContent = `${String(index + 1).padStart(2, "0")} / ${String(total).padStart(2, "0")}`;
+      }
+    };
+    prev?.addEventListener("click", () => show(index - 1));
+    next?.addEventListener("click", () => show(index + 1));
+    let touchStartX = null;
+    slider.addEventListener(
+      "pointerdown",
+      (event) => {
+        touchStartX = event.clientX;
+      },
+      { passive: true },
+    );
+    slider.addEventListener(
+      "pointerup",
+      (event) => {
+        if (touchStartX == null) return;
+        const delta = event.clientX - touchStartX;
+        touchStartX = null;
+        if (Math.abs(delta) > 45) show(index + (delta < 0 ? 1 : -1));
+      },
+      { passive: true },
+    );
+    show(index);
   };
 
   const updateProjectDetail = (project) => {
@@ -829,7 +956,7 @@
       setText(".archive-link", selectedWork.archiveLabel, selectedSection);
       selectedSection.querySelector(".archive-link")?.setAttribute("data-bilingual-label", selectedWork.archiveLabel || "");
 
-      updateProjectsGrid(projects, selectedSection, true);
+      renderFeaturedWorkSlider(projects, selectedSection);
     }
 
     const archiveGrid = document.querySelector("[data-project-grid]");
