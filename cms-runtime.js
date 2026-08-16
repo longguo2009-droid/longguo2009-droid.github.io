@@ -59,7 +59,7 @@
       html[data-lang="zh"] .project-card h3{font-family:var(--font-zh);font-weight:500}
       html[data-lang="zh"] .hero-project .zh{font-family:var(--font-zh);font-size:clamp(1.25rem,2.5vw,2.4rem);line-height:1.1;letter-spacing:-.03em}
       .hero-slides{overflow:hidden}
-      .hero-slide{opacity:0!important;animation:studio-signo-hero-slide var(--duration) cubic-bezier(.76,0,.24,1) infinite!important;animation-delay:calc(var(--index) * var(--step, 6s))!important;transform:translateX(100%);will-change:transform,opacity;pointer-events:auto}
+      .hero-slide{opacity:0;animation:studio-signo-hero-slide var(--duration) cubic-bezier(.76,0,.24,1) infinite!important;animation-delay:calc(var(--index) * var(--step, 6s))!important;transform:translateX(100%);will-change:transform,opacity;pointer-events:auto}
       .hero-slide.active{pointer-events:auto}
       .hero-slide img{animation:studio-signo-hero-image var(--duration) ease-in-out infinite!important;animation-delay:inherit!important;transform:scale(1.035);will-change:transform}
       .hero-project{animation:studio-signo-hero-caption var(--duration) ease-in-out infinite!important;animation-delay:calc(var(--index) * var(--step, 6s))!important}
