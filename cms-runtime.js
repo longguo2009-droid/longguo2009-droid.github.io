@@ -320,11 +320,10 @@
     header.insertBefore(switcher, nav);
   };
   const buildContactMessage = (form) => {
-    const data = new FormData(form);
-    const name = text(data.get("name")).trim();
-    const email = text(data.get("email")).trim();
-    const organization = text(data.get("organization")).trim();
-    const need = text(data.get("need")).trim();
+    const name = text(form.elements.name?.value).trim();
+    const email = text(form.elements.email?.value).trim();
+    const organization = text(form.elements.organization?.value).trim();
+    const need = text(form.elements.need?.value).trim();
     return [
       "New design inquiry from Studio Signo website",
       "",
