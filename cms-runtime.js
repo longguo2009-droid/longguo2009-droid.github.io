@@ -90,6 +90,8 @@
       .hero.is-static h1{max-width:14ch!important;color:#f3eadc!important;font-size:clamp(3.15rem,6.5vw,7.7rem)!important;line-height:.9!important;letter-spacing:-.065em!important;text-shadow:0 .18rem 1.7rem rgba(0,0,0,.2)}
       .hero.is-static .intro{max-width:58rem!important;color:#e4f1fb!important;font-size:clamp(1.12rem,1.65vw,1.9rem)!important;line-height:1.42!important;text-shadow:0 .12rem 1rem rgba(0,0,0,.2)}
       .hero.is-static .overlay > div > .zh{color:#f3eadc!important}
+      html[data-lang] .hero.is-static #hero-title,html[data-lang] .hero.is-static .display,html[data-lang] .hero.is-static .hero-title-zh,html[data-lang] .hero.is-static .hero-title-fi{color:#f3eadc!important}
+      html[data-lang] .hero.is-static .eyebrow,html[data-lang] .hero.is-static .intro{color:#e4f1fb!important}
       .hero-projects{position:relative;min-height:7.4rem;overflow:hidden}
       .hero-project{position:absolute;inset:auto 0 0 auto;display:block;max-width:min(34rem,100%);color:var(--blue);text-align:right;text-decoration:none;opacity:0!important;pointer-events:none!important;animation:none!important;transform:translateY(.35rem);transition:opacity .45s ease,transform .45s ease}
       .hero-project.active{opacity:1!important;pointer-events:auto!important;transform:translateY(0)}
