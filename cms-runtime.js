@@ -16,6 +16,14 @@
     return path.startsWith("images/") ? `/${path}` : path;
   };
   const injectTypography = () => {
+    document.documentElement.classList.add("notranslate");
+    document.documentElement.setAttribute("translate", "no");
+    if (!document.querySelector('meta[name="google"][content="notranslate"]')) {
+      const meta = document.createElement("meta");
+      meta.name = "google";
+      meta.content = "notranslate";
+      document.head.append(meta);
+    }
     if (document.querySelector("[data-silka-typography]")) return;
     const style = document.createElement("style");
     style.setAttribute("data-silka-typography", "true");
@@ -44,7 +52,7 @@
       html[data-lang="zh"] .section-title-zh,html[data-lang="zh"] .project-title-zh{max-width:14ch;margin:.8rem 0;font-size:clamp(2.4rem,5.4vw,5.8rem);line-height:1.02}
       html[data-lang="en"] .narrative,html[data-lang="zh"] .narrative{grid-template-columns:minmax(0,68rem);justify-content:start}
       html[data-lang="zh"] .narrative{font-family:var(--font-zh);font-size:clamp(1rem,1.18vw,1.18rem)!important;line-height:2.05!important;letter-spacing:.01em}
-      html[data-lang="zh"] .narrative p{max-width:52rem;color:var(--ink);font-weight:400}
+      html[data-lang="zh"] .narrative p{max-width:52rem;color:var(--ink);font-size:clamp(1rem,1.18vw,1.18rem)!important;line-height:2.05!important;font-weight:400}
       html[data-lang="zh"] .project-header dl{max-width:34rem;font-family:var(--font-zh);font-size:.95rem;line-height:1.85}
       html[data-lang="zh"] .project-card h3{font-family:var(--font-zh);font-weight:500}
       html[data-lang="zh"] .hero-project .zh{font-family:var(--font-zh);font-size:clamp(1.25rem,2.5vw,2.4rem);line-height:1.1;letter-spacing:-.03em}
