@@ -15,6 +15,30 @@
     const path = text(value);
     return path.startsWith("images/") ? `/${path}` : path;
   };
+  const injectTypography = () => {
+    if (document.querySelector("[data-silka-typography]")) return;
+    const style = document.createElement("style");
+    style.setAttribute("data-silka-typography", "true");
+    style.textContent = `
+      @font-face{font-family:"Silka Local";src:local("Silka ExtraLight"),local("Silka-ExtraLight");font-weight:200;font-style:normal}
+      @font-face{font-family:"Silka Local";src:local("Silka Light"),local("Silka-Light");font-weight:300;font-style:normal}
+      @font-face{font-family:"Silka Local";src:local("Silka Regular"),local("Silka-Regular");font-weight:400;font-style:normal}
+      @font-face{font-family:"Silka Local";src:local("Silka Medium"),local("Silka-Medium");font-weight:500;font-style:normal}
+      @font-face{font-family:"Silka Local";src:local("Silka SemiBold"),local("Silka-SemiBold");font-weight:600;font-style:normal}
+      @font-face{font-family:"Silka Local";src:local("Silka Bold"),local("Silka-Bold");font-weight:700;font-style:normal}
+      :root{--font-en:"Silka Local","Silka","Helvetica Neue",Arial;--font-zh:"PingFang SC","Hiragino Sans GB","Microsoft YaHei";--sans:var(--font-en),var(--font-zh),sans-serif}
+      body{font-family:var(--sans);font-weight:300}
+      .display{font-family:var(--font-en),var(--font-zh)!important;font-weight:600!important;letter-spacing:-0.06em!important}
+      .eyebrow{font-weight:600}
+      .zh{font-family:var(--font-zh);font-weight:400}
+      nav a,.project-card h3,.hero-project span:first-child{font-family:var(--font-en),var(--font-zh);font-weight:500}
+      .hero-project span:first-child{letter-spacing:-0.055em!important}
+      .narrative p,.intro,dd,p{font-weight:300}
+      strong,b{font-weight:600}
+    `;
+    document.head.append(style);
+  };
+  injectTypography();
 
   const renderProjectCard = (project) => {
     const categories = Array.isArray(project.categories) ? project.categories.join(" ") : "";
@@ -76,6 +100,8 @@
         .project-header h1 {
           max-width: 14ch;
           margin: 0.8rem 0;
+          font-weight: 600;
+          letter-spacing: -0.06em;
           font-size: clamp(3rem, 8vw, 8rem);
           line-height: 0.88;
         }
