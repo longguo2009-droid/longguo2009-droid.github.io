@@ -68,12 +68,12 @@
       .hero-slide.active{opacity:1!important;pointer-events:auto!important;z-index:1}
       .hero-slide img{animation:none!important;transform:scale(1.035);transition:transform 6.2s ease!important;will-change:transform}
       .hero-slide.active img{transform:scale(1.065)}
-      .hero.is-static{min-height:min(76rem,calc(100svh - 4.5rem));background:var(--paper);border-bottom:1px solid var(--line)}
+      .hero.is-static{height:auto!important;min-height:0!important;background:var(--paper);border-bottom:1px solid var(--line)}
       .hero.is-static::after{background:linear-gradient(180deg,rgba(241,245,248,.08),rgba(241,245,248,.28) 52%,var(--paper) 76%)!important;pointer-events:none}
-      .hero.is-static .hero-slides{inset:0 0 auto 0!important;height:clamp(24rem,58svh,44rem)!important;overflow:hidden;background:var(--blue)}
+      .hero.is-static .hero-slides{inset:0 0 auto 0!important;height:clamp(22rem,52vw,40rem)!important;overflow:hidden;background:var(--blue)}
       .hero.is-static .hero-slide{height:100%!important;opacity:1!important;pointer-events:none!important}
       .hero.is-static .hero-slide img{height:100%!important;object-fit:cover!important;object-position:center 48%;filter:saturate(.82) contrast(1.02);transform:scale(1.01)!important}
-      .hero.is-static .overlay{justify-content:flex-end!important;min-height:inherit!important;padding-top:clamp(24rem,58svh,44rem)!important;padding-bottom:clamp(2rem,5vw,5rem)!important}
+      .hero.is-static .overlay{justify-content:flex-end!important;min-height:0!important;padding-top:clamp(22rem,52vw,40rem)!important;padding-bottom:clamp(2rem,5vw,5rem)!important}
       .hero.is-static .overlay > div:first-child{max-width:min(70rem,100%)}
       .hero.is-static h1{max-width:15ch!important;color:var(--blue)!important;font-size:clamp(3.2rem,7.4vw,8.8rem)!important;line-height:.88!important;letter-spacing:-.065em!important}
       .hero.is-static .intro{max-width:58rem!important;color:var(--blue)!important;font-size:clamp(1.2rem,2vw,2.15rem)!important;line-height:1.38!important}
