@@ -41,6 +41,9 @@
       .zh{font-family:var(--font-zh);font-weight:400}
       nav a,.project-card h3,.hero-project span:first-child{font-family:var(--font-en),var(--font-zh);font-weight:500}
       .hero-project span:first-child{letter-spacing:-0.055em!important}
+      .footer-social{display:flex;flex-direction:column;gap:.35rem}
+      footer a{color:inherit;text-decoration:none}
+      footer a:hover,footer a:focus-visible{color:var(--blue)}
       .narrative p,.intro,dd,p{font-weight:300}
       strong,b{font-weight:600}
       .site-header .language-switch{display:flex;gap:.35rem;align-items:center;margin-left:auto;margin-right:clamp(.9rem,2.4vw,1.8rem)}
@@ -109,6 +112,7 @@
     subtree: true,
   });
   const NAV_LABELS = {
+    "/": { en: "Home", zh: "首页", fi: "Etusivu" },
     "/projects/": { en: "Projects", zh: "项目", fi: "Projektit" },
     "/studio/": { en: "About", zh: "关于", fi: "Tietoa" },
     "/contact/": { en: "Contact", zh: "联系", fi: "Yhteys" },
@@ -195,6 +199,37 @@
     });
   };
   const markLanguagePairs = () => {
+    const primaryNav = document.querySelector(".site-header nav");
+    if (primaryNav && !primaryNav.querySelector('a[href="/"]')) {
+      const homeLink = document.createElement("a");
+      homeLink.href = "/";
+      homeLink.innerHTML = `
+        <span lang="en" data-lang="en">Home</span>
+        <span lang="zh-CN" data-lang="zh">首页</span>
+        <span lang="fi" data-lang="fi">Etusivu</span>
+      `;
+      primaryNav.prepend(homeLink);
+    }
+    const footer = document.querySelector("footer");
+    if (footer && !footer.querySelector(".footer-social")) {
+      const social = document.createElement("nav");
+      social.className = "footer-social";
+      social.setAttribute("aria-label", "Social links");
+      social.innerHTML = `
+        <a href="https://www.pinterest.com/search/pins/?q=Studio%20Signo" target="_blank" rel="noopener noreferrer">
+          <span data-lang="en">Pinterest</span>
+          <span data-lang="zh">Pinterest</span>
+          <span data-lang="fi">Pinterest</span>
+        </a>
+        <a href="/contact/">
+          <span data-lang="en">WeChat Official Account</span>
+          <span data-lang="zh">微信公众号</span>
+          <span data-lang="fi">WeChat</span>
+        </a>
+      `;
+      const copyright = Array.from(footer.children).find((child) => child.textContent?.includes("©"));
+      footer.insertBefore(social, copyright || null);
+    }
     document.querySelectorAll(".zh").forEach((element) => {
       element.dataset.lang ||= "zh";
     });
