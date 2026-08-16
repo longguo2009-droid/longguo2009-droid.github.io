@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Studio Signo 操作台</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --blue: #123a5d;
+        --ink: #15191d;
+        --muted: #66717c;
+        --line: #d9dee3;
+        --paper: #f4f6f7;
+        --card: #ffffff;
+        --ok: #0d7a46;
+        --warn: #a35b00;
+        --bad: #b42318;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+          sans-serif;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .shell {
+        width: min(1180px, calc(100vw - 32px));
+        margin: 0 auto;
+      }
+
+      header {
+        padding: 32px 0 18px;
+      }
+
+      .topbar,
+      .hero,
+      .panel,
+      .project,
+      .note {
+        border: 1px solid var(--line);
+        background: color-mix(in srgb, var(--card) 92%, transparent);
+        box-shadow: 0 18px 44px rgba(18, 58, 93, 0.08);
+      }
+
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: center;
+        padding: 14px 16px;
+        border-radius: 22px;
+      }
+
+      .brand {
+        color: var(--blue);
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .top-actions,
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        min-height: 40px;
+        padding: 0 14px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: white;
+        color: var(--blue);
+        font-size: 14px;
+        font-weight: 650;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .button.primary {
+        border-color: var(--blue);
+        background: var(--blue);
+        color: white;
+      }
+
+      .hero {
+        margin: 18px 0;
+        padding: clamp(24px, 5vw, 56px);
+        border-radius: 32px;
+        background:
+          linear-gradient(135deg, rgba(18, 58, 93, 0.98), rgba(18, 58, 93, 0.72)),
+          radial-gradient(circle at 80% 10%, rgba(255, 255, 255, 0.38), transparent 32%);
+        color: white;
+      }
+
+      .hero p {
+        max-width: 780px;
+        margin: 10px 0 0;
+        color: rgba(255, 255, 255, 0.78);
+        line-height: 1.75;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(36px, 8vw, 88px);
+        line-height: 0.9;
+        letter-spacing: -0.06em;
+      }
+
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      main {
+        display: grid;
+        gap: 16px;
+        padding-bottom: 48px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+
+      .panel,
+      .note {
+        border-radius: 24px;
+        padding: 22px;
+      }
+
+      .panel h2 {
+        color: var(--blue);
+        font-size: 18px;
+      }
+
+      .panel p,
+      .note p,
+      .project p {
+        color: var(--muted);
+        line-height: 1.65;
+      }
+
+      .steps {
+        display: grid;
+        gap: 10px;
+        margin: 16px 0 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .steps li {
+        display: grid;
+        grid-template-columns: 28px 1fr;
+        gap: 10px;
+        align-items: start;
+      }
+
+      .steps span {
+        display: inline-grid;
+        place-items: center;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: var(--blue);
+        color: white;
+        font-size: 13px;
+        font-weight: 800;
+      }
+
+      .toolbar {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: end;
+        margin-top: 12px;
+      }
+
+      .toolbar input {
+        width: min(360px, 100%);
+        min-height: 42px;
+        padding: 0 14px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: white;
+        font: inherit;
+      }
+
+      .projects {
+        display: grid;
+        gap: 12px;
+      }
+
+      .project {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        gap: 18px;
+        padding: 14px;
+        border-radius: 24px;
+      }
+
+      .thumb {
+        aspect-ratio: 16 / 10;
+        border-radius: 18px;
+        overflow: hidden;
+        background: #d8dde1;
+      }
+
+      .thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .project h3 {
+        margin-bottom: 4px;
+        color: var(--blue);
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 10px 0 14px;
+      }
+
+      .tag {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 5px 9px;
+        background: white;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .tag.ok {
+        border-color: color-mix(in srgb, var(--ok) 32%, var(--line));
+        color: var(--ok);
+      }
+
+      .tag.warn {
+        border-color: color-mix(in srgb, var(--warn) 35%, var(--line));
+        color: var(--warn);
+      }
+
+      .tag.bad {
+        border-color: color-mix(in srgb, var(--bad) 35%, var(--line));
+        color: var(--bad);
+      }
+
+      .mini {
+        font-size: 13px;
+      }
+
+      .slug-helper {
+        display: grid;
+        gap: 10px;
+      }
+
+      .slug-helper input {
+        min-height: 42px;
+        padding: 0 14px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        font: inherit;
+      }
+
+      code {
+        display: block;
+        padding: 12px 14px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: #eef2f4;
+        color: var(--blue);
+        white-space: normal;
+      }
+
+      footer {
+        padding: 0 0 40px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      @media (max-width: 850px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .toolbar,
+        .topbar {
+          align-items: stretch;
+          flex-direction: column;
+        }
+
+        .project {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="shell">
+      <div class="topbar">
+        <div>
+          <div class="brand">Studio Signo Admin</div>
+          <div class="mini">作品网站操作台 / Project website control desk</div>
+        </div>
+        <nav class="top-actions" aria-label="Admin shortcuts">
+          <a class="button primary" href="https://app.pagescms.org/longguo2009-droid/longguo2009-droid.github.io/main/file/site_content" target="_blank" rel="noreferrer">打开内容后台</a>
+          <a class="button" href="https://app.pagescms.org/longguo2009-droid/longguo2009-droid.github.io/main/media/project_images" target="_blank" rel="noreferrer">打开项目图片库</a>
+          <a class="button" href="/" target="_blank">查看网站</a>
+        </nav>
+      </div>
+
+      <section class="hero">
+        <h1>先选项目，<br />再换图。</h1>
+        <p>
+          这个页面帮你把 Pages CMS 变成更清楚的操作流程：先看项目状态，再进入后台修改对应项目。
+          真正保存仍由 Pages CMS 完成，所以安全性和免费托管方式不变。
+        </p>
+      </section>
+    </header>
+
+    <main class="shell">
+      <section class="grid" aria-label="Quick operations">
+        <article class="panel">
+          <h2>替换某个项目图片</h2>
+          <p>进入内容后台 → 打开对应项目 → 替换两个图片区。</p>
+          <ol class="steps">
+            <li><span>1</span><div><strong>01 首页轮播与项目列表封面图</strong><br />这张图控制首页轮播、项目列表卡片。</div></li>
+            <li><span>2</span><div><strong>02 二级页面项目图片</strong><br />这里可以放多张，显示在该项目详情页。</div></li>
+            <li><span>3</span><div><strong>保存</strong><br />保存后等 30–90 秒，再刷新网站。</div></li>
+          </ol>
+        </article>
+
+        <article class="panel">
+          <h2>新增项目</h2>
+          <p>新增项目时，链接名必须用小写英文，例如 <code>only-a-dream-of-red-mansions</code></p>
+          <div class="slug-helper">
+            <input id="slugInput" placeholder="输入英文项目名，例如 Only Henan Theatre City" />
+            <code id="slugOutput">生成的链接名会显示在这里</code>
+          </div>
+        </article>
+
+        <article class="panel">
+          <h2>图片尺寸建议</h2>
+          <p>为了网站速度和视觉统一，推荐所有作品图先处理好再上传。</p>
+          <ol class="steps">
+            <li><span>✓</span><div>尺寸：1920 × 1080 或宽 2000px 左右</div></li>
+            <li><span>✓</span><div>格式：照片优先 JPG / WebP</div></li>
+            <li><span>✓</span><div>大小：300KB–800KB，尽量不要超过 1.2MB</div></li>
+          </ol>
+        </article>
+      </section>
+
+      <section class="note">
+        <div class="toolbar">
+          <div>
+            <h2>项目状态</h2>
+            <p id="statusText">正在读取网站内容……</p>
+          </div>
+          <input id="searchInput" placeholder="搜索项目 / Search project" />
+        </div>
+      </section>
+
+      <section id="projects" class="projects" aria-live="polite"></section>
+    </main>
+
+    <footer class="shell">
+      <p>
+        安全说明：这个操作台是公开网页，但不包含密码，也不能绕过登录。真正编辑和保存仍需要进入 Pages CMS / GitHub 登录后的后台。
+      </p>
+    </footer>
+
+    <script>
+      const contentUrl = "/site-content.json";
+      const cmsUrl = "https://app.pagescms.org/longguo2009-droid/longguo2009-droid.github.io/main/file/site_content";
+      const mediaUrl = "https://app.pagescms.org/longguo2009-droid/longguo2009-droid.github.io/main/media/project_images";
+
+      const assetPath = (value) => {
+        const path = value == null ? "" : String(value);
+        return path.startsWith("images/") ? `/${path}` : path;
+      };
+
+      const slugify = (value) =>
+        String(value || "")
+          .normalize("NFKD")
+          .replace(/[\u0300-\u036f]/g, "")
+          .toLowerCase()
+          .replace(/&/g, " and ")
+          .replace(/[^a-z0-9]+/g, "-")
+          .replace(/^-+|-+$/g, "")
+          .replace(/-{2,}/g, "-");
+
+      const escapeHtml = (value) =>
+        String(value ?? "")
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#39;");
+
+      const state = { projects: [] };
+
+      const render = () => {
+        const root = document.querySelector("#projects");
+        const query = document.querySelector("#searchInput").value.trim().toLowerCase();
+        const imageUse = new Map();
+        state.projects.forEach((project) => {
+          const key = assetPath(project.leadImage);
+          if (!key) return;
+          imageUse.set(key, (imageUse.get(key) || 0) + 1);
+        });
+
+        const projects = state.projects
+          .filter((project) => {
+            const haystack = `${project.titleEn} ${project.titleZh} ${project.id}`.toLowerCase();
+            return !query || haystack.includes(query);
+          })
+          .sort((a, b) => Number(a.order || 0) - Number(b.order || 0));
+
+        root.innerHTML = projects
+          .map((project) => {
+            const cover = assetPath(project.leadImage);
+            const gallery = Array.isArray(project.images) ? project.images : [];
+            const duplicateCover = cover && imageUse.get(cover) > 1;
+            const slugOk = /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(project.id || "");
+            return `
+              <article class="project">
+                <a class="thumb" href="/projects/${escapeHtml(project.id)}/" target="_blank" aria-label="查看项目页面">
+                  ${cover ? `<img src="${escapeHtml(cover)}" alt="${escapeHtml(project.titleEn || project.titleZh || "Project")}" loading="lazy" />` : ""}
+                </a>
+                <div>
+                  <h3>${escapeHtml(project.titleEn || "Untitled project")}</h3>
+                  <p>${escapeHtml(project.titleZh || "")}</p>
+                  <div class="meta">
+                    <span class="tag ${project.featured ? "ok" : "warn"}">${project.featured ? "显示在首页" : "不显示在首页"}</span>
+                    <span class="tag">排序 ${escapeHtml(project.order ?? "未设置")}</span>
+                    <span class="tag ${slugOk ? "ok" : "bad"}">链接名 ${slugOk ? "正常" : "需修改"}</span>
+                    <span class="tag ${gallery.length ? "ok" : "bad"}">详情图 ${gallery.length} 张</span>
+                    ${duplicateCover ? `<span class="tag warn">封面与其他项目重复</span>` : ""}
+                  </div>
+                  <div class="actions">
+                    <a class="button primary" href="${cmsUrl}" target="_blank" rel="noreferrer">去后台修改这个项目</a>
+                    <a class="button" href="/projects/${escapeHtml(project.id)}/" target="_blank">查看二级页面</a>
+                    <a class="button" href="${mediaUrl}" target="_blank" rel="noreferrer">上传/选择图片</a>
+                  </div>
+                </div>
+              </article>
+            `;
+          })
+          .join("");
+
+        document.querySelector("#statusText").textContent =
+          `已读取 ${state.projects.length} 个项目。提示：如果多个项目封面重复，请进入后台逐个替换“01 首页轮播与项目列表封面图”。`;
+      };
+
+      document.querySelector("#slugInput").addEventListener("input", (event) => {
+        document.querySelector("#slugOutput").textContent = slugify(event.target.value) || "生成的链接名会显示在这里";
+      });
+
+      document.querySelector("#searchInput").addEventListener("input", render);
+
+      fetch(`${contentUrl}?v=${Date.now()}`, { cache: "no-store" })
+        .then((response) => response.json())
+        .then((content) => {
+          state.projects = Array.isArray(content.projects) ? content.projects : [];
+          render();
+        })
+        .catch(() => {
+          document.querySelector("#statusText").textContent =
+            "暂时无法读取 site-content.json。请刷新页面，或检查网站是否刚刚部署完成。";
+        });
+    </script>
+  </body>
+</html>
