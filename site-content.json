@@ -189,7 +189,13 @@
       ],
       "leadImage": "/images/projects/3001.png",
       "images": [
-        "/images/projects/3002.png"
+        "/images/projects/3002.png",
+        "/images/projects/3004.png",
+        "/images/projects/3007.png",
+        "/images/projects/3005.png",
+        "/images/projects/3006.png",
+        "/images/projects/3008.png",
+        "/images/projects/3009.png"
       ],
       "featured": true,
       "order": 0
