@@ -61,12 +61,14 @@
       html[data-lang="zh"] .project-header dl{max-width:34rem;font-family:var(--font-zh);font-size:.95rem;line-height:1.85}
       html[data-lang="zh"] .project-card h3{font-family:var(--font-zh);font-weight:500}
       html[data-lang="zh"] .hero-project .zh{font-family:var(--font-zh);font-size:clamp(1.25rem,2.5vw,2.4rem);line-height:1.1;letter-spacing:-.03em}
-      .hero-slides{overflow:hidden}
-      .hero-slide{opacity:0;animation:studio-signo-hero-slide var(--duration) cubic-bezier(.76,0,.24,1) infinite!important;animation-delay:calc(var(--index) * var(--step, 6s))!important;transform:translateX(100%);will-change:transform,opacity;pointer-events:auto}
-      .hero-slide.active{pointer-events:auto}
-      .hero-slide img{animation:studio-signo-hero-image var(--duration) ease-in-out infinite!important;animation-delay:inherit!important;transform:scale(1.035);will-change:transform}
+      .hero-slides{overflow:hidden;background:var(--paper)}
+      .hero-slide{opacity:0!important;animation:none!important;transform:translateX(0)!important;transition:opacity .78s ease!important;will-change:opacity;pointer-events:none!important;z-index:0}
+      .hero-slide.active{opacity:1!important;pointer-events:auto!important;z-index:1}
+      .hero-slide img{animation:none!important;transform:scale(1.035);transition:transform 6.2s ease!important;will-change:transform}
+      .hero-slide.active img{transform:scale(1.065)}
       .hero-projects{position:relative;min-height:7.4rem;overflow:hidden}
-      .hero-project{position:absolute;inset:auto 0 0 auto;display:block;max-width:min(34rem,100%);color:var(--blue);text-align:right;text-decoration:none;opacity:0;pointer-events:auto;animation:studio-signo-hero-caption var(--duration) ease-in-out infinite!important;animation-delay:calc(var(--index) * var(--step, 6s))!important}
+      .hero-project{position:absolute;inset:auto 0 0 auto;display:block;max-width:min(34rem,100%);color:var(--blue);text-align:right;text-decoration:none;opacity:0!important;pointer-events:none!important;animation:none!important;transform:translateY(.35rem);transition:opacity .45s ease,transform .45s ease}
+      .hero-project.active{opacity:1!important;pointer-events:auto!important;transform:translateY(0)}
       .hero-project span{display:block}
       .hero-project span:first-child,.hero-project span[data-lang="fi"]{color:var(--blue);font-size:clamp(1.6rem,3vw,3rem);line-height:.95;letter-spacing:-.055em}
       .hero-project .zh{display:block;margin-top:.35rem;color:var(--blue)}
@@ -96,10 +98,7 @@
       @media (max-width:700px){.floating-contact{right:1rem;bottom:1rem}.floating-contact-panel{width:calc(100vw - 2rem);max-height:calc(100vh - 7rem);overflow:auto}.floating-contact-toggle{padding:.72rem .86rem;font-size:.72rem}}
       img{user-select:none;-webkit-user-select:none;-webkit-user-drag:none;-webkit-touch-callout:none}
       .hero-slide img,.project-card img,.lead img,.project-gallery img{pointer-events:none}
-      @keyframes studio-signo-hero-slide{0%{opacity:0;transform:translateX(100%)}2.8%,11.5%{opacity:1;transform:translateX(0)}14.25%,100%{opacity:0;transform:translateX(-100%)}}
-      @keyframes studio-signo-hero-image{0%{transform:scale(1.035)}50%{transform:scale(1.075)}100%{transform:scale(1.035)}}
-      @keyframes studio-signo-hero-caption{0%{opacity:0;transform:translateX(1rem)}3%,11.5%{opacity:1;transform:translateX(0)}14.25%,100%{opacity:0;transform:translateX(-1rem)}}
-      @media (prefers-reduced-motion:reduce){.hero-slide,.hero-project,.hero-slide img{animation:none!important}.hero-slide:not(.active),.hero-project:not(.active){display:none!important}}
+      @media (prefers-reduced-motion:reduce){.hero-slide,.hero-project,.hero-slide img{animation:none!important;transition:none!important}.hero-slide:not(.active),.hero-project:not(.active){display:none!important}}
     `;
     document.head.append(style);
   };
@@ -452,6 +451,37 @@
   };
   refreshLanguage();
 
+  const startHeroCarousel = () => {
+    const slides = Array.from(document.querySelectorAll("[data-hero-slides] .hero-slide"));
+    const captions = Array.from(document.querySelectorAll("[data-hero-projects] .hero-project"));
+    if (!slides.length || !captions.length) return;
+    if (window.studioSignoHeroTimer) clearInterval(window.studioSignoHeroTimer);
+    let index = Math.max(0, slides.findIndex((slide) => slide.classList.contains("active")));
+    const count = Math.min(slides.length, captions.length);
+    const show = (nextIndex) => {
+      index = ((nextIndex % count) + count) % count;
+      slides.forEach((slide, slideIndex) => {
+        const active = slideIndex === index;
+        slide.classList.toggle("active", active);
+        slide.setAttribute("aria-hidden", active ? "false" : "true");
+        slide.tabIndex = active ? 0 : -1;
+      });
+      captions.forEach((caption, captionIndex) => {
+        const active = captionIndex === index;
+        caption.classList.toggle("active", active);
+        caption.setAttribute("aria-hidden", active ? "false" : "true");
+        caption.tabIndex = active ? 0 : -1;
+      });
+    };
+    show(index);
+    if (count > 1 && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      window.studioSignoHeroTimer = setInterval(() => {
+        if (!document.hidden) show(index + 1);
+      }, 6200);
+    }
+  };
+  startHeroCarousel();
+
   const renderProjectCard = (project) => {
     const categories = Array.isArray(project.categories) ? project.categories.join(" ") : "";
     const year = project.year ? `<p>${escapeHtml(project.year)}</p>` : "";
@@ -633,6 +663,7 @@
         `,
       )
       .join("");
+    startHeroCarousel();
   };
 
   const updateProjectDetail = (project) => {
