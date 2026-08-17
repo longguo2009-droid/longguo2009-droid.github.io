@@ -1,5 +1,9 @@
 (async () => {
   const text = (value) => (value == null ? "" : String(value));
+  const displayPracticeTitleEn = (value) => {
+    const normalized = text(value).trim().toLowerCase();
+    return normalized === "place & wayfinding" || normalized === "place and wayfinding" ? "EGD & Wayfinding" : text(value);
+  };
   const setText = (selector, value, root = document) => {
     const element = root.querySelector(selector);
     if (element && value != null) element.textContent = text(value);
@@ -220,7 +224,7 @@
       "Studio Signo työskentelee brändi-identiteetin, opastuksen ja kulttuurienvälisen strategian parissa, jotta ideat hahmottuvat eri yhteyksissä.",
     selectedTitle: "Identiteetin, paikan ja kulttuurienvälisen vuoropuhelun muotoilemaa työtä.",
     practiceTitle: "Kolme osa-aluetta. Yksi kulttuurienvälinen näkökulma.",
-    practiceAreas: ["Brändi-identiteetti", "Paikka ja opastus", "Kulttuurienvälinen strategia"],
+    practiceAreas: ["Brändi-identiteetti", "EGD & Wayfinding", "Kulttuurienvälinen strategia"],
     approachTitle: "Käännämme kontekstia, emme vain sanoja.",
     approachBody:
       "Studio Signo yhdistää tutkimuksen, visuaaliset järjestelmät ja tilallisen kokemuksen, jotta monimutkaiset ympäristöt tuntuvat selkeiltä, muistettavilta ja inhimillisiltä.",
@@ -1103,12 +1107,13 @@
           .map(
             (area, index) => {
               const image = practiceImageFor(area, index, projects);
-              const titleFi = area.titleFi || HOME_FI.practiceAreas[Number(area.number) - 1] || area.titleEn;
+              const titleEn = displayPracticeTitleEn(area.titleEn);
+              const titleFi = area.titleFi || HOME_FI.practiceAreas[Number(area.number) - 1] || titleEn;
               return `<li class="practice-card">
                 <div class="practice-card-image">
                   <img
                     src="${escapeHtml(image)}"
-                    alt="${escapeHtml(area.titleEn)}"
+                    alt="${escapeHtml(titleEn)}"
                     width="1200"
                     height="1500"
                     loading="lazy"
@@ -1116,7 +1121,7 @@
                 </div>
                 <div class="practice-card-copy">
                   <span class="practice-card-number">${escapeHtml(area.number)}</span>
-                  <h3 data-lang="en">${escapeHtml(area.titleEn)}</h3>
+                  <h3 data-lang="en">${escapeHtml(titleEn)}</h3>
                   <h3 data-lang="fi">${escapeHtml(titleFi)}</h3>
                   <p class="zh" data-lang="zh">${escapeHtml(area.titleZh)}</p>
                 </div>
