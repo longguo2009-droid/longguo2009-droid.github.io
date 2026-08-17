@@ -124,8 +124,19 @@
       .featured-work-buttons{display:flex;gap:.72rem}
       .featured-work-control{display:inline-flex;align-items:center;justify-content:center;width:3.35rem;height:3.35rem;border:1.5px solid var(--blue);border-radius:999px;background:transparent;color:var(--blue);font-size:1.45rem;line-height:1;cursor:pointer}
       .featured-work-control:hover,.featured-work-control:focus-visible{background:var(--blue);color:#fff}
+      section[aria-labelledby="practice-title"] ol{list-style:none!important;margin:clamp(2.4rem,5vw,4.8rem) 0 0!important;padding:0!important;display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:clamp(.9rem,1.8vw,1.6rem)!important}
+      section[aria-labelledby="practice-title"] li.practice-card{position:relative!important;min-height:clamp(22rem,32vw,34rem)!important;overflow:hidden!important;border:0!important;padding:0!important;background:var(--blue)!important;display:block!important}
+      .practice-card-image{position:absolute;inset:0;z-index:0;background:var(--blue)}
+      .practice-card-image img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;filter:saturate(.9) contrast(1.02) brightness(.78);transform:scale(1.01);transition:transform .7s ease,filter .7s ease}
+      li.practice-card:hover .practice-card-image img{transform:scale(1.055);filter:saturate(.96) contrast(1.05) brightness(.82)}
+      .practice-card::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(9,32,54,.02) 0%,rgba(9,32,54,.3) 38%,rgba(9,32,54,.86) 100%);pointer-events:none}
+      .practice-card-copy{position:absolute;inset:auto 0 0;z-index:2;padding:clamp(1.1rem,2.2vw,2rem);display:grid;gap:.6rem;color:#f3eadc!important}
+      .practice-card-number{display:block!important;color:#e4f1fb!important;font-size:.76rem!important;font-weight:600!important;line-height:1!important;letter-spacing:.12em!important}
+      section[aria-labelledby="practice-title"] .practice-card h3{margin:0!important;color:#f3eadc!important;font-size:clamp(1.55rem,2.25vw,2.55rem)!important;line-height:.96!important;letter-spacing:-.05em!important}
+      section[aria-labelledby="practice-title"] .practice-card p{margin:0!important;color:#e4f1fb!important;font-size:clamp(1rem,1.08vw,1.18rem)!important;line-height:1.35!important}
+      html[data-lang="zh"] section[aria-labelledby="practice-title"] .practice-card h3,html[data-lang="zh"] section[aria-labelledby="practice-title"] .practice-card p{font-family:var(--font-zh)!important;letter-spacing:.025em!important}
       .featured-work-progress{color:var(--muted);font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
-      @media (max-width:900px){html{scroll-padding-top:8.8rem}.site-header{grid-template-columns:minmax(9.5rem,1fr) auto!important;grid-template-rows:auto auto!important;gap:.8rem 1rem!important}.site-header .brand{grid-column:1!important;grid-row:1!important;width:clamp(10.5rem,34vw,15rem)!important}.site-header .language-switch{grid-column:2!important;grid-row:1!important;align-self:start!important;margin:0!important}.site-header nav{grid-column:1 / -1!important;grid-row:2!important;width:100%!important;justify-content:center!important;gap:clamp(1rem,6vw,2.6rem)!important;margin-bottom:0!important}.hero.is-static{min-height:clamp(34rem,78vh,48rem)!important}.hero.is-static .overlay{min-height:clamp(34rem,78vh,48rem)!important;padding:clamp(8rem,16vh,12rem) var(--gutter) clamp(2.4rem,7vw,4rem)!important}.hero.is-static h1{font-size:clamp(2.65rem,11vw,5.2rem)!important}html[data-lang="fi"] .hero.is-static .overlay .display,html[data-lang="fi"] .hero.is-static .overlay .hero-title-fi,html[data-lang="fi"] .hero.is-static .overlay #hero-title{color:#f3eadc!important}html[data-lang="fi"] .hero.is-static .overlay .eyebrow,html[data-lang="fi"] .hero.is-static .overlay .intro{color:#e4f1fb!important}.featured-work-stage{min-height:clamp(42rem,118vw,56rem)}.featured-work-slide{grid-template-columns:1fr;align-content:start}.featured-work-media{min-height:19rem}.featured-work-copy{padding-bottom:1rem}.featured-work-title{font-size:clamp(2rem,9.5vw,3.6rem)!important;line-height:.96!important}.featured-work-control{width:3.05rem;height:3.05rem;font-size:1.3rem}}
+      @media (max-width:900px){html{scroll-padding-top:8.8rem}.site-header{grid-template-columns:minmax(9.5rem,1fr) auto!important;grid-template-rows:auto auto!important;gap:.8rem 1rem!important}.site-header .brand{grid-column:1!important;grid-row:1!important;width:clamp(10.5rem,34vw,15rem)!important}.site-header .language-switch{grid-column:2!important;grid-row:1!important;align-self:start!important;margin:0!important}.site-header nav{grid-column:1 / -1!important;grid-row:2!important;width:100%!important;justify-content:center!important;gap:clamp(1rem,6vw,2.6rem)!important;margin-bottom:0!important}.hero.is-static{min-height:clamp(34rem,78vh,48rem)!important}.hero.is-static .overlay{min-height:clamp(34rem,78vh,48rem)!important;padding:clamp(8rem,16vh,12rem) var(--gutter) clamp(2.4rem,7vw,4rem)!important}.hero.is-static h1{font-size:clamp(2.65rem,11vw,5.2rem)!important}html[data-lang="fi"] .hero.is-static .overlay .display,html[data-lang="fi"] .hero.is-static .overlay .hero-title-fi,html[data-lang="fi"] .hero.is-static .overlay #hero-title{color:#f3eadc!important}html[data-lang="fi"] .hero.is-static .overlay .eyebrow,html[data-lang="fi"] .hero.is-static .overlay .intro{color:#e4f1fb!important}.featured-work-stage{min-height:clamp(42rem,118vw,56rem)}.featured-work-slide{grid-template-columns:1fr;align-content:start}.featured-work-media{min-height:19rem}.featured-work-copy{padding-bottom:1rem}.featured-work-title{font-size:clamp(2rem,9.5vw,3.6rem)!important;line-height:.96!important}.featured-work-control{width:3.05rem;height:3.05rem;font-size:1.3rem}section[aria-labelledby="practice-title"] ol{grid-template-columns:1fr!important}section[aria-labelledby="practice-title"] li.practice-card{min-height:22rem!important}}
       @media (max-width:560px){.site-header{padding:1rem var(--gutter)!important}.site-header .brand{width:10.6rem!important}.site-header nav{gap:clamp(.85rem,5vw,1.45rem)!important}.site-header nav a{font-size:.88rem!important}.site-header nav a.home-icon-link{width:2.1rem!important;height:2.1rem!important}.language-switch button{min-width:2.05rem;height:1.65rem;padding:.32rem .52rem;font-size:.62rem}.hero.is-static{min-height:clamp(35rem,86vh,44rem)!important}.hero.is-static .overlay{min-height:clamp(35rem,86vh,44rem)!important;padding-top:8rem!important}.hero.is-static h1{font-size:clamp(2.45rem,12vw,4.2rem)!important}.featured-work-stage{min-height:clamp(40rem,150vw,54rem)}.featured-work-controls{align-items:center}.featured-work-title{font-size:clamp(1.85rem,11vw,3.05rem)!important}.featured-work-summary{font-size:.96rem;line-height:1.75}}
       .floating-contact{position:fixed;right:clamp(.75rem,2vw,1.55rem);top:50%;bottom:auto;transform:translateY(-50%);z-index:90;font-family:var(--sans);color:var(--ink)}
       .floating-contact *{box-sizing:border-box}
@@ -750,6 +761,28 @@
     return project.scopeEn || "";
   };
 
+  const PRACTICE_IMAGES = [
+    {
+      projectId: "qinhuangdao-women-childrens-hospital",
+      fallback:
+        "https://user-assets.sxlcdn.com/images/64359/FpMBCTT2onfE8boriX09FkCN2ilW.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg",
+    },
+    {
+      projectId: "only-henan-theatre-city",
+      fallback:
+        "https://user-assets.sxlcdn.com/images/64359/FqnllKP7viO8Cf3kD3MK4TnsIDdH.jpg?imageMogr2/strip/auto-orient/thumbnail/720x1440%3E/quality/90!/interlace/1/format/jpeg",
+    },
+    {
+      fallback: "images/hero/beijing-helsinki-connected-aerial-ai-1920.jpg",
+    },
+  ];
+
+  const practiceImageFor = (area, index, projects) => {
+    const fallback = PRACTICE_IMAGES[index] || PRACTICE_IMAGES[0];
+    const project = fallback.projectId ? projects.find((item) => item.id === fallback.projectId) : null;
+    return assetPath(area.image || project?.leadImage || fallback.fallback || "");
+  };
+
   const renderFeaturedWorkSlider = (projects, selectedSection) => {
     if (!selectedSection) return;
     const grid = selectedSection.querySelector(".project-grid");
@@ -1068,8 +1101,27 @@
       if (list && Array.isArray(practice.areas) && practice.areas.length) {
         list.innerHTML = practice.areas
           .map(
-            (area) =>
-              `<li><span>${escapeHtml(area.number)}</span><h3 data-lang="en">${escapeHtml(area.titleEn)}</h3><h3 data-lang="fi">${escapeHtml(area.titleFi || HOME_FI.practiceAreas[Number(area.number) - 1] || area.titleEn)}</h3><p class="zh" data-lang="zh">${escapeHtml(area.titleZh)}</p></li>`,
+            (area, index) => {
+              const image = practiceImageFor(area, index, projects);
+              const titleFi = area.titleFi || HOME_FI.practiceAreas[Number(area.number) - 1] || area.titleEn;
+              return `<li class="practice-card">
+                <div class="practice-card-image">
+                  <img
+                    src="${escapeHtml(image)}"
+                    alt="${escapeHtml(area.titleEn)}"
+                    width="1200"
+                    height="1500"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="practice-card-copy">
+                  <span class="practice-card-number">${escapeHtml(area.number)}</span>
+                  <h3 data-lang="en">${escapeHtml(area.titleEn)}</h3>
+                  <h3 data-lang="fi">${escapeHtml(titleFi)}</h3>
+                  <p class="zh" data-lang="zh">${escapeHtml(area.titleZh)}</p>
+                </div>
+              </li>`;
+            },
           )
           .join("");
       }
