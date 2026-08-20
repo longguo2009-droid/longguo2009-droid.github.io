@@ -154,26 +154,21 @@ content:
           - name: id
             label: Slug / 链接名
             type: string
-            required: true
             pattern:
               regex: "^[a-z0-9]+(?:-[a-z0-9]+)*$"
               message: "Use lowercase letters, numbers and hyphens only."
           - name: titleEn
             label: English title / 英文标题
             type: string
-            required: true
           - name: titleZh
             label: Chinese title / 中文标题
             type: string
-            required: true
           - name: summaryEn
             label: English summary / 英文介绍
             type: text
-            required: true
           - name: summaryZh
             label: Chinese summary / 中文介绍
             type: text
-            required: true
           - name: locationEn
             label: English location / 英文地点
             type: string
@@ -183,11 +178,9 @@ content:
           - name: scopeEn
             label: English scope / 英文服务
             type: string
-            required: true
           - name: scopeZh
             label: Chinese scope / 中文服务
             type: string
-            required: true
           - name: year
             label: Year / 年份
             type: number
