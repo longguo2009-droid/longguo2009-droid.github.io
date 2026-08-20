@@ -89,7 +89,6 @@ content:
                 label: Main disciplines / 四大业务方向
                 type: object
                 list:
-                  min: 1
                   max: 6
                   collapsible:
                     collapsed: true
@@ -111,7 +110,6 @@ content:
                 label: Core services / 核心业务范围
                 type: object
                 list:
-                  min: 1
                   max: 20
                   collapsible:
                     collapsed: true
@@ -146,7 +144,6 @@ content:
         label: Projects / 项目
         type: object
         list:
-          min: 1
           collapsible:
             collapsed: true
             summary: "{order}. {titleEn} / {titleZh}"
@@ -154,9 +151,6 @@ content:
           - name: id
             label: Slug / 链接名
             type: string
-            pattern:
-              regex: "^[a-z0-9]+(?:-[a-z0-9]+)*$"
-              message: "Use lowercase letters, numbers and hyphens only."
           - name: titleEn
             label: English title / 英文标题
             type: string
