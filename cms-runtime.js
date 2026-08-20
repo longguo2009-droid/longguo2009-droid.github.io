@@ -283,13 +283,13 @@
   const HOME_FI = {
     heroTitle: "Muotoilutoimisto identiteetille, paikalle ja kulttuuriselle vuoropuhelulle.",
     heroIntro:
-      "Studio Signo työskentelee brändi-identiteetin, opastuksen ja kulttuurienvälisen strategian parissa, jotta ideat hahmottuvat eri yhteyksissä.",
+      "StudioSigno työskentelee brändi-identiteetin, opastuksen ja kulttuurienvälisen strategian parissa, jotta ideat hahmottuvat eri yhteyksissä.",
     selectedTitle: "Identiteetin, paikan ja kulttuurienvälisen vuoropuhelun muotoilemaa työtä.",
     practiceTitle: "Neljä osa-aluetta. Yksi kulttuurienvälinen näkökulma.",
     practiceAreas: ["Brändi-identiteetti", "EGD & Wayfinding", "Tilasuunnittelu", "Kulttuurienvälinen strategia"],
     approachTitle: "Käännämme kontekstia, emme vain sanoja.",
     approachBody:
-      "Studio Signo yhdistää tutkimuksen, visuaaliset järjestelmät ja tilallisen kokemuksen, jotta monimutkaiset ympäristöt tuntuvat selkeiltä, muistettavilta ja inhimillisiltä.",
+      "StudioSigno yhdistää tutkimuksen, visuaaliset järjestelmät ja tilallisen kokemuksen, jotta monimutkaiset ympäristöt tuntuvat selkeiltä, muistettavilta ja inhimillisiltä.",
   };
   const getLanguage = () => {
     const param = new URLSearchParams(window.location.search).get("lang");
@@ -484,7 +484,7 @@
     const organization = text(field("organization")).trim();
     const need = text(field("need")).trim();
     return [
-      "New design inquiry from Studio Signo website",
+      "New design inquiry from StudioSigno website",
       "",
       `Name: ${name}`,
       `Email: ${email}`,
@@ -583,7 +583,7 @@
       event.preventDefault();
       if (!form.reportValidity()) return;
       const message = buildContactMessage(form);
-      const subject = encodeURIComponent("Studio Signo design inquiry");
+      const subject = encodeURIComponent("StudioSigno design inquiry");
       const body = encodeURIComponent(message);
       window.location.href = `mailto:${CONTACT_RECIPIENT}?subject=${subject}&body=${body}`;
       status.textContent = langValue("Opening your email app…", "正在打开邮件应用…", "Avataan sähköpostia…");
@@ -676,7 +676,7 @@
     const main = document.querySelector("main");
     if (!main) return;
 
-    document.title = `${project.titleEn} — Studio Signo`;
+    document.title = `${project.titleEn} — StudioSigno`;
     main.innerHTML = `
       <article>
         <header class="project-header shell section">
@@ -801,9 +801,9 @@
     titleZh: "面向品牌、空间与文化交流的设计实践。",
     titleFi: HOME_FI.heroTitle,
     introEn:
-      "Studio Signo works across brand identity, place and wayfinding, and cross-cultural strategy to make ideas legible across contexts.",
+      "StudioSigno works across brand identity, place and wayfinding, and cross-cultural strategy to make ideas legible across contexts.",
     introZh:
-      "Studio Signo 横跨品牌识别、空间与导示、跨文化策略，让想法在不同语境中清晰可读。",
+      "StudioSigno 横跨品牌识别、空间与导示、跨文化策略，让想法在不同语境中清晰可读。",
     introFi: HOME_FI.heroIntro,
     eyebrow: "China + Finland",
     cityline: "CHINA + FINLAND",
