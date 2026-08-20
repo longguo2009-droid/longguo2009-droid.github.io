@@ -194,7 +194,7 @@ content:
           - name: categories
             label: Categories / 分类
             type: select
-            required: true
+            required: false
             options:
               multiple: true
               min: 1
