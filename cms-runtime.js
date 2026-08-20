@@ -30,6 +30,18 @@
       titleFi: "Kulttuurienvälinen strategia",
     },
   ];
+  const CORE_SERVICES = [
+    { titleEn: "Logo Design", titleZh: "品牌LOGO设计", titleFi: "Logosuunnittelu" },
+    { titleEn: "Visual Identity", titleZh: "平面VI设计", titleFi: "Visuaalinen identiteetti" },
+    { titleEn: "Signage & Wayfinding", titleZh: "标识与导视", titleFi: "Opasteet ja wayfinding" },
+    { titleEn: "Exhibition Design", titleZh: "展厅设计", titleFi: "Näyttelysuunnittelu" },
+    { titleEn: "Event Design", titleZh: "活动设计", titleFi: "Tapahtumasuunnittelu" },
+    { titleEn: "UX Design", titleZh: "UX", titleFi: "UX-suunnittelu" },
+    { titleEn: "Advertising Creative", titleZh: "广告创意", titleFi: "Mainonnan konseptit" },
+    { titleEn: "Exhibition Graphics", titleZh: "展厅视觉", titleFi: "Näyttelygrafiikka" },
+    { titleEn: "Commercial Space Design", titleZh: "商业空间设计", titleFi: "Liiketilasuunnittelu" },
+    { titleEn: "Cross-cultural Strategy", titleZh: "跨文化策略", titleFi: "Kulttuurienvälinen strategia" },
+  ];
   const normalizePracticeAreas = (areas) => {
     const sourceAreas = Array.isArray(areas) ? areas : [];
     const strategySource =
@@ -42,6 +54,10 @@
       ...area,
       image: sources[index]?.image || area.image,
     }));
+  };
+  const normalizeServices = (services) => {
+    const source = Array.isArray(services) ? services.filter((service) => service?.titleEn || service?.titleZh || service?.titleFi) : [];
+    return source.length ? source : CORE_SERVICES;
   };
   const setText = (selector, value, root = document) => {
     const element = root.querySelector(selector);
@@ -178,10 +194,16 @@
       section[aria-labelledby="practice-title"] .practice-card h3{margin:0!important;color:#f3eadc!important;font-size:clamp(1.35rem,1.75vw,2.15rem)!important;line-height:.96!important;letter-spacing:-.05em!important}
       section[aria-labelledby="practice-title"] .practice-card p{margin:0!important;color:#e4f1fb!important;font-size:clamp(1rem,1.08vw,1.18rem)!important;line-height:1.35!important}
       html[data-lang="zh"] section[aria-labelledby="practice-title"] .practice-card h3,html[data-lang="zh"] section[aria-labelledby="practice-title"] .practice-card p{font-family:var(--font-zh)!important;letter-spacing:.025em!important}
+      .core-services{margin-top:clamp(2rem,4vw,4rem);border-top:1px solid var(--line);padding-top:clamp(1.2rem,2.5vw,2.4rem)}
+      .core-services-eyebrow{margin:0 0 1rem;color:var(--blue);font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+      .core-services-list{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.7rem;list-style:none;margin:0;padding:0}
+      .core-services-list li{display:flex;align-items:center;min-height:3.15rem;border:1px solid color-mix(in srgb,var(--blue) 22%,transparent);border-radius:999px;padding:.66rem .95rem;color:var(--blue);font-size:clamp(.82rem,.9vw,.98rem);font-weight:500;line-height:1.25;letter-spacing:-.015em;background:color-mix(in srgb,var(--paper-light) 82%,transparent)}
+      html[data-lang="zh"] .core-services-list li{font-family:var(--font-zh);font-weight:400;letter-spacing:.025em}
       .featured-work-progress{color:var(--muted);font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
       @media (max-width:1200px){section[aria-labelledby="practice-title"] ol{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
-      @media (max-width:900px){html{scroll-padding-top:8.8rem}.site-header{grid-template-columns:minmax(9.5rem,1fr) auto!important;grid-template-rows:auto auto!important;gap:.8rem 1rem!important}.site-header .brand{grid-column:1!important;grid-row:1!important;width:clamp(10.5rem,34vw,15rem)!important}.site-header .language-switch{grid-column:2!important;grid-row:1!important;align-self:start!important;margin:0!important}.site-header nav{grid-column:1 / -1!important;grid-row:2!important;width:100%!important;justify-content:center!important;gap:clamp(1rem,6vw,2.6rem)!important;margin-bottom:0!important}.hero.is-static{min-height:clamp(34rem,78vh,48rem)!important}.hero.is-static .overlay{min-height:clamp(34rem,78vh,48rem)!important;padding:clamp(8rem,16vh,12rem) var(--gutter) clamp(2.4rem,7vw,4rem)!important}.hero.is-static h1{font-size:clamp(2.65rem,11vw,5.2rem)!important}html[data-lang="fi"] .hero.is-static .overlay .display,html[data-lang="fi"] .hero.is-static .overlay .hero-title-fi,html[data-lang="fi"] .hero.is-static .overlay #hero-title{color:#f3eadc!important}html[data-lang="fi"] .hero.is-static .overlay .eyebrow,html[data-lang="fi"] .hero.is-static .overlay .intro{color:#e4f1fb!important}.featured-work-stage{min-height:clamp(42rem,118vw,56rem)}.featured-work-slide{grid-template-columns:1fr;align-content:start}.featured-work-media{min-height:19rem}.featured-work-copy{padding-bottom:1rem}.featured-work-title{font-size:clamp(2rem,9.5vw,3.6rem)!important;line-height:.96!important}.featured-work-control{width:3.05rem;height:3.05rem;font-size:1.3rem}section[aria-labelledby="practice-title"] ol{grid-template-columns:1fr!important}section[aria-labelledby="practice-title"] li.practice-card{min-height:22rem!important}}
-      @media (max-width:560px){.site-header{padding:1rem var(--gutter)!important}.site-header .brand{width:10.6rem!important}.site-header nav{gap:clamp(.85rem,5vw,1.45rem)!important}.site-header nav a{font-size:.88rem!important}.site-header nav a.home-icon-link{width:2.1rem!important;height:2.1rem!important}.language-switch button{min-width:2.05rem;height:1.65rem;padding:.32rem .52rem;font-size:.62rem}.hero.is-static{min-height:clamp(35rem,86vh,44rem)!important}.hero.is-static .overlay{min-height:clamp(35rem,86vh,44rem)!important;padding-top:8rem!important}.hero.is-static h1{font-size:clamp(2.45rem,12vw,4.2rem)!important}.featured-work-stage{min-height:clamp(40rem,150vw,54rem)}.featured-work-controls{align-items:center}.featured-work-title{font-size:clamp(1.85rem,11vw,3.05rem)!important}.featured-work-summary{font-size:.96rem;line-height:1.75}}
+      @media (max-width:1200px){.core-services-list{grid-template-columns:repeat(3,minmax(0,1fr))}}
+      @media (max-width:900px){html{scroll-padding-top:8.8rem}.site-header{grid-template-columns:minmax(9.5rem,1fr) auto!important;grid-template-rows:auto auto!important;gap:.8rem 1rem!important}.site-header .brand{grid-column:1!important;grid-row:1!important;width:clamp(10.5rem,34vw,15rem)!important}.site-header .language-switch{grid-column:2!important;grid-row:1!important;align-self:start!important;margin:0!important}.site-header nav{grid-column:1 / -1!important;grid-row:2!important;width:100%!important;justify-content:flex-start!important;gap:clamp(1rem,6vw,2.6rem)!important;margin-bottom:0!important}.hero.is-static{min-height:clamp(34rem,78vh,48rem)!important}.hero.is-static .overlay{min-height:clamp(34rem,78vh,48rem)!important;padding:clamp(8rem,16vh,12rem) var(--gutter) clamp(2.4rem,7vw,4rem)!important}.hero.is-static h1{font-size:clamp(2.65rem,11vw,5.2rem)!important}html[data-lang="fi"] .hero.is-static .overlay .display,html[data-lang="fi"] .hero.is-static .overlay .hero-title-fi,html[data-lang="fi"] .hero.is-static .overlay #hero-title{color:#f3eadc!important}html[data-lang="fi"] .hero.is-static .overlay .eyebrow,html[data-lang="fi"] .hero.is-static .overlay .intro{color:#e4f1fb!important}.featured-work-stage{min-height:clamp(42rem,118vw,56rem)}.featured-work-slide{grid-template-columns:1fr;align-content:start}.featured-work-media{min-height:19rem}.featured-work-copy{padding-bottom:1rem}.featured-work-title{font-size:clamp(2rem,9.5vw,3.6rem)!important;line-height:.96!important}.featured-work-control{width:3.05rem;height:3.05rem;font-size:1.3rem}section[aria-labelledby="practice-title"] ol{grid-template-columns:1fr!important}section[aria-labelledby="practice-title"] li.practice-card{min-height:22rem!important}.core-services-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+      @media (max-width:560px){.site-header{padding:1rem var(--gutter)!important}.site-header .brand{width:10.6rem!important}.site-header nav{gap:clamp(.85rem,5vw,1.45rem)!important;overflow-x:auto!important;padding-bottom:.1rem!important}.site-header nav a{font-size:.88rem!important}.site-header nav a.home-icon-link{width:2.1rem!important;height:2.1rem!important;flex:0 0 auto}.language-switch button{min-width:2.05rem;height:1.65rem;padding:.32rem .52rem;font-size:.62rem}.hero.is-static{min-height:clamp(35rem,86vh,44rem)!important}.hero.is-static .overlay{min-height:clamp(35rem,86vh,44rem)!important;padding-top:8rem!important}.hero.is-static h1{font-size:clamp(2.45rem,12vw,4.2rem)!important}.featured-work-stage{min-height:clamp(40rem,150vw,54rem)}.featured-work-controls{align-items:center}.featured-work-title{font-size:clamp(1.85rem,11vw,3.05rem)!important}.featured-work-summary{font-size:.96rem;line-height:1.75}.core-services-list{grid-template-columns:1fr}.core-services-list li{min-height:2.8rem}}
       .floating-contact{position:fixed;right:clamp(.75rem,2vw,1.55rem);top:50%;bottom:auto;transform:translateY(-50%);z-index:90;font-family:var(--sans);color:var(--ink)}
       .floating-contact *{box-sizing:border-box}
       .floating-contact-toggle{min-width:5.4rem;min-height:3.85rem;border:1px solid color-mix(in srgb,var(--blue) 78%,#fff);border-radius:999px;background:color-mix(in srgb,var(--blue) 86%,transparent);color:#fff;box-shadow:0 1rem 2.5rem color-mix(in srgb,var(--blue) 22%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:1.05rem 1.22rem;font:600 1rem/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
@@ -263,8 +285,8 @@
     heroIntro:
       "Studio Signo työskentelee brändi-identiteetin, opastuksen ja kulttuurienvälisen strategian parissa, jotta ideat hahmottuvat eri yhteyksissä.",
     selectedTitle: "Identiteetin, paikan ja kulttuurienvälisen vuoropuhelun muotoilemaa työtä.",
-    practiceTitle: "Kolme osa-aluetta. Yksi kulttuurienvälinen näkökulma.",
-    practiceAreas: ["Brändi-identiteetti", "EGD & Wayfinding", "Kulttuurienvälinen strategia"],
+    practiceTitle: "Neljä osa-aluetta. Yksi kulttuurienvälinen näkökulma.",
+    practiceAreas: ["Brändi-identiteetti", "EGD & Wayfinding", "Tilasuunnittelu", "Kulttuurienvälinen strategia"],
     approachTitle: "Käännämme kontekstia, emme vain sanoja.",
     approachBody:
       "Studio Signo yhdistää tutkimuksen, visuaaliset järjestelmät ja tilallisen kokemuksen, jotta monimutkaiset ympäristöt tuntuvat selkeiltä, muistettavilta ja inhimillisiltä.",
@@ -1175,6 +1197,32 @@
             },
           )
           .join("");
+      }
+      const services = normalizeServices(practice.services);
+      let servicesBlock = practiceSection.querySelector("[data-core-services]");
+      if (services.length && !servicesBlock) {
+        servicesBlock = document.createElement("div");
+        servicesBlock.className = "core-services";
+        servicesBlock.setAttribute("data-core-services", "");
+        list?.after(servicesBlock);
+      }
+      if (servicesBlock) {
+        servicesBlock.innerHTML = `
+          <p class="core-services-eyebrow" data-lang="en">Core services</p>
+          <p class="core-services-eyebrow" data-lang="zh">核心业务范围</p>
+          <p class="core-services-eyebrow" data-lang="fi">Palvelut</p>
+          <ul class="core-services-list">
+            ${services
+              .map(
+                (service) => `<li>
+                  <span data-lang="en">${escapeHtml(service.titleEn || service.titleZh || service.titleFi || "")}</span>
+                  <span data-lang="zh">${escapeHtml(service.titleZh || service.titleEn || service.titleFi || "")}</span>
+                  <span data-lang="fi">${escapeHtml(service.titleFi || service.titleEn || service.titleZh || "")}</span>
+                </li>`,
+              )
+              .join("")}
+          </ul>
+        `;
       }
     }
 
