@@ -38,7 +38,7 @@
     { titleEn: "Event Design", titleZh: "活动设计", titleFi: "Tapahtumasuunnittelu" },
     { titleEn: "UX Design", titleZh: "UX", titleFi: "UX-suunnittelu" },
     { titleEn: "Advertising Creative", titleZh: "广告创意", titleFi: "Mainonnan konseptit" },
-    { titleEn: "Exhibition Graphics", titleZh: "展厅视觉", titleFi: "Näyttelygrafiikka" },
+    { titleEn: "Environmental Graphic Design", titleZh: "环境图形设计", titleFi: "Ympäristögrafiikka" },
     { titleEn: "Commercial Space Design", titleZh: "商业空间设计", titleFi: "Liiketilasuunnittelu" },
     { titleEn: "Cross-cultural Strategy", titleZh: "跨文化策略", titleFi: "Kulttuurienvälinen strategia" },
   ];
