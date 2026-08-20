@@ -14,7 +14,7 @@
     {
       number: "02",
       titleEn: "EGD & Wayfinding",
-      titleZh: "环境图形与导视",
+      titleZh: "环境图形与导示",
       titleFi: "EGD & Wayfinding",
     },
     {
@@ -33,7 +33,7 @@
   const CORE_SERVICES = [
     { titleEn: "Logo Design", titleZh: "品牌LOGO设计", titleFi: "Logosuunnittelu" },
     { titleEn: "Visual Identity", titleZh: "平面VI设计", titleFi: "Visuaalinen identiteetti" },
-    { titleEn: "Signage & Wayfinding", titleZh: "标识与导视", titleFi: "Opasteet ja wayfinding" },
+    { titleEn: "Signage & Wayfinding", titleZh: "标识与导示", titleFi: "Opasteet ja wayfinding" },
     { titleEn: "Exhibition Design", titleZh: "展厅设计", titleFi: "Näyttelysuunnittelu" },
     { titleEn: "Event Design", titleZh: "活动设计", titleFi: "Tapahtumasuunnittelu" },
     { titleEn: "UX Design", titleZh: "UX", titleFi: "UX-suunnittelu" },
@@ -803,7 +803,7 @@
     introEn:
       "Studio Signo works across brand identity, place and wayfinding, and cross-cultural strategy to make ideas legible across contexts.",
     introZh:
-      "Studio Signo 横跨品牌识别、空间与导视、跨文化策略，让想法在不同语境中清晰可读。",
+      "Studio Signo 横跨品牌识别、空间与导示、跨文化策略，让想法在不同语境中清晰可读。",
     introFi: HOME_FI.heroIntro,
     eyebrow: "China + Finland",
     cityline: "CHINA + FINLAND",
