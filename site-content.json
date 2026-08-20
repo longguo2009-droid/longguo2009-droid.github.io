@@ -17,23 +17,84 @@
     },
     "practice": {
       "eyebrow": "Practice / 业务领域",
-      "titleEn": "Three disciplines. One cross-cultural perspective.",
-      "titleZh": "三类设计实践，由同一种跨文化视角贯穿。",
+      "titleEn": "Four disciplines. One cross-cultural perspective.",
+      "titleZh": "四类设计实践，由同一种跨文化视角贯穿。",
       "areas": [
         {
           "number": "01",
           "titleEn": "Brand Identity",
-          "titleZh": "品牌与视觉识别"
+          "titleZh": "品牌与视觉识别",
+          "titleFi": "Brändi-identiteetti"
         },
         {
           "number": "02",
-          "titleEn": "Place & Wayfinding",
-          "titleZh": "空间与导视"
+          "titleEn": "EGD & Wayfinding",
+          "titleZh": "环境图形与导视",
+          "titleFi": "EGD & Wayfinding"
         },
         {
           "number": "03",
+          "titleEn": "Spatial Design",
+          "titleZh": "空间设计",
+          "titleFi": "Tilasuunnittelu"
+        },
+        {
+          "number": "04",
           "titleEn": "Cross-cultural Strategy",
-          "titleZh": "跨文化策略"
+          "titleZh": "跨文化策略",
+          "titleFi": "Kulttuurienvälinen strategia"
+        }
+      ],
+      "services": [
+        {
+          "titleEn": "Logo Design",
+          "titleZh": "品牌LOGO设计",
+          "titleFi": "Logosuunnittelu"
+        },
+        {
+          "titleEn": "Visual Identity",
+          "titleZh": "平面VI设计",
+          "titleFi": "Visuaalinen identiteetti"
+        },
+        {
+          "titleEn": "Signage & Wayfinding",
+          "titleZh": "标识与导视",
+          "titleFi": "Opasteet ja wayfinding"
+        },
+        {
+          "titleEn": "Exhibition Design",
+          "titleZh": "展厅设计",
+          "titleFi": "Näyttelysuunnittelu"
+        },
+        {
+          "titleEn": "Event Design",
+          "titleZh": "活动设计",
+          "titleFi": "Tapahtumasuunnittelu"
+        },
+        {
+          "titleEn": "UX Design",
+          "titleZh": "UX",
+          "titleFi": "UX-suunnittelu"
+        },
+        {
+          "titleEn": "Advertising Creative",
+          "titleZh": "广告创意",
+          "titleFi": "Mainonnan konseptit"
+        },
+        {
+          "titleEn": "Exhibition Graphics",
+          "titleZh": "展厅视觉",
+          "titleFi": "Näyttelygrafiikka"
+        },
+        {
+          "titleEn": "Commercial Space Design",
+          "titleZh": "商业空间设计",
+          "titleFi": "Liiketilasuunnittelu"
+        },
+        {
+          "titleEn": "Cross-cultural Strategy",
+          "titleZh": "跨文化策略",
+          "titleFi": "Kulttuurienvälinen strategia"
         }
       ]
     },
