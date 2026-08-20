@@ -202,7 +202,7 @@ content:
                 - name: brand-identity
                   label: Brand Identity / 品牌识别
                 - name: place-wayfinding
-                  label: EGD & Wayfinding / 环境图形与导视
+                  label: EGD & Wayfinding / 环境图形与导示
                 - name: spatial-design
                   label: Spatial Design / 空间设计
                 - name: cross-cultural
