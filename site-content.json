@@ -24,25 +24,33 @@
           "number": "01",
           "titleEn": "Brand Identity",
           "titleZh": "品牌与视觉识别",
-          "titleFi": "Brändi-identiteetti"
+          "titleFi": "Brändi-identiteetti",
+          "image": "/images/projects/qinhuangdao-women-childrens-hospital-cover.jpg",
+          "category": "brand-identity"
         },
         {
           "number": "02",
           "titleEn": "EGD & Wayfinding",
           "titleZh": "环境图形与导示",
-          "titleFi": "EGD & Wayfinding"
+          "titleFi": "EGD & Wayfinding",
+          "image": "/images/projects/only-henan-drama-fantasy-city-cover.jpg",
+          "category": "place-wayfinding"
         },
         {
           "number": "03",
           "titleEn": "Spatial Design",
           "titleZh": "空间设计",
-          "titleFi": "Tilasuunnittelu"
+          "titleFi": "Tilasuunnittelu",
+          "image": "/images/projects/china-life-airport-experience-center-cover.jpg",
+          "category": "spatial-design"
         },
         {
           "number": "04",
           "titleEn": "Cross-cultural Strategy",
           "titleZh": "跨文化策略",
-          "titleFi": "Kulttuurienvälinen strategia"
+          "titleFi": "Kulttuurienvälinen strategia",
+          "image": "/images/hero/beijing-helsinki-connected-aerial-ai-1920.jpg",
+          "category": "cross-cultural"
         }
       ],
       "services": [
@@ -70,6 +78,11 @@
           "titleEn": "Event Design",
           "titleZh": "活动设计",
           "titleFi": "Tapahtumasuunnittelu"
+        },
+        {
+          "titleEn": "UX Design",
+          "titleZh": "UX",
+          "titleFi": "UX-suunnittelu"
         },
         {
           "titleEn": "Advertising Creative",
@@ -116,20 +129,9 @@
         "place-wayfinding",
         "cross-cultural"
       ],
-      "leadImage": "/images/projects/hansign17062026012.jpeg",
+      "leadImage": "/images/projects/only-henan-drama-fantasy-city-cover.jpg",
       "images": [
-        "/images/projects/17062026.jpeg",
-        "/images/projects/hansign17062026001.jpeg",
-        "/images/projects/hansign17062026002.jpeg",
-        "/images/projects/hansign17062026003.jpeg",
-        "/images/projects/hansign17062026004.jpeg",
-        "/images/projects/hansign17062026005.jpeg",
-        "/images/projects/hansign17062026006.jpeg",
-        "/images/projects/hansign17062026007.jpeg",
-        "/images/projects/hansign17062026008.jpeg",
-        "/images/projects/hansign17062026009.jpeg",
-        "/images/projects/hansign17062026010.jpeg",
-        "/images/projects/hansign17062026011.jpeg"
+        "/images/projects/only-henan-drama-fantasy-city-cover.jpg"
       ],
       "featured": true,
       "order": 1
@@ -147,12 +149,9 @@
       "categories": [
         "place-wayfinding"
       ],
-      "leadImage": "/images/projects/hansign17062026023-1.jpeg",
+      "leadImage": "/images/projects/perfect-world-headquarters-cover.jpg",
       "images": [
-        "/images/projects/hansign17062026022.jpeg",
-        "/images/projects/hansign17062026023-1.jpeg",
-        "/images/projects/hansign17062026024.jpeg",
-        "/images/projects/hansign17062026025.jpeg"
+        "/images/projects/perfect-world-headquarters-cover.jpg"
       ],
       "featured": true,
       "order": 2
@@ -174,12 +173,7 @@
       ],
       "leadImage": "/images/projects/qhd-cover.jpg",
       "images": [
-        "/images/projects/hansign17062026062.jpeg",
-        "/images/projects/hansign17062026063.jpeg",
-        "/images/projects/hansign17062026064.jpeg",
-        "/images/projects/hansign17062026065.jpeg",
-        "/images/projects/hansign17062026066.jpeg",
-        "/images/projects/hansign17062026067.jpeg"
+        "/images/projects/qhd-cover.jpg"
       ],
       "featured": true,
       "order": 3
@@ -197,14 +191,12 @@
       "year": 2018,
       "categories": [
         "place-wayfinding",
-        "brand-identity"
+        "brand-identity",
+        "spatial-design"
       ],
-      "leadImage": "/images/projects/china-life-airport-experience-center-cover.jpg",
+      "leadImage": "/images/projects/cla-cover.jpg",
       "images": [
-        "/images/projects/hansign17062026026.jpeg",
-        "/images/projects/hansign17062026027.jpeg",
-        "/images/projects/hansign17062026029.jpeg",
-        "/images/projects/hansign17062026030.jpeg"
+        "/images/projects/cla-cover.jpg"
       ],
       "featured": true,
       "order": 4
