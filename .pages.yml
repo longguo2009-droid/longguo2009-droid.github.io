@@ -210,7 +210,7 @@ content:
           - name: leadImage
             label: 01 Square project cover + homepage carousel / 01 项目页方形封面图 + 首页轮播图
             type: image
-            required: true
+            required: false
             options:
               media: project_images
               path: images/projects
