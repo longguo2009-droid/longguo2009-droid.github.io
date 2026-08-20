@@ -197,7 +197,6 @@ content:
             required: false
             options:
               multiple: true
-              min: 1
               values:
                 - name: brand-identity
                   label: Brand Identity / 品牌识别
