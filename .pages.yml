@@ -106,6 +106,27 @@ content:
                   - name: titleFi
                     label: Finnish title / 芬兰语标题
                     type: string
+                  - name: image
+                    label: Image / 业务块图片
+                    type: image
+                    required: false
+                    options:
+                      media: project_images
+                      path: images/projects
+                  - name: category
+                    label: Linked category / 关联项目分类
+                    type: select
+                    required: false
+                    options:
+                      values:
+                        - name: brand-identity
+                          label: Brand Identity / 品牌识别
+                        - name: place-wayfinding
+                          label: EGD & Wayfinding / 环境图形与导示
+                        - name: spatial-design
+                          label: Spatial Design / 空间设计
+                        - name: cross-cultural
+                          label: Cross-cultural Strategy / 跨文化策略
               - name: services
                 label: Core services / 核心业务范围
                 type: object
