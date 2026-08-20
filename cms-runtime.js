@@ -10,24 +10,28 @@
       titleEn: "Brand Identity",
       titleZh: "品牌与视觉识别",
       titleFi: "Brändi-identiteetti",
+      category: "brand-identity",
     },
     {
       number: "02",
       titleEn: "EGD & Wayfinding",
       titleZh: "环境图形与导示",
       titleFi: "EGD & Wayfinding",
+      category: "place-wayfinding",
     },
     {
       number: "03",
       titleEn: "Spatial Design",
       titleZh: "空间设计",
       titleFi: "Tilasuunnittelu",
+      category: "spatial-design",
     },
     {
       number: "04",
       titleEn: "Cross-cultural Strategy",
       titleZh: "跨文化策略",
       titleFi: "Kulttuurienvälinen strategia",
+      category: "cross-cultural",
     },
   ];
   const CORE_SERVICES = [
@@ -53,6 +57,7 @@
       ...sources[index],
       ...area,
       image: sources[index]?.image || area.image,
+      category: sources[index]?.category || area.category,
     }));
   };
   const normalizeServices = (services) => {
@@ -185,6 +190,8 @@
       .featured-work-control:hover,.featured-work-control:focus-visible{background:var(--blue);color:#fff}
       section[aria-labelledby="practice-title"] ol{list-style:none!important;margin:clamp(2.4rem,5vw,4.8rem) 0 0!important;padding:0!important;display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:clamp(.9rem,1.8vw,1.6rem)!important}
       section[aria-labelledby="practice-title"] li.practice-card{position:relative!important;min-height:clamp(22rem,32vw,34rem)!important;overflow:hidden!important;border:0!important;padding:0!important;background:var(--blue)!important;display:block!important}
+      .practice-card-link{position:absolute!important;inset:0!important;display:block!important;color:inherit!important;text-decoration:none!important;cursor:pointer!important}
+      .practice-card-link:focus-visible{outline:3px solid #f3eadc!important;outline-offset:-8px!important}
       .practice-card-image{position:absolute;inset:0;z-index:0;background:var(--blue)}
       .practice-card-image img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;filter:saturate(.9) contrast(1.02) brightness(.78);transform:scale(1.01);transition:transform .7s ease,filter .7s ease}
       li.practice-card:hover .practice-card-image img{transform:scale(1.055);filter:saturate(.96) contrast(1.05) brightness(.82)}
@@ -764,14 +771,51 @@
     }
   };
 
-  const updateProjectsGrid = (projects, root = document, onlyFeatured = false) => {
+  const updateProjectsGrid = (projects, root = document, onlyFeatured = false, forcedCategory = "") => {
     const grid = root.querySelector(".project-grid");
+    const category = onlyFeatured ? "all" : forcedCategory || selectedProjectCategory();
     const selectedProjects = projects
       .filter((project) => !onlyFeatured || project.featured)
+      .filter((project) => {
+        if (category === "all") return true;
+        return Array.isArray(project.categories) && project.categories.includes(category);
+      })
       .sort((a, b) => Number(a.order || 0) - Number(b.order || 0));
-    if (grid && selectedProjects.length) {
-      grid.innerHTML = selectedProjects.map(renderProjectCard).join("");
+    if (grid) {
+      grid.innerHTML = selectedProjects.length
+        ? selectedProjects.map(renderProjectCard).join("")
+        : `<p class="project-empty" data-lang="en">No projects in this category yet.</p><p class="project-empty zh" data-lang="zh">这个分类下暂时还没有项目。</p><p class="project-empty" data-lang="fi">Tässä kategoriassa ei ole vielä projekteja.</p>`;
+      if (!onlyFeatured) syncProjectFilterButtons(category, root);
     }
+  };
+
+  const bindProjectControls = (projects, root = document) => {
+    const controls = root.querySelector(".project-controls");
+    if (!controls || controls.dataset.runtimeBound === "true") return;
+    controls.dataset.runtimeBound = "true";
+    controls.addEventListener("click", (event) => {
+      const target = event.target;
+      if (!(target instanceof Element)) return;
+      const filterButton = target.closest("[data-filter]");
+      if (filterButton) {
+        const category = filterButton.dataset.filter || "all";
+        const url = new URL(window.location.href);
+        if (category === "all") url.searchParams.delete("category");
+        else url.searchParams.set("category", category);
+        window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
+        updateProjectsGrid(projects, root, false, category);
+      }
+      const viewButton = target.closest("[data-view]");
+      if (viewButton) {
+        root.querySelectorAll("[data-view]").forEach((button) => {
+          const isActive = button === viewButton;
+          button.classList.toggle("active", isActive);
+          button.setAttribute("aria-pressed", isActive ? "true" : "false");
+        });
+        const grid = root.querySelector(".project-grid");
+        if (grid) grid.dataset.mode = viewButton.dataset.view || "images";
+      }
+    });
   };
 
   const renderHeroSlides = (projects) => {
@@ -828,6 +872,49 @@
     if (lang === "zh") return project.scopeZh || project.scopeEn || "";
     if (lang === "fi") return project.scopeFi || project.scopeEn || "";
     return project.scopeEn || "";
+  };
+
+  const CATEGORY_OPTIONS = [
+    { value: "all", label: "All / 全部" },
+    { value: "brand-identity", label: "Brand Identity / 品牌识别" },
+    { value: "place-wayfinding", label: "EGD & Wayfinding / 环境图形与导示" },
+    { value: "spatial-design", label: "Spatial Design / 空间设计" },
+    { value: "cross-cultural", label: "Cross-cultural Strategy / 跨文化策略" },
+  ];
+
+  const categoryHref = (category) => {
+    const value = text(category || "all").trim();
+    return !value || value === "all" ? "/projects/" : `/projects/?category=${encodeURIComponent(value)}`;
+  };
+
+  const selectedProjectCategory = () => {
+    const category = new URLSearchParams(window.location.search).get("category");
+    return text(category || "all").trim() || "all";
+  };
+
+  const ensureProjectFilterButtons = (root = document) => {
+    const filters = root.querySelector(".filters");
+    if (!filters) return;
+    CATEGORY_OPTIONS.forEach((option) => {
+      let button = filters.querySelector(`[data-filter="${option.value}"]`);
+      if (!button) {
+        button = document.createElement("button");
+        button.type = "button";
+        button.dataset.filter = option.value;
+        filters.append(button);
+      }
+      button.textContent = splitBilingual(option.label);
+      button.setAttribute("data-bilingual-label", option.label);
+    });
+  };
+
+  const syncProjectFilterButtons = (category, root = document) => {
+    ensureProjectFilterButtons(root);
+    root.querySelectorAll("[data-filter]").forEach((button) => {
+      const isActive = button.dataset.filter === category || (!category && button.dataset.filter === "all");
+      button.classList.toggle("active", isActive);
+      button.setAttribute("aria-pressed", isActive ? "true" : "false");
+    });
   };
 
   const PRACTICE_IMAGES = [
@@ -1159,7 +1246,10 @@
     }
 
     const archiveGrid = document.querySelector("[data-project-grid]");
-    if (archiveGrid) updateProjectsGrid(projects, document, false);
+    if (archiveGrid) {
+      updateProjectsGrid(projects, document, false);
+      bindProjectControls(projects, document);
+    }
     updateProjectDetail(findProjectFromPath(projects));
 
     const practiceTitle = document.querySelector("#practice-title");
@@ -1180,22 +1270,25 @@
               const image = practiceImageFor(area, index, projects);
               const titleEn = displayPracticeTitleEn(area.titleEn);
               const titleFi = area.titleFi || HOME_FI.practiceAreas[Number(area.number) - 1] || titleEn;
+              const href = categoryHref(area.category || PRACTICE_AREAS[index]?.category);
               return `<li class="practice-card">
-                <div class="practice-card-image">
-                  <img
-                    src="${escapeHtml(image)}"
-                    alt="${escapeHtml(titleEn)}"
-                    width="1200"
-                    height="1500"
-                    loading="lazy"
-                  />
-                </div>
-                <div class="practice-card-copy">
-                  <span class="practice-card-number">${escapeHtml(area.number)}</span>
-                  <h3 data-lang="en">${escapeHtml(titleEn)}</h3>
-                  <h3 data-lang="fi">${escapeHtml(titleFi)}</h3>
-                  <p class="zh" data-lang="zh">${escapeHtml(area.titleZh)}</p>
-                </div>
+                <a class="practice-card-link" href="${escapeHtml(href)}" aria-label="${escapeHtml(titleEn)} projects">
+                  <div class="practice-card-image">
+                    <img
+                      src="${escapeHtml(image)}"
+                      alt="${escapeHtml(titleEn)}"
+                      width="1200"
+                      height="1500"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="practice-card-copy">
+                    <span class="practice-card-number">${escapeHtml(area.number)}</span>
+                    <h3 data-lang="en">${escapeHtml(titleEn)}</h3>
+                    <h3 data-lang="fi">${escapeHtml(titleFi)}</h3>
+                    <p class="zh" data-lang="zh">${escapeHtml(area.titleZh)}</p>
+                  </div>
+                </a>
               </li>`;
             },
           )
