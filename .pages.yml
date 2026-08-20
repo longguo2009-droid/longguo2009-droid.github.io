@@ -86,7 +86,7 @@ content:
                 label: Chinese title / 中文标题
                 type: string
               - name: areas
-                label: Areas / 业务方向
+                label: Main disciplines / 四大业务方向
                 type: object
                 list:
                   min: 1
@@ -103,6 +103,28 @@ content:
                     type: string
                   - name: titleZh
                     label: Chinese title / 中文标题
+                    type: string
+                  - name: titleFi
+                    label: Finnish title / 芬兰语标题
+                    type: string
+              - name: services
+                label: Core services / 核心业务范围
+                type: object
+                list:
+                  min: 1
+                  max: 20
+                  collapsible:
+                    collapsed: true
+                    summary: "{titleEn} / {titleZh}"
+                fields:
+                  - name: titleEn
+                    label: English service / 英文服务
+                    type: string
+                  - name: titleZh
+                    label: Chinese service / 中文服务
+                    type: string
+                  - name: titleFi
+                    label: Finnish service / 芬兰语服务
                     type: string
           - name: approach
             label: Approach / 方法
@@ -180,11 +202,13 @@ content:
                 - name: brand-identity
                   label: Brand Identity / 品牌识别
                 - name: place-wayfinding
-                  label: Place & Wayfinding / 空间导视
+                  label: EGD & Wayfinding / 环境图形与导视
+                - name: spatial-design
+                  label: Spatial Design / 空间设计
                 - name: cross-cultural
                   label: Cross-cultural Strategy / 跨文化策略
           - name: leadImage
-            label: 01 Homepage + list cover image / 01 首页轮播与项目列表封面图
+            label: 01 Square project cover + homepage carousel / 01 项目页方形封面图 + 首页轮播图
             type: image
             required: true
             options:
@@ -193,7 +217,7 @@ content:
           - name: images
             label: 02 Project detail gallery images / 02 二级页面项目图片（可多张）
             type: image
-            required: true
+            required: false
             options:
               media: project_images
               path: images/projects
