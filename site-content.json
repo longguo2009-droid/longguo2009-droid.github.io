@@ -25,7 +25,7 @@
           "titleEn": "Brand Identity",
           "titleZh": "品牌与视觉识别",
           "titleFi": "Brändi-identiteetti",
-          "image": "/images/projects/qinhuangdao-women-childrens-hospital-cover.jpg",
+          "image": "/images/projects/yeahmobi-brand-upgrade-cover.png",
           "category": "brand-identity"
         },
         {
@@ -33,7 +33,7 @@
           "titleEn": "EGD & Wayfinding",
           "titleZh": "环境图形与导示",
           "titleFi": "EGD & Wayfinding",
-          "image": "/images/projects/only-henan-drama-fantasy-city-cover.jpg",
+          "image": "/images/projects/hansign17062026012-1.jpeg",
           "category": "place-wayfinding"
         },
         {
@@ -295,6 +295,7 @@
       "locationZh": "中国上海",
       "scopeEn": "Brand identity, visual identity, retail communication",
       "scopeZh": "品牌识别、视觉系统、零售传播",
+      "year": 2017,
       "categories": [
         "brand-identity",
         "cross-cultural"
@@ -304,8 +305,7 @@
         "/images/projects/brotzeit-brand-identity-cover.jpg"
       ],
       "featured": false,
-      "order": 7,
-      "year": 2017
+      "order": 7
     },
     {
       "id": "tsinghua-library-digital-experience-center",
@@ -486,6 +486,7 @@
       "locationZh": "中国",
       "scopeEn": "Brand upgrade, visual identity, international communication",
       "scopeZh": "品牌升级、VI 设计、国际化传播",
+      "year": 2016,
       "categories": [
         "brand-identity",
         "cross-cultural"
@@ -495,8 +496,7 @@
         "/images/projects/yeahmobi-brand-upgrade-cover.png"
       ],
       "featured": false,
-      "order": 16,
-      "year": 2016
+      "order": 16
     },
     {
       "id": "tongde-hospital-xianlin-campus",
@@ -570,6 +570,7 @@
       "locationZh": "中国青海",
       "scopeEn": "Destination identity, logo design, visual system",
       "scopeZh": "城市/地区品牌、标志设计、视觉系统",
+      "year": 2011,
       "categories": [
         "brand-identity",
         "cross-cultural"
@@ -579,8 +580,7 @@
         "/images/projects/qinghai-tourism-identity-cover.jpg"
       ],
       "featured": false,
-      "order": 20,
-      "year": 2011
+      "order": 20
     },
     {
       "id": "peacock-lake-park",
@@ -655,6 +655,7 @@
       "locationZh": "中国北京",
       "scopeEn": "Wayfinding planning, circulation, medical departments",
       "scopeZh": "导示系统、人流动线、医疗科室导向",
+      "year": 2017,
       "categories": [
         "place-wayfinding"
       ],
@@ -663,8 +664,7 @@
         "/images/projects/china-japan-friendship-hospital-cover.jpg"
       ],
       "featured": false,
-      "order": 24,
-      "year": 2017
+      "order": 24
     },
     {
       "id": "xiyuan-hospital-concept-wayfinding",
@@ -697,6 +697,7 @@
       "locationZh": "中国合肥",
       "scopeEn": "Brand identity, EGD & wayfinding, commercial environment",
       "scopeZh": "品牌设计、环境图形、商业导示",
+      "year": 2014,
       "categories": [
         "brand-identity",
         "place-wayfinding",
@@ -707,8 +708,7 @@
         "/images/projects/hefei-times-mall-cover.png"
       ],
       "featured": false,
-      "order": 26,
-      "year": 2014
+      "order": 26
     },
     {
       "id": "cue-brand-identity",
