@@ -452,9 +452,10 @@
             const gallery = Array.isArray(project.images) ? project.images : [];
             const duplicateCover = cover && imageUse.get(cover) > 1;
             const slugOk = /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(project.id || "");
+            const projectUrl = `/projects/${encodeURIComponent(project.id || "")}/index.html`;
             return `
               <article class="project">
-                <a class="thumb" href="/projects/${escapeHtml(project.id)}/" target="_blank" aria-label="查看项目页面">
+                <a class="thumb" href="${escapeHtml(projectUrl)}" target="_blank" aria-label="查看项目页面">
                   ${cover ? `<img src="${escapeHtml(cover)}" alt="${escapeHtml(project.titleEn || project.titleZh || "Project")}" loading="lazy" />` : ""}
                 </a>
                 <div>
@@ -469,7 +470,7 @@
                   </div>
                   <div class="actions">
                     <a class="button primary" href="${cmsUrl}" target="_blank" rel="noreferrer">去后台修改这个项目</a>
-                    <a class="button" href="/projects/${escapeHtml(project.id)}/" target="_blank">查看二级页面</a>
+                    <a class="button" href="${escapeHtml(projectUrl)}" target="_blank">查看二级页面</a>
                     <a class="button" href="${mediaUrl}" target="_blank" rel="noreferrer">上传/选择图片</a>
                   </div>
                 </div>
