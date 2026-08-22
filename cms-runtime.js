@@ -79,6 +79,7 @@
     const path = text(value);
     return path.startsWith("images/") ? `/${path}` : path;
   };
+  const projectHref = (project) => `/projects/${encodeURIComponent(text(project?.id))}/index.html`;
   const injectTypography = () => {
     document.documentElement.classList.add("notranslate");
     document.documentElement.setAttribute("translate", "no");
@@ -654,9 +655,10 @@
   const renderProjectCard = (project) => {
     const categories = Array.isArray(project.categories) ? project.categories.join(" ") : "";
     const year = project.year ? `<p>${escapeHtml(project.year)}</p>` : "";
+    const href = projectHref(project);
     return `
       <article class="project-card" data-categories="${escapeHtml(categories)}">
-        <a href="/projects/${escapeHtml(project.id)}/">
+        <a href="${escapeHtml(href)}">
           <img
             src="${escapeHtml(assetPath(project.leadImage))}"
             alt="${escapeHtml(project.titleEn)} — ${escapeHtml(project.titleZh)}"
@@ -678,7 +680,7 @@
   };
 
   const findProjectFromPath = (projects) => {
-    const match = window.location.pathname.match(/^\/projects\/([^/]+)\/?$/);
+    const match = window.location.pathname.match(/^\/projects\/([^/]+)(?:\/index\.html|\/)?$/);
     if (!match) return null;
     return projects.find((project) => project.id === match[1]) || null;
   };
@@ -972,9 +974,10 @@
             .map((project, index) => {
               const number = String(index + 1).padStart(2, "0");
               const total = String(slideCount).padStart(2, "0");
+              const href = projectHref(project);
               return `
                 <article class="featured-work-slide${index === 0 ? " active" : ""}" aria-hidden="${index === 0 ? "false" : "true"}">
-                  <a class="featured-work-media" href="/projects/${escapeHtml(project.id)}/" aria-label="${escapeHtml(project.titleEn)}">
+                  <a class="featured-work-media" href="${escapeHtml(href)}" aria-label="${escapeHtml(project.titleEn)}">
                     <img
                       src="${escapeHtml(assetPath(project.leadImage))}"
                       alt="${escapeHtml(project.titleEn)}"
@@ -1001,7 +1004,7 @@
                         <span data-lang="zh">${escapeHtml(projectScope(project, "zh"))}</span>
                       </div>
                     </div>
-                    <a class="featured-work-cta" href="/projects/${escapeHtml(project.id)}/">
+                    <a class="featured-work-cta" href="${escapeHtml(href)}">
                       <span data-lang="en">View project →</span>
                       <span data-lang="fi">Katso projekti →</span>
                       <span data-lang="zh">进入项目 →</span>
