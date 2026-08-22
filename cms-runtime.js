@@ -859,13 +859,13 @@
   };
 
   const HOME_HERO_COPY = {
-    titleEn: "A design practice for identity, place and cultural exchange.",
-    titleZh: "面向品牌、空间与文化交流的设计实践。",
+    titleEn: "StudioSigno shapes identity and place.",
+    titleZh: "塑造品牌与空间。",
     titleFi: HOME_FI.heroTitle,
     introEn:
-      "StudioSigno works across brand identity, place and wayfinding, and cross-cultural strategy to make ideas legible across contexts.",
+      "StudioSigno creates identities, spatial systems and cultural experiences with clarity, restraint and emotional intelligence.",
     introZh:
-      "StudioSigno 横跨品牌识别、空间与导示、跨文化策略，让想法在不同语境中清晰可读。",
+      "以清晰、克制而有温度的设计方式，塑造品牌、空间系统与文化体验。",
     introFi: HOME_FI.heroIntro,
     eyebrow: "China + Finland",
     cityline: "CHINA + FINLAND",
@@ -1236,14 +1236,14 @@
           heroImage.style.display = "none";
         };
       }
-      setText(".eyebrow", hero.eyebrow, heroSection);
-      setText("#hero-title", HOME_HERO_COPY.titleEn, heroSection);
-      setText(".overlay > div > .zh", HOME_HERO_COPY.titleZh, heroSection);
-      ensureLangElement(heroSection.querySelector(".overlay > div > .zh"), "fi", HOME_HERO_COPY.titleFi, "display hero-title-fi");
-      setText(".intro[lang='en']", HOME_HERO_COPY.introEn, heroSection);
-      setText(".intro.zh", HOME_HERO_COPY.introZh, heroSection);
-      ensureLangElement(heroSection.querySelector(".intro.zh"), "fi", HOME_HERO_COPY.introFi, "intro");
-      setText(".cityline", hero.cityline, heroSection);
+      setText(".eyebrow", hero.eyebrow || HOME_HERO_COPY.eyebrow, heroSection);
+      setText("#hero-title", hero.titleEn || HOME_HERO_COPY.titleEn, heroSection);
+      setText(".overlay > div > .zh", hero.titleZh || HOME_HERO_COPY.titleZh, heroSection);
+      ensureLangElement(heroSection.querySelector(".overlay > div > .zh"), "fi", hero.titleFi || HOME_HERO_COPY.titleFi, "display hero-title-fi");
+      setText(".intro[lang='en']", hero.introEn || HOME_HERO_COPY.introEn, heroSection);
+      setText(".intro.zh", hero.introZh || HOME_HERO_COPY.introZh, heroSection);
+      ensureLangElement(heroSection.querySelector(".intro.zh"), "fi", hero.introFi || HOME_HERO_COPY.introFi, "intro");
+      setText(".cityline", hero.cityline || HOME_HERO_COPY.cityline, heroSection);
       renderHeroSlides(projects);
     }
 
