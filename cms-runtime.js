@@ -2,7 +2,7 @@
   const text = (value) => (value == null ? "" : String(value));
   const displayPracticeTitleEn = (value) => {
     const normalized = text(value).trim().toLowerCase();
-    return normalized === "place & wayfinding" || normalized === "place and wayfinding" ? "EGD & Wayfinding" : text(value);
+    return normalized === "space & wayfinding" || normalized === "space and wayfinding" ? "EGD & Wayfinding" : text(value);
   };
   const PRACTICE_AREAS = [
     {
@@ -16,7 +16,7 @@
       number: "02",
       titleEn: "EGD & Wayfinding",
       titleZh: "环境图形与导示",
-      titleFi: "EGD & Wayfinding",
+      titleFi: "Ympäristögrafiikka ja opastus",
       category: "place-wayfinding",
     },
     {
@@ -37,13 +37,13 @@
   const CORE_SERVICES = [
     { titleEn: "Logo Design", titleZh: "品牌LOGO设计", titleFi: "Logosuunnittelu" },
     { titleEn: "Visual Identity", titleZh: "平面VI设计", titleFi: "Visuaalinen identiteetti" },
-    { titleEn: "Signage & Wayfinding", titleZh: "标识与导示", titleFi: "Opasteet ja wayfinding" },
+    { titleEn: "Signage & Wayfinding", titleZh: "标识与导示", titleFi: "Opasteet ja opastusjärjestelmät" },
     { titleEn: "Exhibition Design", titleZh: "展厅设计", titleFi: "Näyttelysuunnittelu" },
     { titleEn: "Event Design", titleZh: "活动设计", titleFi: "Tapahtumasuunnittelu" },
     { titleEn: "UX Design", titleZh: "UX", titleFi: "UX-suunnittelu" },
-    { titleEn: "Advertising Creative", titleZh: "广告创意", titleFi: "Mainonnan konseptit" },
-    { titleEn: "Environmental Graphic Design", titleZh: "环境图形设计", titleFi: "Ympäristögrafiikka" },
-    { titleEn: "Commercial Space Design", titleZh: "商业空间设计", titleFi: "Liiketilasuunnittelu" },
+    { titleEn: "Advertising Creative", titleZh: "广告创意", titleFi: "Mainonnan konseptisuunnittelu" },
+    { titleEn: "Environmental Graphic Design", titleZh: "环境图形设计", titleFi: "Ympäristögraafinen suunnittelu" },
+    { titleEn: "Commercial Space Design", titleZh: "商业空间设计", titleFi: "Liiketilojen suunnittelu" },
     { titleEn: "Cross-cultural Strategy", titleZh: "跨文化策略", titleFi: "Kulttuurienvälinen strategia" },
   ];
   const normalizePracticeAreas = (areas) => {
@@ -68,6 +68,7 @@
     const element = root.querySelector(selector);
     if (element && value != null) element.textContent = text(value);
   };
+  const keepZhNoBreak = (value) => text(value).replaceAll("空间", "空\u2060间");
   const escapeHtml = (value) =>
     text(value)
       .replaceAll("&", "&amp;")
@@ -294,13 +295,13 @@
     "Return home": "Takaisin etusivulle →",
   };
   const HOME_FI = {
-    heroTitle: "Muotoilutoimisto identiteetille, paikalle ja kulttuuriselle vuoropuhelulle.",
+    heroTitle: "StudioSigno muotoilee identiteettiä ja tilaa.",
     heroIntro:
-      "StudioSigno työskentelee brändi-identiteetin, opastuksen ja kulttuurienvälisen strategian parissa, jotta ideat hahmottuvat eri yhteyksissä.",
-    selectedTitle: "Identiteetin, paikan ja kulttuurienvälisen vuoropuhelun muotoilemaa työtä.",
+      "StudioSigno luo identiteettejä, tilallisia järjestelmiä ja kulttuurisia kokemuksia selkeästi, pidättyvästi ja inhimillisellä herkkyydellä.",
+    selectedTitle: "Valikoituja projekteja kontekstissaan.",
     practiceTitle: "Neljä osa-aluetta. Yksi kulttuurienvälinen näkökulma.",
-    practiceAreas: ["Brändi-identiteetti", "EGD & Wayfinding", "Tilasuunnittelu", "Kulttuurienvälinen strategia"],
-    approachTitle: "Käännämme kontekstia, emme vain sanoja.",
+    practiceAreas: ["Brändi-identiteetti", "Ympäristögrafiikka ja opastus", "Tilasuunnittelu", "Kulttuurienvälinen strategia"],
+    approachTitle: "Emme käännä vain sanoja, vaan myös kontekstia.",
     approachBody:
       "StudioSigno yhdistää tutkimuksen, visuaaliset järjestelmät ja tilallisen kokemuksen, jotta monimutkaiset ympäristöt tuntuvat selkeiltä, muistettavilta ja inhimillisiltä.",
   };
@@ -859,7 +860,7 @@
   };
 
   const HOME_HERO_COPY = {
-    titleEn: "StudioSigno shapes identity and place.",
+    titleEn: "StudioSigno shapes identity and space.",
     titleZh: "塑造品牌与空间。",
     titleFi: HOME_FI.heroTitle,
     introEn:
@@ -869,6 +870,38 @@
     introFi: HOME_FI.heroIntro,
     eyebrow: "China + Finland",
     cityline: "CHINA + FINLAND",
+  };
+
+  const STUDIO_COPY = {
+    eyebrow: "About / 关于",
+    titleEn: "A design practice for identity, space and cultural exchange.",
+    titleZh: "面向品牌、空间与文化交流的设计实践。",
+    titleFi: "Suunnittelutoimisto identiteetin, tilan ja kulttuurisen vuorovaikutuksen parissa.",
+    introEn:
+      "StudioSigno works across brand identity, space and wayfinding, and cross-cultural strategy to make ideas legible across contexts.",
+    introZh:
+      "StudioSigno 横跨品牌识别、空间与导示、跨文化策略，让想法在不同语境中清晰可读。",
+    introFi:
+      "StudioSigno työskentelee brändi-identiteetin, tilan ja opastusjärjestelmien sekä kulttuurienvälisen strategian alueilla, jotta ideat ovat selkeästi luettavia eri konteksteissa.",
+    image: "/images/hero/beijing-helsinki-connected-aerial-ai-1920.jpg",
+    imageAlt: "China and Finland connected through a city landscape",
+    caption: "China + Finland",
+  };
+
+  const CONTACT_COPY = {
+    eyebrow: "Contact / 联系",
+    titleEn: "Bring a space, a brand or an early idea.",
+    titleZh: "从一个空间、一个品牌，或一个尚未成形的想法开始。",
+    titleFi: "Tuo meille tila, brändi tai varhainen idea.",
+    introEn:
+      "Tell us about your project, context and design needs. We will respond with a clear next step.",
+    introZh: "告诉我们你的项目背景、语境与设计需求，我们会以清晰的下一步回应。",
+    introFi:
+      "Kerro projektistasi, kontekstista ja suunnittelutarpeistasi. Vastaamme selkeällä seuraavalla askeleella.",
+    cityline: "China + Finland",
+    email: "",
+    image: "",
+    imageAlt: "",
   };
 
   const projectSummary = (project, lang) => {
@@ -1090,6 +1123,103 @@
     restartAutoplay();
   };
 
+  const renderStudioPage = (studio) => {
+    if (!/\/studio\/?/.test(window.location.pathname)) return;
+    const section = document.querySelector(".intro");
+    if (!section) return;
+    const copy = { ...STUDIO_COPY, ...(studio || {}) };
+    setText(".eyebrow", copy.eyebrow, section);
+    setText("h1", copy.titleEn, section);
+    section.querySelector("h1")?.setAttribute("data-lang", "en");
+    let titleZh = section.querySelector("h1 + .zh");
+    if (!titleZh) {
+      titleZh = document.createElement("p");
+      titleZh.className = "zh";
+      section.querySelector("h1")?.insertAdjacentElement("afterend", titleZh);
+    }
+    titleZh.dataset.lang = "zh";
+    titleZh.textContent = text(copy.titleZh);
+    ensureLangElement(titleZh, "fi", copy.titleFi || copy.titleEn, "display section-title-fi");
+    const paragraphs = section.querySelectorAll(".copy p");
+    if (paragraphs[0]) {
+      paragraphs[0].textContent = text(copy.introEn);
+      paragraphs[0].dataset.lang = "en";
+    }
+    if (paragraphs[1]) {
+      paragraphs[1].textContent = text(copy.introZh);
+      paragraphs[1].dataset.lang = "zh";
+    }
+    ensureLangElement(paragraphs[1] || paragraphs[0], "fi", copy.introFi || copy.introEn, "");
+    const image = document.querySelector(".about-landscape img");
+    if (image && copy.image) {
+      image.src = assetPath(copy.image);
+      image.alt = text(copy.imageAlt);
+    }
+    const caption = document.querySelector(".about-landscape figcaption");
+    if (caption) caption.textContent = text(copy.caption);
+  };
+
+  const renderContactPage = (contact) => {
+    if (!/\/contact\/?/.test(window.location.pathname)) return;
+    const section = document.querySelector(".contact");
+    if (!section) return;
+    const copy = { ...CONTACT_COPY, ...(contact || {}) };
+    setText(".eyebrow", copy.eyebrow, section);
+    setText("h1", copy.titleEn, section);
+    section.querySelector("h1")?.setAttribute("data-lang", "en");
+    let titleZh = section.querySelector("h1 + .zh");
+    if (!titleZh) {
+      titleZh = document.createElement("p");
+      titleZh.className = "zh";
+      section.querySelector("h1")?.insertAdjacentElement("afterend", titleZh);
+    }
+    titleZh.dataset.lang = "zh";
+    titleZh.textContent = text(copy.titleZh);
+    ensureLangElement(titleZh, "fi", copy.titleFi || copy.titleEn, "display section-title-fi");
+    let contactCopy = section.querySelector(".contact-copy");
+    if (!contactCopy) {
+      contactCopy = document.createElement("div");
+      contactCopy.className = "contact-copy";
+      titleZh.insertAdjacentElement("afterend", contactCopy);
+    }
+    contactCopy.innerHTML = `
+      <p data-lang="en">${escapeHtml(copy.introEn)}</p>
+      <p class="zh" data-lang="zh">${escapeHtml(copy.introZh)}</p>
+      <p data-lang="fi">${escapeHtml(copy.introFi || copy.introEn)}</p>
+    `;
+    let cityline = section.querySelector(".contact-cityline");
+    if (!cityline) {
+      cityline = document.createElement("p");
+      cityline.className = "contact-cityline";
+      contactCopy.insertAdjacentElement("afterend", cityline);
+    }
+    cityline.textContent = text(copy.cityline);
+    const email = text(copy.email).trim();
+    const pending = section.querySelector(".pending");
+    let emailLink = section.querySelector(".email");
+    if (email) {
+      if (!emailLink) {
+        emailLink = document.createElement("a");
+        emailLink.className = "email";
+        (pending || cityline).insertAdjacentElement("afterend", emailLink);
+      }
+      emailLink.href = `mailto:${email}`;
+      emailLink.textContent = email;
+      pending?.remove();
+    }
+    let figure = document.querySelector(".contact-landscape");
+    if (copy.image) {
+      if (!figure) {
+        figure = document.createElement("figure");
+        figure.className = "contact-landscape shell";
+        section.insertAdjacentElement("afterend", figure);
+      }
+      figure.innerHTML = `<img src="${escapeHtml(assetPath(copy.image))}" alt="${escapeHtml(copy.imageAlt || "")}" width="1920" height="1081" loading="lazy" />`;
+    } else {
+      figure?.remove();
+    }
+  };
+
   const updateProjectDetail = (project) => {
     ensureProjectDetailScaffold(project);
     const header = document.querySelector(".project-header");
@@ -1224,6 +1354,8 @@
     const selectedWork = home.selectedWork || {};
     const practice = home.practice || {};
     const approach = home.approach || {};
+    const studio = content.studio || {};
+    const contact = content.contact || {};
 
     const heroSection = document.querySelector(".hero");
     if (heroSection) {
@@ -1238,7 +1370,7 @@
       }
       setText(".eyebrow", hero.eyebrow || HOME_HERO_COPY.eyebrow, heroSection);
       setText("#hero-title", hero.titleEn || HOME_HERO_COPY.titleEn, heroSection);
-      setText(".overlay > div > .zh", hero.titleZh || HOME_HERO_COPY.titleZh, heroSection);
+      setText(".overlay > div > .zh", keepZhNoBreak(hero.titleZh || HOME_HERO_COPY.titleZh), heroSection);
       ensureLangElement(heroSection.querySelector(".overlay > div > .zh"), "fi", hero.titleFi || HOME_HERO_COPY.titleFi, "display hero-title-fi");
       setText(".intro[lang='en']", hero.introEn || HOME_HERO_COPY.introEn, heroSection);
       setText(".intro.zh", hero.introZh || HOME_HERO_COPY.introZh, heroSection);
@@ -1267,6 +1399,8 @@
       bindProjectControls(projects, document);
     }
     updateProjectDetail(findProjectFromPath(projects));
+    renderStudioPage(studio);
+    renderContactPage(contact);
 
     const practiceTitle = document.querySelector("#practice-title");
     const practiceSection = practiceTitle?.closest("section");

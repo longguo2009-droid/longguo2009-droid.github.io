@@ -47,11 +47,17 @@ content:
               - name: titleZh
                 label: Chinese title / 中文标题
                 type: string
+              - name: titleFi
+                label: Finnish title / 芬兰语标题
+                type: string
               - name: introEn
                 label: English intro / 英文介绍
                 type: text
               - name: introZh
                 label: Chinese intro / 中文介绍
+                type: text
+              - name: introFi
+                label: Finnish intro / 芬兰语介绍
                 type: text
               - name: cityline
                 label: City line / 城市标识
@@ -69,6 +75,12 @@ content:
               - name: titleZh
                 label: Chinese title / 中文标题
                 type: string
+              - name: titleFi
+                label: Finnish title / 芬兰语标题
+                type: string
+              - name: archiveLabelFi
+                label: Finnish archive link / 芬兰语查看全部链接
+                type: string
               - name: archiveLabel
                 label: Archive link / 查看全部链接
                 type: string
@@ -84,6 +96,9 @@ content:
                 type: string
               - name: titleZh
                 label: Chinese title / 中文标题
+                type: string
+              - name: titleFi
+                label: Finnish title / 芬兰语标题
                 type: string
               - name: areas
                 label: Main disciplines / 四大业务方向
@@ -155,12 +170,98 @@ content:
               - name: titleEn
                 label: English title / 英文标题
                 type: string
+              - name: titleFi
+                label: Finnish title / 芬兰语标题
+                type: string
               - name: bodyEn
                 label: English body / 英文正文
                 type: text
               - name: bodyZh
                 label: Chinese body / 中文正文
                 type: text
+              - name: bodyFi
+                label: Finnish body / 芬兰语正文
+                type: text
+      - name: studio
+        label: About page / 关于页面
+        type: object
+        fields:
+          - name: eyebrow
+            label: Eyebrow / 小标题
+            type: string
+          - name: titleEn
+            label: English title / 英文标题
+            type: string
+          - name: titleZh
+            label: Chinese title / 中文标题
+            type: string
+          - name: titleFi
+            label: Finnish title / 芬兰语标题
+            type: string
+          - name: introEn
+            label: English intro / 英文介绍
+            type: text
+          - name: introZh
+            label: Chinese intro / 中文介绍
+            type: text
+          - name: introFi
+            label: Finnish intro / 芬兰语介绍
+            type: text
+          - name: image
+            label: Main image / 主图
+            type: image
+            required: false
+            options:
+              media: hero_images
+              path: images/hero
+          - name: imageAlt
+            label: Image description / 图片描述
+            type: string
+          - name: caption
+            label: Image caption / 图片说明
+            type: string
+      - name: contact
+        label: Contact page / 联系页面
+        type: object
+        fields:
+          - name: eyebrow
+            label: Eyebrow / 小标题
+            type: string
+          - name: titleEn
+            label: English title / 英文标题
+            type: string
+          - name: titleZh
+            label: Chinese title / 中文标题
+            type: string
+          - name: titleFi
+            label: Finnish title / 芬兰语标题
+            type: string
+          - name: introEn
+            label: English intro / 英文说明
+            type: text
+          - name: introZh
+            label: Chinese intro / 中文说明
+            type: text
+          - name: introFi
+            label: Finnish intro / 芬兰语说明
+            type: text
+          - name: cityline
+            label: City line / 地区标识
+            type: string
+          - name: email
+            label: Email / 邮箱
+            type: string
+            required: false
+          - name: image
+            label: Optional image / 可选图片
+            type: image
+            required: false
+            options:
+              media: hero_images
+              path: images/hero
+          - name: imageAlt
+            label: Image description / 图片描述
+            type: string
       - name: projects
         label: Projects / 项目
         type: object
@@ -178,24 +279,40 @@ content:
           - name: titleZh
             label: Chinese title / 中文标题
             type: string
+          - name: titleFi
+            label: Finnish title / 芬兰语标题
+            type: string
+            required: false
           - name: summaryEn
             label: English summary / 英文介绍
             type: text
           - name: summaryZh
             label: Chinese summary / 中文介绍
             type: text
+          - name: summaryFi
+            label: Finnish summary / 芬兰语介绍
+            type: text
+            required: false
           - name: locationEn
             label: English location / 英文地点
             type: string
           - name: locationZh
             label: Chinese location / 中文地点
             type: string
+          - name: locationFi
+            label: Finnish location / 芬兰语地点
+            type: string
+            required: false
           - name: scopeEn
             label: English scope / 英文服务
             type: string
           - name: scopeZh
             label: Chinese scope / 中文服务
             type: string
+          - name: scopeFi
+            label: Finnish scope / 芬兰语服务
+            type: string
+            required: false
           - name: year
             label: Year / 年份
             type: number
