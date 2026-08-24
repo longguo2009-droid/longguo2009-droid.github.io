@@ -157,7 +157,7 @@
       "titleZh": "只有河南·戏剧幻城",
       "titleFi": "Only Henan · draaman fantasiakaupunki",
       "summaryEn": "A large-scale wayfinding and environmental graphics system for an immersive cultural destination where performance, hospitality and visitor movement meet.",
-      "summaryZh": "为沉浸式文化景区建立大尺度导示与环境图形系统，在演出、商业、餐饮、酒店与游客动线之间形成清晰秩序。",
+      "summaryZh": "为沉浸式文化景区建立大尺度导示与环境图形系统，在演出、商业、餐饮、酒店与游客动线之间形成清晰秩序。\n王潮歌导演作品",
       "summaryFi": "Laaja opastus- ja ympäristögrafiikkajärjestelmä immersiiviseen kulttuurikohteeseen, jossa esitykset, vieraanvaraisuus ja kävijävirrat kohtaavat.",
       "locationEn": "China",
       "locationZh": "中国",
@@ -168,11 +168,28 @@
       "year": 2021,
       "categories": [
         "place-wayfinding",
-        "cross-cultural"
+        "brand-identity"
       ],
-      "leadImage": "/images/projects/only-henan-drama-fantasy-city-cover.jpg",
+      "leadImage": "/images/projects/hansign17062026012-1.jpeg",
       "images": [
-        "/images/projects/only-henan-drama-fantasy-city-cover.jpg"
+        "/images/projects/17062026.jpeg",
+        "/images/projects/hansign17062026001.jpeg",
+        "/images/projects/hansign17062026002.jpeg",
+        "/images/projects/img2955.jpg",
+        "/images/projects/img2956.jpg",
+        "/images/projects/img2953.jpg",
+        "/images/projects/hansign17062026003.jpeg",
+        "/images/projects/hansign17062026005.jpeg",
+        "/images/projects/hansign17062026007.jpeg",
+        "/images/projects/hansign17062026009.jpeg",
+        "/images/projects/hansign17062026010.jpeg",
+        "/images/projects/hansign17062026011.jpeg",
+        "/images/projects/hansign17062026012-1.jpeg",
+        "/images/projects/img2954.jpg",
+        "/images/projects/img2961.jpg",
+        "/images/projects/img2962.jpg",
+        "/images/projects/img2959.jpg",
+        "/images/projects/img2960.jpg"
       ],
       "featured": true,
       "order": 1
@@ -196,7 +213,10 @@
       ],
       "leadImage": "/images/projects/perfect-world-headquarters-cover.jpg",
       "images": [
-        "/images/projects/perfect-world-headquarters-cover.jpg"
+        "/images/projects/hansign17062026022.jpeg",
+        "/images/projects/hansign17062026023-1.jpeg",
+        "/images/projects/hansign17062026024.jpeg",
+        "/images/projects/hansign17062026025.jpeg"
       ],
       "featured": true,
       "order": 2
@@ -222,7 +242,11 @@
       ],
       "leadImage": "/images/projects/qinhuangdao-women-childrens-hospital-cover.jpg",
       "images": [
-        "/images/projects/qinhuangdao-women-childrens-hospital-cover.jpg"
+        "/images/projects/hansign17062026066.jpeg",
+        "/images/projects/hansign17062026065.jpeg",
+        "/images/projects/hansign17062026063.jpeg",
+        "/images/projects/hansign17062026062.jpeg",
+        "/images/projects/hansign17062026067.jpeg"
       ],
       "featured": true,
       "order": 3
@@ -243,13 +267,16 @@
       "scopeFi": "Näyttely-ympäristö, pehmeä sisustus ja opastus",
       "year": 2018,
       "categories": [
+        "spatial-design",
         "place-wayfinding",
-        "brand-identity",
-        "spatial-design"
+        "brand-identity"
       ],
       "leadImage": "/images/projects/china-life-airport-experience-center-cover.jpg",
       "images": [
-        "/images/projects/china-life-airport-experience-center-cover.jpg"
+        "/images/projects/hansign17062026026.jpeg",
+        "/images/projects/hansign17062026027.jpeg",
+        "/images/projects/hansign17062026029.jpeg",
+        "/images/projects/hansign17062026030.jpeg"
       ],
       "featured": true,
       "order": 4
@@ -320,11 +347,19 @@
       "scopeFi": "Opastusstrategia, ympäristögrafiikka ja kirjaintyyppisuunnittelu",
       "year": 2026,
       "categories": [
-        "place-wayfinding"
+        "place-wayfinding",
+        "spatial-design"
       ],
-      "leadImage": "/images/projects/dream-red-mansions.jpg",
+      "leadImage": "/images/projects/17062026.jpeg",
       "images": [
-        "/images/projects/dream-red-mansions.jpg"
+        "/images/projects/3001.png",
+        "/images/projects/3002.png",
+        "/images/projects/3004.png",
+        "/images/projects/3007.png",
+        "/images/projects/17062026.jpeg",
+        "/images/projects/3005.png",
+        "/images/projects/3006.png",
+        "/images/projects/3009.png"
       ],
       "featured": true,
       "order": 0
@@ -373,9 +408,9 @@
         "spatial-design",
         "cross-cultural"
       ],
-      "leadImage": "/images/projects/tsinghua-library-digital-experience-center-cover.jpg",
+      "leadImage": "/images/projects/hansign17062026077.jpeg",
       "images": [
-        "/images/projects/tsinghua-library-digital-experience-center-cover.jpg"
+        "/images/projects/hansign17062026077.jpeg"
       ],
       "featured": false,
       "order": 8
@@ -398,10 +433,6 @@
         "spatial-design",
         "cross-cultural"
       ],
-      "leadImage": "/images/projects/beijing-design-week-installation-cover.jpg",
-      "images": [
-        "/images/projects/beijing-design-week-installation-cover.jpg"
-      ],
       "featured": false,
       "order": 9
     },
@@ -423,9 +454,9 @@
         "brand-identity",
         "place-wayfinding"
       ],
-      "leadImage": "/images/projects/tianjin-hospital-cover.jpg",
+      "leadImage": "/images/projects/china-japan-friendship-hospital-cover.jpg",
       "images": [
-        "/images/projects/tianjin-hospital-cover.jpg"
+        "/images/projects/china-japan-friendship-hospital-cover.jpg"
       ],
       "featured": false,
       "order": 10
@@ -448,7 +479,7 @@
         "place-wayfinding",
         "spatial-design"
       ],
-      "leadImage": "/images/projects/wuxi-hemei-maternity-hospital-cover.jpg",
+      "leadImage": "/images/projects/hansign17062026070.jpeg",
       "images": [
         "/images/projects/wuxi-hemei-maternity-hospital-cover.jpg"
       ],
@@ -549,9 +580,9 @@
         "brand-identity",
         "place-wayfinding"
       ],
-      "leadImage": "/images/projects/china-world-trade-center-phase-3-cover.jpg",
+      "leadImage": "/images/projects/china-life-jiayuan-cover.jpg",
       "images": [
-        "/images/projects/china-world-trade-center-phase-3-cover.jpg"
+        "/images/projects/china-life-jiayuan-cover.jpg"
       ],
       "featured": false,
       "order": 15
