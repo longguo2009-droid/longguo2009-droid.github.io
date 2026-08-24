@@ -1,0 +1,71 @@
+---
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import { site } from "../config/site";
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+}
+
+const {
+  title = site.title,
+  description = site.description,
+  image = "/images/brand/studio-signo-logo.png",
+} = Astro.props;
+const canonical = new URL(Astro.url.pathname, site.url);
+const socialImage = new URL(image, site.url);
+const organization = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: site.name,
+  alternateName: site.alternateNames,
+  url: site.url,
+  sameAs: [],
+  slogan: "China + Finland",
+  areaServed: ["China", "Finland", "International"],
+  knowsAbout: [
+    "Brand identity",
+    "Space and wayfinding",
+    "Cross-cultural strategy",
+    "StudioSigno",
+  ],
+};
+const website = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: site.name,
+  alternateName: site.alternateNames,
+  url: site.url,
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta
+      name="keywords"
+      content="StudioSigno, cross-cultural design, brand identity, space design, wayfinding, spatial systems, cultural experience"
+    />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={socialImage} />
+    <meta property="og:url" content={canonical} />
+    <script type="application/ld+json" set:html={JSON.stringify([organization, website])} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <SiteHeader />
+    <main id="main"><slot /></main>
+    <SiteFooter />
+    <script src="/cms-runtime.js?v=20260824-home-copy" defer></script>
+  </body>
+</html>
