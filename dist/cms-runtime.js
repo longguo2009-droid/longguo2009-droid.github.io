@@ -103,6 +103,8 @@
       :root{--font-en:"Silka Local","Silka","DIN Pro","DINPro","FF DIN","DIN 2014","Clan Pro","Clan","Zurich","Helvetica Neue",Arial,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI";--font-zh:"Source Han Sans SC","Source Han Sans CN","Noto Sans CJK SC","Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Microsoft JhengHei","Heiti SC","Adobe Heiti Std","Adobe 黑体 Std";--sans:var(--font-en),var(--font-zh),sans-serif}
       body{font-family:var(--sans);font-weight:300}
       .display{font-family:var(--font-en),var(--font-zh)!important;font-weight:600!important;letter-spacing:-0.06em!important}
+      #selected-work{max-width:46ch!important;font-size:clamp(1.55rem,2.35vw,2.7rem)!important;line-height:1.18!important;letter-spacing:-.035em!important;font-weight:500!important}
+      #selected-work + .zh,#selected-work + .zh + .section-title-fi{max-width:42ch!important;font-size:clamp(1.35rem,2.05vw,2.35rem)!important;line-height:1.45!important;font-weight:400!important;letter-spacing:.02em!important}
       .eyebrow{font-weight:600}
       .zh{font-family:var(--font-zh);font-weight:400}
       nav a,.project-card h3,.hero-project span:first-child{font-family:var(--font-en),var(--font-zh);font-weight:500}
@@ -133,8 +135,8 @@
       html[data-lang="zh"] .display[data-lang="en"]{display:block!important;color:var(--blue)!important}
       html[data-lang="zh"] .hero-title-zh,html[data-lang="fi"] .hero-title-fi{max-width:11ch;margin:.6rem 0 2rem;font-size:clamp(3.2rem,8.5vw,8.5rem);line-height:.92}
       html[data-lang="zh"] .section-title-zh,html[data-lang="zh"] .project-title-zh,html[data-lang="fi"] .section-title-fi,html[data-lang="fi"] .project-title-fi{max-width:14ch;margin:.8rem 0;font-size:clamp(2.4rem,5.4vw,5.8rem);line-height:1.02}
-      #selected-work{max-width:26ch!important;font-size:clamp(2rem,4vw,4.2rem)!important;line-height:1.02!important;letter-spacing:-.045em!important}
-      #selected-work + .zh,#selected-work + .zh + .section-title-fi{max-width:28ch!important;font-size:clamp(1.85rem,3.6vw,3.8rem)!important;line-height:1.15!important}
+      #selected-work{max-width:46ch!important;font-size:clamp(1.55rem,2.35vw,2.7rem)!important;line-height:1.18!important;letter-spacing:-.035em!important;font-weight:500!important}
+      #selected-work + .zh,#selected-work + .zh + .section-title-fi{max-width:42ch!important;font-size:clamp(1.35rem,2.05vw,2.35rem)!important;line-height:1.45!important;font-weight:400!important;letter-spacing:.02em!important}
       html[data-lang="en"] .narrative,html[data-lang="zh"] .narrative,html[data-lang="fi"] .narrative{grid-template-columns:minmax(0,68rem);justify-content:start}
       html[data-lang="zh"] .narrative{font-family:var(--font-zh);font-size:clamp(1rem,1.18vw,1.18rem)!important;line-height:2.05!important;letter-spacing:.01em}
       html[data-lang="zh"] .narrative p{max-width:52rem;color:var(--ink);font-size:clamp(1rem,1.18vw,1.18rem)!important;line-height:2.05!important;font-weight:400}
