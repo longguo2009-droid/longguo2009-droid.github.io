@@ -280,6 +280,22 @@ content:
             label: Email / 邮箱
             type: string
             required: false
+          - name: addressEn
+            label: English address / 英文地址
+            type: text
+            required: false
+          - name: addressZh
+            label: Chinese address / 中文地址
+            type: text
+            required: false
+          - name: addressFi
+            label: Finnish address / 芬兰语地址
+            type: text
+            required: false
+          - name: phone
+            label: Phone / 电话
+            type: string
+            required: false
           - name: image
             label: Optional image / 可选图片
             type: image
