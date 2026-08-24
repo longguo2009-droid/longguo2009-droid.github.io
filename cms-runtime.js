@@ -179,7 +179,8 @@
       .about-overlay h2{max-width:12ch!important;margin:0!important;color:#f3eadc!important;font-size:clamp(2.6rem,6vw,7.2rem)!important;font-weight:600!important;line-height:.9!important;letter-spacing:-.06em!important}
       .about-overlay h2[data-lang="zh"]{max-width:13ch!important;font-family:var(--font-zh)!important;font-weight:400!important;line-height:1.05!important;letter-spacing:.04em!important}
       .about-overlay p:not(.about-overlay-eyebrow){max-width:38rem!important;margin:clamp(1rem,2vw,1.6rem) 0 0!important;color:#e4f1fb!important;font-size:clamp(1rem,1.55vw,1.65rem)!important;line-height:1.5!important}
-      .featured-work-slider{margin-top:clamp(2rem,5vw,4.5rem);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+      .project-grid.is-featured-slider,.project-grid:has(.featured-work-slider){display:block!important;grid-template-columns:1fr!important;width:100%!important}
+      .featured-work-slider{grid-column:1 / -1;width:100%;margin-top:clamp(2rem,5vw,4.5rem);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
       .featured-work-stage{position:relative;min-height:clamp(34rem,62vw,47rem);overflow:hidden;isolation:isolate}
       .featured-work-slide{position:absolute;inset:0;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(24rem,.85fr);gap:clamp(1.2rem,3vw,3rem);align-items:stretch;padding-block:clamp(1rem,2vw,1.5rem);opacity:0;visibility:hidden;pointer-events:none;z-index:0;transform:none;transition:none}
       .featured-work-slide:not(.active),.featured-work-slide[aria-hidden="true"]{display:none!important;opacity:0!important;visibility:hidden!important;pointer-events:none!important;z-index:0!important;transform:none!important;transition:none!important}
@@ -1073,6 +1074,7 @@
       .sort((a, b) => Number(a.order || 0) - Number(b.order || 0));
     if (!grid || !selectedProjects.length) return;
     const slideCount = selectedProjects.length;
+    grid.classList.add("is-featured-slider");
     grid.innerHTML = `
       <div class="featured-work-slider" data-featured-work-slider aria-label="Selected projects">
         <div class="featured-work-stage">
