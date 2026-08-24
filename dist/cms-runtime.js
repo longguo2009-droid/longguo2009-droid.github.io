@@ -133,6 +133,8 @@
       html[data-lang="zh"] .display[data-lang="en"]{display:block!important;color:var(--blue)!important}
       html[data-lang="zh"] .hero-title-zh,html[data-lang="fi"] .hero-title-fi{max-width:11ch;margin:.6rem 0 2rem;font-size:clamp(3.2rem,8.5vw,8.5rem);line-height:.92}
       html[data-lang="zh"] .section-title-zh,html[data-lang="zh"] .project-title-zh,html[data-lang="fi"] .section-title-fi,html[data-lang="fi"] .project-title-fi{max-width:14ch;margin:.8rem 0;font-size:clamp(2.4rem,5.4vw,5.8rem);line-height:1.02}
+      #selected-work{max-width:26ch!important;font-size:clamp(2rem,4vw,4.2rem)!important;line-height:1.02!important;letter-spacing:-.045em!important}
+      #selected-work + .zh,#selected-work + .zh + .section-title-fi{max-width:28ch!important;font-size:clamp(1.85rem,3.6vw,3.8rem)!important;line-height:1.15!important}
       html[data-lang="en"] .narrative,html[data-lang="zh"] .narrative,html[data-lang="fi"] .narrative{grid-template-columns:minmax(0,68rem);justify-content:start}
       html[data-lang="zh"] .narrative{font-family:var(--font-zh);font-size:clamp(1rem,1.18vw,1.18rem)!important;line-height:2.05!important;letter-spacing:.01em}
       html[data-lang="zh"] .narrative p{max-width:52rem;color:var(--ink);font-size:clamp(1rem,1.18vw,1.18rem)!important;line-height:2.05!important;font-weight:400}
@@ -227,6 +229,26 @@
       @media (max-width:560px){.hero.is-static .hero-slide img{object-position:center center!important}.hero.is-static .intro{font-size:.94rem!important}.featured-work-stage{min-height:clamp(32rem,138vw,43rem)!important}.featured-work-media{aspect-ratio:3/4!important}.featured-work-title{font-size:clamp(1.65rem,9.2vw,2.65rem)!important}.floating-contact-toggle{min-width:4.35rem!important;min-height:3.05rem!important;padding:.82rem .9rem!important;font-size:.82rem!important}}
       @media (max-width:900px){.featured-work-media{display:flex!important;align-items:center!important;justify-content:center!important;aspect-ratio:auto!important;min-height:0!important;max-height:none!important;background:color-mix(in srgb,var(--blue) 5%,var(--paper-light))!important}.featured-work-media img{position:relative!important;width:100%!important;height:auto!important;max-height:min(74svh,42rem)!important;object-fit:contain!important;object-position:center!important;transform:none!important}.featured-work-slide.active .featured-work-media img{transform:none!important}.lead img,.project-gallery img{width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;object-position:center!important;aspect-ratio:auto!important;transform:none!important}.project-gallery figure{overflow:visible!important;background:transparent!important}.project-gallery{gap:clamp(1.4rem,5vw,2.4rem)!important}.project-card img{height:auto!important;aspect-ratio:auto!important;object-fit:contain!important}}
       @media (max-width:560px){.featured-work-stage{min-height:auto!important}.featured-work-slide{position:relative!important;display:none!important;inset:auto!important}.featured-work-slide.active{display:grid!important}.featured-work-media img{max-height:none!important}.lead img,.project-gallery img,.project-card img{max-width:100%!important;height:auto!important}}
+      .contact-details{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:1rem!important;margin-top:clamp(2.5rem,5vw,5rem)!important;border-top:1px solid var(--line)!important;border-bottom:1px solid var(--line)!important}
+      .contact-details div{padding-block:1.1rem!important}
+      .contact-details span{display:inline-block!important;margin-bottom:.65rem!important;color:var(--muted)!important;font-size:.72rem!important;font-weight:600!important;letter-spacing:.14em!important;text-transform:uppercase!important}
+      .contact-details p{margin:0!important;color:var(--blue)!important;font-size:clamp(1rem,1.55vw,1.45rem)!important;line-height:1.35!important}
+      .contact-details a{color:inherit!important;text-decoration:none!important;border-bottom:1px solid currentColor!important}
+      .contact-form{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:1rem!important;margin-top:clamp(2.5rem,5vw,5rem)!important;padding:clamp(1rem,2.5vw,2rem)!important;border:1px solid var(--line)!important;background:color-mix(in srgb,var(--paper-light) 86%,#fff)!important}
+      .contact-form-head,.contact-form label:has(textarea),.contact-form-actions,.contact-form-status{grid-column:1 / -1!important}
+      .contact-form-head{max-width:46rem!important}
+      .contact-form-head .eyebrow{margin-bottom:.7rem!important}
+      .contact-form-head p:not(.eyebrow){margin:0!important;color:var(--muted)!important;line-height:1.6!important}
+      .contact-form label{display:grid!important;gap:.45rem!important;color:var(--muted)!important;font-size:.72rem!important;font-weight:600!important;letter-spacing:.1em!important;text-transform:uppercase!important}
+      .contact-form input,.contact-form textarea{width:100%!important;border:1px solid color-mix(in srgb,var(--ink) 18%,transparent)!important;border-radius:0!important;background:#fff!important;color:var(--ink)!important;padding:.9rem .95rem!important;font:400 1rem/1.45 var(--sans)!important;text-transform:none!important;letter-spacing:0!important}
+      .contact-form textarea{min-height:11rem!important;resize:vertical!important}
+      .contact-form-actions{display:flex!important;flex-wrap:wrap!important;gap:.75rem!important}
+      .contact-form button{border:1px solid var(--blue)!important;border-radius:999px!important;padding:.8rem 1rem!important;font:600 .78rem/1 var(--sans)!important;letter-spacing:.08em!important;text-transform:uppercase!important;cursor:pointer!important}
+      .contact-form button[type="submit"]{background:var(--blue)!important;color:#fff!important}
+      .contact-form button[type="button"]{background:transparent!important;color:var(--blue)!important}
+      .contact-form-status{min-height:1.2rem!important;margin:0!important;color:var(--muted)!important;font-size:.85rem!important}
+      @media (max-width:900px){.contact-details,.contact-form{grid-template-columns:1fr 1fr!important}}
+      @media (max-width:620px){.contact-details,.contact-form{grid-template-columns:1fr!important}}
       .floating-contact{position:fixed;right:clamp(.75rem,2vw,1.55rem);top:50%;bottom:auto;transform:translateY(-50%);z-index:90;font-family:var(--sans);color:var(--ink)}
       .floating-contact *{box-sizing:border-box}
       .floating-contact-toggle{min-width:5.4rem;min-height:3.85rem;border:1px solid color-mix(in srgb,var(--blue) 78%,#fff);border-radius:999px;background:color-mix(in srgb,var(--blue) 86%,transparent);color:#fff;box-shadow:0 1rem 2.5rem color-mix(in srgb,var(--blue) 22%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:1.05rem 1.22rem;font:600 1rem/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
@@ -287,7 +309,7 @@
     "/studio/": { en: "About", zh: "关于", fi: "Tietoa" },
     "/contact/": { en: "Contact", zh: "联系", fi: "Yhteys" },
   };
-  const CONTACT_RECIPIENT = "longguo2009@gmail.com";
+  let contactRecipient = "studiosigno@studiosigno.com";
   const LABEL_FI = {
     Project: "Projekti",
     Projects: "Projektit",
@@ -304,15 +326,16 @@
     "Return home": "Takaisin etusivulle →",
   };
   const HOME_FI = {
-    heroTitle: "Suunnittelutoimisto identiteetin, tilan ja kulttuurisen vuorovaikutuksen parissa.",
+    heroTitle: "Kulttuurienvälinen näkökulma identiteetteihin, ympäristöihin ja julkisiin kokemuksiin.",
     heroIntro:
+      "Muutamme tutkimuksen, visuaaliset järjestelmät ja tilallisen kokemuksen selkeäksi ja muistettavaksi suunnitteluksi.",
+    selectedTitle:
       "StudioSigno työskentelee brändi-identiteetin, tilan ja opastusjärjestelmien sekä kulttuurienvälisen strategian alueilla, jotta ideat ovat selkeästi luettavia eri konteksteissa.",
-    selectedTitle: "Valikoituja projekteja kontekstissaan.",
-    practiceTitle: "Neljä osa-aluetta. Yksi kulttuurienvälinen näkökulma.",
+    practiceTitle: "StudioSigno muotoilee identiteettiä ja tilaa.",
     practiceAreas: ["Brändi-identiteetti", "Ympäristögrafiikka ja opastus", "Tilasuunnittelu", "Kulttuurienvälinen strategia"],
     approachTitle: "Emme käännä vain sanoja, vaan myös kontekstia.",
     approachBody:
-      "StudioSigno yhdistää tutkimuksen, visuaaliset järjestelmät ja tilallisen kokemuksen, jotta monimutkaiset ympäristöt tuntuvat selkeiltä, muistettavilta ja inhimillisiltä.",
+      "StudioSigno yhdistää tutkimuksen, visuaaliset järjestelmät ja tilallisen kokemuksen, jotta monimutkaiset ympäristöt tuntuvat selkeiltä, muistettavilta ja inhimillisiltä. Neljä osa-aluetta. Yksi kulttuurienvälinen näkökulma.",
   };
   const getLanguage = () => {
     const param = new URLSearchParams(window.location.search).get("lang");
@@ -526,6 +549,44 @@
       `Page: ${window.location.href}`,
     ].join("\n");
   };
+  const submitContactForm = (form, status) => {
+    if (!form.reportValidity()) return;
+    const message = buildContactMessage(form);
+    const subject = encodeURIComponent("StudioSigno design inquiry");
+    const body = encodeURIComponent(message);
+    window.location.href = `mailto:${contactRecipient}?subject=${subject}&body=${body}`;
+    if (status) {
+      status.textContent = langValue("Opening your email app…", "正在打开邮件应用…", "Avataan sähköpostia…");
+    }
+  };
+  const copyContactMessage = async (form, status) => {
+    const message = buildContactMessage(form);
+    try {
+      await navigator.clipboard.writeText(message);
+      if (status) {
+        status.textContent = langValue("Copied. You can paste it into email or WeChat.", "已复制，可粘贴到邮件或微信。", "Kopioitu. Voit liittää sen sähköpostiin tai WeChatiin.");
+      }
+    } catch {
+      if (status) {
+        status.textContent = langValue("Please select and copy the text manually.", "请手动选择并复制内容。", "Valitse ja kopioi teksti käsin.");
+      }
+    }
+  };
+  const bindContactForm = (form) => {
+    if (!form || form.dataset.contactFormBound === "true") return;
+    form.dataset.contactFormBound = "true";
+    const status =
+      form.querySelector(".contact-form-status") ||
+      form.querySelector(".floating-contact-status");
+    const copy =
+      form.querySelector("[data-copy-contact]") ||
+      form.querySelector(".floating-contact-copy");
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      submitContactForm(form, status);
+    });
+    copy?.addEventListener("click", () => copyContactMessage(form, status));
+  };
   const injectContactWidget = () => {
     if (document.querySelector("[data-floating-contact]")) return;
     const widget = document.createElement("aside");
@@ -597,8 +658,6 @@
     const toggle = widget.querySelector(".floating-contact-toggle");
     const close = widget.querySelector(".floating-contact-close");
     const form = widget.querySelector("form");
-    const copy = widget.querySelector(".floating-contact-copy");
-    const status = widget.querySelector(".floating-contact-status");
     const setOpen = (open) => {
       widget.classList.toggle("is-open", open);
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
@@ -609,29 +668,13 @@
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape") setOpen(false);
     });
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-      if (!form.reportValidity()) return;
-      const message = buildContactMessage(form);
-      const subject = encodeURIComponent("StudioSigno design inquiry");
-      const body = encodeURIComponent(message);
-      window.location.href = `mailto:${CONTACT_RECIPIENT}?subject=${subject}&body=${body}`;
-      status.textContent = langValue("Opening your email app…", "正在打开邮件应用…", "Avataan sähköpostia…");
-    });
-    copy.addEventListener("click", async () => {
-      const message = buildContactMessage(form);
-      try {
-        await navigator.clipboard.writeText(message);
-        status.textContent = langValue("Copied. You can paste it into email or WeChat.", "已复制，可粘贴到邮件或微信。", "Kopioitu. Voit liittää sen sähköpostiin tai WeChatiin.");
-      } catch {
-        status.textContent = langValue("Please select and copy the text manually.", "请手动选择并复制内容。", "Valitse ja kopioi teksti käsin.");
-      }
-    });
+    bindContactForm(form);
     document.body.append(widget);
   };
   const refreshLanguage = () => {
     injectLanguageSwitch();
     injectContactWidget();
+    document.querySelectorAll("[data-contact-form], .contact-form").forEach(bindContactForm);
     markLanguagePairs();
     updateBilingualLabels();
     setLanguage(currentLanguage, false);
@@ -876,13 +919,13 @@
   };
 
   const HOME_HERO_COPY = {
-    titleEn: "A design practice for identity, place and cultural exchange.",
-    titleZh: "面向品牌、空间与文化交流的设计实践。",
+    titleEn: "A cross-cultural design perspective for identities, environments and public experience.",
+    titleZh: "以跨文化视角，连接品牌、环境与公共体验。",
     titleFi: HOME_FI.heroTitle,
     introEn:
-      "StudioSigno works across brand identity, place and wayfinding, and cross-cultural strategy to make ideas legible across contexts.",
+      "We translate research, visual systems and spatial experience into clear, memorable design.",
     introZh:
-      "StudioSigno 横跨品牌识别、空间与导示、跨文化策略，让想法在不同语境中清晰可读。",
+      "研究、视觉系统与空间体验，转化为清晰而可被记住的设计。",
     introFi: HOME_FI.heroIntro,
     eyebrow: "China + Finland",
     cityline: "CHINA + FINLAND",
@@ -925,7 +968,11 @@
     introFi:
       "Kerro projektistasi, kontekstista ja suunnittelutarpeistasi. Vastaamme selkeällä seuraavalla askeleella.",
     cityline: "China + Finland",
-    email: "",
+    email: "studiosigno@studiosigno.com",
+    addressEn: "",
+    addressZh: "",
+    addressFi: "",
+    phone: "",
     image: "",
     imageAlt: "",
   };
@@ -1238,26 +1285,127 @@
       <p class="zh" data-lang="zh">${escapeHtml(copy.introZh)}</p>
       <p data-lang="fi">${escapeHtml(copy.introFi || copy.introEn)}</p>
     `;
-    let cityline = section.querySelector(".contact-cityline");
-    if (!cityline) {
-      cityline = document.createElement("p");
-      cityline.className = "contact-cityline";
-      contactCopy.insertAdjacentElement("afterend", cityline);
-    }
-    cityline.textContent = text(copy.cityline);
     const email = text(copy.email).trim();
-    const pending = section.querySelector(".pending");
-    let emailLink = section.querySelector(".email");
-    if (email) {
-      if (!emailLink) {
-        emailLink = document.createElement("a");
-        emailLink.className = "email";
-        (pending || cityline).insertAdjacentElement("afterend", emailLink);
-      }
-      emailLink.href = `mailto:${email}`;
-      emailLink.textContent = email;
-      pending?.remove();
+    if (email) contactRecipient = email;
+    let details = section.querySelector(".contact-details");
+    if (!details) {
+      details = document.createElement("div");
+      details.className = "contact-details";
+      details.setAttribute("aria-label", "Contact details");
+      contactCopy.insertAdjacentElement("afterend", details);
     }
+    const cityline = text(copy.cityline).trim();
+    const addressEn = text(copy.addressEn).trim();
+    const addressZh = text(copy.addressZh).trim();
+    const addressFi = text(copy.addressFi).trim();
+    const phone = text(copy.phone).trim();
+    details.innerHTML = `
+      ${cityline ? `
+        <div>
+          <span data-lang="en">Location</span>
+          <span class="zh" data-lang="zh">地区</span>
+          <span data-lang="fi" lang="fi">Sijainti</span>
+          <p>${escapeHtml(cityline)}</p>
+        </div>
+      ` : ""}
+      ${email ? `
+        <div>
+          <span data-lang="en">Email</span>
+          <span class="zh" data-lang="zh">邮箱</span>
+          <span data-lang="fi" lang="fi">Sähköposti</span>
+          <p><a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></p>
+        </div>
+      ` : `
+        <div class="pending">
+          <span data-lang="en">Email</span>
+          <span class="zh" data-lang="zh">邮箱</span>
+          <span data-lang="fi" lang="fi">Sähköposti</span>
+          <p>
+            <span data-lang="en">Direct contact details will appear after publication approval.</span>
+            <span class="zh" data-lang="zh">联系方式将在发布确认后显示。</span>
+            <span data-lang="fi" lang="fi">Yhteystiedot tulevat näkyviin julkaisun hyväksynnän jälkeen.</span>
+          </p>
+        </div>
+      `}
+      ${(addressEn || addressZh || addressFi) ? `
+        <div>
+          <span data-lang="en">Address</span>
+          <span class="zh" data-lang="zh">地址</span>
+          <span data-lang="fi" lang="fi">Osoite</span>
+          <p data-lang="en">${escapeHtml(addressEn || addressZh || addressFi)}</p>
+          <p class="zh" data-lang="zh">${escapeHtml(addressZh || addressEn || addressFi)}</p>
+          <p data-lang="fi" lang="fi">${escapeHtml(addressFi || addressEn || addressZh)}</p>
+        </div>
+      ` : ""}
+      ${phone ? `
+        <div>
+          <span data-lang="en">Phone</span>
+          <span class="zh" data-lang="zh">电话</span>
+          <span data-lang="fi" lang="fi">Puhelin</span>
+          <p><a href="tel:${escapeHtml(phone.replace(/[^+0-9]/g, ""))}">${escapeHtml(phone)}</a></p>
+        </div>
+      ` : ""}
+    `;
+    let form = section.querySelector(".contact-form");
+    if (!form) {
+      form = document.createElement("form");
+      form.className = "contact-form";
+      form.dataset.contactForm = "";
+      details.insertAdjacentElement("afterend", form);
+    }
+    form.innerHTML = `
+      <div class="contact-form-head">
+        <p class="eyebrow">
+          <span data-lang="en">Project inquiry</span>
+          <span class="zh" data-lang="zh">项目咨询</span>
+          <span data-lang="fi" lang="fi">Projektikysely</span>
+        </p>
+        <p>
+          <span data-lang="en">The form opens a ready-to-send email, so no message is stored on the website.</span>
+          <span class="zh" data-lang="zh">填写后会自动生成一封待发送邮件，网站不会保存你的信息。</span>
+          <span data-lang="fi" lang="fi">Lomake avaa valmiin sähköpostiluonnoksen; tietoja ei tallenneta sivustolle.</span>
+        </p>
+      </div>
+      <label>
+        <span data-lang="en">Name</span>
+        <span class="zh" data-lang="zh">姓名</span>
+        <span data-lang="fi" lang="fi">Nimi</span>
+        <input name="name" autocomplete="name" required>
+      </label>
+      <label>
+        <span data-lang="en">Email</span>
+        <span class="zh" data-lang="zh">邮箱</span>
+        <span data-lang="fi" lang="fi">Sähköposti</span>
+        <input name="email" type="email" autocomplete="email" required>
+      </label>
+      <label>
+        <span data-lang="en">Project / Organization</span>
+        <span class="zh" data-lang="zh">项目 / 公司</span>
+        <span data-lang="fi" lang="fi">Projekti / Organisaatio</span>
+        <input name="organization" autocomplete="organization">
+      </label>
+      <label>
+        <span data-lang="en">Design need</span>
+        <span class="zh" data-lang="zh">设计需求</span>
+        <span data-lang="fi" lang="fi">Suunnittelutarve</span>
+        <textarea name="need" required></textarea>
+      </label>
+      <div class="contact-form-actions">
+        <button type="submit">
+          <span data-lang="en">Send email</span>
+          <span class="zh" data-lang="zh">发送邮件</span>
+          <span data-lang="fi" lang="fi">Lähetä</span>
+        </button>
+        <button type="button" data-copy-contact>
+          <span data-lang="en">Copy text</span>
+          <span class="zh" data-lang="zh">复制内容</span>
+          <span data-lang="fi" lang="fi">Kopioi</span>
+        </button>
+      </div>
+      <p class="contact-form-status" aria-live="polite"></p>
+    `;
+    delete form.dataset.contactFormBound;
+    bindContactForm(form);
     let figure = document.querySelector(".contact-landscape");
     if (copy.image) {
       if (!figure) {
