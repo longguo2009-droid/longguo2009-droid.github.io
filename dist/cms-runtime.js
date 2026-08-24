@@ -867,11 +867,11 @@
   };
 
   const HOME_HERO_COPY = {
-    titleEn: "A design practice for identity, space and cultural exchange.",
+    titleEn: "A design practice for identity, place and cultural exchange.",
     titleZh: "面向品牌、空间与文化交流的设计实践。",
     titleFi: HOME_FI.heroTitle,
     introEn:
-      "StudioSigno works across brand identity, space and wayfinding, and cross-cultural strategy to make ideas legible across contexts.",
+      "StudioSigno works across brand identity, place and wayfinding, and cross-cultural strategy to make ideas legible across contexts.",
     introZh:
       "StudioSigno 横跨品牌识别、空间与导示、跨文化策略，让想法在不同语境中清晰可读。",
     introFi: HOME_FI.heroIntro,
@@ -881,11 +881,11 @@
 
   const STUDIO_COPY = {
     eyebrow: "About / 关于",
-    titleEn: "A design practice for identity, space and cultural exchange.",
+    titleEn: "A design practice for identity, place and cultural exchange.",
     titleZh: "面向品牌、空间与文化交流的设计实践。",
     titleFi: "Suunnittelutoimisto identiteetin, tilan ja kulttuurisen vuorovaikutuksen parissa.",
     introEn:
-      "StudioSigno works across brand identity, space and wayfinding, and cross-cultural strategy to make ideas legible across contexts.",
+      "StudioSigno works across brand identity, place and wayfinding, and cross-cultural strategy to make ideas legible across contexts.",
     introZh:
       "StudioSigno 横跨品牌识别、空间与导示、跨文化策略，让想法在不同语境中清晰可读。",
     introFi:
