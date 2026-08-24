@@ -467,12 +467,22 @@
       button.setAttribute("aria-label", "Finnish");
     });
   };
+  const bindLanguageSwitch = (switcher) => {
+    if (!switcher || switcher.dataset.languageBound === "true") return;
+    switcher.dataset.languageBound = "true";
+    switcher.addEventListener("click", (event) => {
+      const button = event.target.closest("button[data-set-language]");
+      if (button) setLanguage(button.dataset.setLanguage);
+    });
+  };
   const injectLanguageSwitch = () => {
     const header = document.querySelector(".site-header");
     const nav = header?.querySelector("nav");
     if (!header || !nav) return;
-    if (header.querySelector("[data-language-switch]")) {
+    const existingSwitcher = header.querySelector("[data-language-switch]");
+    if (existingSwitcher) {
       normalizeLanguageSwitch(header);
+      bindLanguageSwitch(existingSwitcher);
       return;
     }
     const switcher = document.createElement("div");
@@ -484,10 +494,7 @@
       <button type="button" data-set-language="en">EN</button>
       <button type="button" data-set-language="fi">FI</button>
     `;
-    switcher.addEventListener("click", (event) => {
-      const button = event.target.closest("button[data-set-language]");
-      if (button) setLanguage(button.dataset.setLanguage);
-    });
+    bindLanguageSwitch(switcher);
     header.insertBefore(switcher, nav);
     normalizeLanguageSwitch(header);
   };
