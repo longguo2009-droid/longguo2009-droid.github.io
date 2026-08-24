@@ -1,0 +1,109 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+import PracticeAreas from "../components/PracticeAreas.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import home from "../data/home.json";
+
+const projects = (await getCollection("projects"))
+  .filter(({ data }) => data.featured)
+  .sort((a, b) => a.data.order - b.data.order);
+---
+
+<BaseLayout>
+  <Hero hero={home.hero} projects={projects} />
+  <section class="section shell" aria-labelledby="selected-work">
+    <p class="eyebrow">{home.selectedWork.eyebrow}</p>
+    <h2 id="selected-work" class="display" data-lang="en">{home.selectedWork.titleEn}</h2>
+    <p class="zh" data-lang="zh">{home.selectedWork.titleZh}</p>
+    <h2 class="display section-title-fi" data-lang="fi" lang="fi">{home.selectedWork.titleFi || home.selectedWork.titleEn}</h2>
+    <div class="project-grid">
+      {projects.map(({ id, data }) => (
+        <ProjectCard
+          id={id}
+          titleEn={data.titleEn}
+          titleZh={data.titleZh}
+          titleFi={data.titleFi}
+          year={data.year}
+          categories={data.categories}
+          image={data.leadImage}
+        />
+      ))}
+    </div>
+    <a class="archive-link" href="/projects/">
+      <span data-lang="en">View all projects →</span>
+      <span data-lang="zh">查看全部项目 →</span>
+      <span data-lang="fi">{home.selectedWork.archiveLabelFi || "Katso kaikki projektit →"}</span>
+    </a>
+  </section>
+  <PracticeAreas practice={home.practice} />
+  <section class="section shell approach">
+    <p class="eyebrow">{home.approach.eyebrow}</p>
+    <h2 class="display" data-lang="en">{home.approach.titleEn}</h2>
+    <h2 class="display section-title-fi" data-lang="fi" lang="fi">{home.approach.titleFi || home.approach.titleEn}</h2>
+    <div class="approach-copy">
+      <p data-lang="en">{home.approach.bodyEn}</p>
+      <p class="zh" data-lang="zh">{home.approach.bodyZh}</p>
+      <p data-lang="fi" lang="fi">{home.approach.bodyFi || home.approach.bodyEn}</p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  #selected-work {
+    max-width: 26ch;
+    font-size: clamp(2rem, 4vw, 4.2rem);
+    line-height: 1.02;
+    letter-spacing: -0.045em;
+  }
+
+  #selected-work + .zh,
+  #selected-work + .zh + .section-title-fi {
+    max-width: 28ch;
+    font-size: clamp(1.85rem, 3.6vw, 3.8rem);
+    line-height: 1.15;
+  }
+
+  .project-grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(2rem, 5vw, 6rem) 1rem;
+  }
+
+  .archive-link {
+    display: inline-block;
+    margin-top: 4rem;
+    border-bottom: 1px solid;
+  }
+
+  .approach {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .approach .eyebrow {
+    grid-column: 1 / -1;
+  }
+
+  .approach h2 {
+    margin: 0;
+    font-size: clamp(3rem, 7vw, 7rem);
+    line-height: 0.9;
+  }
+
+  .approach-copy {
+    max-width: 34rem;
+    align-self: end;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 700px) {
+    .project-grid,
+    .approach {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

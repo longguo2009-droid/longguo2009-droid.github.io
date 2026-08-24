@@ -1,0 +1,316 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { site } from "../config/site";
+import siteContent from "../../site-content.json";
+
+const contact = siteContent.contact ?? {
+  eyebrow: "Contact / 联系",
+  titleEn: "Bring a space, a brand or an early idea.",
+  titleZh: "从一个空间、一个品牌，或一个尚未成形的想法开始。",
+  titleFi: "Tuo meille tila, brändi tai varhainen idea.",
+  introEn:
+    "Tell us about your project, context and design needs. We will respond with a clear next step.",
+  introZh: "告诉我们你的项目背景、语境与设计需求，我们会以清晰的下一步回应。",
+  introFi:
+    "Kerro projektistasi, kontekstista ja suunnittelutarpeistasi. Vastaamme selkeällä seuraavalla askeleella.",
+  cityline: "China + Finland",
+  email: "studiosigno@studiosigno.com",
+  addressEn: "",
+  addressZh: "",
+  addressFi: "",
+  phone: "",
+  image: "",
+  imageAlt: "",
+};
+
+const contactEmail = contact.email || site.email;
+---
+
+<BaseLayout title="Contact — StudioSigno">
+  <section class="shell section contact">
+    <p class="eyebrow">{contact.eyebrow}</p>
+    <h1 class="display" data-lang="en">{contact.titleEn}</h1>
+    <p class="zh" data-lang="zh">{contact.titleZh}</p>
+    <h1 class="display section-title-fi" data-lang="fi" lang="fi">{contact.titleFi || contact.titleEn}</h1>
+    <div class="contact-copy">
+      <p data-lang="en">{contact.introEn}</p>
+      <p class="zh" data-lang="zh">{contact.introZh}</p>
+      <p data-lang="fi" lang="fi">{contact.introFi || contact.introEn}</p>
+    </div>
+    <div class="contact-details" aria-label="Contact details">
+      {contact.cityline ? (
+        <div>
+          <span data-lang="en">Location</span>
+          <span class="zh" data-lang="zh">地区</span>
+          <span data-lang="fi" lang="fi">Sijainti</span>
+          <p>{contact.cityline}</p>
+        </div>
+      ) : null}
+      {contactEmail ? (
+        <div>
+          <span data-lang="en">Email</span>
+          <span class="zh" data-lang="zh">邮箱</span>
+          <span data-lang="fi" lang="fi">Sähköposti</span>
+          <p><a href={`mailto:${contactEmail}`}>{contactEmail}</a></p>
+        </div>
+      ) : (
+        <div class="pending">
+          <span data-lang="en">Email</span>
+          <span class="zh" data-lang="zh">邮箱</span>
+          <span data-lang="fi" lang="fi">Sähköposti</span>
+          <p>
+            <span data-lang="en">Direct contact details will appear after publication approval.</span>
+            <span class="zh" data-lang="zh">联系方式将在发布确认后显示。</span>
+            <span data-lang="fi" lang="fi">Yhteystiedot tulevat näkyviin julkaisun hyväksynnän jälkeen.</span>
+          </p>
+        </div>
+      )}
+      {contact.addressEn || contact.addressZh || contact.addressFi ? (
+        <div>
+          <span data-lang="en">Address</span>
+          <span class="zh" data-lang="zh">地址</span>
+          <span data-lang="fi" lang="fi">Osoite</span>
+          <p data-lang="en">{contact.addressEn || contact.addressZh || contact.addressFi}</p>
+          <p class="zh" data-lang="zh">{contact.addressZh || contact.addressEn || contact.addressFi}</p>
+          <p data-lang="fi" lang="fi">{contact.addressFi || contact.addressEn || contact.addressZh}</p>
+        </div>
+      ) : null}
+      {contact.phone ? (
+        <div>
+          <span data-lang="en">Phone</span>
+          <span class="zh" data-lang="zh">电话</span>
+          <span data-lang="fi" lang="fi">Puhelin</span>
+          <p><a href={`tel:${String(contact.phone).replace(/[^+0-9]/g, "")}`}>{contact.phone}</a></p>
+        </div>
+      ) : null}
+    </div>
+    <form class="contact-form" data-contact-form>
+      <div class="contact-form-head">
+        <p class="eyebrow">
+          <span data-lang="en">Project inquiry</span>
+          <span class="zh" data-lang="zh">项目咨询</span>
+          <span data-lang="fi" lang="fi">Projektikysely</span>
+        </p>
+        <p>
+          <span data-lang="en">The form opens a ready-to-send email, so no message is stored on the website.</span>
+          <span class="zh" data-lang="zh">填写后会自动生成一封待发送邮件，网站不会保存你的信息。</span>
+          <span data-lang="fi" lang="fi">Lomake avaa valmiin sähköpostiluonnoksen; tietoja ei tallenneta sivustolle.</span>
+        </p>
+      </div>
+      <label>
+        <span data-lang="en">Name</span>
+        <span class="zh" data-lang="zh">姓名</span>
+        <span data-lang="fi" lang="fi">Nimi</span>
+        <input name="name" autocomplete="name" required />
+      </label>
+      <label>
+        <span data-lang="en">Email</span>
+        <span class="zh" data-lang="zh">邮箱</span>
+        <span data-lang="fi" lang="fi">Sähköposti</span>
+        <input name="email" type="email" autocomplete="email" required />
+      </label>
+      <label>
+        <span data-lang="en">Project / Organization</span>
+        <span class="zh" data-lang="zh">项目 / 公司</span>
+        <span data-lang="fi" lang="fi">Projekti / Organisaatio</span>
+        <input name="organization" autocomplete="organization" />
+      </label>
+      <label>
+        <span data-lang="en">Design need</span>
+        <span class="zh" data-lang="zh">设计需求</span>
+        <span data-lang="fi" lang="fi">Suunnittelutarve</span>
+        <textarea name="need" required></textarea>
+      </label>
+      <div class="contact-form-actions">
+        <button type="submit">
+          <span data-lang="en">Send email</span>
+          <span class="zh" data-lang="zh">发送邮件</span>
+          <span data-lang="fi" lang="fi">Lähetä</span>
+        </button>
+        <button type="button" data-copy-contact>
+          <span data-lang="en">Copy text</span>
+          <span class="zh" data-lang="zh">复制内容</span>
+          <span data-lang="fi" lang="fi">Kopioi</span>
+        </button>
+      </div>
+      <p class="contact-form-status" aria-live="polite"></p>
+    </form>
+  </section>
+  {contact.image ? (
+    <figure class="contact-landscape shell">
+      <img src={contact.image} alt={contact.imageAlt || ""} width="1920" height="1081" loading="lazy" />
+    </figure>
+  ) : null}
+</BaseLayout>
+
+<style>
+  h1 {
+    max-width: 13ch;
+    margin: 0.8rem 0;
+    font-size: clamp(4rem, 9vw, 9rem);
+    line-height: 0.84;
+  }
+
+  .contact-copy {
+    max-width: 42rem;
+    line-height: 1.7;
+  }
+
+  .contact-details {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: clamp(2.5rem, 5vw, 5rem);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .contact-details div {
+    padding-block: 1.1rem;
+  }
+
+  .contact-details span {
+    display: inline-block;
+    margin-bottom: 0.65rem;
+    color: var(--muted);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .contact-details p {
+    margin: 0;
+    color: var(--blue);
+    font-size: clamp(1rem, 1.55vw, 1.45rem);
+    line-height: 1.35;
+  }
+
+  .contact-details a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+  }
+
+  .pending {
+    margin: 0;
+  }
+
+  .contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: clamp(2.5rem, 5vw, 5rem);
+    padding: clamp(1rem, 2.5vw, 2rem);
+    border: 1px solid var(--line);
+    background: color-mix(in srgb, var(--paper-light) 86%, #fff);
+  }
+
+  .contact-form-head {
+    grid-column: 1 / -1;
+    max-width: 46rem;
+  }
+
+  .contact-form-head .eyebrow {
+    margin-bottom: 0.7rem;
+  }
+
+  .contact-form-head p:not(.eyebrow) {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .contact-form label {
+    display: grid;
+    gap: 0.45rem;
+    color: var(--muted);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .contact-form label:has(textarea),
+  .contact-form-actions,
+  .contact-form-status {
+    grid-column: 1 / -1;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    border: 1px solid color-mix(in srgb, var(--ink) 18%, transparent);
+    border-radius: 0;
+    background: #fff;
+    color: var(--ink);
+    padding: 0.9rem 0.95rem;
+    font: 400 1rem/1.45 var(--sans);
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  .contact-form textarea {
+    min-height: 11rem;
+    resize: vertical;
+  }
+
+  .contact-form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .contact-form button {
+    border: 1px solid var(--blue);
+    border-radius: 999px;
+    padding: 0.8rem 1rem;
+    font: 600 0.78rem/1 var(--sans);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .contact-form button[type="submit"] {
+    background: var(--blue);
+    color: #fff;
+  }
+
+  .contact-form button[type="button"] {
+    background: transparent;
+    color: var(--blue);
+  }
+
+  .contact-form-status {
+    min-height: 1.2rem;
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  .contact-landscape {
+    margin-block: 0 clamp(4rem, 8vw, 8rem);
+    padding-inline: 0;
+    overflow: hidden;
+  }
+
+  .contact-landscape img {
+    width: 100%;
+    aspect-ratio: 16 / 8;
+    object-fit: cover;
+  }
+
+  @media (max-width: 900px) {
+    .contact-details,
+    .contact-form {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 620px) {
+    .contact-details,
+    .contact-form {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
