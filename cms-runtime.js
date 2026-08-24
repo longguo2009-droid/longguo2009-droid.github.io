@@ -295,9 +295,9 @@
     "Return home": "Takaisin etusivulle →",
   };
   const HOME_FI = {
-    heroTitle: "StudioSigno muotoilee identiteettiä ja tilaa.",
+    heroTitle: "Suunnittelutoimisto identiteetin, tilan ja kulttuurisen vuorovaikutuksen parissa.",
     heroIntro:
-      "StudioSigno luo identiteettejä, tilallisia järjestelmiä ja kulttuurisia kokemuksia selkeästi, pidättyvästi ja inhimillisellä herkkyydellä.",
+      "StudioSigno työskentelee brändi-identiteetin, tilan ja opastusjärjestelmien sekä kulttuurienvälisen strategian alueilla, jotta ideat ovat selkeästi luettavia eri konteksteissa.",
     selectedTitle: "Valikoituja projekteja kontekstissaan.",
     practiceTitle: "Neljä osa-aluetta. Yksi kulttuurienvälinen näkökulma.",
     practiceAreas: ["Brändi-identiteetti", "Ympäristögrafiikka ja opastus", "Tilasuunnittelu", "Kulttuurienvälinen strategia"],
@@ -467,12 +467,22 @@
       button.setAttribute("aria-label", "Finnish");
     });
   };
+  const bindLanguageSwitch = (switcher) => {
+    if (!switcher || switcher.dataset.languageBound === "true") return;
+    switcher.dataset.languageBound = "true";
+    switcher.addEventListener("click", (event) => {
+      const button = event.target.closest("button[data-set-language]");
+      if (button) setLanguage(button.dataset.setLanguage);
+    });
+  };
   const injectLanguageSwitch = () => {
     const header = document.querySelector(".site-header");
     const nav = header?.querySelector("nav");
     if (!header || !nav) return;
-    if (header.querySelector("[data-language-switch]")) {
+    const existingSwitcher = header.querySelector("[data-language-switch]");
+    if (existingSwitcher) {
       normalizeLanguageSwitch(header);
+      bindLanguageSwitch(existingSwitcher);
       return;
     }
     const switcher = document.createElement("div");
@@ -484,10 +494,7 @@
       <button type="button" data-set-language="en">EN</button>
       <button type="button" data-set-language="fi">FI</button>
     `;
-    switcher.addEventListener("click", (event) => {
-      const button = event.target.closest("button[data-set-language]");
-      if (button) setLanguage(button.dataset.setLanguage);
-    });
+    bindLanguageSwitch(switcher);
     header.insertBefore(switcher, nav);
     normalizeLanguageSwitch(header);
   };
@@ -860,13 +867,13 @@
   };
 
   const HOME_HERO_COPY = {
-    titleEn: "StudioSigno shapes identity and space.",
-    titleZh: "塑造品牌与空间。",
+    titleEn: "A design practice for identity, place and cultural exchange.",
+    titleZh: "面向品牌、空间与文化交流的设计实践。",
     titleFi: HOME_FI.heroTitle,
     introEn:
-      "StudioSigno creates identities, spatial systems and cultural experiences with clarity, restraint and emotional intelligence.",
+      "StudioSigno works across brand identity, place and wayfinding, and cross-cultural strategy to make ideas legible across contexts.",
     introZh:
-      "以清晰、克制而有温度的设计方式，塑造品牌、空间系统与文化体验。",
+      "StudioSigno 横跨品牌识别、空间与导示、跨文化策略，让想法在不同语境中清晰可读。",
     introFi: HOME_FI.heroIntro,
     eyebrow: "China + Finland",
     cityline: "CHINA + FINLAND",
@@ -874,11 +881,11 @@
 
   const STUDIO_COPY = {
     eyebrow: "About / 关于",
-    titleEn: "A design practice for identity, space and cultural exchange.",
+    titleEn: "A design practice for identity, place and cultural exchange.",
     titleZh: "面向品牌、空间与文化交流的设计实践。",
     titleFi: "Suunnittelutoimisto identiteetin, tilan ja kulttuurisen vuorovaikutuksen parissa.",
     introEn:
-      "StudioSigno works across brand identity, space and wayfinding, and cross-cultural strategy to make ideas legible across contexts.",
+      "StudioSigno works across brand identity, place and wayfinding, and cross-cultural strategy to make ideas legible across contexts.",
     introZh:
       "StudioSigno 横跨品牌识别、空间与导示、跨文化策略，让想法在不同语境中清晰可读。",
     introFi:
