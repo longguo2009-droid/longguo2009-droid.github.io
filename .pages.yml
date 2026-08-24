@@ -220,6 +220,34 @@ content:
           - name: caption
             label: Image caption / 图片说明
             type: string
+          - name: overlayEyebrow
+            label: Image overlay small line / 图片叠加小字
+            type: string
+            required: false
+          - name: overlayTitleEn
+            label: Image overlay English title / 图片叠加英文标题
+            type: text
+            required: false
+          - name: overlayTitleZh
+            label: Image overlay Chinese title / 图片叠加中文标题
+            type: text
+            required: false
+          - name: overlayTitleFi
+            label: Image overlay Finnish title / 图片叠加芬兰语标题
+            type: text
+            required: false
+          - name: overlayBodyEn
+            label: Image overlay English body / 图片叠加英文正文
+            type: text
+            required: false
+          - name: overlayBodyZh
+            label: Image overlay Chinese body / 图片叠加中文正文
+            type: text
+            required: false
+          - name: overlayBodyFi
+            label: Image overlay Finnish body / 图片叠加芬兰语正文
+            type: text
+            required: false
       - name: contact
         label: Contact page / 联系页面
         type: object

@@ -170,6 +170,13 @@
       .hero-project{cursor:pointer}
       .hero.is-static .hero-bottom{grid-template-columns:1fr}
       .hero.is-static .hero-projects{display:none!important}
+      .about-landscape{position:relative!important;overflow:hidden!important}
+      .about-landscape figcaption{display:none!important}
+      .about-overlay{position:absolute!important;inset:auto var(--gutter) clamp(1.4rem,4vw,4.6rem)!important;z-index:2!important;max-width:min(54rem,calc(100% - var(--gutter) * 2))!important;color:#f3eadc!important}
+      .about-overlay-eyebrow{margin:0 0 clamp(.85rem,1.5vw,1.3rem)!important;color:#e4f1fb!important;font-size:.72rem!important;font-weight:700!important;letter-spacing:.18em!important;text-transform:uppercase!important}
+      .about-overlay h2{max-width:12ch!important;margin:0!important;color:#f3eadc!important;font-size:clamp(2.6rem,6vw,7.2rem)!important;font-weight:600!important;line-height:.9!important;letter-spacing:-.06em!important}
+      .about-overlay h2[data-lang="zh"]{max-width:13ch!important;font-family:var(--font-zh)!important;font-weight:400!important;line-height:1.05!important;letter-spacing:.04em!important}
+      .about-overlay p:not(.about-overlay-eyebrow){max-width:38rem!important;margin:clamp(1rem,2vw,1.6rem) 0 0!important;color:#e4f1fb!important;font-size:clamp(1rem,1.55vw,1.65rem)!important;line-height:1.5!important}
       .featured-work-slider{margin-top:clamp(2rem,5vw,4.5rem);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
       .featured-work-stage{position:relative;min-height:clamp(34rem,62vw,47rem);overflow:hidden;isolation:isolate}
       .featured-work-slide{position:absolute;inset:0;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(24rem,.85fr);gap:clamp(1.2rem,3vw,3rem);align-items:stretch;padding-block:clamp(1rem,2vw,1.5rem);opacity:0;visibility:hidden;pointer-events:none;z-index:0;transform:none;transition:none}
@@ -214,6 +221,7 @@
       @media (max-width:1200px){.core-services-list{grid-template-columns:repeat(3,minmax(0,1fr))}}
       @media (max-width:900px){html{scroll-padding-top:8.8rem}.site-header{grid-template-columns:minmax(9.5rem,1fr) auto!important;grid-template-rows:auto auto!important;align-items:start!important;gap:1rem 1rem!important}.site-header .brand{grid-column:1!important;grid-row:1!important;align-self:start!important;width:clamp(10.8rem,36vw,15rem)!important}.site-header .language-switch{grid-column:2!important;grid-row:1!important;align-self:start!important;justify-self:end!important;margin:0!important}.site-header nav{grid-column:1 / -1!important;grid-row:2!important;width:100%!important;justify-content:flex-start!important;align-items:center!important;gap:clamp(1rem,6vw,2.6rem)!important;margin:0!important;overflow-x:auto!important;-webkit-overflow-scrolling:touch}.hero.is-static{min-height:clamp(30rem,62svh,42rem)!important}.hero.is-static .overlay{min-height:clamp(30rem,62svh,42rem)!important;justify-content:flex-end!important;padding:clamp(4.5rem,10vh,7rem) var(--gutter) clamp(2rem,6vw,3.5rem)!important}.hero.is-static h1{font-size:clamp(2.45rem,9vw,4.8rem)!important}html[data-lang="fi"] .hero.is-static .overlay .display,html[data-lang="fi"] .hero.is-static .overlay .hero-title-fi,html[data-lang="fi"] .hero.is-static .overlay #hero-title{color:#f3eadc!important}html[data-lang="fi"] .hero.is-static .overlay .eyebrow,html[data-lang="fi"] .hero.is-static .overlay .intro{color:#e4f1fb!important}.featured-work-stage{min-height:clamp(42rem,118vw,56rem)}.featured-work-slide{grid-template-columns:1fr;align-content:start}.featured-work-media{min-height:19rem}.featured-work-copy{padding-bottom:1rem}.featured-work-title{font-size:clamp(2rem,9.5vw,3.6rem)!important;line-height:.96!important}.featured-work-control{width:3.05rem;height:3.05rem;font-size:1.3rem}section[aria-labelledby="practice-title"] ol{grid-template-columns:1fr!important}section[aria-labelledby="practice-title"] li.practice-card{min-height:22rem!important}.core-services-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
       @media (max-width:560px){html{scroll-padding-top:8rem}.site-header{padding:.95rem var(--gutter)!important;gap:.9rem .75rem!important}.site-header .brand{width:clamp(9.8rem,52vw,11.7rem)!important}.site-header nav{gap:clamp(.9rem,6vw,1.65rem)!important;overflow-x:auto!important;padding-bottom:.1rem!important}.site-header nav a{font-size:.88rem!important}.site-header nav a.home-icon-link{width:2.25rem!important;height:2.25rem!important;flex:0 0 auto}.language-switch{gap:.32rem!important}.language-switch button{min-width:2.05rem;height:1.65rem;padding:.32rem .52rem;font-size:.62rem}.hero.is-static{min-height:clamp(28rem,58svh,36rem)!important}.hero.is-static .overlay{min-height:clamp(28rem,58svh,36rem)!important;padding:clamp(3.6rem,8vh,5.6rem) var(--gutter) 2rem!important}.hero.is-static h1{font-size:clamp(2.15rem,10.5vw,3.55rem)!important;line-height:.94!important}.featured-work-stage{min-height:clamp(40rem,150vw,54rem)}.featured-work-controls{align-items:center}.featured-work-title{font-size:clamp(1.85rem,11vw,3.05rem)!important}.featured-work-summary{font-size:.96rem;line-height:1.75}.core-services-list{grid-template-columns:1fr}.core-services-list li{min-height:2.8rem}}
+      @media (max-width:700px){.about-landscape img{aspect-ratio:4/5!important}.about-overlay h2{max-width:11ch!important;font-size:clamp(2.25rem,10vw,4rem)!important}.about-overlay p:not(.about-overlay-eyebrow){font-size:1rem!important;line-height:1.55!important}}
 
       @media (max-width:900px){.hero.is-static .hero-slide img{object-position:center center!important}.hero.is-static::after{background:linear-gradient(180deg,rgba(9,32,54,.04) 0%,rgba(9,32,54,.3) 46%,rgba(9,32,54,.76) 100%)!important}.hero.is-static .intro{font-size:clamp(.98rem,2.9vw,1.22rem)!important;line-height:1.48!important}.hero.is-static .eyebrow{font-size:.68rem!important}.featured-work-stage{min-height:clamp(34rem,104vw,46rem)!important}.featured-work-slide{gap:1rem!important}.featured-work-media{min-height:0!important;aspect-ratio:4/3!important}.featured-work-media img{height:100%!important;object-fit:cover!important;object-position:center!important}.featured-work-copy{justify-content:start!important}.floating-contact{right:.65rem!important}}
       @media (max-width:560px){.hero.is-static .hero-slide img{object-position:center center!important}.hero.is-static .intro{font-size:.94rem!important}.featured-work-stage{min-height:clamp(32rem,138vw,43rem)!important}.featured-work-media{aspect-ratio:3/4!important}.featured-work-title{font-size:clamp(1.65rem,9.2vw,2.65rem)!important}.floating-contact-toggle{min-width:4.35rem!important;min-height:3.05rem!important;padding:.82rem .9rem!important;font-size:.82rem!important}}
@@ -894,6 +902,16 @@
     image: "/images/hero/beijing-helsinki-connected-aerial-ai-1920.jpg",
     imageAlt: "China and Finland connected through a city landscape",
     caption: "China + Finland",
+    overlayEyebrow: "China + Finland",
+    overlayTitleEn: "A cross-cultural design perspective for identities, environments and public experience.",
+    overlayTitleZh: "以跨文化视角，连接品牌、环境与公共体验。",
+    overlayTitleFi:
+      "Kulttuurienvälinen näkökulma identiteetteihin, ympäristöihin ja julkisiin kokemuksiin.",
+    overlayBodyEn:
+      "We translate research, visual systems and spatial experience into clear, memorable design.",
+    overlayBodyZh: "将研究、视觉系统与空间体验，转化为清晰而可被记住的设计。",
+    overlayBodyFi:
+      "Muutamme tutkimuksen, visuaaliset järjestelmät ja tilallisen kokemuksen selkeäksi ja muistettavaksi suunnitteluksi.",
   };
 
   const CONTACT_COPY = {
@@ -1165,6 +1183,31 @@
     }
     const caption = document.querySelector(".about-landscape figcaption");
     if (caption) caption.textContent = text(copy.caption);
+    const landscape = document.querySelector(".about-landscape");
+    if (landscape) {
+      let overlay = landscape.querySelector(".about-overlay");
+      if (!overlay) {
+        overlay = document.createElement("div");
+        overlay.className = "about-overlay";
+        landscape.appendChild(overlay);
+      }
+      overlay.innerHTML = `
+        <p class="about-overlay-eyebrow"></p>
+        <h2 data-lang="en"></h2>
+        <h2 data-lang="zh" class="zh"></h2>
+        <h2 data-lang="fi" lang="fi"></h2>
+        <p data-lang="en"></p>
+        <p data-lang="zh" class="zh"></p>
+        <p data-lang="fi" lang="fi"></p>
+      `;
+      setText(".about-overlay-eyebrow", copy.overlayEyebrow || copy.caption || "China + Finland", overlay);
+      setText('h2[data-lang="en"]', copy.overlayTitleEn || "", overlay);
+      setText('h2[data-lang="zh"]', copy.overlayTitleZh || "", overlay);
+      setText('h2[data-lang="fi"]', copy.overlayTitleFi || copy.overlayTitleEn || "", overlay);
+      setText('p[data-lang="en"]:not(.about-overlay-eyebrow)', copy.overlayBodyEn || "", overlay);
+      setText('p[data-lang="zh"]', copy.overlayBodyZh || "", overlay);
+      setText('p[data-lang="fi"]', copy.overlayBodyFi || copy.overlayBodyEn || "", overlay);
+    }
   };
 
   const renderContactPage = (contact) => {
