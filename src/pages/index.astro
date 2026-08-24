@@ -72,6 +72,18 @@ const projects = (await getCollection("projects"))
     gap: clamp(2rem, 5vw, 6rem) 1rem;
   }
 
+  .project-grid:has(.featured-work-slider),
+  .project-grid.is-featured-slider {
+    display: block;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .project-grid :global(.featured-work-slider) {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
   .archive-link {
     display: inline-block;
     margin-top: 4rem;
