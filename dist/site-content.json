@@ -1,0 +1,882 @@
+{
+  "home": {
+    "hero": {
+      "imageAlt": "A connected aerial composition of Helsinki and Beijing",
+      "eyebrow": "China + Finland",
+      "titleEn": "A design practice for identity, space and cultural exchange.",
+      "titleZh": "面向品牌、空间与文化交流的设计实践。",
+      "titleFi": "Suunnittelutoimisto identiteetin, tilan ja kulttuurisen vuorovaikutuksen parissa.",
+      "introEn": "StudioSigno works across brand identity, space and wayfinding, and cross-cultural strategy to make ideas legible across contexts.",
+      "introZh": "StudioSigno 横跨品牌识别、空间与导示、跨文化策略，让想法在不同语境中清晰可读。",
+      "introFi": "StudioSigno työskentelee brändi-identiteetin, tilan ja opastusjärjestelmien sekä kulttuurienvälisen strategian alueilla, jotta ideat ovat selkeästi luettavia eri konteksteissa.",
+      "cityline": "CHINA + FINLAND"
+    },
+    "selectedWork": {
+      "eyebrow": "Selected Work / 精选项目",
+      "titleEn": "Selected projects in context.",
+      "titleZh": "在真实场景中展开的项目。",
+      "titleFi": "Valikoituja projekteja kontekstissaan.",
+      "archiveLabel": "View all projects / 查看全部项目 →",
+      "archiveLabelFi": "Katso kaikki projektit →"
+    },
+    "practice": {
+      "eyebrow": "Practice / 业务领域",
+      "titleEn": "Four disciplines. One cross-cultural perspective.",
+      "titleZh": "四类设计实践，由同一种跨文化视角贯穿。",
+      "titleFi": "Neljä osa-aluetta. Yksi kulttuurienvälinen näkökulma.",
+      "areas": [
+        {
+          "number": "01",
+          "titleEn": "Brand Identity",
+          "titleZh": "品牌与视觉识别",
+          "titleFi": "Brändi-identiteetti",
+          "image": "/images/projects/yeahmobi-brand-upgrade-cover.png",
+          "category": "brand-identity"
+        },
+        {
+          "number": "02",
+          "titleEn": "EGD & Wayfinding",
+          "titleZh": "环境图形与导示",
+          "titleFi": "Ympäristögrafiikka ja opastus",
+          "image": "/images/projects/only-henan-drama-fantasy-city-cover.jpg",
+          "category": "place-wayfinding"
+        },
+        {
+          "number": "03",
+          "titleEn": "Spatial Design",
+          "titleZh": "空间设计",
+          "titleFi": "Tilasuunnittelu",
+          "image": "/images/projects/china-life-airport-experience-center-cover.jpg",
+          "category": "spatial-design"
+        },
+        {
+          "number": "04",
+          "titleEn": "Cross-cultural Strategy",
+          "titleZh": "跨文化策略",
+          "titleFi": "Kulttuurienvälinen strategia",
+          "image": "/images/hero/beijing-helsinki-connected-aerial-ai-1920.jpg",
+          "category": "cross-cultural"
+        }
+      ],
+      "services": [
+        {
+          "titleEn": "Logo Design",
+          "titleZh": "品牌LOGO设计",
+          "titleFi": "Logosuunnittelu"
+        },
+        {
+          "titleEn": "Visual Identity",
+          "titleZh": "平面VI设计",
+          "titleFi": "Visuaalinen identiteetti"
+        },
+        {
+          "titleEn": "Signage & Wayfinding",
+          "titleZh": "标识与导示",
+          "titleFi": "Opasteet ja opastusjärjestelmät"
+        },
+        {
+          "titleEn": "Exhibition Design",
+          "titleZh": "展厅设计",
+          "titleFi": "Näyttelysuunnittelu"
+        },
+        {
+          "titleEn": "Event Design",
+          "titleZh": "活动设计",
+          "titleFi": "Tapahtumasuunnittelu"
+        },
+        {
+          "titleEn": "UX Design",
+          "titleZh": "UX",
+          "titleFi": "UX-suunnittelu"
+        },
+        {
+          "titleEn": "Advertising Creative",
+          "titleZh": "广告创意",
+          "titleFi": "Mainonnan konseptisuunnittelu"
+        },
+        {
+          "titleEn": "Environmental Graphic Design",
+          "titleZh": "环境图形设计",
+          "titleFi": "Ympäristögraafinen suunnittelu"
+        },
+        {
+          "titleEn": "Commercial Space Design",
+          "titleZh": "商业空间设计",
+          "titleFi": "Liiketilojen suunnittelu"
+        },
+        {
+          "titleEn": "Cross-cultural Strategy",
+          "titleZh": "跨文化策略",
+          "titleFi": "Kulttuurienvälinen strategia"
+        }
+      ]
+    },
+    "approach": {
+      "eyebrow": "Approach / 方法",
+      "titleEn": "We translate context, not only words.",
+      "titleFi": "Emme käännä vain sanoja, vaan myös kontekstia.",
+      "bodyEn": "StudioSigno connects research, visual systems and spatial experience to make complex contexts feel legible, memorable and humane.",
+      "bodyZh": "以研究、视觉系统与空间体验回应复杂语境，让信息清晰可读，也让体验被记住。",
+      "bodyFi": "StudioSigno yhdistää tutkimuksen, visuaaliset järjestelmät ja tilallisen kokemuksen, jotta monimutkaiset ympäristöt tuntuvat selkeiltä, muistettavilta ja inhimillisiltä."
+    }
+  },
+  "studio": {
+    "eyebrow": "About / 关于",
+    "titleEn": "A design practice for identity, space and cultural exchange.",
+    "titleZh": "面向品牌、空间与文化交流的设计实践。",
+    "titleFi": "Suunnittelutoimisto identiteetin, tilan ja kulttuurisen vuorovaikutuksen parissa.",
+    "introEn": "StudioSigno works across brand identity, space and wayfinding, and cross-cultural strategy to make ideas legible across contexts.",
+    "introZh": "StudioSigno 横跨品牌识别、空间与导示、跨文化策略，让想法在不同语境中清晰可读。",
+    "introFi": "StudioSigno työskentelee brändi-identiteetin, tilan ja opastusjärjestelmien sekä kulttuurienvälisen strategian alueilla, jotta ideat ovat selkeästi luettavia eri konteksteissa.",
+    "image": "/images/hero/beijing-helsinki-connected-aerial-ai-1920.jpg",
+    "imageAlt": "China and Finland connected through a city landscape",
+    "caption": "China + Finland"
+  },
+  "contact": {
+    "eyebrow": "Contact / 联系",
+    "titleEn": "Bring a space, a brand or an early idea.",
+    "titleZh": "从一个空间、一个品牌，或一个尚未成形的想法开始。",
+    "titleFi": "Tuo meille tila, brändi tai varhainen idea.",
+    "introEn": "Tell us about your project, context and design needs. We will respond with a clear next step.",
+    "introZh": "告诉我们你的项目背景、语境与设计需求，我们会以清晰的下一步回应。",
+    "introFi": "Kerro projektistasi, kontekstista ja suunnittelutarpeistasi. Vastaamme selkeällä seuraavalla askeleella.",
+    "cityline": "China + Finland",
+    "email": "",
+    "image": "",
+    "imageAlt": ""
+  },
+  "projects": [
+    {
+      "id": "only-henan-drama-fantasy-city",
+      "titleEn": "Only Henan · Drama Fantasy City ",
+      "titleZh": "只有河南·戏剧幻城",
+      "summaryEn": "A large-scale wayfinding and environmental graphics system for an immersive cultural destination where performance, hospitality and visitor movement meet.",
+      "summaryZh": "为沉浸式文化景区建立大尺度导示与环境图形系统，在演出、商业、餐饮、酒店与游客动线之间形成清晰秩序。",
+      "locationEn": "China",
+      "locationZh": "中国",
+      "scopeEn": "Wayfinding strategy and environmental graphics",
+      "scopeZh": "导示策略、环境图形设计",
+      "year": 2021,
+      "categories": [
+        "place-wayfinding",
+        "cross-cultural"
+      ],
+      "leadImage": "/images/projects/only-henan-drama-fantasy-city-cover.jpg",
+      "images": [
+        "/images/projects/only-henan-drama-fantasy-city-cover.jpg"
+      ],
+      "featured": true,
+      "order": 1,
+      "titleFi": "Only Henan · draaman fantasiakaupunki",
+      "summaryFi": "Laaja opastus- ja ympäristögrafiikkajärjestelmä immersiiviseen kulttuurikohteeseen, jossa esitykset, vieraanvaraisuus ja kävijävirrat kohtaavat.",
+      "locationFi": "Kiina",
+      "scopeFi": "Opastusstrategia ja ympäristögrafiikka"
+    },
+    {
+      "id": "perfect-world-headquarters",
+      "titleEn": "Perfect World Headquarters",
+      "titleZh": "完美世界总部大楼",
+      "summaryEn": "Environmental graphics and signage for a multi-building entertainment and technology headquarters, connecting brand energy with daily navigation.",
+      "summaryZh": "为影游综合企业总部建立环境图形与标识系统，将品牌个性、办公动线与多楼宇信息组织连接起来。",
+      "locationEn": "Beijing, China",
+      "locationZh": "中国北京",
+      "scopeEn": "Environmental graphics, signage and wayfinding",
+      "scopeZh": "环境图形、标识与导示设计",
+      "categories": [
+        "place-wayfinding"
+      ],
+      "leadImage": "/images/projects/perfect-world-headquarters-cover.jpg",
+      "images": [
+        "/images/projects/perfect-world-headquarters-cover.jpg"
+      ],
+      "featured": true,
+      "order": 2,
+      "titleFi": "Perfect Worldin pääkonttori",
+      "summaryFi": "Ympäristögrafiikka ja opastejärjestelmä usean rakennuksen viihde- ja teknologiakampukselle, jossa brändin energia yhdistyy arjen navigointiin.",
+      "locationFi": "Peking, Kiina",
+      "scopeFi": "Ympäristögrafiikka, opasteet ja opastus"
+    },
+    {
+      "id": "qinhuangdao-women-childrens-hospital",
+      "titleEn": "Qinhuangdao Women & Children’s Hospital",
+      "titleZh": "秦皇岛妇幼保健院",
+      "summaryEn": "A hospital identity, wayfinding and environmental graphics system shaped around care, clarity and a warmer public-service experience.",
+      "summaryZh": "为妇幼保健院建立视觉形象、导示系统与楼层环境图形，让公共医疗空间更清晰、更亲和。",
+      "locationEn": "Qinhuangdao, China",
+      "locationZh": "中国秦皇岛",
+      "scopeEn": "Spatial identity, wayfinding and environmental graphics",
+      "scopeZh": "空间识别、导示系统、环境图形",
+      "year": 2018,
+      "categories": [
+        "place-wayfinding",
+        "brand-identity"
+      ],
+      "leadImage": "/images/projects/qinhuangdao-women-childrens-hospital-cover.jpg",
+      "images": [
+        "/images/projects/qinhuangdao-women-childrens-hospital-cover.jpg"
+      ],
+      "featured": true,
+      "order": 3,
+      "titleFi": "Qinhuangdaon naisten ja lasten sairaala",
+      "summaryFi": "Sairaalan visuaalinen identiteetti, opastusjärjestelmä ja ympäristögrafiikka, joiden lähtökohtina ovat hoiva, selkeys ja lämpimämpi julkinen palvelukokemus.",
+      "locationFi": "Qinhuangdao, Kiina",
+      "scopeFi": "Tilallinen identiteetti, opastus ja ympäristögrafiikka"
+    },
+    {
+      "id": "china-life-airport-experience-center",
+      "titleEn": "China Life Airport Experience Center",
+      "titleZh": "空港国寿展陈空间",
+      "summaryEn": "A marketing and exhibition environment integrating display planning, atmosphere, interaction, soft furnishing and visitor guidance.",
+      "summaryZh": "整合展示陈列、环境氛围、互动体验、软装设施、景观小品与导示系统，形成完整的营销体验空间。",
+      "locationEn": "Tianjin, China",
+      "locationZh": "中国天津",
+      "scopeEn": "Exhibition environment, soft furnishing and wayfinding",
+      "scopeZh": "展陈空间、软装、环境图形与导示",
+      "year": 2018,
+      "categories": [
+        "place-wayfinding",
+        "brand-identity",
+        "spatial-design"
+      ],
+      "leadImage": "/images/projects/china-life-airport-experience-center-cover.jpg",
+      "images": [
+        "/images/projects/china-life-airport-experience-center-cover.jpg"
+      ],
+      "featured": true,
+      "order": 4,
+      "titleFi": "China Lifen lentoaseman kokemuskeskus",
+      "summaryFi": "Markkinointi- ja näyttely-ympäristö, joka yhdistää esillepanon, tunnelman, vuorovaikutuksen, pehmeän sisustuksen ja kävijäopastuksen.",
+      "locationFi": "Tianjin, Kiina",
+      "scopeFi": "Näyttely-ympäristö, pehmeä sisustus ja opastus"
+    },
+    {
+      "id": "didi-workplace",
+      "titleEn": "Didi Workplace Graphics",
+      "titleZh": "滴滴出行办公空间",
+      "summaryEn": "A scalable workplace graphics and wayfinding language for a fast-changing technology company, designed for clarity, repetition and internal maintenance.",
+      "summaryZh": "为快速变化的移动互联网企业建立可复制、可维护的办公空间环境图形与导示语言。",
+      "locationEn": "Beijing, China",
+      "locationZh": "中国北京",
+      "scopeEn": "Workplace graphics, illustration and wayfinding",
+      "scopeZh": "办公环境图形、插画与导示设计",
+      "categories": [
+        "place-wayfinding",
+        "brand-identity"
+      ],
+      "leadImage": "/images/projects/didi-workplace-cover.jpg",
+      "images": [
+        "/images/projects/didi-workplace-cover.jpg"
+      ],
+      "featured": true,
+      "order": 5,
+      "titleFi": "Didi työympäristön grafiikat",
+      "summaryFi": "Skaalautuva työympäristön grafiikka- ja opastuskieli nopeasti muuttuvalle teknologiayritykselle; suunniteltu selkeyttä, toistettavuutta ja sisäistä ylläpitoa varten.",
+      "locationFi": "Peking, Kiina",
+      "scopeFi": "Työympäristön grafiikka, kuvitus ja opastus"
+    },
+    {
+      "id": "xiamen-humanity-hospital",
+      "titleEn": "Xiamen Humanity Hospital",
+      "titleZh": "厦门弘爱国际医院",
+      "summaryEn": "A wayfinding and environmental graphics system for a large medical campus, balancing functional clarity with a calm, humane spatial experience.",
+      "summaryZh": "为大型医疗园区建立导示与环境图形系统，在复杂功能组织与温和的人性化体验之间取得平衡。",
+      "locationEn": "Xiamen, China",
+      "locationZh": "中国厦门",
+      "scopeEn": "Wayfinding and environmental graphic design",
+      "scopeZh": "导示系统与环境图形设计",
+      "categories": [
+        "place-wayfinding",
+        "cross-cultural"
+      ],
+      "leadImage": "/images/projects/xiamen-humanity-hospital-cover.jpg",
+      "images": [
+        "/images/projects/xiamen-humanity-hospital-cover.jpg"
+      ],
+      "featured": true,
+      "order": 6,
+      "titleFi": "Xiamen Humanity -sairaala",
+      "summaryFi": "Suuren sairaalakampuksen opastus- ja ympäristögrafiikkajärjestelmä, joka tasapainottaa toiminnallisen selkeyden ja rauhallisen, inhimillisen tilakokemuksen.",
+      "locationFi": "Xiamen, Kiina",
+      "scopeFi": "Opastus ja ympäristögraafinen suunnittelu"
+    },
+    {
+      "id": "only-a-dream-of-red-mansions",
+      "titleEn": "Only A Dream of Red Mansions · Drama Fantasy City",
+      "titleZh": "只有红楼梦·戏剧幻城",
+      "summaryEn": "StudioSigno provided spatial wayfinding planning, signage system design, and custom typeface design for Only A Dream of Red Mansions | Drama Fantasy City. Based on the project’s theatrical spatial experience, the design clarifies audience circulation, scene transitions, and visitor flow through a systematic visual wayfinding language, helping visitors navigate the immersive park and enter the cultural narrative of Dream of the Red Chamber.",
+      "summaryZh": "本团队为「只有红楼梦 | 戏剧幻城」提供空间导引规划、导示系统及字体设计服务。项目以戏剧化空间体验为基础，梳理观演动线、场景转换与人流组织，通过系统化的视觉导引语言，帮助观众在沉浸式园区中清晰识别方向、理解空间层级，并进入《红楼梦》所营造的文化叙事氛围。",
+      "locationEn": "China",
+      "locationZh": "中国",
+      "scopeEn": "Wayfinding strategy and environmental graphics",
+      "scopeZh": "环境图形设计、空间导引规划及字体设计服务",
+      "year": 2026,
+      "categories": [
+        "place-wayfinding"
+      ],
+      "leadImage": "/images/projects/dream-red-mansions.jpg",
+      "images": [
+        "/images/projects/dream-red-mansions.jpg"
+      ],
+      "featured": true,
+      "order": 0,
+      "titleFi": "Only A Dream of Red Mansions · draaman fantasiakaupunki",
+      "summaryFi": "StudioSigno suunnitteli hankkeelle tilallisen opastuksen, opastejärjestelmän ja räätälöidyn kirjaintyypin. Teatterilliseen tilakokemukseen perustuva visuaalinen opastuskieli selkeyttää yleisöreittejä, kohtausten siirtymiä ja kävijävirtoja sekä johdattaa vierailijat Punaisen kammarin unen kulttuuriseen kertomukseen.",
+      "locationFi": "Kiina",
+      "scopeFi": "Opastusstrategia, ympäristögrafiikka ja kirjaintyyppisuunnittelu"
+    },
+    {
+      "id": "brotzeit-brand-identity",
+      "titleEn": "Brotzeit Brand Identity",
+      "titleZh": "面包一刻 Brotzeit 品牌设计",
+      "summaryEn": "A brand identity system for a German-style bakery chain in China, translating bread culture, craft process and retail warmth into a clear visual language.",
+      "summaryZh": "为中国德式面包连锁品牌建立品牌识别系统，以面包文化、制作过程与零售体验为线索，形成温暖而清晰的视觉语言。",
+      "locationEn": "Shanghai, China",
+      "locationZh": "中国上海",
+      "scopeEn": "Brand identity, visual identity, retail communication",
+      "scopeZh": "品牌识别、视觉系统、零售传播",
+      "categories": [
+        "brand-identity",
+        "cross-cultural"
+      ],
+      "leadImage": "/images/projects/brotzeit-brand-identity-cover.jpg",
+      "images": [
+        "/images/projects/brotzeit-brand-identity-cover.jpg"
+      ],
+      "featured": false,
+      "order": 7,
+      "year": 2017,
+      "titleFi": "Brotzeit-brändi-identiteetti",
+      "summaryFi": "Brändi-identiteettijärjestelmä saksalaistyyliselle leipomoketjulle Kiinassa. Leipäkulttuuri, käsityöprosessi ja lämmin vähittäiskokemus muutetaan selkeäksi visuaaliseksi kieleksi.",
+      "locationFi": "Shanghai, Kiina",
+      "scopeFi": "Brändi-identiteetti, visuaalinen identiteetti ja vähittäisviestintä"
+    },
+    {
+      "id": "tsinghua-library-digital-experience-center",
+      "titleEn": "Tsinghua Library Digital Experience Center",
+      "titleZh": "清华图书馆数字体验中心",
+      "summaryEn": "A digital experience and exhibition environment for Tsinghua University Library, making academic data and library memory readable through spatial media.",
+      "summaryZh": "为清华大学图书馆的新媒体展示与互动空间进行数据视觉化和空间体验设计，让学术数据与图书馆记忆以空间媒体方式呈现。",
+      "locationEn": "Beijing, China",
+      "locationZh": "中国北京",
+      "scopeEn": "Data visualization, exhibition experience, spatial media",
+      "scopeZh": "数据视觉化、展陈体验、空间媒体",
+      "categories": [
+        "spatial-design",
+        "cross-cultural"
+      ],
+      "leadImage": "/images/projects/tsinghua-library-digital-experience-center-cover.jpg",
+      "images": [
+        "/images/projects/tsinghua-library-digital-experience-center-cover.jpg"
+      ],
+      "featured": false,
+      "order": 8,
+      "titleFi": "Tsinghuan kirjaston digitaalinen kokemuskeskus",
+      "summaryFi": "Tsinghuan yliopiston kirjastolle suunniteltu digitaalinen kokemus- ja näyttely-ympäristö, jossa akateeminen data ja kirjaston muisti tehdään luettaviksi tilallisen median kautta.",
+      "locationFi": "Peking, Kiina",
+      "scopeFi": "Datavisualisointi, näyttelykokemus ja tilallinen media"
+    },
+    {
+      "id": "beijing-design-week-installation",
+      "titleEn": "Beijing Design Week Installation",
+      "titleZh": "北京设计周装置艺术",
+      "summaryEn": "A cross-disciplinary installation project for Beijing Design Week, combining visual design, spatial narrative and cultural interpretation.",
+      "summaryZh": "北京设计周跨界装置艺术项目，将视觉设计、空间叙事与文化阐释结合，形成公共展览体验。",
+      "locationEn": "Beijing, China",
+      "locationZh": "中国北京",
+      "scopeEn": "Installation art, visual design, cultural collaboration",
+      "scopeZh": "装置艺术、视觉设计、跨文化合作",
+      "categories": [
+        "spatial-design",
+        "cross-cultural"
+      ],
+      "leadImage": "/images/projects/beijing-design-week-installation-cover.jpg",
+      "images": [
+        "/images/projects/beijing-design-week-installation-cover.jpg"
+      ],
+      "featured": false,
+      "order": 9,
+      "titleFi": "Beijing Design Week -installaatio",
+      "summaryFi": "Monialainen installaatioprojekti Beijing Design Weekille, jossa visuaalinen suunnittelu, tilallinen kerronta ja kulttuurinen tulkinta yhdistyvät.",
+      "locationFi": "Peking, Kiina",
+      "scopeFi": "Installaatio, visuaalinen suunnittelu ja kulttuurinen yhteistyö"
+    },
+    {
+      "id": "tianjin-hospital",
+      "titleEn": "Tianjin Hospital",
+      "titleZh": "天津医院",
+      "summaryEn": "A hospital identity and wayfinding system built around the institution’s orthopedic heritage, improving clarity and human care in medical environments.",
+      "summaryZh": "围绕医院骨科传统建立品牌与导示系统，在功能识别与人性化关怀之间取得平衡。",
+      "locationEn": "Tianjin, China",
+      "locationZh": "中国天津",
+      "scopeEn": "Brand identity, EGD & wayfinding",
+      "scopeZh": "品牌识别、环境图形与导示",
+      "categories": [
+        "brand-identity",
+        "place-wayfinding"
+      ],
+      "leadImage": "/images/projects/tianjin-hospital-cover.jpg",
+      "images": [
+        "/images/projects/tianjin-hospital-cover.jpg"
+      ],
+      "featured": false,
+      "order": 10,
+      "titleFi": "Tianjinin sairaala",
+      "summaryFi": "Sairaalan brändi- ja opastusjärjestelmä, joka rakentuu ortopedisen perinnön ympärille ja parantaa selkeyttä sekä inhimillistä hoivakokemusta lääketieteellisissä ympäristöissä.",
+      "locationFi": "Tianjin, Kiina",
+      "scopeFi": "Brändi-identiteetti, ympäristögrafiikka ja opastus"
+    },
+    {
+      "id": "wuxi-hemei-maternity-hospital",
+      "titleEn": "Wuxi Hemei Maternity Hospital",
+      "titleZh": "无锡和美妇产医院",
+      "summaryEn": "An environmental graphics and wayfinding project for a maternity hospital, using regional garden imagery to create a softer medical experience.",
+      "summaryZh": "为妇产医院建立环境图形与导示系统，以江南园林意象贯穿空间，营造更亲和的医疗体验。",
+      "locationEn": "Wuxi, China",
+      "locationZh": "中国无锡",
+      "scopeEn": "EGD & wayfinding, environmental graphics, implementation",
+      "scopeZh": "环境图形、导示系统、落地实施",
+      "categories": [
+        "place-wayfinding",
+        "spatial-design"
+      ],
+      "leadImage": "/images/projects/wuxi-hemei-maternity-hospital-cover.jpg",
+      "images": [
+        "/images/projects/wuxi-hemei-maternity-hospital-cover.jpg"
+      ],
+      "featured": false,
+      "order": 11,
+      "titleFi": "Wuxi Hemei -synnytyssairaala",
+      "summaryFi": "Synnytyssairaalan ympäristögrafiikka- ja opastusprojekti, jossa Jiangnanin puutarhakuvasto luo pehmeämmän lääketieteellisen kokemuksen.",
+      "locationFi": "Wuxi, Kiina",
+      "scopeFi": "Ympäristögrafiikka, opastusjärjestelmä ja toteutus"
+    },
+    {
+      "id": "cctv-headquarters-wayfinding",
+      "titleEn": "CCTV Headquarters Wayfinding",
+      "titleZh": "CCTV 央视大楼",
+      "summaryEn": "Wayfinding planning and signage design experience for a super-scale landmark building with complex circulation and operational requirements.",
+      "summaryZh": "服务超体量地标建筑的导示规划与标识系统设计，在复杂空间、人流组织与实施管理中建立清晰秩序。",
+      "locationEn": "Beijing, China",
+      "locationZh": "中国北京",
+      "scopeEn": "Wayfinding strategy, signage planning, complex-building navigation",
+      "scopeZh": "导示策略、标识规划、复杂建筑导向",
+      "categories": [
+        "place-wayfinding",
+        "spatial-design"
+      ],
+      "leadImage": "/images/projects/cctv-headquarters-wayfinding-cover.jpg",
+      "images": [
+        "/images/projects/cctv-headquarters-wayfinding-cover.jpg"
+      ],
+      "featured": false,
+      "order": 12,
+      "titleFi": "CCTV:n pääkonttorin opastus",
+      "summaryFi": "Opastuksen suunnittelu- ja opastejärjestelmäkokemus erittäin suuren mittakaavan maamerkkirakennukselle, jossa liikkuminen ja operatiiviset vaatimukset ovat monimutkaisia.",
+      "locationFi": "Peking, Kiina",
+      "scopeFi": "Opastusstrategia, opastesuunnittelu ja monimutkaisen rakennuksen navigointi"
+    },
+    {
+      "id": "china-life-jiayuan",
+      "titleEn": "China Life Jiayuan Senior Living Demonstration Zone",
+      "titleZh": "中国人寿·国寿嘉园",
+      "summaryEn": "A wayfinding and environmental graphics system for a high-end senior living demonstration district composed of multiple buildings.",
+      "summaryZh": "为高端养老养生示范区建立导示系统与环境图形，面对多栋建筑综合体形成清晰、温和的空间识别。",
+      "locationEn": "Tianjin, China",
+      "locationZh": "中国天津",
+      "scopeEn": "EGD & wayfinding, environmental graphics, senior living experience",
+      "scopeZh": "环境图形、导示系统、养老体验空间",
+      "categories": [
+        "place-wayfinding",
+        "spatial-design"
+      ],
+      "leadImage": "/images/projects/china-life-jiayuan-cover.jpg",
+      "images": [
+        "/images/projects/china-life-jiayuan-cover.jpg"
+      ],
+      "featured": false,
+      "order": 13,
+      "titleFi": "China Life Jiayuan -senioriasumisen esittelyalue",
+      "summaryFi": "Korkeatasoisen senioriasumisen esittelyalueen opastus- ja ympäristögrafiikkajärjestelmä, joka jäsentää useista rakennuksista koostuvan kokonaisuuden selkeästi ja lempeästi.",
+      "locationFi": "Tianjin, Kiina",
+      "scopeFi": "Ympäristögrafiikka, opastus ja senioriasumisen tilakokemus"
+    },
+    {
+      "id": "kyoto-international-childrens-hospital",
+      "titleEn": "Kyoto International Children’s Hospital",
+      "titleZh": "京都国际儿童医院",
+      "summaryEn": "An environmental graphics project for a private children’s hospital, bringing a more experiential and approachable visual language into pediatric healthcare spaces.",
+      "summaryZh": "为私立儿童医院进行环境图形设计，将更具体验感和亲和力的视觉语言引入儿童医疗空间。",
+      "locationEn": "China",
+      "locationZh": "中国",
+      "scopeEn": "Environmental graphics, pediatric experience design",
+      "scopeZh": "环境图形、儿童医疗体验设计",
+      "categories": [
+        "place-wayfinding",
+        "spatial-design"
+      ],
+      "leadImage": "/images/projects/kyoto-international-childrens-hospital-cover.jpg",
+      "images": [
+        "/images/projects/kyoto-international-childrens-hospital-cover.jpg",
+        "/images/projects/kyoto-international-childrens-hospital-cover-2.jpg"
+      ],
+      "featured": false,
+      "order": 14,
+      "titleFi": "Kyoton kansainvälinen lastensairaala",
+      "summaryFi": "Yksityisen lastensairaalan ympäristögrafiikkaprojekti, joka tuo lasten terveydenhuollon tiloihin kokemuksellisemman ja helpommin lähestyttävän visuaalisen kielen.",
+      "locationFi": "Kiina",
+      "scopeFi": "Ympäristögrafiikka ja lasten terveydenhuollon kokemussuunnittelu"
+    },
+    {
+      "id": "china-world-trade-center-phase-3",
+      "titleEn": "China World Trade Center Phase 3",
+      "titleZh": "中国国贸三期",
+      "summaryEn": "Brand and wayfinding design management for a major CBD landmark integrating commercial, office and hotel functions.",
+      "summaryZh": "参与北京 CBD 核心地标的品牌与导示系统设计管理，覆盖商业、写字楼与酒店等复合功能。",
+      "locationEn": "Beijing, China",
+      "locationZh": "中国北京",
+      "scopeEn": "Brand identity, wayfinding, design management",
+      "scopeZh": "品牌识别、导示系统、设计管理",
+      "categories": [
+        "brand-identity",
+        "place-wayfinding"
+      ],
+      "leadImage": "/images/projects/china-world-trade-center-phase-3-cover.jpg",
+      "images": [
+        "/images/projects/china-world-trade-center-phase-3-cover.jpg"
+      ],
+      "featured": false,
+      "order": 15,
+      "titleFi": "China World Trade Center, vaihe 3",
+      "summaryFi": "Brändi- ja opastussuunnittelun hallintaa keskeiselle CBD-maamerkille, joka yhdistää kaupallisia, toimisto- ja hotellitoimintoja.",
+      "locationFi": "Peking, Kiina",
+      "scopeFi": "Brändi-identiteetti, opastus ja suunnittelun hallinta"
+    },
+    {
+      "id": "yeahmobi-brand-upgrade",
+      "titleEn": "Yeahmobi Brand Upgrade",
+      "titleZh": "Yeahmobi 品牌升级",
+      "summaryEn": "A brand upgrade and visual identity refresh for a global mobile performance marketing platform, simplifying the existing identity for international use.",
+      "summaryZh": "为移动效果营销平台进行品牌升级与 VI 设计，在保留原有识别气质的基础上，以更国际化、扁平化的方式更新视觉形象。",
+      "locationEn": "China",
+      "locationZh": "中国",
+      "scopeEn": "Brand upgrade, visual identity, international communication",
+      "scopeZh": "品牌升级、VI 设计、国际化传播",
+      "categories": [
+        "brand-identity",
+        "cross-cultural"
+      ],
+      "leadImage": "/images/projects/yeahmobi-brand-upgrade-cover.png",
+      "images": [
+        "/images/projects/yeahmobi-brand-upgrade-cover.png"
+      ],
+      "featured": false,
+      "order": 16,
+      "year": 2016,
+      "titleFi": "Yeahmobi-brändiuudistus",
+      "summaryFi": "Globaalin mobiilimarkkinoinnin suorituskykyalustan brändiuudistus ja visuaalisen identiteetin päivitys, joka yksinkertaistaa olemassa olevaa ilmettä kansainväliseen käyttöön.",
+      "locationFi": "Kiina",
+      "scopeFi": "Brändiuudistus, visuaalinen identiteetti ja kansainvälinen viestintä"
+    },
+    {
+      "id": "tongde-hospital-xianlin-campus",
+      "titleEn": "Tongde Hospital Xianlin Campus",
+      "titleZh": "同德医院闲林院区",
+      "summaryEn": "A brand refresh and wayfinding system for a hospital campus, extending institutional identity into a clearer spatial experience.",
+      "summaryZh": "为医院院区进行品牌重塑、VI 系统与导示系统设计，将机构识别延展到更清晰的空间体验。",
+      "locationEn": "Zhejiang, China",
+      "locationZh": "中国浙江",
+      "scopeEn": "Brand refresh, visual identity, wayfinding",
+      "scopeZh": "品牌重塑、VI 系统、导示系统",
+      "categories": [
+        "brand-identity",
+        "place-wayfinding"
+      ],
+      "leadImage": "/images/projects/tongde-hospital-xianlin-campus-cover.jpg",
+      "images": [
+        "/images/projects/tongde-hospital-xianlin-campus-cover.jpg"
+      ],
+      "featured": false,
+      "order": 17,
+      "titleFi": "Tongde-sairaalan Xianlin-kampus",
+      "summaryFi": "Sairaalakampuksen brändin päivitys ja opastusjärjestelmä, joka laajentaa instituution identiteetin selkeämmäksi tilakokemukseksi.",
+      "locationFi": "Zhejiang, Kiina",
+      "scopeFi": "Brändin uudistus, visuaalinen identiteetti ja opastus"
+    },
+    {
+      "id": "jiangsu-peoples-hospital-emergency-center",
+      "titleEn": "Jiangsu People’s Hospital Emergency Center",
+      "titleZh": "江苏人民医院急诊医学中心",
+      "summaryEn": "A wayfinding renewal for an emergency medical center, improving clarity and movement efficiency in a high-pressure healthcare environment.",
+      "summaryZh": "为急诊医学中心进行导示系统改造，在高压力医疗环境中提升方向识别与流线效率。",
+      "locationEn": "Jiangsu, China",
+      "locationZh": "中国江苏",
+      "scopeEn": "Wayfinding system, emergency medical environment",
+      "scopeZh": "导示系统、急诊医疗环境",
+      "categories": [
+        "place-wayfinding"
+      ],
+      "leadImage": "/images/projects/jiangsu-peoples-hospital-emergency-center-cover.jpg",
+      "images": [
+        "/images/projects/jiangsu-peoples-hospital-emergency-center-cover.jpg"
+      ],
+      "featured": false,
+      "order": 18,
+      "titleFi": "Jiangsun kansansairaalan päivystyskeskus",
+      "summaryFi": "Päivystyskeskuksen opastusjärjestelmän uudistus, joka parantaa selkeyttä ja liikkumisen tehokkuutta paineisessa terveydenhuollon ympäristössä.",
+      "locationFi": "Jiangsu, Kiina",
+      "scopeFi": "Opastusjärjestelmä ja päivystysympäristö"
+    },
+    {
+      "id": "china-science-and-technology-museum",
+      "titleEn": "China Science and Technology Museum",
+      "titleZh": "中国科技馆",
+      "summaryEn": "A wayfinding concept for a science museum whose architecture evokes a puzzle-like structure, translating exploration into spatial guidance.",
+      "summaryZh": "为中国科学技术馆新馆进行导示系统设计，将建筑“鲁班锁/魔方”的探索意象转化为空间导向语言。",
+      "locationEn": "Beijing, China",
+      "locationZh": "中国北京",
+      "scopeEn": "Wayfinding system, exhibition environment",
+      "scopeZh": "导示系统、展览空间导向",
+      "categories": [
+        "place-wayfinding",
+        "spatial-design"
+      ],
+      "leadImage": "/images/projects/china-science-and-technology-museum-cover.jpg",
+      "images": [
+        "/images/projects/china-science-and-technology-museum-cover.jpg"
+      ],
+      "featured": false,
+      "order": 19,
+      "titleFi": "Kiinan tiede- ja teknologiamuseo",
+      "summaryFi": "Tiedemuseon opastuskonsepti, jossa palapelimäinen arkkitehtuuri ja tutkimisen kokemus muutetaan tilalliseksi opastukseksi.",
+      "locationFi": "Peking, Kiina",
+      "scopeFi": "Opastusjärjestelmä ja näyttely-ympäristö"
+    },
+    {
+      "id": "qinghai-tourism-identity",
+      "titleEn": "Qinghai Tourism Identity",
+      "titleZh": "青海旅游形象",
+      "summaryEn": "A destination identity proposal for Qinghai tourism, using graphic rhythm and landscape texture to express a new regional image.",
+      "summaryZh": "青海旅游形象品牌设计，以山川肌理与律动辅助图形呈现新的地区旅游形象。",
+      "locationEn": "Qinghai, China",
+      "locationZh": "中国青海",
+      "scopeEn": "Destination identity, logo design, visual system",
+      "scopeZh": "城市/地区品牌、标志设计、视觉系统",
+      "categories": [
+        "brand-identity",
+        "cross-cultural"
+      ],
+      "leadImage": "/images/projects/qinghai-tourism-identity-cover.jpg",
+      "images": [
+        "/images/projects/qinghai-tourism-identity-cover.jpg"
+      ],
+      "featured": false,
+      "order": 20,
+      "year": 2011,
+      "titleFi": "Qinghain matkailuidentiteetti",
+      "summaryFi": "Qinghain matkailulle laadittu kohdeidentiteetin ehdotus, jossa graafinen rytmi ja maiseman tekstuurit ilmaisevat uutta alueellista kuvaa.",
+      "locationFi": "Qinghai, Kiina",
+      "scopeFi": "Kohdeidentiteetti, logosuunnittelu ja visuaalinen järjestelmä"
+    },
+    {
+      "id": "peacock-lake-park",
+      "titleEn": "Peacock Lake Park",
+      "titleZh": "华夏·孔雀湖公园",
+      "summaryEn": "A park wayfinding and environmental graphics project supporting daily public use and a refined landscape identity.",
+      "summaryZh": "以孔雀湖公园为核心进行景观导示与环境图形设计，回应公共使用、生活方式与景观品质。",
+      "locationEn": "China",
+      "locationZh": "中国",
+      "scopeEn": "Landscape wayfinding, public environment graphics",
+      "scopeZh": "景观导示、公共环境图形",
+      "categories": [
+        "place-wayfinding",
+        "spatial-design"
+      ],
+      "leadImage": "/images/projects/peacock-lake-park-cover.jpg",
+      "images": [
+        "/images/projects/peacock-lake-park-cover.jpg"
+      ],
+      "featured": false,
+      "order": 21,
+      "titleFi": "Peacock Lake Park",
+      "summaryFi": "Puiston opastus- ja ympäristögrafiikkaprojekti, joka tukee päivittäistä julkista käyttöä ja viimeisteltyä maisemaidentiteettiä.",
+      "locationFi": "Kiina",
+      "scopeFi": "Maisemaopastus ja julkisen ympäristön grafiikka"
+    },
+    {
+      "id": "wellem-medical-beauty-hospital",
+      "titleEn": "Wellem Medical Beauty Hospital",
+      "titleZh": "薇琳医美国际美容医院",
+      "summaryEn": "A wayfinding and environmental graphics project for a high-end medical beauty hospital, shaping a more distinctive service environment.",
+      "summaryZh": "为高端医美医院提供导示系统与环境图形设计，并服务落地实施，塑造更具品牌识别的就诊空间。",
+      "locationEn": "Beijing, China",
+      "locationZh": "中国北京",
+      "scopeEn": "Wayfinding, environmental graphics, implementation",
+      "scopeZh": "导示系统、环境图形、施工落地",
+      "categories": [
+        "place-wayfinding",
+        "spatial-design"
+      ],
+      "leadImage": "/images/projects/wellem-medical-beauty-hospital-cover.jpg",
+      "images": [
+        "/images/projects/wellem-medical-beauty-hospital-cover.jpg"
+      ],
+      "featured": false,
+      "order": 22,
+      "titleFi": "Wellem Medical Beauty -sairaala",
+      "summaryFi": "Korkeatasoisen lääketieteellisen kauneussairaalan opastus- ja ympäristögrafiikkaprojekti, joka rakentaa erottuvampaa palveluympäristöä.",
+      "locationFi": "Peking, Kiina",
+      "scopeFi": "Opastus, ympäristögrafiikka ja toteutus"
+    },
+    {
+      "id": "runze-park-residence",
+      "titleEn": "Runze Park Residence",
+      "titleZh": "润泽·公园居住区",
+      "summaryEn": "A residential wayfinding and signage system integrating apartments, villas and low-density commercial spaces into a unified visual order.",
+      "summaryZh": "为集合公寓、别墅与低密商业的居住区进行导示系统整合，形成统一、高效且具品质感的空间识别。",
+      "locationEn": "China",
+      "locationZh": "中国",
+      "scopeEn": "Residential wayfinding, signage system, visual integration",
+      "scopeZh": "住宅导示、标识系统、视觉整合",
+      "categories": [
+        "place-wayfinding",
+        "spatial-design"
+      ],
+      "leadImage": "/images/projects/runze-park-residence-cover.jpg",
+      "images": [
+        "/images/projects/runze-park-residence-cover.jpg"
+      ],
+      "featured": false,
+      "order": 23,
+      "titleFi": "Runze Park -asuinalue",
+      "summaryFi": "Asuinalueen opastus- ja opastejärjestelmä, joka yhdistää asunnot, huvilat ja matalan tiheyden liiketilat yhtenäiseksi visuaaliseksi järjestykseksi.",
+      "locationFi": "Kiina",
+      "scopeFi": "Asuinalueen opastus, opastejärjestelmä ja visuaalinen integraatio"
+    },
+    {
+      "id": "china-japan-friendship-hospital",
+      "titleEn": "China-Japan Friendship Hospital",
+      "titleZh": "中日友好医院",
+      "summaryEn": "Wayfinding planning for the international, pediatric and traditional Chinese medicine departments, coordinating circulation, information and implementation detail.",
+      "summaryZh": "为国际部、儿科及中医部进行导示系统规划，协同人流动线、信息识别与施工落地细节。",
+      "locationEn": "Beijing, China",
+      "locationZh": "中国北京",
+      "scopeEn": "Wayfinding planning, circulation, medical departments",
+      "scopeZh": "导示系统、人流动线、医疗科室导向",
+      "categories": [
+        "place-wayfinding"
+      ],
+      "leadImage": "/images/projects/china-japan-friendship-hospital-cover.jpg",
+      "images": [
+        "/images/projects/china-japan-friendship-hospital-cover.jpg"
+      ],
+      "featured": false,
+      "order": 24,
+      "year": 2017,
+      "titleFi": "Kiinan ja Japanin ystävyyssairaala",
+      "summaryFi": "Kansainvälisen osaston, pediatrian ja perinteisen kiinalaisen lääketieteen osastojen opastussuunnittelu, jossa liikkuminen, informaatio ja toteutusyksityiskohdat sovitetaan yhteen.",
+      "locationFi": "Peking, Kiina",
+      "scopeFi": "Opastussuunnittelu, kulkureitit ja lääketieteellisten osastojen navigointi"
+    },
+    {
+      "id": "xiyuan-hospital-concept-wayfinding",
+      "titleEn": "Xiyuan Hospital Concept Wayfinding",
+      "titleZh": "中国中医科学院附属西苑医院",
+      "summaryEn": "A concept wayfinding study for a traditional Chinese medicine hospital, exploring material expression rooted in Chinese medical culture.",
+      "summaryZh": "为中医权威医疗机构进行导示系统概念设计，尝试以宣纸等材料回应中医与中国文化语境。",
+      "locationEn": "Beijing, China",
+      "locationZh": "中国北京",
+      "scopeEn": "Wayfinding concept, cultural material research",
+      "scopeZh": "导示概念设计、文化材料研究",
+      "categories": [
+        "place-wayfinding",
+        "cross-cultural"
+      ],
+      "leadImage": "/images/projects/xiyuan-hospital-concept-wayfinding-cover.jpg",
+      "images": [
+        "/images/projects/xiyuan-hospital-concept-wayfinding-cover.jpg"
+      ],
+      "featured": false,
+      "order": 25,
+      "titleFi": "Xiyuan-sairaalan opastuskonsepti",
+      "summaryFi": "Perinteisen kiinalaisen lääketieteen sairaalan opastuskonseptitutkimus, joka tarkastelee kiinalaiseen lääketieteelliseen kulttuuriin juurtuvaa materiaalista ilmaisua.",
+      "locationFi": "Peking, Kiina",
+      "scopeFi": "Opastuskonsepti ja kulttuurinen materiaalitutkimus"
+    },
+    {
+      "id": "hefei-times-mall",
+      "titleEn": "Hefei Times Mall",
+      "titleZh": "合肥时代 MALL",
+      "summaryEn": "A commercial complex project connecting brand identity, landscape environment and wayfinding into one visual system.",
+      "summaryZh": "为商业综合体项目提供品牌设计、环境景观与导示系统规划，实现品牌到环境的视觉衔接。",
+      "locationEn": "Hefei, China",
+      "locationZh": "中国合肥",
+      "scopeEn": "Brand identity, EGD & wayfinding, commercial environment",
+      "scopeZh": "品牌设计、环境图形、商业导示",
+      "categories": [
+        "brand-identity",
+        "place-wayfinding",
+        "spatial-design"
+      ],
+      "leadImage": "/images/projects/hefei-times-mall-cover.png",
+      "images": [
+        "/images/projects/hefei-times-mall-cover.png"
+      ],
+      "featured": false,
+      "order": 26,
+      "year": 2014,
+      "titleFi": "Hefei Times Mall",
+      "summaryFi": "Kaupallisen kokonaisuuden projekti, jossa brändi-identiteetti, maisemaympäristö ja opastus yhdistyvät yhdeksi visuaaliseksi järjestelmäksi.",
+      "locationFi": "Hefei, Kiina",
+      "scopeFi": "Brändi-identiteetti, ympäristögrafiikka ja kaupallinen opastus"
+    },
+    {
+      "id": "cue-brand-identity",
+      "titleEn": "CUE Brand Identity",
+      "titleZh": "CUE 品牌与 VI 设计",
+      "summaryEn": "A visual identity project for an engineering and project-management company serving super high-rise architecture.",
+      "summaryZh": "为面向超高层建筑的一站式工程与项目管理企业进行品牌与 VI 设计，建立更国际化的企业视觉表达。",
+      "locationEn": "China",
+      "locationZh": "中国",
+      "scopeEn": "Brand identity, visual identity, corporate communication",
+      "scopeZh": "品牌识别、VI 设计、企业传播",
+      "categories": [
+        "brand-identity"
+      ],
+      "leadImage": "/images/projects/cue-brand-identity-cover.jpg",
+      "images": [
+        "/images/projects/cue-brand-identity-cover.jpg"
+      ],
+      "featured": false,
+      "order": 27,
+      "titleFi": "CUE-brändi-identiteetti",
+      "summaryFi": "Visuaalisen identiteetin projekti insinööri- ja projektinhallintayritykselle, joka palvelee erittäin korkeiden rakennusten hankkeita.",
+      "locationFi": "Kiina",
+      "scopeFi": "Brändi-identiteetti, visuaalinen identiteetti ja yritysviestintä"
+    },
+    {
+      "id": "smart-eco-city-book-illustration",
+      "titleEn": "Smart Eco City Book Illustration",
+      "titleZh": "《智慧生态城市》封面主题图案",
+      "summaryEn": "A publication illustration project visualizing themes of sustainable cities, carbon neutrality, energy, mobility and urban systems.",
+      "summaryZh": "为《智慧生态城市——走向碳中立的世界》系列丛书进行封面主题图案与插图设计，将可持续城市议题转化为视觉语言。",
+      "locationEn": "China",
+      "locationZh": "中国",
+      "scopeEn": "Illustration, publication graphics, concept visualization",
+      "scopeZh": "插图设计、出版视觉、概念视觉化",
+      "categories": [
+        "brand-identity",
+        "cross-cultural"
+      ],
+      "leadImage": "/images/projects/smart-eco-city-book-illustration-cover.jpg",
+      "images": [
+        "/images/projects/smart-eco-city-book-illustration-cover.jpg"
+      ],
+      "featured": false,
+      "order": 28,
+      "titleFi": "Smart Eco City -kirjan kuvitus",
+      "summaryFi": "Julkaisukuvitusprojekti, joka visualisoi kestävien kaupunkien, hiilineutraaliuden, energian, liikkumisen ja kaupunkijärjestelmien teemoja.",
+      "locationFi": "Kiina",
+      "scopeFi": "Kuvitus, julkaisugrafiikka ja konseptien visualisointi"
+    }
+  ]
+}
