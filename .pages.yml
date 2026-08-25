@@ -1,14 +1,14 @@
 media:
   - name: project_images
     label: Project images / 项目图片
-    input: images/projects
+    input: public/images/projects
     output: /images/projects
     categories: [image]
     extensions: [jpg, jpeg, png, webp]
     rename: safe
   - name: hero_images
     label: Hero images / 首页背景
-    input: images/hero
+    input: public/images/hero
     output: /images/hero
     categories: [image]
     extensions: [jpg, jpeg, png, webp]
@@ -18,7 +18,7 @@ content:
   - name: site_content
     label: Website content / 网站内容
     type: file
-    path: site-content.json
+    path: public/site-content.json
     format: json
     fields:
       - name: home
@@ -34,7 +34,7 @@ content:
                 type: image
                 options:
                   media: hero_images
-                  path: images/hero
+                  path: public/images/hero
               - name: imageAlt
                 label: Image description / 图片描述
                 type: string
@@ -127,7 +127,7 @@ content:
                     required: false
                     options:
                       media: project_images
-                      path: images/projects
+                      path: public/images/projects
                   - name: category
                     label: Linked category / 关联项目分类
                     type: select
@@ -213,7 +213,7 @@ content:
             required: false
             options:
               media: hero_images
-              path: images/hero
+              path: public/images/hero
           - name: imageAlt
             label: Image description / 图片描述
             type: string
@@ -302,7 +302,7 @@ content:
             required: false
             options:
               media: hero_images
-              path: images/hero
+              path: public/images/hero
           - name: imageAlt
             label: Image description / 图片描述
             type: string
@@ -381,14 +381,14 @@ content:
             required: false
             options:
               media: project_images
-              path: images/projects
+              path: public/images/projects
           - name: images
             label: 02 Project detail gallery images / 02 二级页面项目图片（可多张）
             type: image
             required: false
             options:
               media: project_images
-              path: images/projects
+              path: public/images/projects
               multiple: true
               unique: true
           - name: featured
