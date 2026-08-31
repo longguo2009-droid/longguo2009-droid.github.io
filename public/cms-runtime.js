@@ -481,7 +481,7 @@
     document.querySelectorAll(".display + .zh").forEach((title) => {
       title.classList.add("display", "section-title-zh");
     });
-    document.querySelectorAll(".intro:not(.zh), .narrative p:not(.zh), .approach-copy p:not(.zh)").forEach((element) => {
+    document.querySelectorAll(".intro p:not(.zh):not(.eyebrow), .narrative p:not(.zh), .approach-copy p:not(.zh)").forEach((element) => {
       element.dataset.lang ||= "en";
     });
     document.querySelectorAll(".cityline").forEach((element) => {
