@@ -459,13 +459,10 @@
       "scopeEn": "Workplace graphics, illustration and wayfinding",
       "scopeZh": "办公环境图形、插画与导示设计",
       "scopeFi": "Työympäristön grafiikka, kuvitus ja opastus",
+      "year": 2018,
       "categories": [
         "place-wayfinding",
         "brand-identity"
-      ],
-      "leadImage": "/images/projects/didi-workplace-cover.jpg",
-      "images": [
-        "/images/projects/didi-workplace-cover.jpg"
       ],
       "featured": true,
       "order": 5
@@ -648,6 +645,33 @@
       "order": 16
     },
     {
+      "id": "hefei-times-mall",
+      "titleEn": "Hefei Times Mall",
+      "titleZh": "合肥时代 MALL",
+      "titleFi": "Hefei Times Mall",
+      "summaryEn": "A commercial complex project connecting brand identity, landscape environment and wayfinding into one visual system.",
+      "summaryZh": "为商业综合体项目提供品牌设计、环境景观与导示系统规划，实现品牌到环境的视觉衔接。",
+      "summaryFi": "Kaupallisen kokonaisuuden projekti, jossa brändi-identiteetti, maisemaympäristö ja opastus yhdistyvät yhdeksi visuaaliseksi järjestelmäksi.",
+      "locationEn": "Hefei, China",
+      "locationZh": "中国合肥",
+      "locationFi": "Hefei, Kiina",
+      "scopeEn": "Brand identity, EGD & wayfinding, commercial environment",
+      "scopeZh": "品牌设计、环境图形、商业导示",
+      "scopeFi": "Brändi-identiteetti, ympäristögrafiikka ja kaupallinen opastus",
+      "year": 2014,
+      "categories": [
+        "brand-identity",
+        "place-wayfinding",
+        "spatial-design"
+      ],
+      "leadImage": "/images/projects/hefei-times-mall-cover.png",
+      "images": [
+        "/images/projects/hefei-times-mall-cover.png"
+      ],
+      "featured": false,
+      "order": 26
+    },
+    {
       "id": "tongde-hospital-xianlin-campus",
       "titleEn": "Tongde Hospital Xianlin Campus",
       "titleZh": "同德医院闲林院区",
@@ -821,33 +845,6 @@
       ],
       "featured": false,
       "order": 25
-    },
-    {
-      "id": "hefei-times-mall",
-      "titleEn": "Hefei Times Mall",
-      "titleZh": "合肥时代 MALL",
-      "titleFi": "Hefei Times Mall",
-      "summaryEn": "A commercial complex project connecting brand identity, landscape environment and wayfinding into one visual system.",
-      "summaryZh": "为商业综合体项目提供品牌设计、环境景观与导示系统规划，实现品牌到环境的视觉衔接。",
-      "summaryFi": "Kaupallisen kokonaisuuden projekti, jossa brändi-identiteetti, maisemaympäristö ja opastus yhdistyvät yhdeksi visuaaliseksi järjestelmäksi.",
-      "locationEn": "Hefei, China",
-      "locationZh": "中国合肥",
-      "locationFi": "Hefei, Kiina",
-      "scopeEn": "Brand identity, EGD & wayfinding, commercial environment",
-      "scopeZh": "品牌设计、环境图形、商业导示",
-      "scopeFi": "Brändi-identiteetti, ympäristögrafiikka ja kaupallinen opastus",
-      "year": 2014,
-      "categories": [
-        "brand-identity",
-        "place-wayfinding",
-        "spatial-design"
-      ],
-      "leadImage": "/images/projects/hefei-times-mall-cover.png",
-      "images": [
-        "/images/projects/hefei-times-mall-cover.png"
-      ],
-      "featured": false,
-      "order": 26
     },
     {
       "id": "tianjin-hospital",
