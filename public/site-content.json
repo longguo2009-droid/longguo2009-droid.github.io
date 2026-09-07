@@ -228,26 +228,6 @@
         "place-wayfinding",
         "brand-identity"
       ],
-      "leadImage": "/images/projects/hansign17062026008.jpeg",
-      "images": [
-        "/images/projects/hansign17062026001.jpeg",
-        "/images/projects/hansign17062026002.jpeg",
-        "/images/projects/img2955.jpg",
-        "/images/projects/img2956.jpg",
-        "/images/projects/img2953.jpg",
-        "/images/projects/hansign17062026003.jpeg",
-        "/images/projects/hansign17062026005.jpeg",
-        "/images/projects/hansign17062026007.jpeg",
-        "/images/projects/hansign17062026009.jpeg",
-        "/images/projects/hansign17062026010.jpeg",
-        "/images/projects/hansign17062026011.jpeg",
-        "/images/projects/hansign17062026012-1.jpeg",
-        "/images/projects/img2954.jpg",
-        "/images/projects/img2961.jpg",
-        "/images/projects/img2962.jpg",
-        "/images/projects/img2959.jpg",
-        "/images/projects/img2960.jpg"
-      ],
       "featured": true,
       "order": 1
     },
@@ -364,54 +344,50 @@
       "order": 13
     },
     {
-      "id": "didi-workplace",
-      "titleEn": "Didi Workplace Graphics",
-      "titleZh": "滴滴出行办公空间",
-      "titleFi": "Didi työympäristön grafiikat",
-      "summaryEn": "A scalable workplace graphics and wayfinding language for a fast-changing technology company, designed for clarity, repetition and internal maintenance.",
-      "summaryZh": "为快速变化的移动互联网企业建立可复制、可维护的办公空间环境图形与导示语言。",
-      "summaryFi": "Skaalautuva työympäristön grafiikka- ja opastuskieli nopeasti muuttuvalle teknologiayritykselle; suunniteltu selkeyttä, toistettavuutta ja sisäistä ylläpitoa varten.",
+      "id": "beijing-design-week-installation",
+      "titleEn": "Beijing Design Week Installation",
+      "titleZh": "北京设计周装置艺术",
+      "titleFi": "Beijing Design Week -installaatio",
+      "summaryEn": "A cross-disciplinary installation project for Beijing Design Week, combining visual design, spatial narrative and cultural interpretation.",
+      "summaryZh": "北京设计周跨界装置艺术项目，将视觉设计、空间叙事与文化阐释结合，形成公共展览体验。",
+      "summaryFi": "Monialainen installaatioprojekti Beijing Design Weekille, jossa visuaalinen suunnittelu, tilallinen kerronta ja kulttuurinen tulkinta yhdistyvät.",
       "locationEn": "Beijing, China",
       "locationZh": "中国北京",
       "locationFi": "Peking, Kiina",
-      "scopeEn": "Workplace graphics, illustration and wayfinding",
-      "scopeZh": "办公环境图形、插画与导示设计",
-      "scopeFi": "Työympäristön grafiikka, kuvitus ja opastus",
+      "scopeEn": "Installation art, visual design, cultural collaboration",
+      "scopeZh": "装置艺术、视觉设计、跨文化合作",
+      "scopeFi": "Installaatio, visuaalinen suunnittelu ja kulttuurinen yhteistyö",
       "categories": [
-        "place-wayfinding",
-        "brand-identity"
-      ],
-      "leadImage": "/images/projects/didi-workplace-cover.jpg",
-      "images": [
-        "/images/projects/didi-workplace-cover.jpg"
-      ],
-      "featured": true,
-      "order": 5
-    },
-    {
-      "id": "xiamen-humanity-hospital",
-      "titleEn": "Xiamen Humanity Hospital",
-      "titleZh": "厦门弘爱国际医院",
-      "titleFi": "Xiamen Humanity -sairaala",
-      "summaryEn": "A wayfinding and environmental graphics system for a large medical campus, balancing functional clarity with a calm, humane spatial experience.",
-      "summaryZh": "为大型医疗园区建立导示与环境图形系统，在复杂功能组织与温和的人性化体验之间取得平衡。",
-      "summaryFi": "Suuren sairaalakampuksen opastus- ja ympäristögrafiikkajärjestelmä, joka tasapainottaa toiminnallisen selkeyden ja rauhallisen, inhimillisen tilakokemuksen.",
-      "locationEn": "Xiamen, China",
-      "locationZh": "中国厦门",
-      "locationFi": "Xiamen, Kiina",
-      "scopeEn": "Wayfinding and environmental graphic design",
-      "scopeZh": "导示系统与环境图形设计",
-      "scopeFi": "Opastus ja ympäristögraafinen suunnittelu",
-      "categories": [
-        "place-wayfinding",
+        "spatial-design",
         "cross-cultural"
       ],
-      "leadImage": "/images/projects/xiamen-humanity-hospital-cover.jpg",
-      "images": [
-        "/images/projects/xiamen-humanity-hospital-cover.jpg"
+      "featured": false,
+      "order": 9
+    },
+    {
+      "id": "china-japan-friendship-hospital",
+      "titleEn": "China-Japan Friendship Hospital",
+      "titleZh": "中日友好医院",
+      "titleFi": "Kiinan ja Japanin ystävyyssairaala",
+      "summaryEn": "Wayfinding planning for the international, pediatric and traditional Chinese medicine departments, coordinating circulation, information and implementation detail.",
+      "summaryZh": "为国际部、儿科及中医部进行导示系统规划，协同人流动线、信息识别与施工落地细节。",
+      "summaryFi": "Kansainvälisen osaston, pediatrian ja perinteisen kiinalaisen lääketieteen osastojen opastussuunnittelu, jossa liikkuminen, informaatio ja toteutusyksityiskohdat sovitetaan yhteen.",
+      "locationEn": "Beijing, China",
+      "locationZh": "中国北京",
+      "locationFi": "Peking, Kiina",
+      "scopeEn": "Wayfinding planning, circulation, medical departments",
+      "scopeZh": "导示系统、人流动线、医疗科室导向",
+      "scopeFi": "Opastussuunnittelu, kulkureitit ja lääketieteellisten osastojen navigointi",
+      "year": 2017,
+      "categories": [
+        "place-wayfinding"
       ],
-      "featured": true,
-      "order": 6
+      "leadImage": "/images/projects/china-japan-friendship-hospital-cover.jpg",
+      "images": [
+        "/images/projects/china-japan-friendship-hospital-cover.jpg"
+      ],
+      "featured": false,
+      "order": 24
     },
     {
       "id": "haikou_unicare_international_hospital",
@@ -442,6 +418,56 @@
       ],
       "featured": false,
       "order": 23
+    },
+    {
+      "id": "xiamen-humanity-hospital",
+      "titleEn": "Xiamen Humanity Hospital",
+      "titleZh": "厦门弘爱国际医院",
+      "titleFi": "Xiamen Humanity -sairaala",
+      "summaryEn": "A wayfinding and environmental graphics system for a large medical campus, balancing functional clarity with a calm, humane spatial experience.",
+      "summaryZh": "为大型医疗园区建立导示与环境图形系统，在复杂功能组织与温和的人性化体验之间取得平衡。",
+      "summaryFi": "Suuren sairaalakampuksen opastus- ja ympäristögrafiikkajärjestelmä, joka tasapainottaa toiminnallisen selkeyden ja rauhallisen, inhimillisen tilakokemuksen.",
+      "locationEn": "Xiamen, China",
+      "locationZh": "中国厦门",
+      "locationFi": "Xiamen, Kiina",
+      "scopeEn": "Wayfinding and environmental graphic design",
+      "scopeZh": "导示系统与环境图形设计",
+      "scopeFi": "Opastus ja ympäristögraafinen suunnittelu",
+      "categories": [
+        "place-wayfinding",
+        "cross-cultural"
+      ],
+      "leadImage": "/images/projects/xiamen-humanity-hospital-cover.jpg",
+      "images": [
+        "/images/projects/xiamen-humanity-hospital-cover.jpg"
+      ],
+      "featured": true,
+      "order": 6
+    },
+    {
+      "id": "didi-workplace",
+      "titleEn": "Didi Workplace Graphics",
+      "titleZh": "滴滴出行办公空间",
+      "titleFi": "Didi työympäristön grafiikat",
+      "summaryEn": "A scalable workplace graphics and wayfinding language for a fast-changing technology company, designed for clarity, repetition and internal maintenance.",
+      "summaryZh": "为快速变化的移动互联网企业建立可复制、可维护的办公空间环境图形与导示语言。",
+      "summaryFi": "Skaalautuva työympäristön grafiikka- ja opastuskieli nopeasti muuttuvalle teknologiayritykselle; suunniteltu selkeyttä, toistettavuutta ja sisäistä ylläpitoa varten.",
+      "locationEn": "Beijing, China",
+      "locationZh": "中国北京",
+      "locationFi": "Peking, Kiina",
+      "scopeEn": "Workplace graphics, illustration and wayfinding",
+      "scopeZh": "办公环境图形、插画与导示设计",
+      "scopeFi": "Työympäristön grafiikka, kuvitus ja opastus",
+      "categories": [
+        "place-wayfinding",
+        "brand-identity"
+      ],
+      "leadImage": "/images/projects/didi-workplace-cover.jpg",
+      "images": [
+        "/images/projects/didi-workplace-cover.jpg"
+      ],
+      "featured": true,
+      "order": 5
     },
     {
       "id": "brotzeit-brand-identity",
@@ -493,52 +519,6 @@
       ],
       "featured": false,
       "order": 8
-    },
-    {
-      "id": "china-japan-friendship-hospital",
-      "titleEn": "China-Japan Friendship Hospital",
-      "titleZh": "中日友好医院",
-      "titleFi": "Kiinan ja Japanin ystävyyssairaala",
-      "summaryEn": "Wayfinding planning for the international, pediatric and traditional Chinese medicine departments, coordinating circulation, information and implementation detail.",
-      "summaryZh": "为国际部、儿科及中医部进行导示系统规划，协同人流动线、信息识别与施工落地细节。",
-      "summaryFi": "Kansainvälisen osaston, pediatrian ja perinteisen kiinalaisen lääketieteen osastojen opastussuunnittelu, jossa liikkuminen, informaatio ja toteutusyksityiskohdat sovitetaan yhteen.",
-      "locationEn": "Beijing, China",
-      "locationZh": "中国北京",
-      "locationFi": "Peking, Kiina",
-      "scopeEn": "Wayfinding planning, circulation, medical departments",
-      "scopeZh": "导示系统、人流动线、医疗科室导向",
-      "scopeFi": "Opastussuunnittelu, kulkureitit ja lääketieteellisten osastojen navigointi",
-      "year": 2017,
-      "categories": [
-        "place-wayfinding"
-      ],
-      "leadImage": "/images/projects/china-japan-friendship-hospital-cover.jpg",
-      "images": [
-        "/images/projects/china-japan-friendship-hospital-cover.jpg"
-      ],
-      "featured": false,
-      "order": 24
-    },
-    {
-      "id": "beijing-design-week-installation",
-      "titleEn": "Beijing Design Week Installation",
-      "titleZh": "北京设计周装置艺术",
-      "titleFi": "Beijing Design Week -installaatio",
-      "summaryEn": "A cross-disciplinary installation project for Beijing Design Week, combining visual design, spatial narrative and cultural interpretation.",
-      "summaryZh": "北京设计周跨界装置艺术项目，将视觉设计、空间叙事与文化阐释结合，形成公共展览体验。",
-      "summaryFi": "Monialainen installaatioprojekti Beijing Design Weekille, jossa visuaalinen suunnittelu, tilallinen kerronta ja kulttuurinen tulkinta yhdistyvät.",
-      "locationEn": "Beijing, China",
-      "locationZh": "中国北京",
-      "locationFi": "Peking, Kiina",
-      "scopeEn": "Installation art, visual design, cultural collaboration",
-      "scopeZh": "装置艺术、视觉设计、跨文化合作",
-      "scopeFi": "Installaatio, visuaalinen suunnittelu ja kulttuurinen yhteistyö",
-      "categories": [
-        "spatial-design",
-        "cross-cultural"
-      ],
-      "featured": false,
-      "order": 9
     },
     {
       "id": "cue-brand-identity",
@@ -917,6 +897,19 @@
       ],
       "featured": false,
       "order": 28
+    },
+    {
+      "id": "qingyang_headquarters_economy_base",
+      "titleEn": "Qingyang Headquarters Economy Base",
+      "titleZh": "青羊总部基地",
+      "titleFi": "Qingyangin päämajan taloustukikohta",
+      "locationEn": "Chengdu_China",
+      "locationFi": "Chengdu_Kiina",
+      "year": 2017,
+      "categories": [
+        "place-wayfinding"
+      ],
+      "featured": false
     }
   ]
 }
