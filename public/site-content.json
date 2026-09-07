@@ -365,6 +365,36 @@
       "order": 0
     },
     {
+      "id": "haikou_unicare_international_hospital",
+      "titleEn": "Haikou UNICARE International Hospital",
+      "titleZh": "海南优联国际医院",
+      "titleFi": "Haikoun UNICARE-kansainvälinen sairaala",
+      "summaryEn": "The project was jointly developed in 2015 by China’s HNA Group and Austria’s leading healthcare provider, VAMED Healthcare. It is Hainan Province’s first Sino-foreign joint-venture international general hospital, with a planned total floor area of approximately 70,000 m².\n\nWe were involved from the early construction stage, contributing to the overall planning of the medical service experience and the development of the wayfinding system.\n",
+      "summaryZh": "该项目由中国海航集团（HNA Group）与欧洲知名医疗巨头奥地利奥美德集团（VAMED Healthcare）于2015年联合建造。是海南省首家中外合资的国际综合性医院，规划总建筑面积约 7万平方米。我们从建造初期就参与完善其医疗就诊综合规划及指路系统的建构。",
+      "summaryFi": "HNA Group ja itävaltalainen johtava terveydenhuoltoalan yritys VAMED Healthcare toteuttivat hankkeen yhteistyössä vuonna 2015. Se on Hainanin maakunnan ensimmäinen kiinalais-ulkomaisena yhteisyrityksenä toteutettu kansainvälinen yleissairaala, jonka suunniteltu kokonaispinta-ala on noin 70 000 m².\n\nOlimme mukana hankkeessa jo rakennusvaiheen alkuvaiheista lähtien ja osallistuimme hoitoympäristön kokonaisvaltaiseen suunnitteluun sekä opastus- ja wayfinding-järjestelmän kehittämiseen.\n",
+      "locationEn": "China",
+      "locationZh": "中国",
+      "locationFi": "Kiina",
+      "scopeEn": "Wayfinding planning, circulation, medical departments",
+      "scopeZh": "导示系统、人流动线、医疗科室导向",
+      "scopeFi": "Opastussuunnittelu, kulkureitit ja lääketieteellisten osastojen navigointi",
+      "year": 2016,
+      "categories": [
+        "place-wayfinding",
+        "spatial-design"
+      ],
+      "leadImage": "/images/projects/Wayfinding MedicalSpace/haikou_unicare/001.webp",
+      "images": [
+        "/images/projects/Wayfinding MedicalSpace/haikou_unicare/002.webp",
+        "/images/projects/Wayfinding MedicalSpace/haikou_unicare/003.webp",
+        "/images/projects/Wayfinding MedicalSpace/haikou_unicare/004.webp",
+        "/images/projects/Wayfinding MedicalSpace/haikou_unicare/005.webp",
+        "/images/projects/Wayfinding MedicalSpace/haikou_unicare/006.webp"
+      ],
+      "featured": false,
+      "order": 23
+    },
+    {
       "id": "brotzeit-brand-identity",
       "titleEn": "Brotzeit Brand Identity",
       "titleZh": "面包一刻 Brotzeit 品牌设计",
@@ -762,36 +792,6 @@
       ],
       "featured": false,
       "order": 22
-    },
-    {
-      "id": "haikou_unicare_international_hospital",
-      "titleEn": "Haikou UNICARE International Hospital",
-      "titleZh": "海南优联国际医院",
-      "titleFi": "Haikoun UNICARE-kansainvälinen sairaala",
-      "summaryEn": "The project was jointly developed in 2015 by China’s HNA Group and Austria’s leading healthcare provider, VAMED Healthcare. It is Hainan Province’s first Sino-foreign joint-venture international general hospital, with a planned total floor area of approximately 70,000 m².\n\nWe were involved from the early construction stage, contributing to the overall planning of the medical service experience and the development of the wayfinding system.\n",
-      "summaryZh": "该项目由中国海航集团（HNA Group）与欧洲知名医疗巨头奥地利奥美德集团（VAMED Healthcare）于2015年联合建造。是海南省首家中外合资的国际综合性医院，规划总建筑面积约 7万平方米。我们从建造初期就参与完善其医疗就诊综合规划及指路系统的建构。",
-      "summaryFi": "HNA Group ja itävaltalainen johtava terveydenhuoltoalan yritys VAMED Healthcare toteuttivat hankkeen yhteistyössä vuonna 2015. Se on Hainanin maakunnan ensimmäinen kiinalais-ulkomaisena yhteisyrityksenä toteutettu kansainvälinen yleissairaala, jonka suunniteltu kokonaispinta-ala on noin 70 000 m².\n\nOlimme mukana hankkeessa jo rakennusvaiheen alkuvaiheista lähtien ja osallistuimme hoitoympäristön kokonaisvaltaiseen suunnitteluun sekä opastus- ja wayfinding-järjestelmän kehittämiseen.\n",
-      "locationEn": "China",
-      "locationZh": "中国",
-      "locationFi": "Kiina",
-      "scopeEn": "Wayfinding planning, circulation, medical departments",
-      "scopeZh": "导示系统、人流动线、医疗科室导向",
-      "scopeFi": "Opastussuunnittelu, kulkureitit ja lääketieteellisten osastojen navigointi",
-      "year": 2016,
-      "categories": [
-        "place-wayfinding",
-        "spatial-design"
-      ],
-      "leadImage": "/images/projects/Wayfinding MedicalSpace/haikou_unicare/001.webp",
-      "images": [
-        "/images/projects/Wayfinding MedicalSpace/haikou_unicare/002.webp",
-        "/images/projects/Wayfinding MedicalSpace/haikou_unicare/003.webp",
-        "/images/projects/Wayfinding MedicalSpace/haikou_unicare/004.webp",
-        "/images/projects/Wayfinding MedicalSpace/haikou_unicare/005.webp",
-        "/images/projects/Wayfinding MedicalSpace/haikou_unicare/006.webp"
-      ],
-      "featured": false,
-      "order": 23
     },
     {
       "id": "china-japan-friendship-hospital",
