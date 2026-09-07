@@ -912,6 +912,14 @@
       ],
       "featured": false,
       "order": 30
+    },
+    {
+      "id": "extreme_run ",
+      "titleEn": "Extreme_Run",
+      "titleZh": "悦跑者",
+      "titleFi": "Extreme_Run",
+      "featured": false,
+      "order": 32
     }
   ]
 }
