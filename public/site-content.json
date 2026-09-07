@@ -777,9 +777,18 @@
       "scopeEn": "Wayfinding planning, circulation, medical departments",
       "scopeZh": "导示系统、人流动线、医疗科室导向",
       "scopeFi": "Opastussuunnittelu, kulkureitit ja lääketieteellisten osastojen navigointi",
+      "year": 2016,
       "categories": [
         "place-wayfinding",
         "spatial-design"
+      ],
+      "leadImage": "/images/projects/Wayfinding MedicalSpace/haikou_unicare/001.webp",
+      "images": [
+        "/images/projects/Wayfinding MedicalSpace/haikou_unicare/002.webp",
+        "/images/projects/Wayfinding MedicalSpace/haikou_unicare/003.webp",
+        "/images/projects/Wayfinding MedicalSpace/haikou_unicare/004.webp",
+        "/images/projects/Wayfinding MedicalSpace/haikou_unicare/005.webp",
+        "/images/projects/Wayfinding MedicalSpace/haikou_unicare/006.webp"
       ],
       "featured": false,
       "order": 23
