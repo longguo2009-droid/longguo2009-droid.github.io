@@ -152,26 +152,27 @@
   },
   "projects": [
     {
-      "id": "cctv-headquarters-wayfinding",
-      "titleEn": "CCTV Headquarters Wayfinding",
+      "id": "china_central_television",
+      "titleEn": "China Central Television Building",
       "titleZh": "CCTV 央视大楼",
-      "titleFi": "CCTV:n pääkonttorin opastus",
-      "summaryEn": "Wayfinding planning and signage design experience for a super-scale landmark building with complex circulation and operational requirements.",
-      "summaryZh": "服务超体量地标建筑的导示规划与标识系统设计，在复杂空间、人流组织与实施管理中建立清晰秩序。",
-      "summaryFi": "Opastuksen suunnittelu- ja opastejärjestelmäkokemus erittäin suuren mittakaavan maamerkkirakennukselle, jossa liikkuminen ja operatiiviset vaatimukset ovat monimutkaisia.",
+      "titleFi": "Kiinan keskustelevisiorakennus",
+      "summaryEn": "In collaboration with the Dutch firm OMA，wayfinding planning and signage design experience for a super-scale landmark building with complex circulation and operational requirements.",
+      "summaryZh": "配合荷兰大都会建筑事务所 OMA ，服务超体量地标建筑的导示规划与标识系统设计，在复杂空间、人流组织与实施管理中建立清晰秩序。",
+      "summaryFi": "Yhteistyössä hollantilaisen OMA-yrityksen kanssa toteutettiin opasteiden suunnittelua ja opasteiden suunnittelua erittäin suuressa maamerkkirakennuksessa, jolla on monimutkaiset liikenne- ja toimintavaatimukset.",
       "locationEn": "Beijing, China",
       "locationZh": "中国北京",
       "locationFi": "Peking, Kiina",
       "scopeEn": "Wayfinding strategy, signage planning, complex-building navigation",
       "scopeZh": "导示策略、标识规划、复杂建筑导向",
       "scopeFi": "Opastusstrategia, opastesuunnittelu ja monimutkaisen rakennuksen navigointi",
+      "year": 2006,
       "categories": [
         "place-wayfinding",
         "spatial-design"
       ],
       "leadImage": "/images/projects/cctv-headquarters-wayfinding-cover.jpg",
       "images": [
-        "/images/projects/cctv-headquarters-wayfinding-cover.jpg"
+        "/images/projects/CCTV/26-10.png"
       ],
       "featured": false,
       "order": 12
