@@ -774,16 +774,12 @@
       "locationEn": "China",
       "locationZh": "中国",
       "locationFi": "Kiina",
-      "scopeEn": "Residential wayfinding, signage system, visual integration",
-      "scopeZh": "住宅导示、标识系统、视觉整合",
-      "scopeFi": "Asuinalueen opastus, opastejärjestelmä ja visuaalinen integraatio",
+      "scopeEn": "Wayfinding planning, circulation, medical departments",
+      "scopeZh": "导示系统、人流动线、医疗科室导向",
+      "scopeFi": "Opastussuunnittelu, kulkureitit ja lääketieteellisten osastojen navigointi",
       "categories": [
         "place-wayfinding",
         "spatial-design"
-      ],
-      "leadImage": "/images/projects/runze-park-residence-cover.jpg",
-      "images": [
-        "/images/projects/runze-park-residence-cover.jpg"
       ],
       "featured": false,
       "order": 23
