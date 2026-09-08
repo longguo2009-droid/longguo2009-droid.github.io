@@ -204,9 +204,9 @@
         "place-wayfinding",
         "spatial-design"
       ],
-      "leadImage": "/images/projects/CCTV/c4f2e8f9bae005543595f22ecf638a90.webp",
+      "leadImage": "/images/projects/CCTV/c4f2e8f9bae005543595f22ecf638a90-optimized.webp",
       "images": [
-        "/images/projects/CCTV/26-10.png"
+        "/images/projects/CCTV/26-10-optimized.webp"
       ],
       "featured": false,
       "order": 2
@@ -259,15 +259,23 @@
       "categories": [
         "place-wayfinding"
       ],
-      "leadImage": "/images/projects/perfect-world-headquarters/6w4a4024.webp",
+      "leadImage": "/images/projects/perfect-world-headquarters/cover-16x9.webp",
       "images": [
-        "/images/projects/perfect-world-headquarters/26-02.webp",
-        "/images/projects/perfect-world-headquarters/26-03.webp",
-        "/images/projects/perfect-world-headquarters/26-04.webp",
-        "/images/projects/perfect-world-headquarters/hansign17062026034.webp",
-        "/images/projects/perfect-world-headquarters/the-main-image10.webp",
-        "/images/projects/perfect-world-headquarters/the-main-image3.webp",
-        "/images/projects/perfect-world-headquarters/hansign17062026032.webp"
+        "/images/projects/perfect-world-headquarters/6W4A3877.webp",
+        "/images/projects/perfect-world-headquarters/6W4A3950.webp",
+        "/images/projects/perfect-world-headquarters/6W4A4024.webp",
+        "/images/projects/perfect-world-headquarters/HÄNSIGN_1706.2026—待完善_副本.032.webp",
+        "/images/projects/perfect-world-headquarters/HÄNSIGN_1706.2026—待完善_副本.033.webp",
+        "/images/projects/perfect-world-headquarters/HÄNSIGN_1706.2026—待完善_副本.034.webp",
+        "/images/projects/perfect-world-headquarters/HÄNSIGN_1706.2026—待完善_副本.035.webp",
+        "/images/projects/perfect-world-headquarters/the Main image10.webp",
+        "/images/projects/perfect-world-headquarters/the Main image3.webp",
+        "/images/projects/perfect-world-headquarters/the Main image6.webp",
+        "/images/projects/perfect-world-headquarters/the Main image7.webp",
+        "/images/projects/perfect-world-headquarters/the Main image8.webp",
+        "/images/projects/perfect-world-headquarters/作品集26-02.webp",
+        "/images/projects/perfect-world-headquarters/作品集26-03.webp",
+        "/images/projects/perfect-world-headquarters/作品集26-04.webp"
       ],
       "featured": true,
       "order": 4
@@ -378,13 +386,19 @@
         "place-wayfinding",
         "brand-identity"
       ],
-      "leadImage": "/images/projects/qinhuangdao-women-childrens-hospital/img2949.webp",
+      "leadImage": "/images/projects/qinhuangdao-women-childrens-hospital/HÄNSIGN_1706.2026—待完善_副本.074.webp",
       "images": [
-        "/images/projects/hansign17062026066.jpeg",
-        "/images/projects/hansign17062026065.jpeg",
-        "/images/projects/hansign17062026063.jpeg",
-        "/images/projects/hansign17062026062.jpeg",
-        "/images/projects/hansign17062026067.jpeg"
+        "/images/projects/qinhuangdao-women-childrens-hospital/HÄNSIGN_1706.2026—待完善_副本.074.webp",
+        "/images/projects/qinhuangdao-women-childrens-hospital/HÄNSIGN_1706.2026—待完善_副本.075.webp",
+        "/images/projects/qinhuangdao-women-childrens-hospital/HÄNSIGN_1706.2026—待完善_副本.076.webp",
+        "/images/projects/qinhuangdao-women-childrens-hospital/IMG_2944.webp",
+        "/images/projects/qinhuangdao-women-childrens-hospital/IMG_2946.webp",
+        "/images/projects/qinhuangdao-women-childrens-hospital/IMG_2947.webp",
+        "/images/projects/qinhuangdao-women-childrens-hospital/IMG_2948.webp",
+        "/images/projects/qinhuangdao-women-childrens-hospital/IMG_2949.webp",
+        "/images/projects/qinhuangdao-women-childrens-hospital/IMG_2950.webp",
+        "/images/projects/qinhuangdao-women-childrens-hospital/IMG_2951.webp",
+        "/images/projects/qinhuangdao-women-childrens-hospital/IMG_2952.webp"
       ],
       "featured": true,
       "order": 8
@@ -494,13 +508,15 @@
         "place-wayfinding",
         "spatial-design"
       ],
-      "leadImage": "/images/projects/Wayfinding MedicalSpace/haikou_unicare/001.webp",
+      "leadImage": "/images/projects/haikou_unicare_international_hospital/cover-16x9.webp",
       "images": [
-        "/images/projects/Wayfinding MedicalSpace/haikou_unicare/002.webp",
-        "/images/projects/Wayfinding MedicalSpace/haikou_unicare/003.webp",
-        "/images/projects/Wayfinding MedicalSpace/haikou_unicare/004.webp",
-        "/images/projects/Wayfinding MedicalSpace/haikou_unicare/005.webp",
-        "/images/projects/Wayfinding MedicalSpace/haikou_unicare/006.webp"
+        "/images/projects/haikou_unicare_international_hospital/001.webp",
+        "/images/projects/haikou_unicare_international_hospital/002.webp",
+        "/images/projects/haikou_unicare_international_hospital/003.webp",
+        "/images/projects/haikou_unicare_international_hospital/004.webp",
+        "/images/projects/haikou_unicare_international_hospital/005.webp",
+        "/images/projects/haikou_unicare_international_hospital/006.webp",
+        "/images/projects/haikou_unicare_international_hospital/youlian-optimized.webp"
       ],
       "featured": true,
       "order": 7
@@ -523,9 +539,9 @@
         "place-wayfinding",
         "cross-cultural"
       ],
-      "leadImage": "/images/projects/xiamen-humanity-hospital-cover.jpg",
+      "leadImage": "/images/projects/xiamen-humanity-hospital/cover-16x9.webp",
       "images": [
-        "/images/projects/xiamen-humanity-hospital-cover.jpg"
+        "/images/projects/xiamen-humanity-hospital/IMG_3450(20190603-131029).webp"
       ],
       "featured": false,
       "order": 9
@@ -549,16 +565,19 @@
         "place-wayfinding",
         "brand-identity"
       ],
-      "leadImage": "/images/projects/didi/codex-202698-021316.webp",
+      "leadImage": "/images/projects/didi-workplace/cover-16x9.webp",
       "images": [
-        "/images/projects/didi/dididesignprinciplespage01.webp",
-        "/images/projects/didi/dididesignprinciplespage02.webp",
-        "/images/projects/didi/codex-202698-014709.webp",
-        "/images/projects/didi/codex-202698-015823.webp",
-        "/images/projects/didi/codex-202698-020021.webp",
-        "/images/projects/didi/codex-202698-020306.webp",
-        "/images/projects/didi/codex-202698-021720.webp",
-        "/images/projects/didi/codex-202698-022438.webp"
+        "/images/projects/didi-workplace/27x58PIC6hN_1024.webp",
+        "/images/projects/didi-workplace/Codex 图像 2026年9月8日 01_47_09.webp",
+        "/images/projects/didi-workplace/Codex 图像 2026年9月8日 01_58_23.webp",
+        "/images/projects/didi-workplace/Codex 图像 2026年9月8日 02_00_21.webp",
+        "/images/projects/didi-workplace/Codex 图像 2026年9月8日 02_03_06.webp",
+        "/images/projects/didi-workplace/Codex 图像 2026年9月8日 02_13_16.webp",
+        "/images/projects/didi-workplace/Codex 图像 2026年9月8日 02_17_20.webp",
+        "/images/projects/didi-workplace/Codex 图像 2026年9月8日 02_24_38.webp",
+        "/images/projects/didi-workplace/DIDI_design_principles_page_01.webp",
+        "/images/projects/didi-workplace/DIDI_design_principles_page_02.webp",
+        "/images/projects/didi-workplace/纸杯效果图 .webp"
       ],
       "featured": true,
       "order": 8
@@ -582,18 +601,18 @@
         "brand-identity",
         "cross-cultural"
       ],
-      "leadImage": "/images/projects/brotzeit-brand-identity/2.webp",
+      "leadImage": "/images/projects/brotzeit-brand-identity/cover-16x9.webp",
       "images": [
-        "/images/projects/brotzeit-brand-identity/file.webp",
-        "/images/projects/brotzeit-brand-identity/2.webp",
-        "/images/projects/brotzeit-brand-identity/001.webp",
-        "/images/projects/brotzeit-brand-identity/004.webp",
-        "/images/projects/brotzeit-brand-identity/005.webp",
-        "/images/projects/brotzeit-brand-identity/014.webp",
-        "/images/projects/brotzeit-brand-identity/017.webp",
-        "/images/projects/brotzeit-brand-identity/021.webp",
-        "/images/projects/brotzeit-brand-identity/b.webp",
-        "/images/projects/brotzeit-brand-identity/macbook-pro.webp"
+        "/images/projects/brotzeit-brand-identity/B.webp",
+        "/images/projects/brotzeit-brand-identity/macbook-pro.webp",
+        "/images/projects/brotzeit-brand-identity/海报墙.webp",
+        "/images/projects/brotzeit-brand-identity/面包2.webp",
+        "/images/projects/brotzeit-brand-identity/面包一刻 品牌历程.001.webp",
+        "/images/projects/brotzeit-brand-identity/面包一刻 品牌历程.004.webp",
+        "/images/projects/brotzeit-brand-identity/面包一刻 品牌历程.005.webp",
+        "/images/projects/brotzeit-brand-identity/面包一刻 品牌历程.014.webp",
+        "/images/projects/brotzeit-brand-identity/面包一刻 品牌历程.017.webp",
+        "/images/projects/brotzeit-brand-identity/面包一刻 品牌历程.021.webp"
       ],
       "featured": true,
       "order": 10
@@ -640,13 +659,14 @@
       "categories": [
         "brand-identity"
       ],
-      "leadImage": "/images/projects/CUE/1.webp",
+      "leadImage": "/images/projects/cue-brand-identity/cover-16x9.webp",
       "images": [
-        "/images/projects/CUE/cue-3.webp",
-        "/images/projects/CUE/cue-4.webp",
-        "/images/projects/CUE/cue-2.webp",
-        "/images/projects/CUE/file.webp",
-        "/images/projects/CUE/file-1.webp"
+        "/images/projects/cue-brand-identity/cue-2.webp",
+        "/images/projects/cue-brand-identity/cue-3.webp",
+        "/images/projects/cue-brand-identity/cue-4.webp",
+        "/images/projects/cue-brand-identity/信头.webp",
+        "/images/projects/cue-brand-identity/平板电脑.webp",
+        "/images/projects/cue-brand-identity/未标题-1.webp"
       ],
       "featured": true,
       "order": 12
@@ -695,9 +715,31 @@
         "brand-identity",
         "place-wayfinding"
       ],
-      "leadImage": "/images/projects/china-life-jiayuan-cover.jpg",
+      "leadImage": "/images/projects/china-world-trade-center-phase-3/cover-16x9.webp",
       "images": [
-        "/images/projects/china-life-jiayuan-cover.jpg"
+        "/images/projects/china-world-trade-center-phase-3/01.webp",
+        "/images/projects/china-world-trade-center-phase-3/02.webp",
+        "/images/projects/china-world-trade-center-phase-3/03.webp",
+        "/images/projects/china-world-trade-center-phase-3/04-1.webp",
+        "/images/projects/china-world-trade-center-phase-3/04-2.webp",
+        "/images/projects/china-world-trade-center-phase-3/04.webp",
+        "/images/projects/china-world-trade-center-phase-3/05-1.webp",
+        "/images/projects/china-world-trade-center-phase-3/05-2.webp",
+        "/images/projects/china-world-trade-center-phase-3/05.webp",
+        "/images/projects/china-world-trade-center-phase-3/06.webp",
+        "/images/projects/china-world-trade-center-phase-3/07.webp",
+        "/images/projects/china-world-trade-center-phase-3/08.webp",
+        "/images/projects/china-world-trade-center-phase-3/09.webp",
+        "/images/projects/china-world-trade-center-phase-3/10.webp",
+        "/images/projects/china-world-trade-center-phase-3/11.webp",
+        "/images/projects/china-world-trade-center-phase-3/12.webp",
+        "/images/projects/china-world-trade-center-phase-3/13.webp",
+        "/images/projects/china-world-trade-center-phase-3/14.webp",
+        "/images/projects/china-world-trade-center-phase-3/15.webp",
+        "/images/projects/china-world-trade-center-phase-3/16.webp",
+        "/images/projects/china-world-trade-center-phase-3/17.webp",
+        "/images/projects/china-world-trade-center-phase-3/18.webp",
+        "/images/projects/china-world-trade-center-phase-3/19.webp"
       ],
       "featured": false,
       "order": 14
@@ -725,7 +767,7 @@
         "/images/projects/Wayfinding MedicalSpace/Peking-childrens-hospital/00.webp",
         "/images/projects/Wayfinding MedicalSpace/Peking-childrens-hospital/002-1.webp",
         "/images/projects/Wayfinding MedicalSpace/Peking-childrens-hospital/v2140428-01.webp",
-        "/images/projects/Wayfinding MedicalSpace/Peking-childrens-hospital/hansign17062026072.jpeg",
+        "/images/projects/Wayfinding MedicalSpace/Peking-childrens-hospital/hansign17062026072-optimized.webp",
         "/images/projects/Wayfinding MedicalSpace/Peking-childrens-hospital/002.webp",
         "/images/projects/Wayfinding MedicalSpace/Peking-childrens-hospital/hansign17062026070.webp"
       ],
@@ -751,17 +793,19 @@
         "brand-identity",
         "cross-cultural"
       ],
-      "leadImage": "/images/projects/yeahmobi/wechatimg1128.webp",
+      "leadImage": "/images/projects/yeahmobi-brand-upgrade/cover-16x9.webp",
       "images": [
-        "/images/projects/yeahmobi/db85e638-5468-4e28-838e-62366aa24723.webp",
-        "/images/projects/yeahmobi/2018-08-02-100550.webp",
-        "/images/projects/yeahmobi/3b137e2a-6dfd-46f0-976b-fa9c18e225a9.webp",
-        "/images/projects/yeahmobi/e1f7d2d5-18cc-41ba-9b51-12e1a2ab3d9a.webp",
-        "/images/projects/yeahmobi/yeahmobilogo-01.webp",
-        "/images/projects/yeahmobi/yeahmobilogo-03.webp",
-        "/images/projects/yeahmobi/yeahmobilogo-04.webp",
-        "/images/projects/yeahmobi/yeahmobilogo-07.webp",
-        "/images/projects/yeahmobi/wechatimg1129.webp"
+        "/images/projects/yeahmobi-brand-upgrade/3B137E2A-6DFD-46F0-976B-FA9C18E225A9.webp",
+        "/images/projects/yeahmobi-brand-upgrade/DB85E638-5468-4E28-838E-62366AA24723.webp",
+        "/images/projects/yeahmobi-brand-upgrade/E1F7D2D5-18CC-41BA-9B51-12E1A2AB3D9A.webp",
+        "/images/projects/yeahmobi-brand-upgrade/WechatIMG1128.webp",
+        "/images/projects/yeahmobi-brand-upgrade/WechatIMG1129.webp",
+        "/images/projects/yeahmobi-brand-upgrade/YEAHMOBI_LOGO-01.webp",
+        "/images/projects/yeahmobi-brand-upgrade/YEAHMOBI_LOGO-02.webp",
+        "/images/projects/yeahmobi-brand-upgrade/YEAHMOBI_LOGO-03.webp",
+        "/images/projects/yeahmobi-brand-upgrade/YEAHMOBI_LOGO-04.webp",
+        "/images/projects/yeahmobi-brand-upgrade/YEAHMOBI_LOGO-07.webp",
+        "/images/projects/yeahmobi-brand-upgrade/屏幕快照 2018-08-02 下午10.05.50.webp"
       ],
       "featured": false,
       "order": 16
@@ -786,19 +830,19 @@
         "place-wayfinding",
         "spatial-design"
       ],
-      "leadImage": "/images/projects/Hefei Times Mall/codex-202697-232148.webp",
+      "leadImage": "/images/projects/hefei-times-mall/cover-16x9.webp",
       "images": [
-        "/images/projects/Hefei Times Mall/001.webp",
-        "/images/projects/Hefei Times Mall/005.webp",
-        "/images/projects/Hefei Times Mall/006.webp",
-        "/images/projects/Hefei Times Mall/002.webp",
-        "/images/projects/Hefei Times Mall/004.webp",
-        "/images/projects/Hefei Times Mall/003.webp",
-        "/images/projects/Hefei Times Mall/codex-202697-234926.webp",
-        "/images/projects/Hefei Times Mall/codex-202697-232211.webp",
-        "/images/projects/Hefei Times Mall/codex-202697-232148.webp",
-        "/images/projects/Hefei Times Mall/codex-202697-232224.webp",
-        "/images/projects/Hefei Times Mall/codex-202697-233503.webp"
+        "/images/projects/hefei-times-mall/Codex 图像 2026年9月7日 23_21_48.webp",
+        "/images/projects/hefei-times-mall/Codex 图像 2026年9月7日 23_22_11.webp",
+        "/images/projects/hefei-times-mall/Codex 图像 2026年9月7日 23_22_24.webp",
+        "/images/projects/hefei-times-mall/Codex 图像 2026年9月7日 23_35_03.webp",
+        "/images/projects/hefei-times-mall/Codex 图像 2026年9月7日 23_49_26.webp",
+        "/images/projects/hefei-times-mall/高速案例.001.webp",
+        "/images/projects/hefei-times-mall/高速案例.002.webp",
+        "/images/projects/hefei-times-mall/高速案例.003.webp",
+        "/images/projects/hefei-times-mall/高速案例.004.webp",
+        "/images/projects/hefei-times-mall/高速案例.005.webp",
+        "/images/projects/hefei-times-mall/高速案例.006.webp"
       ],
       "featured": false,
       "order": 26
@@ -821,9 +865,12 @@
         "brand-identity",
         "place-wayfinding"
       ],
-      "leadImage": "/images/projects/tongde-hospital-xianlin-campus-cover.jpg",
+      "leadImage": "/images/projects/tongde-hospital-xianlin-campus/cover-16x9.webp",
       "images": [
-        "/images/projects/tongde-hospital-xianlin-campus-cover.jpg"
+        "/images/projects/tongde-hospital-xianlin-campus/0012.webp",
+        "/images/projects/tongde-hospital-xianlin-campus/HÄNSIGN_1706.2026—待完善_副本.068.webp",
+        "/images/projects/tongde-hospital-xianlin-campus/P1020649.webp",
+        "/images/projects/tongde-hospital-xianlin-campus/P1030050.webp"
       ],
       "featured": false,
       "order": 17
@@ -845,7 +892,7 @@
       "categories": [
         "place-wayfinding"
       ],
-      "leadImage": "/images/projects/Wayfinding MedicalSpace/Jiangsu/p1020649.webp",
+      "leadImage": "/images/projects/jiangsu-peoples-hospital-emergency-center/cover-16x9.webp",
       "images": [
         "/images/projects/Wayfinding MedicalSpace/Jiangsu/p1020649.webp",
         "/images/projects/Wayfinding MedicalSpace/Jiangsu/0012.webp",
@@ -872,7 +919,7 @@
         "place-wayfinding",
         "spatial-design"
       ],
-      "leadImage": "/images/projects/kejiguan.jpg",
+      "leadImage": "/images/projects/china-science-and-technology-museum/cover-16x9.webp",
       "featured": false,
       "order": 19
     },
@@ -895,9 +942,9 @@
         "brand-identity",
         "cross-cultural"
       ],
-      "leadImage": "/images/projects/qinghai-tourism-identity-cover.jpg",
+      "leadImage": "/images/projects/qinghai-tourism-identity/cover-16x9.webp",
       "images": [
-        "/images/projects/qinghai_branding/05.webp"
+        "/images/projects/qinghai-tourism-identity/龙平作品-05.webp"
       ],
       "featured": false,
       "order": 20
@@ -948,9 +995,9 @@
         "place-wayfinding",
         "spatial-design"
       ],
-      "leadImage": "/images/projects/wellem-medical-beauty-hospital-cover.jpg",
+      "leadImage": "/images/projects/wellem-medical-beauty-hospital/cover-16x9.webp",
       "images": [
-        "/images/projects/Wayfinding MedicalSpace/weilin/weilin.jpg"
+        "/images/projects/Wayfinding MedicalSpace/weilin/weilin-optimized.webp"
       ],
       "featured": false,
       "order": 22
@@ -973,13 +1020,15 @@
         "brand-identity",
         "place-wayfinding"
       ],
-      "leadImage": "/images/projects/Wayfinding MedicalSpace/tianjin/tianjin2.jpg",
+      "leadImage": "/images/projects/tianjin-hospital/cover-16x9.webp",
       "images": [
-        "/images/projects/Wayfinding MedicalSpace/tianjin/00-02.webp",
-        "/images/projects/Wayfinding MedicalSpace/tianjin/00-03.webp",
-        "/images/projects/Wayfinding MedicalSpace/tianjin/00-04.webp",
-        "/images/projects/Wayfinding MedicalSpace/tianjin/00-05.webp",
-        "/images/projects/Wayfinding MedicalSpace/tianjin/00-01.webp"
+        "/images/projects/tianjin-hospital/00-01.webp",
+        "/images/projects/tianjin-hospital/00-02.webp",
+        "/images/projects/tianjin-hospital/00-03.webp",
+        "/images/projects/tianjin-hospital/00-04.webp",
+        "/images/projects/tianjin-hospital/00-05.webp",
+        "/images/projects/tianjin-hospital/00-06-optimized.webp",
+        "/images/projects/tianjin-hospital/00-06-optimized-2.webp"
       ],
       "featured": false,
       "order": 31
@@ -1002,9 +1051,9 @@
         "brand-identity",
         "cross-cultural"
       ],
-      "leadImage": "/images/projects/smart-eco-city-book-illustration-cover.jpg",
+      "leadImage": "/images/projects/smart-eco-city-book-illustration/cover-16x9.webp",
       "images": [
-        "/images/projects/2018-0605.webp"
+        "/images/projects/smart-eco-city-book-illustration/加噪点2018-0605.webp"
       ],
       "featured": false,
       "order": 28
@@ -1020,9 +1069,12 @@
       "categories": [
         "place-wayfinding"
       ],
-      "leadImage": "/images/projects/26-14.webp",
+      "leadImage": "/images/projects/qingyang_headquarters_economy_base/cover-16x9.webp",
       "featured": false,
-      "order": 30
+      "order": 30,
+      "images": [
+        "/images/projects/qingyang_headquarters_economy_base/作品集26-14.webp"
+      ]
     },
     {
       "id": "yiqing_tech_fuel_cel_branding",
@@ -1060,7 +1112,11 @@
         "cross-cultural"
       ],
       "featured": false,
-      "order": 25
+      "order": 25,
+      "images": [
+        "/images/projects/ludaopei_medical/Codex 图像 2026年9月8日 02_56_15.webp"
+      ],
+      "leadImage": "/images/projects/ludaopei_medical/cover-16x9.webp"
     }
   ]
 }
