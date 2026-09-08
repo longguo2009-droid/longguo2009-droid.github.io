@@ -183,7 +183,7 @@
         "/images/projects/only-a-dream-of-red-mansions/hansign17062026009.webp"
       ],
       "featured": true,
-      "order": 0
+      "order": 1
     },
     {
       "id": "china_central_television",
@@ -209,7 +209,7 @@
         "/images/projects/CCTV/26-10.png"
       ],
       "featured": false,
-      "order": 12
+      "order": 2
     },
     {
       "id": "only-henan-drama-fantasy-city",
