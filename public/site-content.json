@@ -322,13 +322,7 @@
         "place-wayfinding",
         "brand-identity"
       ],
-      "leadImage": "/images/projects/china-life-airport-experience-center-cover.jpg",
-      "images": [
-        "/images/projects/hansign17062026026.jpeg",
-        "/images/projects/hansign17062026027.jpeg",
-        "/images/projects/hansign17062026029.jpeg",
-        "/images/projects/hansign17062026030.jpeg"
-      ],
+      "leadImage": "/images/projects/cla-cover.jpg",
       "featured": true,
       "order": 4
     },
