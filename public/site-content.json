@@ -1023,9 +1023,27 @@
       "order": 31
     },
     {
-      "id": "tikkurila_",
-      "titleEn": "Tikkurila",
-      "featured": false
+      "id": "tikkurila_store_identity",
+      "titleEn": "Tikkurila Store Identity",
+      "titleZh": "芬琳漆 SI 统一店面系统",
+      "titleFi": "Tikkurilan myymäläilme",
+      "summaryEn": "For Tikkurila, a premium Finnish paint brand with over 160 years of heritage, we upgraded its retail visual identity to highlight Nordic aesthetics and sustainability. We established a standardized SI system adaptable to various store formats and scales, while enhancing the customer experience through optimized layout and digital interactions.",
+      "summaryZh": "针对拥有 160 余年历史的芬兰高端涂料品牌 Tikkurila，我们全面升级其终端视觉形象，彰显北欧美学与可持续理念；打造可弹性适配不同店型与规模的标准化 SI 系统；并通过优化空间布局与引入数字交互，重塑顾客零售体验。",
+      "summaryFi": "Tikkurilalle, yli 160-vuotiaalle ensiluokkaiselle suomalaiselle maalituotemerkille, uudistimme myymälän visuaalisen ilmeen korostaaksemme pohjoismaista estetiikkaa ja vastuullisuutta.  Loimme standardoidun myymäläkonseptijärjestelmän (SI-järjestelmän), joka mukautuu joustavasti eri myymälämuotoihin ja -kokoihin.Paransimme asiakaskokemusta optimoidun tilasuunnittelun ja digitaalisen vuorovaikutuksen avulla.",
+      "year": 2025,
+      "categories": [
+        "cross-cultural",
+        "spatial-design"
+      ],
+      "leadImage": "/images/projects/tikkurila/hansign17062026023.webp",
+      "images": [
+        "/images/projects/tikkurila/hansign17062026027.webp",
+        "/images/projects/tikkurila/hansign17062026025.webp",
+        "/images/projects/tikkurila/hansign17062026030.webp",
+        "/images/projects/tikkurila/hansign17062026026.webp",
+        "/images/projects/tikkurila/hansign17062026024.webp"
+      ],
+      "featured": true
     }
   ]
 }
