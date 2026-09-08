@@ -531,11 +531,20 @@
         "brand-identity",
         "cross-cultural"
       ],
-      "leadImage": "/images/projects/brotzeit-brand-identity-cover.jpg",
+      "leadImage": "/images/projects/brotzeit-brand-identity/2.webp",
       "images": [
-        "/images/projects/brotzeit-brand-identity-cover.jpg"
+        "/images/projects/brotzeit-brand-identity/file.webp",
+        "/images/projects/brotzeit-brand-identity/2.webp",
+        "/images/projects/brotzeit-brand-identity/001.webp",
+        "/images/projects/brotzeit-brand-identity/004.webp",
+        "/images/projects/brotzeit-brand-identity/005.webp",
+        "/images/projects/brotzeit-brand-identity/014.webp",
+        "/images/projects/brotzeit-brand-identity/017.webp",
+        "/images/projects/brotzeit-brand-identity/021.webp",
+        "/images/projects/brotzeit-brand-identity/b.webp",
+        "/images/projects/brotzeit-brand-identity/macbook-pro.webp"
       ],
-      "featured": false,
+      "featured": true,
       "order": 7
     },
     {
