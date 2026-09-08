@@ -350,9 +350,14 @@
         "place-wayfinding",
         "spatial-design"
       ],
-      "leadImage": "/images/projects/china-life-jiayuan-cover.jpg",
+      "leadImage": "/images/projects/china-life-jiayuan/hansign17062026042.webp",
       "images": [
-        "/images/projects/china-life-jiayuan-cover.jpg"
+        "/images/projects/china-life-jiayuan/hansign17062026043.webp",
+        "/images/projects/china-life-jiayuan/hansign17062026044.webp",
+        "/images/projects/china-life-jiayuan/hansign17062026045.webp",
+        "/images/projects/china-life-jiayuan/hansign17062026046.webp",
+        "/images/projects/china-life-jiayuan/hansign17062026047.webp",
+        "/images/projects/china-life-jiayuan/hansign17062026048.webp"
       ],
       "featured": false,
       "order": 13
