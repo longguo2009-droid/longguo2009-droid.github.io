@@ -380,6 +380,18 @@
         "spatial-design",
         "cross-cultural"
       ],
+      "leadImage": "/images/projects/beijing-design-week-installation/001.webp",
+      "images": [
+        "/images/projects/beijing-design-week-installation/002.webp",
+        "/images/projects/beijing-design-week-installation/003.webp",
+        "/images/projects/beijing-design-week-installation/004.webp",
+        "/images/projects/beijing-design-week-installation/006.webp",
+        "/images/projects/beijing-design-week-installation/007.webp",
+        "/images/projects/beijing-design-week-installation/008.webp",
+        "/images/projects/beijing-design-week-installation/009-1.webp",
+        "/images/projects/beijing-design-week-installation/010-1.webp",
+        "/images/projects/beijing-design-week-installation/011.webp"
+      ],
       "featured": false,
       "order": 9
     },
