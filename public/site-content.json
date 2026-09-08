@@ -735,6 +735,20 @@
         "place-wayfinding",
         "spatial-design"
       ],
+      "leadImage": "/images/projects/Hefei Times Mall/codex-202697-232148.webp",
+      "images": [
+        "/images/projects/Hefei Times Mall/001.webp",
+        "/images/projects/Hefei Times Mall/005.webp",
+        "/images/projects/Hefei Times Mall/006.webp",
+        "/images/projects/Hefei Times Mall/002.webp",
+        "/images/projects/Hefei Times Mall/004.webp",
+        "/images/projects/Hefei Times Mall/003.webp",
+        "/images/projects/Hefei Times Mall/codex-202697-234926.webp",
+        "/images/projects/Hefei Times Mall/codex-202697-232211.webp",
+        "/images/projects/Hefei Times Mall/codex-202697-232148.webp",
+        "/images/projects/Hefei Times Mall/codex-202697-232224.webp",
+        "/images/projects/Hefei Times Mall/codex-202697-233503.webp"
+      ],
       "featured": false,
       "order": 26
     },
