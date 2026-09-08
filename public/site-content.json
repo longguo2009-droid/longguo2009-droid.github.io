@@ -204,9 +204,9 @@
         "place-wayfinding",
         "spatial-design"
       ],
-      "leadImage": "/images/projects/CCTV/c4f2e8f9bae005543595f22ecf638a90-optimized.webp",
+      "leadImage": "/images/projects/china_central_television/c4f2e8f9bae005543595f22ecf638a90-optimized.webp",
       "images": [
-        "/images/projects/CCTV/26-10-optimized.webp"
+        "/images/projects/china_central_television/26-10-optimized.webp"
       ],
       "featured": false,
       "order": 2
@@ -230,14 +230,14 @@
         "place-wayfinding",
         "brand-identity"
       ],
-      "leadImage": "/images/projects/henan/hansign17062026018.webp",
+      "leadImage": "/images/projects/only-henan-drama-fantasy-city/hansign17062026018.webp",
       "images": [
-        "/images/projects/henan/26-06.webp",
-        "/images/projects/henan/26-07.webp",
-        "/images/projects/henan/26-08.webp",
-        "/images/projects/henan/hansign17062026015.webp",
-        "/images/projects/henan/img2961.webp",
-        "/images/projects/henan/img2962.webp"
+        "/images/projects/only-henan-drama-fantasy-city/26-06.webp",
+        "/images/projects/only-henan-drama-fantasy-city/26-07.webp",
+        "/images/projects/only-henan-drama-fantasy-city/26-08.webp",
+        "/images/projects/only-henan-drama-fantasy-city/hansign17062026015.webp",
+        "/images/projects/only-henan-drama-fantasy-city/img2961.webp",
+        "/images/projects/only-henan-drama-fantasy-city/img2962.webp"
       ],
       "featured": true,
       "order": 3
@@ -281,7 +281,7 @@
       "order": 4
     },
     {
-      "id": "extreme_run ",
+      "id": "extreme_run",
       "titleEn": "Extreme_Run_2025_beijing",
       "titleZh": "悦跑者",
       "titleFi": "Extreme_Run_2025_beijing",
@@ -386,19 +386,19 @@
         "place-wayfinding",
         "brand-identity"
       ],
-      "leadImage": "/images/projects/qinhuangdao-women-childrens-hospital/HÄNSIGN_1706.2026—待完善_副本.074.webp",
+      "leadImage": "/images/projects/medical/qinhuangdao-women-childrens-hospital/HÄNSIGN_1706.2026—待完善_副本.074.webp",
       "images": [
-        "/images/projects/qinhuangdao-women-childrens-hospital/HÄNSIGN_1706.2026—待完善_副本.074.webp",
-        "/images/projects/qinhuangdao-women-childrens-hospital/HÄNSIGN_1706.2026—待完善_副本.075.webp",
-        "/images/projects/qinhuangdao-women-childrens-hospital/HÄNSIGN_1706.2026—待完善_副本.076.webp",
-        "/images/projects/qinhuangdao-women-childrens-hospital/IMG_2944.webp",
-        "/images/projects/qinhuangdao-women-childrens-hospital/IMG_2946.webp",
-        "/images/projects/qinhuangdao-women-childrens-hospital/IMG_2947.webp",
-        "/images/projects/qinhuangdao-women-childrens-hospital/IMG_2948.webp",
-        "/images/projects/qinhuangdao-women-childrens-hospital/IMG_2949.webp",
-        "/images/projects/qinhuangdao-women-childrens-hospital/IMG_2950.webp",
-        "/images/projects/qinhuangdao-women-childrens-hospital/IMG_2951.webp",
-        "/images/projects/qinhuangdao-women-childrens-hospital/IMG_2952.webp"
+        "/images/projects/medical/qinhuangdao-women-childrens-hospital/HÄNSIGN_1706.2026—待完善_副本.074.webp",
+        "/images/projects/medical/qinhuangdao-women-childrens-hospital/HÄNSIGN_1706.2026—待完善_副本.075.webp",
+        "/images/projects/medical/qinhuangdao-women-childrens-hospital/HÄNSIGN_1706.2026—待完善_副本.076.webp",
+        "/images/projects/medical/qinhuangdao-women-childrens-hospital/IMG_2944.webp",
+        "/images/projects/medical/qinhuangdao-women-childrens-hospital/IMG_2946.webp",
+        "/images/projects/medical/qinhuangdao-women-childrens-hospital/IMG_2947.webp",
+        "/images/projects/medical/qinhuangdao-women-childrens-hospital/IMG_2948.webp",
+        "/images/projects/medical/qinhuangdao-women-childrens-hospital/IMG_2949.webp",
+        "/images/projects/medical/qinhuangdao-women-childrens-hospital/IMG_2950.webp",
+        "/images/projects/medical/qinhuangdao-women-childrens-hospital/IMG_2951.webp",
+        "/images/projects/medical/qinhuangdao-women-childrens-hospital/IMG_2952.webp"
       ],
       "featured": true,
       "order": 8
@@ -450,13 +450,13 @@
         "cross-cultural",
         "spatial-design"
       ],
-      "leadImage": "/images/projects/tikkurila/hansign17062026023.webp",
+      "leadImage": "/images/projects/tikkurila_store_identity/hansign17062026023.webp",
       "images": [
-        "/images/projects/tikkurila/hansign17062026027.webp",
-        "/images/projects/tikkurila/hansign17062026025.webp",
-        "/images/projects/tikkurila/hansign17062026030.webp",
-        "/images/projects/tikkurila/hansign17062026026.webp",
-        "/images/projects/tikkurila/hansign17062026024.webp"
+        "/images/projects/tikkurila_store_identity/hansign17062026027.webp",
+        "/images/projects/tikkurila_store_identity/hansign17062026025.webp",
+        "/images/projects/tikkurila_store_identity/hansign17062026030.webp",
+        "/images/projects/tikkurila_store_identity/hansign17062026026.webp",
+        "/images/projects/tikkurila_store_identity/hansign17062026024.webp"
       ],
       "featured": true,
       "order": 0
@@ -479,12 +479,12 @@
       "categories": [
         "place-wayfinding"
       ],
-      "leadImage": "/images/projects/Wayfinding MedicalSpace/china-japan-friendship-hospital/hansign17062026052.webp",
+      "leadImage": "/images/projects/medical/china-japan-friendship-hospital/hansign17062026052.webp",
       "images": [
-        "/images/projects/Wayfinding MedicalSpace/china-japan-friendship-hospital/hansign17062026050.webp",
-        "/images/projects/Wayfinding MedicalSpace/china-japan-friendship-hospital/hansign17062026051.webp",
-        "/images/projects/Wayfinding MedicalSpace/china-japan-friendship-hospital/hansign17062026052.webp",
-        "/images/projects/Wayfinding MedicalSpace/china-japan-friendship-hospital/hansign17062026053.webp"
+        "/images/projects/medical/china-japan-friendship-hospital/hansign17062026050.webp",
+        "/images/projects/medical/china-japan-friendship-hospital/hansign17062026051.webp",
+        "/images/projects/medical/china-japan-friendship-hospital/hansign17062026052.webp",
+        "/images/projects/medical/china-japan-friendship-hospital/hansign17062026053.webp"
       ],
       "featured": false,
       "order": 24
@@ -508,15 +508,15 @@
         "place-wayfinding",
         "spatial-design"
       ],
-      "leadImage": "/images/projects/haikou_unicare_international_hospital/cover-16x9.webp",
+      "leadImage": "/images/projects/medical/haikou_unicare_international_hospital/cover-16x9.webp",
       "images": [
-        "/images/projects/haikou_unicare_international_hospital/001.webp",
-        "/images/projects/haikou_unicare_international_hospital/002.webp",
-        "/images/projects/haikou_unicare_international_hospital/003.webp",
-        "/images/projects/haikou_unicare_international_hospital/004.webp",
-        "/images/projects/haikou_unicare_international_hospital/005.webp",
-        "/images/projects/haikou_unicare_international_hospital/006.webp",
-        "/images/projects/haikou_unicare_international_hospital/youlian-optimized.webp"
+        "/images/projects/medical/haikou_unicare_international_hospital/001.webp",
+        "/images/projects/medical/haikou_unicare_international_hospital/002.webp",
+        "/images/projects/medical/haikou_unicare_international_hospital/003.webp",
+        "/images/projects/medical/haikou_unicare_international_hospital/004.webp",
+        "/images/projects/medical/haikou_unicare_international_hospital/005.webp",
+        "/images/projects/medical/haikou_unicare_international_hospital/006.webp",
+        "/images/projects/medical/haikou_unicare_international_hospital/youlian-optimized.webp"
       ],
       "featured": true,
       "order": 7
@@ -539,9 +539,9 @@
         "place-wayfinding",
         "cross-cultural"
       ],
-      "leadImage": "/images/projects/xiamen-humanity-hospital/cover-16x9.webp",
+      "leadImage": "/images/projects/medical/xiamen-humanity-hospital/cover-16x9.webp",
       "images": [
-        "/images/projects/xiamen-humanity-hospital/IMG_3450(20190603-131029).webp"
+        "/images/projects/medical/xiamen-humanity-hospital/IMG_3450(20190603-131029).webp"
       ],
       "featured": false,
       "order": 9
@@ -635,9 +635,9 @@
         "spatial-design",
         "cross-cultural"
       ],
-      "leadImage": "/images/projects/hansign17062026077.jpeg",
+      "leadImage": "/images/projects/tsinghua-library-digital-experience-center/hansign17062026077.jpeg",
       "images": [
-        "/images/projects/hansign17062026077.jpeg"
+        "/images/projects/tsinghua-library-digital-experience-center/hansign17062026077.jpeg"
       ],
       "featured": false,
       "order": 11
@@ -689,10 +689,10 @@
         "place-wayfinding",
         "spatial-design"
       ],
-      "leadImage": "/images/projects/Wayfinding MedicalSpace/wuxi/hansign17062026081.webp",
+      "leadImage": "/images/projects/medical/wuxi-hemei-maternity-hospital/hansign17062026081.webp",
       "images": [
-        "/images/projects/Wayfinding MedicalSpace/wuxi/img4131.webp",
-        "/images/projects/Wayfinding MedicalSpace/wuxi/hansign17062026082.webp"
+        "/images/projects/medical/wuxi-hemei-maternity-hospital/img4131.webp",
+        "/images/projects/medical/wuxi-hemei-maternity-hospital/hansign17062026082.webp"
       ],
       "featured": false,
       "order": 13
@@ -762,14 +762,14 @@
         "place-wayfinding",
         "spatial-design"
       ],
-      "leadImage": "/images/projects/Wayfinding MedicalSpace/Peking-childrens-hospital/hansign17062026070.webp",
+      "leadImage": "/images/projects/medical/Peking-international-childrens-hospital/hansign17062026070.webp",
       "images": [
-        "/images/projects/Wayfinding MedicalSpace/Peking-childrens-hospital/00.webp",
-        "/images/projects/Wayfinding MedicalSpace/Peking-childrens-hospital/002-1.webp",
-        "/images/projects/Wayfinding MedicalSpace/Peking-childrens-hospital/v2140428-01.webp",
-        "/images/projects/Wayfinding MedicalSpace/Peking-childrens-hospital/hansign17062026072-optimized.webp",
-        "/images/projects/Wayfinding MedicalSpace/Peking-childrens-hospital/002.webp",
-        "/images/projects/Wayfinding MedicalSpace/Peking-childrens-hospital/hansign17062026070.webp"
+        "/images/projects/medical/Peking-international-childrens-hospital/00.webp",
+        "/images/projects/medical/Peking-international-childrens-hospital/002-1.webp",
+        "/images/projects/medical/Peking-international-childrens-hospital/v2140428-01.webp",
+        "/images/projects/medical/Peking-international-childrens-hospital/hansign17062026072-optimized.webp",
+        "/images/projects/medical/Peking-international-childrens-hospital/002.webp",
+        "/images/projects/medical/Peking-international-childrens-hospital/hansign17062026070.webp"
       ],
       "featured": false,
       "order": 15
@@ -865,12 +865,12 @@
         "brand-identity",
         "place-wayfinding"
       ],
-      "leadImage": "/images/projects/tongde-hospital-xianlin-campus/cover-16x9.webp",
+      "leadImage": "/images/projects/medical/tongde-hospital-xianlin-campus/cover-16x9.webp",
       "images": [
-        "/images/projects/tongde-hospital-xianlin-campus/0012.webp",
-        "/images/projects/tongde-hospital-xianlin-campus/HÄNSIGN_1706.2026—待完善_副本.068.webp",
-        "/images/projects/tongde-hospital-xianlin-campus/P1020649.webp",
-        "/images/projects/tongde-hospital-xianlin-campus/P1030050.webp"
+        "/images/projects/medical/tongde-hospital-xianlin-campus/0012.webp",
+        "/images/projects/medical/tongde-hospital-xianlin-campus/HÄNSIGN_1706.2026—待完善_副本.068.webp",
+        "/images/projects/medical/tongde-hospital-xianlin-campus/P1020649.webp",
+        "/images/projects/medical/tongde-hospital-xianlin-campus/P1030050.webp"
       ],
       "featured": false,
       "order": 17
@@ -892,11 +892,11 @@
       "categories": [
         "place-wayfinding"
       ],
-      "leadImage": "/images/projects/jiangsu-peoples-hospital-emergency-center/cover-16x9.webp",
+      "leadImage": "/images/projects/medical/jiangsu-peoples-hospital-emergency-center/cover-16x9.webp",
       "images": [
-        "/images/projects/Wayfinding MedicalSpace/Jiangsu/p1020649.webp",
-        "/images/projects/Wayfinding MedicalSpace/Jiangsu/0012.webp",
-        "/images/projects/Wayfinding MedicalSpace/Jiangsu/p1030050.webp"
+        "/images/projects/medical/jiangsu-peoples-hospital-emergency-center/p1020649.webp",
+        "/images/projects/medical/jiangsu-peoples-hospital-emergency-center/0012.webp",
+        "/images/projects/medical/jiangsu-peoples-hospital-emergency-center/p1030050.webp"
       ],
       "featured": false,
       "order": 18
@@ -967,12 +967,12 @@
         "place-wayfinding",
         "spatial-design"
       ],
-      "leadImage": "/images/projects/Qianxia_Lake/hansign17062026056.webp",
+      "leadImage": "/images/projects/qianxia-lake-park/hansign17062026056.webp",
       "images": [
-        "/images/projects/Qianxia_Lake/hansign17062026055.webp",
-        "/images/projects/Qianxia_Lake/hansign17062026056.webp",
-        "/images/projects/Qianxia_Lake/hansign17062026059.webp",
-        "/images/projects/Qianxia_Lake/hansign17062026058.webp"
+        "/images/projects/qianxia-lake-park/hansign17062026055.webp",
+        "/images/projects/qianxia-lake-park/hansign17062026056.webp",
+        "/images/projects/qianxia-lake-park/hansign17062026059.webp",
+        "/images/projects/qianxia-lake-park/hansign17062026058.webp"
       ],
       "featured": false,
       "order": 21
@@ -995,9 +995,9 @@
         "place-wayfinding",
         "spatial-design"
       ],
-      "leadImage": "/images/projects/wellem-medical-beauty-hospital/cover-16x9.webp",
+      "leadImage": "/images/projects/medical/wellem-medical-beauty-hospital/cover-16x9.webp",
       "images": [
-        "/images/projects/Wayfinding MedicalSpace/weilin/weilin-optimized.webp"
+        "/images/projects/medical/wellem-medical-beauty-hospital/weilin-optimized.webp"
       ],
       "featured": false,
       "order": 22
@@ -1020,15 +1020,15 @@
         "brand-identity",
         "place-wayfinding"
       ],
-      "leadImage": "/images/projects/tianjin-hospital/cover-16x9.webp",
+      "leadImage": "/images/projects/medical/tianjin-hospital/cover-16x9.webp",
       "images": [
-        "/images/projects/tianjin-hospital/00-01.webp",
-        "/images/projects/tianjin-hospital/00-02.webp",
-        "/images/projects/tianjin-hospital/00-03.webp",
-        "/images/projects/tianjin-hospital/00-04.webp",
-        "/images/projects/tianjin-hospital/00-05.webp",
-        "/images/projects/tianjin-hospital/00-06-optimized.webp",
-        "/images/projects/tianjin-hospital/00-06-optimized-2.webp"
+        "/images/projects/medical/tianjin-hospital/00-01.webp",
+        "/images/projects/medical/tianjin-hospital/00-02.webp",
+        "/images/projects/medical/tianjin-hospital/00-03.webp",
+        "/images/projects/medical/tianjin-hospital/00-04.webp",
+        "/images/projects/medical/tianjin-hospital/00-05.webp",
+        "/images/projects/medical/tianjin-hospital/00-06-optimized.webp",
+        "/images/projects/medical/tianjin-hospital/00-06-optimized-2.webp"
       ],
       "featured": false,
       "order": 31
@@ -1084,11 +1084,11 @@
       "summaryEn": "Established in 2019, Shanghai YiHydrogen Technology Co., Ltd. is a high-tech enterprise specializing in the research, development, manufacturing, and technical services of membrane electrode products, the core components of hydrogen fuel cells and PEM hydrogen electrolyzers.",
       "summaryZh": "上海亿氢科技有限公司于2019年成立，是一家专业从事氢燃料电池、PEM制氢电解槽的核心组件膜电极产品的研发、制造和技术服务的高新技术企业。 ",
       "summaryFi": "Shanghai YiHydrogen Technology Co., Ltd. perustettiin vuonna 2019, ja se on korkean teknologian yritys, joka on erikoistunut kalvoelektrodituotteiden tutkimukseen, kehitykseen, valmistukseen ja teknisiin palveluihin. Kalvoelektrodit ovat vetypolttokennojen ja PEM-vetyelektrolyyserien ydinkomponentteja.",
-      "leadImage": "/images/projects/Yiqing Techin/codex-202698-031811.webp",
+      "leadImage": "/images/projects/yiqing_tech_fuel_cel_branding/codex-202698-031811.webp",
       "images": [
-        "/images/projects/Yiqing Techin/logo0408036.jpeg",
-        "/images/projects/Yiqing Techin/codex-202698-031803.webp",
-        "/images/projects/Yiqing Techin/codex-202698-031524.webp"
+        "/images/projects/yiqing_tech_fuel_cel_branding/logo0408036.jpeg",
+        "/images/projects/yiqing_tech_fuel_cel_branding/codex-202698-031803.webp",
+        "/images/projects/yiqing_tech_fuel_cel_branding/codex-202698-031524.webp"
       ],
       "featured": true,
       "order": 33
@@ -1114,9 +1114,9 @@
       "featured": false,
       "order": 25,
       "images": [
-        "/images/projects/ludaopei_medical/Codex 图像 2026年9月8日 02_56_15.webp"
+        "/images/projects/medical/ludaopei_medical/Codex 图像 2026年9月8日 02_56_15.webp"
       ],
-      "leadImage": "/images/projects/ludaopei_medical/cover-16x9.webp"
+      "leadImage": "/images/projects/medical/ludaopei_medical/cover-16x9.webp"
     }
   ]
 }

@@ -13,6 +13,13 @@ media:
     categories: [image]
     extensions: [jpg, jpeg, png, webp]
     rename: safe
+  - name: project_videos
+    label: Project videos / 项目视频
+    input: public/videos/projects
+    output: /videos/projects
+    categories: [video]
+    extensions: [mp4, webm, mov]
+    rename: safe
 
 content:
   - name: site_content
@@ -376,7 +383,7 @@ content:
                 - name: cross-cultural
                   label: Cross-cultural Strategy / 跨文化策略
           - name: leadImage
-            label: 01 Square project cover + homepage carousel / 01 项目页方形封面图 + 首页轮播图
+            label: 01 Project cover + homepage carousel / 01 项目首图 + 首页轮播图
             type: image
             required: false
             options:
@@ -389,6 +396,17 @@ content:
             options:
               media: project_images
               path: public/images/projects
+              multiple: true
+              unique: true
+          - name: videos
+            label: 03 Project videos / 03 项目视频（可多条）
+            type: file
+            required: false
+            options:
+              media: project_videos
+              path: public/videos/projects
+              categories: [video]
+              extensions: [mp4, webm, mov]
               multiple: true
               unique: true
           - name: featured
