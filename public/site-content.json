@@ -872,8 +872,12 @@
         "place-wayfinding",
         "spatial-design"
       ],
+      "leadImage": "/images/projects/Qianxia_Lake/hansign17062026056.webp",
       "images": [
-        "/images/projects/peacock-lake-park-cover.jpg"
+        "/images/projects/Qianxia_Lake/hansign17062026055.webp",
+        "/images/projects/Qianxia_Lake/hansign17062026056.webp",
+        "/images/projects/Qianxia_Lake/hansign17062026059.webp",
+        "/images/projects/Qianxia_Lake/hansign17062026058.webp"
       ],
       "featured": false,
       "order": 21
