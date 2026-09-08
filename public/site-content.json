@@ -273,6 +273,33 @@
       "order": 2
     },
     {
+      "id": "extreme_run ",
+      "titleEn": "Extreme_Run_2024_beijing",
+      "titleZh": "悦跑者",
+      "titleFi": "Extreme_Run_2024_beijing",
+      "summaryEn": "In October 2025, the inaugural Finnish ExtremeRun, a large-scale fun running event, was held on the Huanshan Road of the Laoshan Cycling and Fencing Center in Shijingshan District, Beijing, China. We participated in the brand's update and advertising support in China. The Finnish ExtremeRun was organized for the very first time in China, as hundreds of runners took part in this fun event.",
+      "summaryZh": "2025年10月，首届芬兰大型趣味跑步活动“EXTREMERUN悦跑者嘉年华”在中国北京石景山区老山自剑中心环山路举办。我们参与了品牌在中国的更新和广告宣传支持。",
+      "summaryFi": "Lokakuussa 2025 järjestettiin ensimmäinen laajamittainen hauska juoksutapahtuma Finnish ExtremeRun Laoshanin pyöräily- ja miekkailukeskuksen Huanshan-tiellä Shijingshanin piirikunnassa Pekingissä, Kiinassa. Osallistuimme brändin uudistukseen ja mainontaan Kiinassa. Finnish ExtremeRun järjestettiin ensimmäistä kertaa Kiinassa, ja satoja juoksijoita osallistui tähän hauskaan tapahtumaan.",
+      "locationEn": "Beijing",
+      "locationZh": "北京",
+      "locationFi": "Beijing",
+      "year": 2025,
+      "categories": [
+        "brand-identity",
+        "cross-cultural"
+      ],
+      "leadImage": "/images/projects/extreme_run/file.webp",
+      "images": [
+        "/images/projects/extreme_run/vi.webp",
+        "/images/projects/extreme_run/vi2.webp",
+        "/images/projects/extreme_run/didi181010007.webp",
+        "/images/projects/extreme_run/didi181010008.webp",
+        "/images/projects/extreme_run/vi3.webp"
+      ],
+      "featured": true,
+      "order": 31
+    },
+    {
       "id": "qinhuangdao-women-childrens-hospital",
       "titleEn": "Qinhuangdao Women & Children’s Hospital",
       "titleZh": "秦皇岛妇幼保健院",
@@ -395,6 +422,30 @@
       ],
       "featured": false,
       "order": 9
+    },
+    {
+      "id": "tikkurila_store_identity",
+      "titleEn": "Tikkurila Store Identity",
+      "titleZh": "芬琳漆 SI 统一店面系统",
+      "titleFi": "Tikkurilan myymäläilme",
+      "summaryEn": "For Tikkurila, a premium Finnish paint brand with over 160 years of heritage, we upgraded its retail visual identity to highlight Nordic aesthetics and sustainability. We established a standardized SI system adaptable to various store formats and scales, while enhancing the customer experience through optimized layout and digital interactions.",
+      "summaryZh": "针对拥有 160 余年历史的芬兰高端涂料品牌 Tikkurila，我们全面升级其终端视觉形象，彰显北欧美学与可持续理念；打造可弹性适配不同店型与规模的标准化 SI 系统；并通过优化空间布局与引入数字交互，重塑顾客零售体验。",
+      "summaryFi": "Tikkurilalle, yli 160-vuotiaalle ensiluokkaiselle suomalaiselle maalituotemerkille, uudistimme myymälän visuaalisen ilmeen korostaaksemme pohjoismaista estetiikkaa ja vastuullisuutta.  Loimme standardoidun myymäläkonseptijärjestelmän (SI-järjestelmän), joka mukautuu joustavasti eri myymälämuotoihin ja -kokoihin.Paransimme asiakaskokemusta optimoidun tilasuunnittelun ja digitaalisen vuorovaikutuksen avulla.",
+      "year": 2025,
+      "categories": [
+        "cross-cultural",
+        "spatial-design"
+      ],
+      "leadImage": "/images/projects/tikkurila/hansign17062026023.webp",
+      "images": [
+        "/images/projects/tikkurila/hansign17062026027.webp",
+        "/images/projects/tikkurila/hansign17062026025.webp",
+        "/images/projects/tikkurila/hansign17062026030.webp",
+        "/images/projects/tikkurila/hansign17062026026.webp",
+        "/images/projects/tikkurila/hansign17062026024.webp"
+      ],
+      "featured": true,
+      "order": 0
     },
     {
       "id": "china-japan-friendship-hospital",
@@ -974,55 +1025,20 @@
       "order": 30
     },
     {
-      "id": "extreme_run ",
-      "titleEn": "Extreme_Run_2024_beijing",
-      "titleZh": "悦跑者",
-      "titleFi": "Extreme_Run_2024_beijing",
-      "summaryEn": "In October 2025, the inaugural Finnish ExtremeRun, a large-scale fun running event, was held on the Huanshan Road of the Laoshan Cycling and Fencing Center in Shijingshan District, Beijing, China. We participated in the brand's update and advertising support in China. The Finnish ExtremeRun was organized for the very first time in China, as hundreds of runners took part in this fun event.",
-      "summaryZh": "2025年10月，首届芬兰大型趣味跑步活动“EXTREMERUN悦跑者嘉年华”在中国北京石景山区老山自剑中心环山路举办。我们参与了品牌在中国的更新和广告宣传支持。",
-      "summaryFi": "Lokakuussa 2025 järjestettiin ensimmäinen laajamittainen hauska juoksutapahtuma Finnish ExtremeRun Laoshanin pyöräily- ja miekkailukeskuksen Huanshan-tiellä Shijingshanin piirikunnassa Pekingissä, Kiinassa. Osallistuimme brändin uudistukseen ja mainontaan Kiinassa. Finnish ExtremeRun järjestettiin ensimmäistä kertaa Kiinassa, ja satoja juoksijoita osallistui tähän hauskaan tapahtumaan.",
-      "locationEn": "Beijing",
-      "locationZh": "北京",
-      "locationFi": "Beijing",
-      "year": 2025,
-      "categories": [
-        "brand-identity",
-        "cross-cultural"
-      ],
-      "leadImage": "/images/projects/extreme_run/file.webp",
+      "id": "yiqing_tech_fuel_cel_branding",
+      "titleEn": "Yiqing Tech Fuel Cel Branding",
+      "titleZh": "亿氢科技 品牌",
+      "titleFi": "Yiqing Techin polttokennojen brändäys",
+      "summaryEn": "Established in 2019, Shanghai YiHydrogen Technology Co., Ltd. is a high-tech enterprise specializing in the research, development, manufacturing, and technical services of membrane electrode products, the core components of hydrogen fuel cells and PEM hydrogen electrolyzers.",
+      "summaryZh": "上海亿氢科技有限公司于2019年成立，是一家专业从事氢燃料电池、PEM制氢电解槽的核心组件膜电极产品的研发、制造和技术服务的高新技术企业。 ",
+      "summaryFi": "Shanghai YiHydrogen Technology Co., Ltd. perustettiin vuonna 2019, ja se on korkean teknologian yritys, joka on erikoistunut kalvoelektrodituotteiden tutkimukseen, kehitykseen, valmistukseen ja teknisiin palveluihin. Kalvoelektrodit ovat vetypolttokennojen ja PEM-vetyelektrolyyserien ydinkomponentteja.",
+      "leadImage": "/images/projects/Yiqing Techin/codex-202698-031811.webp",
       "images": [
-        "/images/projects/extreme_run/vi.webp",
-        "/images/projects/extreme_run/vi2.webp",
-        "/images/projects/extreme_run/didi181010007.webp",
-        "/images/projects/extreme_run/didi181010008.webp",
-        "/images/projects/extreme_run/vi3.webp"
+        "/images/projects/Yiqing Techin/logo0408036.jpeg",
+        "/images/projects/Yiqing Techin/codex-202698-031803.webp",
+        "/images/projects/Yiqing Techin/codex-202698-031524.webp"
       ],
-      "featured": true,
-      "order": 31
-    },
-    {
-      "id": "tikkurila_store_identity",
-      "titleEn": "Tikkurila Store Identity",
-      "titleZh": "芬琳漆 SI 统一店面系统",
-      "titleFi": "Tikkurilan myymäläilme",
-      "summaryEn": "For Tikkurila, a premium Finnish paint brand with over 160 years of heritage, we upgraded its retail visual identity to highlight Nordic aesthetics and sustainability. We established a standardized SI system adaptable to various store formats and scales, while enhancing the customer experience through optimized layout and digital interactions.",
-      "summaryZh": "针对拥有 160 余年历史的芬兰高端涂料品牌 Tikkurila，我们全面升级其终端视觉形象，彰显北欧美学与可持续理念；打造可弹性适配不同店型与规模的标准化 SI 系统；并通过优化空间布局与引入数字交互，重塑顾客零售体验。",
-      "summaryFi": "Tikkurilalle, yli 160-vuotiaalle ensiluokkaiselle suomalaiselle maalituotemerkille, uudistimme myymälän visuaalisen ilmeen korostaaksemme pohjoismaista estetiikkaa ja vastuullisuutta.  Loimme standardoidun myymäläkonseptijärjestelmän (SI-järjestelmän), joka mukautuu joustavasti eri myymälämuotoihin ja -kokoihin.Paransimme asiakaskokemusta optimoidun tilasuunnittelun ja digitaalisen vuorovaikutuksen avulla.",
-      "year": 2025,
-      "categories": [
-        "cross-cultural",
-        "spatial-design"
-      ],
-      "leadImage": "/images/projects/tikkurila/hansign17062026023.webp",
-      "images": [
-        "/images/projects/tikkurila/hansign17062026027.webp",
-        "/images/projects/tikkurila/hansign17062026025.webp",
-        "/images/projects/tikkurila/hansign17062026030.webp",
-        "/images/projects/tikkurila/hansign17062026026.webp",
-        "/images/projects/tikkurila/hansign17062026024.webp"
-      ],
-      "featured": true,
-      "order": 0
+      "featured": true
     },
     {
       "id": "ludaopei_medical",
@@ -1044,22 +1060,6 @@
       ],
       "featured": false,
       "order": 25
-    },
-    {
-      "id": "yiqing_tech_fuel_cel_branding",
-      "titleEn": "Yiqing Tech Fuel Cel Branding",
-      "titleZh": "亿氢科技 品牌",
-      "titleFi": "Yiqing Techin polttokennojen brändäys",
-      "summaryEn": "Established in 2019, Shanghai YiHydrogen Technology Co., Ltd. is a high-tech enterprise specializing in the research, development, manufacturing, and technical services of membrane electrode products, the core components of hydrogen fuel cells and PEM hydrogen electrolyzers.",
-      "summaryZh": "上海亿氢科技有限公司于2019年成立，是一家专业从事氢燃料电池、PEM制氢电解槽的核心组件膜电极产品的研发、制造和技术服务的高新技术企业。 ",
-      "summaryFi": "Shanghai YiHydrogen Technology Co., Ltd. perustettiin vuonna 2019, ja se on korkean teknologian yritys, joka on erikoistunut kalvoelektrodituotteiden tutkimukseen, kehitykseen, valmistukseen ja teknisiin palveluihin. Kalvoelektrodit ovat vetypolttokennojen ja PEM-vetyelektrolyyserien ydinkomponentteja.",
-      "leadImage": "/images/projects/Yiqing Techin/codex-202698-031811.webp",
-      "images": [
-        "/images/projects/Yiqing Techin/logo0408036.jpeg",
-        "/images/projects/Yiqing Techin/codex-202698-031803.webp",
-        "/images/projects/Yiqing Techin/codex-202698-031524.webp"
-      ],
-      "featured": true
     }
   ]
 }
