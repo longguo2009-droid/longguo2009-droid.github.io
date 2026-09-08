@@ -589,11 +589,15 @@
       "categories": [
         "brand-identity"
       ],
-      "leadImage": "/images/projects/cue-brand-identity-cover.jpg",
+      "leadImage": "/images/projects/CUE/1.webp",
       "images": [
-        "/images/projects/cue-brand-identity-cover.jpg"
+        "/images/projects/CUE/cue-3.webp",
+        "/images/projects/CUE/cue-4.webp",
+        "/images/projects/CUE/cue-2.webp",
+        "/images/projects/CUE/file.webp",
+        "/images/projects/CUE/file-1.webp"
       ],
-      "featured": false,
+      "featured": true,
       "order": 27
     },
     {
