@@ -855,12 +855,12 @@
       "order": 20
     },
     {
-      "id": "peacock-lake-park",
-      "titleEn": "Peacock Lake Park",
-      "titleZh": "华夏·孔雀湖公园",
-      "titleFi": "Peacock Lake Park",
+      "id": "qianxia-lake-park",
+      "titleEn": "Qianxia Lake Park Guide Map",
+      "titleZh": "千峡湖景区导览",
+      "titleFi": "Qianxia Lake Park Guide Map",
       "summaryEn": "A park wayfinding and environmental graphics project supporting daily public use and a refined landscape identity.",
-      "summaryZh": "以孔雀湖公园为核心进行景观导示与环境图形设计，回应公共使用、生活方式与景观品质。",
+      "summaryZh": "以千峡湖景区为核心进行景观导示与环境图形设计，回应公共使用、生活方式与景观品质。",
       "summaryFi": "Puiston opastus- ja ympäristögrafiikkaprojekti, joka tukee päivittäistä julkista käyttöä ja viimeisteltyä maisemaidentiteettiä.",
       "locationEn": "China",
       "locationZh": "中国",
@@ -872,7 +872,6 @@
         "place-wayfinding",
         "spatial-design"
       ],
-      "leadImage": "/images/projects/peacock-lake-park-cover.jpg",
       "images": [
         "/images/projects/peacock-lake-park-cover.jpg"
       ],
