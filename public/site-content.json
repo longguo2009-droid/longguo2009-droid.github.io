@@ -1021,6 +1021,11 @@
       ],
       "featured": true,
       "order": 31
+    },
+    {
+      "id": "tikkurila_",
+      "titleEn": "Tikkurila",
+      "featured": false
     }
   ]
 }
