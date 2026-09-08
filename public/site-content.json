@@ -596,7 +596,7 @@
         "/images/projects/brotzeit-brand-identity/macbook-pro.webp"
       ],
       "featured": true,
-      "order": 7
+      "order": 10
     },
     {
       "id": "tsinghua-library-digital-experience-center",
@@ -621,7 +621,7 @@
         "/images/projects/hansign17062026077.jpeg"
       ],
       "featured": false,
-      "order": 8
+      "order": 11
     },
     {
       "id": "cue-brand-identity",
@@ -649,7 +649,7 @@
         "/images/projects/CUE/file-1.webp"
       ],
       "featured": true,
-      "order": 27
+      "order": 12
     },
     {
       "id": "wuxi-hemei-maternity-hospital",
@@ -675,7 +675,7 @@
         "/images/projects/Wayfinding MedicalSpace/wuxi/hansign17062026082.webp"
       ],
       "featured": false,
-      "order": 11
+      "order": 13
     },
     {
       "id": "china-world-trade-center-phase-3",
@@ -700,7 +700,7 @@
         "/images/projects/china-life-jiayuan-cover.jpg"
       ],
       "featured": false,
-      "order": 15
+      "order": 14
     },
     {
       "id": "Peking-international-childrens-hospital",
@@ -730,7 +730,7 @@
         "/images/projects/Wayfinding MedicalSpace/Peking-childrens-hospital/hansign17062026070.webp"
       ],
       "featured": false,
-      "order": 14
+      "order": 15
     },
     {
       "id": "yeahmobi-brand-upgrade",
@@ -1038,7 +1038,8 @@
         "/images/projects/Yiqing Techin/codex-202698-031803.webp",
         "/images/projects/Yiqing Techin/codex-202698-031524.webp"
       ],
-      "featured": true
+      "featured": true,
+      "order": 33
     },
     {
       "id": "ludaopei_medical",
