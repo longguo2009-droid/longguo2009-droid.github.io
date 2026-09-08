@@ -669,10 +669,14 @@
         "place-wayfinding",
         "spatial-design"
       ],
-      "leadImage": "/images/projects/kyoto-international-childrens-hospital-cover.jpg",
+      "leadImage": "/images/projects/Wayfinding MedicalSpace/Peking-childrens-hospital/hansign17062026070.webp",
       "images": [
-        "/images/projects/kyoto-international-childrens-hospital-cover.jpg",
-        "/images/projects/kyoto-international-childrens-hospital-cover-2.jpg"
+        "/images/projects/Wayfinding MedicalSpace/Peking-childrens-hospital/00.webp",
+        "/images/projects/Wayfinding MedicalSpace/Peking-childrens-hospital/002-1.webp",
+        "/images/projects/Wayfinding MedicalSpace/Peking-childrens-hospital/v2140428-01.webp",
+        "/images/projects/Wayfinding MedicalSpace/Peking-childrens-hospital/hansign17062026072.jpeg",
+        "/images/projects/Wayfinding MedicalSpace/Peking-childrens-hospital/002.webp",
+        "/images/projects/Wayfinding MedicalSpace/Peking-childrens-hospital/hansign17062026070.webp"
       ],
       "featured": false,
       "order": 14
