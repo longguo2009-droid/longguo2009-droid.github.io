@@ -997,10 +997,29 @@
     },
     {
       "id": "extreme_run ",
-      "titleEn": "Extreme_Run",
+      "titleEn": "Extreme_Run_2024_beijing",
       "titleZh": "悦跑者",
-      "titleFi": "Extreme_Run",
-      "featured": false,
+      "titleFi": "Extreme_Run_2024_beijing",
+      "summaryEn": "In October 2025, the inaugural Finnish ExtremeRun, a large-scale fun running event, was held on the Huanshan Road of the Laoshan Cycling and Fencing Center in Shijingshan District, Beijing, China. We participated in the brand's update and advertising support in China. The Finnish ExtremeRun was organized for the very first time in China, as hundreds of runners took part in this fun event.",
+      "summaryZh": "2025年10月，首届芬兰大型趣味跑步活动“EXTREMERUN悦跑者嘉年华”在中国北京石景山区老山自剑中心环山路举办。我们参与了品牌在中国的更新和广告宣传支持。",
+      "summaryFi": "Lokakuussa 2025 järjestettiin ensimmäinen laajamittainen hauska juoksutapahtuma Finnish ExtremeRun Laoshanin pyöräily- ja miekkailukeskuksen Huanshan-tiellä Shijingshanin piirikunnassa Pekingissä, Kiinassa. Osallistuimme brändin uudistukseen ja mainontaan Kiinassa. Finnish ExtremeRun järjestettiin ensimmäistä kertaa Kiinassa, ja satoja juoksijoita osallistui tähän hauskaan tapahtumaan.",
+      "locationEn": "Beijing",
+      "locationZh": "北京",
+      "locationFi": "Beijing",
+      "year": 2025,
+      "categories": [
+        "brand-identity",
+        "cross-cultural"
+      ],
+      "leadImage": "/images/projects/extreme_run/file.webp",
+      "images": [
+        "/images/projects/extreme_run/vi.webp",
+        "/images/projects/extreme_run/vi2.webp",
+        "/images/projects/extreme_run/didi181010007.webp",
+        "/images/projects/extreme_run/didi181010008.webp",
+        "/images/projects/extreme_run/vi3.webp"
+      ],
+      "featured": true,
       "order": 31
     }
   ]
