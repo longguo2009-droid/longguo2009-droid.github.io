@@ -947,9 +947,14 @@
         "brand-identity",
         "place-wayfinding"
       ],
-      "leadImage": "/images/projects/china-japan-friendship-hospital-cover.jpg",
+      "leadImage": "/images/projects/Wayfinding MedicalSpace/tianjin/tianjin2.jpg",
       "images": [
-        "/images/projects/china-japan-friendship-hospital-cover.jpg"
+        "/images/projects/Wayfinding MedicalSpace/tianjin/00-02.webp",
+        "/images/projects/Wayfinding MedicalSpace/tianjin/00-03.webp",
+        "/images/projects/Wayfinding MedicalSpace/tianjin/00-04.webp",
+        "/images/projects/Wayfinding MedicalSpace/tianjin/00-05.webp",
+        "/images/projects/Wayfinding MedicalSpace/tianjin/00-01.webp",
+        "/images/projects/00-06.jpg"
       ],
       "featured": false,
       "order": 10
