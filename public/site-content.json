@@ -1043,7 +1043,8 @@
         "/images/projects/tikkurila/hansign17062026026.webp",
         "/images/projects/tikkurila/hansign17062026024.webp"
       ],
-      "featured": true
+      "featured": true,
+      "order": 0
     }
   ]
 }
