@@ -498,6 +498,17 @@
         "place-wayfinding",
         "brand-identity"
       ],
+      "leadImage": "/images/projects/didi/codex-202698-021316.webp",
+      "images": [
+        "/images/projects/didi/dididesignprinciplespage01.webp",
+        "/images/projects/didi/dididesignprinciplespage02.webp",
+        "/images/projects/didi/codex-202698-014709.webp",
+        "/images/projects/didi/codex-202698-015823.webp",
+        "/images/projects/didi/codex-202698-020021.webp",
+        "/images/projects/didi/codex-202698-020306.webp",
+        "/images/projects/didi/codex-202698-021720.webp",
+        "/images/projects/didi/codex-202698-022438.webp"
+      ],
       "featured": true,
       "order": 5
     },
