@@ -1044,6 +1044,12 @@
       ],
       "featured": false,
       "order": 25
+    },
+    {
+      "id": "yiqing_tech_fuel_cel_branding",
+      "titleEn": "Yiqing Tech Fuel Cel Branding",
+      "titleZh": "亿氢科技 品牌",
+      "featured": false
     }
   ]
 }
