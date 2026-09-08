@@ -735,10 +735,6 @@
         "place-wayfinding",
         "spatial-design"
       ],
-      "leadImage": "/images/projects/hefei-times-mall-cover.png",
-      "images": [
-        "/images/projects/hefei-times-mall-cover.png"
-      ],
       "featured": false,
       "order": 26
     },
