@@ -230,6 +230,15 @@
         "place-wayfinding",
         "brand-identity"
       ],
+      "leadImage": "/images/projects/henan/hansign17062026018.webp",
+      "images": [
+        "/images/projects/henan/26-06.webp",
+        "/images/projects/henan/26-07.webp",
+        "/images/projects/henan/26-08.webp",
+        "/images/projects/henan/hansign17062026015.webp",
+        "/images/projects/henan/img2961.webp",
+        "/images/projects/henan/img2962.webp"
+      ],
       "featured": true,
       "order": 1
     },
