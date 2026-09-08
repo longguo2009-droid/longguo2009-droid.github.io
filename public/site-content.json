@@ -300,36 +300,6 @@
       "order": 5
     },
     {
-      "id": "qinhuangdao-women-childrens-hospital",
-      "titleEn": "Qinhuangdao Women & Children’s Hospital",
-      "titleZh": "秦皇岛妇幼保健院",
-      "titleFi": "Qinhuangdaon naisten ja lasten sairaala",
-      "summaryEn": "A hospital identity, wayfinding and environmental graphics system shaped around care, clarity and a warmer public-service experience.",
-      "summaryZh": "为妇幼保健院建立视觉形象、导示系统与楼层环境图形，让公共医疗空间更清晰、更亲和。",
-      "summaryFi": "Sairaalan visuaalinen identiteetti, opastusjärjestelmä ja ympäristögrafiikka, joiden lähtökohtina ovat hoiva, selkeys ja lämpimämpi julkinen palvelukokemus.",
-      "locationEn": "Qinhuangdao, China",
-      "locationZh": "中国秦皇岛",
-      "locationFi": "Qinhuangdao, Kiina",
-      "scopeEn": "Spatial identity, wayfinding and environmental graphics",
-      "scopeZh": "空间识别、导示系统、环境图形",
-      "scopeFi": "Tilallinen identiteetti, opastus ja ympäristögrafiikka",
-      "year": 2018,
-      "categories": [
-        "place-wayfinding",
-        "brand-identity"
-      ],
-      "leadImage": "/images/projects/qinhuangdao-women-childrens-hospital/img2949.webp",
-      "images": [
-        "/images/projects/hansign17062026066.jpeg",
-        "/images/projects/hansign17062026065.jpeg",
-        "/images/projects/hansign17062026063.jpeg",
-        "/images/projects/hansign17062026062.jpeg",
-        "/images/projects/hansign17062026067.jpeg"
-      ],
-      "featured": true,
-      "order": 3
-    },
-    {
       "id": "china-life-airport-experience-center",
       "titleEn": "China Life Airport Experience Center",
       "titleZh": "空港国寿展陈空间",
@@ -387,7 +357,37 @@
         "/images/projects/china-life-jiayuan/hansign17062026048.webp"
       ],
       "featured": false,
-      "order": 13
+      "order": 7
+    },
+    {
+      "id": "qinhuangdao-women-childrens-hospital",
+      "titleEn": "Qinhuangdao Women & Children’s Hospital",
+      "titleZh": "秦皇岛妇幼保健院",
+      "titleFi": "Qinhuangdaon naisten ja lasten sairaala",
+      "summaryEn": "A hospital identity, wayfinding and environmental graphics system shaped around care, clarity and a warmer public-service experience.",
+      "summaryZh": "为妇幼保健院建立视觉形象、导示系统与楼层环境图形，让公共医疗空间更清晰、更亲和。",
+      "summaryFi": "Sairaalan visuaalinen identiteetti, opastusjärjestelmä ja ympäristögrafiikka, joiden lähtökohtina ovat hoiva, selkeys ja lämpimämpi julkinen palvelukokemus.",
+      "locationEn": "Qinhuangdao, China",
+      "locationZh": "中国秦皇岛",
+      "locationFi": "Qinhuangdao, Kiina",
+      "scopeEn": "Spatial identity, wayfinding and environmental graphics",
+      "scopeZh": "空间识别、导示系统、环境图形",
+      "scopeFi": "Tilallinen identiteetti, opastus ja ympäristögrafiikka",
+      "year": 2018,
+      "categories": [
+        "place-wayfinding",
+        "brand-identity"
+      ],
+      "leadImage": "/images/projects/qinhuangdao-women-childrens-hospital/img2949.webp",
+      "images": [
+        "/images/projects/hansign17062026066.jpeg",
+        "/images/projects/hansign17062026065.jpeg",
+        "/images/projects/hansign17062026063.jpeg",
+        "/images/projects/hansign17062026062.jpeg",
+        "/images/projects/hansign17062026067.jpeg"
+      ],
+      "featured": true,
+      "order": 8
     },
     {
       "id": "beijing-design-week-installation",
@@ -503,7 +503,7 @@
         "/images/projects/Wayfinding MedicalSpace/haikou_unicare/006.webp"
       ],
       "featured": true,
-      "order": 23
+      "order": 7
     },
     {
       "id": "xiamen-humanity-hospital",
