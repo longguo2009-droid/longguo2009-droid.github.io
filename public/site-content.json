@@ -905,27 +905,6 @@
       "order": 22
     },
     {
-      "id": "haikou_unicare_international_hospital",
-      "titleEn": "haikou_unicare_international_hospital",
-      "titleZh": "中国中医科学院附属西苑医院",
-      "titleFi": "Xiyuan-sairaalan opastuskonsepti",
-      "summaryEn": "A concept wayfinding study for a traditional Chinese medicine hospital, exploring material expression rooted in Chinese medical culture.",
-      "summaryZh": "为中医权威医疗机构进行导示系统概念设计，尝试以宣纸等材料回应中医与中国文化语境。",
-      "summaryFi": "Perinteisen kiinalaisen lääketieteen sairaalan opastuskonseptitutkimus, joka tarkastelee kiinalaiseen lääketieteelliseen kulttuuriin juurtuvaa materiaalista ilmaisua.",
-      "locationEn": "Beijing, China",
-      "locationZh": "中国北京",
-      "locationFi": "Peking, Kiina",
-      "scopeEn": "Wayfinding concept, cultural material research",
-      "scopeZh": "导示概念设计、文化材料研究",
-      "scopeFi": "Opastuskonsepti ja kulttuurinen materiaalitutkimus",
-      "categories": [
-        "place-wayfinding",
-        "cross-cultural"
-      ],
-      "featured": false,
-      "order": 25
-    },
-    {
       "id": "tianjin-hospital",
       "titleEn": "Tianjin Hospital",
       "titleZh": "天津医院",
@@ -1044,6 +1023,27 @@
       ],
       "featured": true,
       "order": 0
+    },
+    {
+      "id": "ludaopei_medical",
+      "titleEn": "Ludaopei_Medical_International_Hospital",
+      "titleZh": "陆道培血液病医院",
+      "titleFi": "Xiyuan-sairaalan opastuskonsepti",
+      "summaryEn": "A concept wayfinding study for a traditional Chinese medicine hospital, exploring material expression rooted in Chinese medical culture.",
+      "summaryZh": "为中医权威医疗机构进行导示系统概念设计，尝试以宣纸等材料回应中医与中国文化语境。",
+      "summaryFi": "Perinteisen kiinalaisen lääketieteen sairaalan opastuskonseptitutkimus, joka tarkastelee kiinalaiseen lääketieteelliseen kulttuuriin juurtuvaa materiaalista ilmaisua.",
+      "locationEn": "Beijing, China",
+      "locationZh": "中国北京",
+      "locationFi": "Peking, Kiina",
+      "scopeEn": "Wayfinding concept, cultural material research",
+      "scopeZh": "导示概念设计、文化材料研究",
+      "scopeFi": "Opastuskonsepti ja kulttuurinen materiaalitutkimus",
+      "categories": [
+        "place-wayfinding",
+        "cross-cultural"
+      ],
+      "featured": false,
+      "order": 25
     }
   ]
 }
