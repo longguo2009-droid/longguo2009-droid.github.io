@@ -851,6 +851,8 @@
         .project-gallery img {
           width: 100%;
           height: auto;
+          aspect-ratio: auto;
+          object-fit: contain;
           display: block;
           background: #d8d8d4;
         }
@@ -1573,8 +1575,6 @@
               <img
                 src="${escapeHtml(assetPath(image))}"
                 alt="${escapeHtml(project.titleEn)} detail image ${index + 1}"
-                width="1600"
-                height="900"
                 loading="${index === 0 ? "eager" : "lazy"}"
               />
             </figure>
