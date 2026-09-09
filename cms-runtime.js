@@ -80,7 +80,25 @@
     const path = text(value);
     return path.startsWith("images/") ? `/${path}` : path;
   };
-  const projectHref = (project) => `/projects/${encodeURIComponent(text(project?.id))}/index.html`;
+  const projectId = (project) => text(project?.id).trim();
+  const projectHref = (project) => `/projects/${encodeURIComponent(projectId(project))}/index.html`;
+  const canonicalizeProjectPath = () => {
+    const match = window.location.pathname.match(/^\/projects\/([^/]+)(?:\/index\.html)?\/?$/);
+    if (!match) return false;
+    let decoded = match[1];
+    try {
+      decoded = decodeURIComponent(decoded);
+    } catch {}
+    const normalized = decoded.trim();
+    if (!normalized) return false;
+    const canonicalPath = `/projects/${encodeURIComponent(normalized)}/index.html`;
+    if (window.location.pathname !== canonicalPath) {
+      window.location.replace(`${canonicalPath}${window.location.search}${window.location.hash}`);
+      return true;
+    }
+    return false;
+  };
+  if (canonicalizeProjectPath()) return;
   const injectTypography = () => {
     document.documentElement.classList.add("notranslate");
     document.documentElement.setAttribute("translate", "no");
@@ -231,6 +249,9 @@
       @media (max-width:900px){.hero.is-static .hero-slide img{object-position:center center!important}.hero.is-static::after{background:linear-gradient(180deg,rgba(9,32,54,.04) 0%,rgba(9,32,54,.3) 46%,rgba(9,32,54,.76) 100%)!important}.hero.is-static .intro{font-size:clamp(.98rem,2.9vw,1.22rem)!important;line-height:1.48!important}.hero.is-static .eyebrow{font-size:.68rem!important}.featured-work-stage{min-height:clamp(34rem,104vw,46rem)!important}.featured-work-slide{gap:1rem!important}.featured-work-media{min-height:0!important;aspect-ratio:4/3!important}.featured-work-media img{height:100%!important;object-fit:cover!important;object-position:center!important}.featured-work-copy{justify-content:start!important}.floating-contact{right:.65rem!important}}
       @media (max-width:560px){.hero.is-static .hero-slide img{object-position:center center!important}.hero.is-static .intro{font-size:.94rem!important}.featured-work-stage{min-height:clamp(32rem,138vw,43rem)!important}.featured-work-media{aspect-ratio:3/4!important}.featured-work-title{font-size:clamp(1.65rem,9.2vw,2.65rem)!important}.floating-contact-toggle{min-width:4.35rem!important;min-height:3.05rem!important;padding:.82rem .9rem!important;font-size:.82rem!important}}
       @media (max-width:900px){.featured-work-media{display:flex!important;align-items:center!important;justify-content:center!important;aspect-ratio:auto!important;min-height:0!important;max-height:none!important;background:color-mix(in srgb,var(--blue) 5%,var(--paper-light))!important}.featured-work-media img{position:relative!important;width:100%!important;height:auto!important;max-height:min(74svh,42rem)!important;object-fit:contain!important;object-position:center!important;transform:none!important}.featured-work-slide.active .featured-work-media img{transform:none!important}.lead img,.project-gallery img{width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;object-position:center!important;aspect-ratio:auto!important;transform:none!important}.project-gallery figure{overflow:visible!important;background:transparent!important}.project-gallery{gap:clamp(1.4rem,5vw,2.4rem)!important}.project-card img{height:auto!important;aspect-ratio:auto!important;object-fit:contain!important}}
+      .project-videos{display:grid;gap:clamp(1.4rem,5vw,2.4rem)}
+      .project-videos figure{margin:0}
+      .project-videos video{display:block;width:100%;height:auto;background:#000}
       @media (max-width:560px){.featured-work-stage{min-height:auto!important}.featured-work-slide{position:relative!important;display:none!important;inset:auto!important}.featured-work-slide.active{display:grid!important}.featured-work-media img{max-height:none!important}.lead img,.project-gallery img,.project-card img{max-width:100%!important;height:auto!important}}
       .contact-details{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:1rem!important;margin-top:clamp(2.5rem,5vw,5rem)!important;border-top:1px solid var(--line)!important;border-bottom:1px solid var(--line)!important}
       .contact-details div{padding-block:1.1rem!important}
@@ -481,7 +502,7 @@
     document.querySelectorAll(".display + .zh").forEach((title) => {
       title.classList.add("display", "section-title-zh");
     });
-    document.querySelectorAll(".intro:not(.zh), .narrative p:not(.zh), .approach-copy p:not(.zh)").forEach((element) => {
+    document.querySelectorAll(".intro p:not(.zh):not(.eyebrow), .narrative p:not(.zh), .approach-copy p:not(.zh)").forEach((element) => {
       element.dataset.lang ||= "en";
     });
     document.querySelectorAll(".cityline").forEach((element) => {
@@ -745,7 +766,12 @@
   const findProjectFromPath = (projects) => {
     const match = window.location.pathname.match(/^\/projects\/([^/]+)(?:\/index\.html|\/)?$/);
     if (!match) return null;
-    return projects.find((project) => project.id === match[1]) || null;
+    let slug = match[1];
+    try {
+      slug = decodeURIComponent(slug);
+    } catch {}
+    slug = slug.trim();
+    return projects.find((project) => projectId(project) === slug) || null;
   };
 
   const ensureProjectDetailScaffold = (project) => {
@@ -772,6 +798,7 @@
           <p data-lang="fi"></p>
         </section>
         <section class="project-gallery shell section" aria-label="Project detail gallery / 项目详情图片" data-project-gallery></section>
+        <section class="project-videos shell section" aria-label="Project videos / 项目视频" data-project-videos></section>
       </article>
     `;
 
@@ -826,6 +853,19 @@
           height: auto;
           display: block;
           background: #d8d8d4;
+        }
+        .project-videos {
+          display: grid;
+          gap: clamp(1rem, 2vw, 2rem);
+        }
+        .project-videos figure {
+          margin: 0;
+        }
+        .project-videos video {
+          display: block;
+          width: 100%;
+          height: auto;
+          background: #000;
         }
         @media (max-width: 700px) {
           .project-header dl,
@@ -1537,6 +1577,33 @@
                 height="900"
                 loading="${index === 0 ? "eager" : "lazy"}"
               />
+            </figure>
+          `,
+        )
+        .join("");
+    }
+
+    let videosSection = document.querySelector("[data-project-videos]");
+    if (!videosSection && gallery) {
+      videosSection = document.createElement("section");
+      videosSection.className = "project-videos shell section";
+      videosSection.setAttribute("aria-label", "Project videos / 项目视频");
+      videosSection.setAttribute("data-project-videos", "");
+      gallery.insertAdjacentElement("afterend", videosSection);
+    }
+    const videos = Array.isArray(project.videos) ? project.videos : [];
+    if (videosSection) {
+      videosSection.hidden = !videos.length;
+      videosSection.innerHTML = videos
+        .map(
+          (video, index) => `
+            <figure>
+              <video
+                src="${escapeHtml(assetPath(video))}"
+                controls
+                preload="metadata"
+                aria-label="${escapeHtml(project.titleEn)} video ${index + 1}"
+              ></video>
             </figure>
           `,
         )

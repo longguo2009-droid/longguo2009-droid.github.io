@@ -82,6 +82,23 @@
   };
   const projectId = (project) => text(project?.id).trim();
   const projectHref = (project) => `/projects/${encodeURIComponent(projectId(project))}/index.html`;
+  const canonicalizeProjectPath = () => {
+    const match = window.location.pathname.match(/^\/projects\/([^/]+)(?:\/index\.html)?\/?$/);
+    if (!match) return false;
+    let decoded = match[1];
+    try {
+      decoded = decodeURIComponent(decoded);
+    } catch {}
+    const normalized = decoded.trim();
+    if (!normalized) return false;
+    const canonicalPath = `/projects/${encodeURIComponent(normalized)}/index.html`;
+    if (window.location.pathname !== canonicalPath) {
+      window.location.replace(`${canonicalPath}${window.location.search}${window.location.hash}`);
+      return true;
+    }
+    return false;
+  };
+  if (canonicalizeProjectPath()) return;
   const injectTypography = () => {
     document.documentElement.classList.add("notranslate");
     document.documentElement.setAttribute("translate", "no");
