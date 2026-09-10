@@ -298,11 +298,11 @@
       ],
       "leadImage": "/images/projects/extreme_run/file.webp",
       "images": [
+        "/images/projects/extreme_run/vi3.webp",
         "/images/projects/extreme_run/vi.webp",
         "/images/projects/extreme_run/vi2.webp",
         "/images/projects/extreme_run/didi181010007.webp",
-        "/images/projects/extreme_run/didi181010008.webp",
-        "/images/projects/extreme_run/vi3.webp"
+        "/images/projects/extreme_run/didi181010008.webp"
       ],
       "featured": true,
       "order": 5
@@ -1070,11 +1070,11 @@
         "place-wayfinding"
       ],
       "leadImage": "/images/projects/qingyang_headquarters_economy_base/cover-16x9.webp",
-      "featured": false,
-      "order": 30,
       "images": [
         "/images/projects/qingyang_headquarters_economy_base/作品集26-14.webp"
-      ]
+      ],
+      "featured": false,
+      "order": 30
     },
     {
       "id": "yiqing_tech_fuel_cel_branding",
@@ -1111,12 +1111,12 @@
         "place-wayfinding",
         "cross-cultural"
       ],
-      "featured": false,
-      "order": 25,
+      "leadImage": "/images/projects/medical/ludaopei_medical/cover-16x9.webp",
       "images": [
         "/images/projects/medical/ludaopei_medical/Codex 图像 2026年9月8日 02_56_15.webp"
       ],
-      "leadImage": "/images/projects/medical/ludaopei_medical/cover-16x9.webp"
+      "featured": false,
+      "order": 25
     }
   ]
 }
