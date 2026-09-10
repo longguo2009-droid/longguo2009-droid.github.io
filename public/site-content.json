@@ -208,7 +208,7 @@
       "images": [
         "/images/projects/china_central_television/26-10-optimized.webp"
       ],
-      "featured": false,
+      "featured": true,
       "order": 2
     },
     {
@@ -517,6 +517,29 @@
         "/images/projects/medical/haikou_unicare_international_hospital/005.webp",
         "/images/projects/medical/haikou_unicare_international_hospital/006.webp",
         "/images/projects/medical/haikou_unicare_international_hospital/youlian-optimized.webp"
+      ],
+      "featured": true,
+      "order": 7
+    },
+    {
+      "id": "wanshan_wanpu",
+      "titleEn": "Wanshan Wanpu – Office Space Design",
+      "titleZh": "万山万璞-办公空间设计",
+      "titleFi": "Wanshan Wanpu – Toimistotilan suunnittelu",
+      "summaryEn": "Just as raw stone shapes a mountain and unpolished jade conceals perfection, \"Wanshan Wanpu\" serves clients with its core values: \"Goodwill, Professionalism, and Orderly Execution.\"\nInspired by the grand contours of Mount Tai, the logo captures a powerful presence that reflects the company's solid foundation and dependability.",
+      "summaryZh": "山是石，璞是玉，万山万璞公司服务客户的宗旨就是这句「善意、专业、行而有序」的slogan。\n创作取法泰山的山形，以雄浑之气势代表企业的厚重和坚实。",
+      "summaryFi": "Vuori muodostuu kivestä ja raakakivi piilottaa jalokiven. \"Wanshan Wanpu\" palvelee asiakkaitaan arvojensa mukaisesti: \"Hyväntahtoisuus, ammattitaito ja hallittu toteutus.\"\nMuotoilultaan Tai-vuoren jylhiä ääriviivoja mukaileva logo ilmentää yrityksen vakavaraisuutta, lujuutta ja luotettavuutta.",
+      "year": 2018,
+      "categories": [
+        "place-wayfinding",
+        "spatial-design"
+      ],
+      "leadImage": "/images/projects/Wanshan Wanpu/wechatimg1291.jpeg",
+      "images": [
+        "/images/projects/Wanshan Wanpu/wechatimg1290.jpeg",
+        "/images/projects/Wanshan Wanpu/wechatimg1292.jpeg",
+        "/images/projects/Wanshan Wanpu/wechatimg1293.jpeg",
+        "/images/projects/Wanshan Wanpu/wechatimg1291.jpeg"
       ],
       "featured": true,
       "order": 7
@@ -975,31 +998,6 @@
       "order": 21
     },
     {
-      "id": "wellem-medical-beauty-hospital",
-      "titleEn": "Wellem Medical Beauty Hospital",
-      "titleZh": "薇琳医美国际美容医院",
-      "titleFi": "Wellem Medical Beauty -sairaala",
-      "summaryEn": "A wayfinding and environmental graphics project for a high-end medical beauty hospital, shaping a more distinctive service environment.",
-      "summaryZh": "为高端医美医院提供导示系统与环境图形设计，并服务落地实施，塑造更具品牌识别的就诊空间。",
-      "summaryFi": "Korkeatasoisen lääketieteellisen kauneussairaalan opastus- ja ympäristögrafiikkaprojekti, joka rakentaa erottuvampaa palveluympäristöä.",
-      "locationEn": "Beijing, China",
-      "locationZh": "中国北京",
-      "locationFi": "Peking, Kiina",
-      "scopeEn": "Wayfinding, environmental graphics, implementation",
-      "scopeZh": "导示系统、环境图形、施工落地",
-      "scopeFi": "Opastus, ympäristögrafiikka ja toteutus",
-      "categories": [
-        "place-wayfinding",
-        "spatial-design"
-      ],
-      "leadImage": "/images/projects/medical/wellem-medical-beauty-hospital/cover-16x9.webp",
-      "images": [
-        "/images/projects/medical/wellem-medical-beauty-hospital/weilin-optimized.webp"
-      ],
-      "featured": false,
-      "order": 22
-    },
-    {
       "id": "tianjin-hospital",
       "titleEn": "Tianjin Hospital",
       "titleZh": "天津医院",
@@ -1094,7 +1092,7 @@
         "/images/projects/yiqing_tech_fuel_cel_branding/codex-202698-031803.webp",
         "/images/projects/yiqing_tech_fuel_cel_branding/codex-202698-031524.webp"
       ],
-      "featured": true,
+      "featured": false,
       "order": 33
     },
     {
@@ -1120,27 +1118,29 @@
       "order": 25
     },
     {
-      "id": "wanshan_wanpu",
-      "titleEn": "Wanshan Wanpu – Office Space Design",
-      "titleZh": "万山万璞-办公空间设计",
-      "titleFi": "Wanshan Wanpu – Toimistotilan suunnittelu",
-      "summaryEn": "Just as raw stone shapes a mountain and unpolished jade conceals perfection, \"Wanshan Wanpu\" serves clients with its core values: \"Goodwill, Professionalism, and Orderly Execution.\"\nInspired by the grand contours of Mount Tai, the logo captures a powerful presence that reflects the company's solid foundation and dependability.",
-      "summaryZh": "山是石，璞是玉，万山万璞公司服务客户的宗旨就是这句「善意、专业、行而有序」的slogan。\n创作取法泰山的山形，以雄浑之气势代表企业的厚重和坚实。",
-      "summaryFi": "Vuori muodostuu kivestä ja raakakivi piilottaa jalokiven. \"Wanshan Wanpu\" palvelee asiakkaitaan arvojensa mukaisesti: \"Hyväntahtoisuus, ammattitaito ja hallittu toteutus.\"\nMuotoilultaan Tai-vuoren jylhiä ääriviivoja mukaileva logo ilmentää yrityksen vakavaraisuutta, lujuutta ja luotettavuutta.",
-      "year": 2018,
+      "id": "wellem-medical-beauty-hospital",
+      "titleEn": "Wellem Medical Beauty Hospital",
+      "titleZh": "薇琳医美国际美容医院",
+      "titleFi": "Wellem Medical Beauty -sairaala",
+      "summaryEn": "A wayfinding and environmental graphics project for a high-end medical beauty hospital, shaping a more distinctive service environment.",
+      "summaryZh": "为高端医美医院提供导示系统与环境图形设计，并服务落地实施，塑造更具品牌识别的就诊空间。",
+      "summaryFi": "Korkeatasoisen lääketieteellisen kauneussairaalan opastus- ja ympäristögrafiikkaprojekti, joka rakentaa erottuvampaa palveluympäristöä.",
+      "locationEn": "Beijing, China",
+      "locationZh": "中国北京",
+      "locationFi": "Peking, Kiina",
+      "scopeEn": "Wayfinding, environmental graphics, implementation",
+      "scopeZh": "导示系统、环境图形、施工落地",
+      "scopeFi": "Opastus, ympäristögrafiikka ja toteutus",
       "categories": [
         "place-wayfinding",
         "spatial-design"
       ],
-      "leadImage": "/images/projects/Wanshan Wanpu/wechatimg1291.jpeg",
+      "leadImage": "/images/projects/medical/wellem-medical-beauty-hospital/cover-16x9.webp",
       "images": [
-        "/images/projects/Wanshan Wanpu/wechatimg1290.jpeg",
-        "/images/projects/Wanshan Wanpu/wechatimg1292.jpeg",
-        "/images/projects/Wanshan Wanpu/wechatimg1293.jpeg",
-        "/images/projects/Wanshan Wanpu/wechatimg1291.jpeg"
+        "/images/projects/medical/wellem-medical-beauty-hospital/weilin-optimized.webp"
       ],
-      "featured": true,
-      "order": 7
+      "featured": false,
+      "order": 22
     }
   ]
 }
