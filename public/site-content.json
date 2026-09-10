@@ -1059,15 +1059,22 @@
       "titleEn": "Qingyang Headquarters Economy Base",
       "titleZh": "青羊总部基地",
       "titleFi": "Qingyangin päämajan taloustukikohta",
+      "summaryZh": "青羊总部经济基地是成都青羊区发展以军民融合为依托的航空产业、软件制造、电子商务、健康服务等龙头产业，致力于打造现代新兴产业发展示范区。\n动态的logo及衍生的icon，代表了总部经济基地未来的互联／共生／绿能的理念。\n最重要的“青羊”之拼音首字母“QY”及“开关”的形象，智慧的开启了一个总部经济基地综合服务平台。\n",
       "locationEn": "Chengdu_China",
       "locationFi": "Chengdu_Kiina",
       "year": 2017,
       "categories": [
-        "place-wayfinding"
+        "place-wayfinding",
+        "brand-identity"
       ],
-      "leadImage": "/images/projects/qingyang_headquarters_economy_base/cover-16x9.webp",
+      "leadImage": "/images/projects/qingyang_headquarters_economy_base/004.jpeg",
       "images": [
-        "/images/projects/qingyang_headquarters_economy_base/作品集26-14.webp"
+        "/images/projects/qingyang_headquarters_economy_base/cover-16x9.webp",
+        "/images/projects/qingyang_headquarters_economy_base/005.jpeg",
+        "/images/projects/qingyang_headquarters_economy_base/002.jpeg",
+        "/images/projects/qingyang_headquarters_economy_base/004.jpeg",
+        "/images/projects/qingyang_headquarters_economy_base/006.jpeg",
+        "/images/projects/qingyang_headquarters_economy_base/007.jpeg"
       ],
       "featured": false,
       "order": 30
