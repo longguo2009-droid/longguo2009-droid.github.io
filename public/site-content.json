@@ -868,28 +868,25 @@
       "order": 26
     },
     {
-      "id": "tongde-hospital-xianlin-campus",
-      "titleEn": "Tongde Hospital Xianlin Campus",
-      "titleZh": "同德医院闲林院区",
-      "titleFi": "Tongde-sairaalan Xianlin-kampus",
-      "summaryEn": "A brand refresh and wayfinding system for a hospital campus, extending institutional identity into a clearer spatial experience.",
-      "summaryZh": "为医院院区进行品牌重塑、VI 系统与导示系统设计，将机构识别延展到更清晰的空间体验。",
-      "summaryFi": "Sairaalakampuksen brändin päivitys ja opastusjärjestelmä, joka laajentaa instituution identiteetin selkeämmäksi tilakokemukseksi.",
-      "locationEn": "Zhejiang, China",
-      "locationZh": "中国浙江",
-      "locationFi": "Zhejiang, Kiina",
-      "scopeEn": "Brand refresh, visual identity, wayfinding",
-      "scopeZh": "品牌重塑、VI 系统、导示系统",
-      "scopeFi": "Brändin uudistus, visuaalinen identiteetti ja opastus",
+      "id": "jiangRong-hub-apartment-space",
+      "titleEn": "JiangRong Hub Apartment Space",
+      "titleZh": "建融青年公寓",
+      "titleFi": "JiangRong Hub Asuntokohde",
+      "summaryEn": "CCB Youth Apartment is a premium long-term rental youth community by CCB Housing. Designed in collaboration with Tsinghua University, it incorporates human-centric, modular, and community-driven spatial concepts, balancing minimalist aesthetics with spatial efficiency.",
+      "summaryZh": "建融青年公寓是建信住房推出的高品质长租青年社区，清华大学设计团队为其注入了人本化、模块化与社群化的空间设计理念，兼顾极简美学与高利用率。",
+      "summaryFi": "CCB Youth Apartment on CCB Housingin kehittämä laadukas pitkäaikaiseen vuokraukseen tarkoitettu nuorisoasuntoyhteisö. Yhteistyössä Tsinghua-yliopiston kanssa suunnitellussa kohteessa yhdistyvät käyttäjälähtöinen ja moduulipohjainen tilasuunnittelu sekä yhteisöllisyys.",
+      "locationEn": "Beijing, China",
+      "locationZh": "中国北京",
+      "locationFi": "Beijing, Kiina",
+      "scopeEn": "visual identity, wayfinding",
+      "scopeZh": "VI 系统、导示系统",
+      "scopeFi": "visuaalinen identiteetti ja opastus",
       "categories": [
-        "brand-identity",
         "place-wayfinding"
       ],
-      "leadImage": "/images/projects/medical/tongde-hospital-xianlin-campus/cover-16x9.webp",
+      "leadImage": "/images/projects/JiangRong Hub/hansign17062026078.jpeg",
       "images": [
-        "/images/projects/medical/tongde-hospital-xianlin-campus/0012.webp",
-        "/images/projects/medical/tongde-hospital-xianlin-campus/P1020649.webp",
-        "/images/projects/medical/tongde-hospital-xianlin-campus/P1030050.webp"
+        "/images/projects/JiangRong Hub/hansign17062026079.jpeg"
       ],
       "featured": false,
       "order": 17
