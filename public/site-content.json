@@ -1124,9 +1124,10 @@
       "titleEn": "Wanshan Wanpu – Office Space Design",
       "titleZh": "万山万璞-办公空间设计",
       "titleFi": "Wanshan Wanpu – Toimistotilan suunnittelu",
-      "summaryEn": "Just as raw stone shapes a mountain and unpolished jade conceals perfection, \"Wanshan Wanpu\" serves clients with its core values: \"Goodwill, Professionalism, and Orderly Execution.\"\n\nInspired by the grand contours of Mount Tai, the logo captures a powerful presence that reflects the company's solid foundation and dependability.",
+      "summaryEn": "Just as raw stone shapes a mountain and unpolished jade conceals perfection, \"Wanshan Wanpu\" serves clients with its core values: \"Goodwill, Professionalism, and Orderly Execution.\"\nInspired by the grand contours of Mount Tai, the logo captures a powerful presence that reflects the company's solid foundation and dependability.",
       "summaryZh": "山是石，璞是玉，万山万璞公司服务客户的宗旨就是这句「善意、专业、行而有序」的slogan。\n创作取法泰山的山形，以雄浑之气势代表企业的厚重和坚实。",
-      "summaryFi": "Vuori muodostuu kivestä ja raakakivi piilottaa jalokiven. \"Wanshan Wanpu\" palvelee asiakkaitaan arvojensa mukaisesti: \"Hyväntahtoisuus, ammattitaito ja hallittu toteutus.\"\n\nMuotoilultaan Tai-vuoren jylhiä ääriviivoja mukaileva logo ilmentää yrityksen vakavaraisuutta, lujuutta ja luotettavuutta.",
+      "summaryFi": "Vuori muodostuu kivestä ja raakakivi piilottaa jalokiven. \"Wanshan Wanpu\" palvelee asiakkaitaan arvojensa mukaisesti: \"Hyväntahtoisuus, ammattitaito ja hallittu toteutus.\"\nMuotoilultaan Tai-vuoren jylhiä ääriviivoja mukaileva logo ilmentää yrityksen vakavaraisuutta, lujuutta ja luotettavuutta.",
+      "year": 2018,
       "categories": [
         "place-wayfinding",
         "spatial-design"
@@ -1138,7 +1139,8 @@
         "/images/projects/Wanshan Wanpu/wechatimg1293.jpeg",
         "/images/projects/Wanshan Wanpu/wechatimg1291.jpeg"
       ],
-      "featured": true
+      "featured": true,
+      "order": 7
     }
   ]
 }
