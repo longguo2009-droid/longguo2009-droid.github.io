@@ -259,11 +259,8 @@
       "categories": [
         "place-wayfinding"
       ],
-      "leadImage": "/images/projects/perfect-world-headquarters/cover-16x9.webp",
+      "leadImage": "/images/projects/perfect-world-headquarters/the Main image3.webp",
       "images": [
-        "/images/projects/perfect-world-headquarters/6W4A3877.webp",
-        "/images/projects/perfect-world-headquarters/6W4A3950.webp",
-        "/images/projects/perfect-world-headquarters/6W4A4024.webp",
         "/images/projects/perfect-world-headquarters/detail-032.webp",
         "/images/projects/perfect-world-headquarters/detail-033.webp",
         "/images/projects/perfect-world-headquarters/detail-034.webp",
@@ -275,7 +272,9 @@
         "/images/projects/perfect-world-headquarters/the Main image8.webp",
         "/images/projects/perfect-world-headquarters/作品集26-02.webp",
         "/images/projects/perfect-world-headquarters/作品集26-03.webp",
-        "/images/projects/perfect-world-headquarters/作品集26-04.webp"
+        "/images/projects/perfect-world-headquarters/作品集26-04.webp",
+        "/images/projects/perfect-world-headquarters/6W4A3877.webp",
+        "/images/projects/perfect-world-headquarters/6W4A3950.webp"
       ],
       "featured": true,
       "order": 4
