@@ -208,7 +208,7 @@
       "images": [
         "/images/projects/china_central_television/26-10-optimized.webp"
       ],
-      "featured": false,
+      "featured": true,
       "order": 2
     },
     {
@@ -259,11 +259,8 @@
       "categories": [
         "place-wayfinding"
       ],
-      "leadImage": "/images/projects/perfect-world-headquarters/cover-16x9.webp",
+      "leadImage": "/images/projects/perfect-world-headquarters/6w4a4024.webp",
       "images": [
-        "/images/projects/perfect-world-headquarters/6W4A3877.webp",
-        "/images/projects/perfect-world-headquarters/6W4A3950.webp",
-        "/images/projects/perfect-world-headquarters/6W4A4024.webp",
         "/images/projects/perfect-world-headquarters/detail-032.webp",
         "/images/projects/perfect-world-headquarters/detail-033.webp",
         "/images/projects/perfect-world-headquarters/detail-034.webp",
@@ -275,7 +272,9 @@
         "/images/projects/perfect-world-headquarters/the Main image8.webp",
         "/images/projects/perfect-world-headquarters/作品集26-02.webp",
         "/images/projects/perfect-world-headquarters/作品集26-03.webp",
-        "/images/projects/perfect-world-headquarters/作品集26-04.webp"
+        "/images/projects/perfect-world-headquarters/作品集26-04.webp",
+        "/images/projects/perfect-world-headquarters/6W4A3877.webp",
+        "/images/projects/perfect-world-headquarters/6W4A3950.webp"
       ],
       "featured": true,
       "order": 4
@@ -298,11 +297,11 @@
       ],
       "leadImage": "/images/projects/extreme_run/file.webp",
       "images": [
+        "/images/projects/extreme_run/vi3.webp",
         "/images/projects/extreme_run/vi.webp",
         "/images/projects/extreme_run/vi2.webp",
         "/images/projects/extreme_run/didi181010007.webp",
-        "/images/projects/extreme_run/didi181010008.webp",
-        "/images/projects/extreme_run/vi3.webp"
+        "/images/projects/extreme_run/didi181010008.webp"
       ],
       "featured": true,
       "order": 5
@@ -327,8 +326,9 @@
         "place-wayfinding",
         "brand-identity"
       ],
-      "leadImage": "/images/projects/china-life-airport-experience-center/hansign17062026036.webp",
+      "leadImage": "/images/projects/china-life-airport-experience-center-cover.jpg",
       "images": [
+        "/images/projects/china-life-airport-experience-center/hansign17062026036.webp",
         "/images/projects/china-life-airport-experience-center/hansign17062026037.webp",
         "/images/projects/china-life-airport-experience-center/hansign17062026038.webp",
         "/images/projects/china-life-airport-experience-center/hansign17062026039.webp",
@@ -522,6 +522,29 @@
       "order": 7
     },
     {
+      "id": "wanshan_wanpu",
+      "titleEn": "Wanshan Wanpu – Office Space Design",
+      "titleZh": "万山万璞-办公空间设计",
+      "titleFi": "Wanshan Wanpu – Toimistotilan suunnittelu",
+      "summaryEn": "Just as raw stone shapes a mountain and unpolished jade conceals perfection, \"Wanshan Wanpu\" serves clients with its core values: \"Goodwill, Professionalism, and Orderly Execution.\"\nInspired by the grand contours of Mount Tai, the logo captures a powerful presence that reflects the company's solid foundation and dependability.",
+      "summaryZh": "山是石，璞是玉，万山万璞公司服务客户的宗旨就是这句「善意、专业、行而有序」的slogan。\n创作取法泰山的山形，以雄浑之气势代表企业的厚重和坚实。",
+      "summaryFi": "Vuori muodostuu kivestä ja raakakivi piilottaa jalokiven. \"Wanshan Wanpu\" palvelee asiakkaitaan arvojensa mukaisesti: \"Hyväntahtoisuus, ammattitaito ja hallittu toteutus.\"\nMuotoilultaan Tai-vuoren jylhiä ääriviivoja mukaileva logo ilmentää yrityksen vakavaraisuutta, lujuutta ja luotettavuutta.",
+      "year": 2018,
+      "categories": [
+        "place-wayfinding",
+        "spatial-design"
+      ],
+      "leadImage": "/images/projects/wanshan-wanpu/cover-16x9.webp",
+      "images": [
+        "/images/projects/wanshan-wanpu/detail-001.webp",
+        "/images/projects/wanshan-wanpu/detail-002.webp",
+        "/images/projects/wanshan-wanpu/detail-003.webp",
+        "/images/projects/wanshan-wanpu/cover-16x9.webp"
+      ],
+      "featured": true,
+      "order": 7
+    },
+    {
       "id": "xiamen-humanity-hospital",
       "titleEn": "Xiamen Humanity Hospital",
       "titleZh": "厦门弘爱国际医院",
@@ -565,19 +588,16 @@
         "place-wayfinding",
         "brand-identity"
       ],
-      "leadImage": "/images/projects/didi-workplace/cover-16x9.webp",
+      "leadImage": "/images/projects/didi-workplace/Codex 图像 2026年9月8日 02_13_16.webp",
       "images": [
-        "/images/projects/didi-workplace/27x58PIC6hN_1024.webp",
         "/images/projects/didi-workplace/Codex 图像 2026年9月8日 01_47_09.webp",
         "/images/projects/didi-workplace/Codex 图像 2026年9月8日 01_58_23.webp",
         "/images/projects/didi-workplace/Codex 图像 2026年9月8日 02_00_21.webp",
         "/images/projects/didi-workplace/Codex 图像 2026年9月8日 02_03_06.webp",
-        "/images/projects/didi-workplace/Codex 图像 2026年9月8日 02_13_16.webp",
         "/images/projects/didi-workplace/Codex 图像 2026年9月8日 02_17_20.webp",
         "/images/projects/didi-workplace/Codex 图像 2026年9月8日 02_24_38.webp",
         "/images/projects/didi-workplace/DIDI_design_principles_page_01.webp",
-        "/images/projects/didi-workplace/DIDI_design_principles_page_02.webp",
-        "/images/projects/didi-workplace/纸杯效果图 .webp"
+        "/images/projects/didi-workplace/DIDI_design_principles_page_02.webp"
       ],
       "featured": true,
       "order": 8
@@ -848,29 +868,25 @@
       "order": 26
     },
     {
-      "id": "tongde-hospital-xianlin-campus",
-      "titleEn": "Tongde Hospital Xianlin Campus",
-      "titleZh": "同德医院闲林院区",
-      "titleFi": "Tongde-sairaalan Xianlin-kampus",
-      "summaryEn": "A brand refresh and wayfinding system for a hospital campus, extending institutional identity into a clearer spatial experience.",
-      "summaryZh": "为医院院区进行品牌重塑、VI 系统与导示系统设计，将机构识别延展到更清晰的空间体验。",
-      "summaryFi": "Sairaalakampuksen brändin päivitys ja opastusjärjestelmä, joka laajentaa instituution identiteetin selkeämmäksi tilakokemukseksi.",
-      "locationEn": "Zhejiang, China",
-      "locationZh": "中国浙江",
-      "locationFi": "Zhejiang, Kiina",
-      "scopeEn": "Brand refresh, visual identity, wayfinding",
-      "scopeZh": "品牌重塑、VI 系统、导示系统",
-      "scopeFi": "Brändin uudistus, visuaalinen identiteetti ja opastus",
+      "id": "jiangRong-hub-apartment-space",
+      "titleEn": "JiangRong Hub Apartment Space",
+      "titleZh": "建融青年公寓",
+      "titleFi": "JiangRong Hub Asuntokohde",
+      "summaryEn": "CCB Youth Apartment is a premium long-term rental youth community by CCB Housing. Designed in collaboration with Tsinghua University, it incorporates human-centric, modular, and community-driven spatial concepts, balancing minimalist aesthetics with spatial efficiency.",
+      "summaryZh": "建融青年公寓是建信住房推出的高品质长租青年社区，清华大学设计团队为其注入了人本化、模块化与社群化的空间设计理念，兼顾极简美学与高利用率。",
+      "summaryFi": "CCB Youth Apartment on CCB Housingin kehittämä laadukas pitkäaikaiseen vuokraukseen tarkoitettu nuorisoasuntoyhteisö. Yhteistyössä Tsinghua-yliopiston kanssa suunnitellussa kohteessa yhdistyvät käyttäjälähtöinen ja moduulipohjainen tilasuunnittelu sekä yhteisöllisyys.",
+      "locationEn": "Beijing, China",
+      "locationZh": "中国北京",
+      "locationFi": "Beijing, Kiina",
+      "scopeEn": "visual identity, wayfinding",
+      "scopeZh": "VI 系统、导示系统",
+      "scopeFi": "visuaalinen identiteetti ja opastus",
       "categories": [
-        "brand-identity",
         "place-wayfinding"
       ],
-      "leadImage": "/images/projects/medical/tongde-hospital-xianlin-campus/cover-16x9.webp",
+      "leadImage": "/images/projects/jiangrong-hub-apartment-space/cover-16x9.webp",
       "images": [
-        "/images/projects/medical/tongde-hospital-xianlin-campus/0012.webp",
-        "/images/projects/medical/tongde-hospital-xianlin-campus/detail-068.webp",
-        "/images/projects/medical/tongde-hospital-xianlin-campus/P1020649.webp",
-        "/images/projects/medical/tongde-hospital-xianlin-campus/P1030050.webp"
+        "/images/projects/jiangrong-hub-apartment-space/detail-001.webp"
       ],
       "featured": false,
       "order": 17
@@ -892,11 +908,11 @@
       "categories": [
         "place-wayfinding"
       ],
-      "leadImage": "/images/projects/medical/jiangsu-peoples-hospital-emergency-center/cover-16x9.webp",
+      "leadImage": "/images/projects/medical/tongde-hospital-xianlin-campus/P1020649.webp",
       "images": [
-        "/images/projects/medical/jiangsu-peoples-hospital-emergency-center/p1020649.webp",
         "/images/projects/medical/jiangsu-peoples-hospital-emergency-center/0012.webp",
-        "/images/projects/medical/jiangsu-peoples-hospital-emergency-center/p1030050.webp"
+        "/images/projects/medical/jiangsu-peoples-hospital-emergency-center/p1030050.webp",
+        "/images/projects/medical/jiangsu-peoples-hospital-emergency-center/p1020649.webp"
       ],
       "featured": false,
       "order": 18
@@ -978,31 +994,6 @@
       "order": 21
     },
     {
-      "id": "wellem-medical-beauty-hospital",
-      "titleEn": "Wellem Medical Beauty Hospital",
-      "titleZh": "薇琳医美国际美容医院",
-      "titleFi": "Wellem Medical Beauty -sairaala",
-      "summaryEn": "A wayfinding and environmental graphics project for a high-end medical beauty hospital, shaping a more distinctive service environment.",
-      "summaryZh": "为高端医美医院提供导示系统与环境图形设计，并服务落地实施，塑造更具品牌识别的就诊空间。",
-      "summaryFi": "Korkeatasoisen lääketieteellisen kauneussairaalan opastus- ja ympäristögrafiikkaprojekti, joka rakentaa erottuvampaa palveluympäristöä.",
-      "locationEn": "Beijing, China",
-      "locationZh": "中国北京",
-      "locationFi": "Peking, Kiina",
-      "scopeEn": "Wayfinding, environmental graphics, implementation",
-      "scopeZh": "导示系统、环境图形、施工落地",
-      "scopeFi": "Opastus, ympäristögrafiikka ja toteutus",
-      "categories": [
-        "place-wayfinding",
-        "spatial-design"
-      ],
-      "leadImage": "/images/projects/medical/wellem-medical-beauty-hospital/cover-16x9.webp",
-      "images": [
-        "/images/projects/medical/wellem-medical-beauty-hospital/weilin-optimized.webp"
-      ],
-      "featured": false,
-      "order": 22
-    },
-    {
       "id": "tianjin-hospital",
       "titleEn": "Tianjin Hospital",
       "titleZh": "天津医院",
@@ -1027,8 +1018,7 @@
         "/images/projects/medical/tianjin-hospital/00-03.webp",
         "/images/projects/medical/tianjin-hospital/00-04.webp",
         "/images/projects/medical/tianjin-hospital/00-05.webp",
-        "/images/projects/medical/tianjin-hospital/00-06-optimized.webp",
-        "/images/projects/medical/tianjin-hospital/00-06-optimized-2.webp"
+        "/images/projects/medical/tianjin-hospital/00-06-optimized.webp"
       ],
       "featured": false,
       "order": 31
@@ -1063,18 +1053,26 @@
       "titleEn": "Qingyang Headquarters Economy Base",
       "titleZh": "青羊总部基地",
       "titleFi": "Qingyangin päämajan taloustukikohta",
+      "summaryEn": "Qingyang Headquarters Economy Base is a demonstration zone for emerging industries in Qingyang District, Chengdu, focusing on military-civilian integration across aviation, software, e-commerce, and healthcare.\n\nThe dynamic logo and icons embody its vision of connectivity, symbiosis, and green energy.\n\nInspired by the initials \"QY\" for Qingyang and the image of a power switch, the brand identity symbolizes the smart launch of an integrated service platform.",
+      "summaryZh": "青羊总部经济基地是成都青羊区发展以军民融合为依托的航空产业、软件制造、电子商务、健康服务等龙头产业，致力于打造现代新兴产业发展示范区。\n动态的logo及衍生的icon，代表了总部经济基地未来的互联／共生／绿能的理念。\n最重要的“青羊”之拼音首字母“QY”及“开关”的形象，智慧的开启了一个总部经济基地综合服务平台。\n",
+      "summaryFi": "Qingyang Headquarters Economy Base on Chengdun Qingyangin alueella sijaitseva uuden ajan teollisuuspuisto, joka keskittyy ilmailuun, ohjelmistoalaan, sähköiseen kaupankäyntiin ja terveyspalveluihin.\n\nDynaaminen logo ja sen pohjalta luodut kuvakkeet ilmentävät tulevaisuuden verkottuneisuutta, symbioosia ja vihreää energiaa.\n\nNimen alkukirjaimista \"QY\" ja virtapainikkeesta muotoiltu logo symboloi älykkään palvelualustan käynnistämistä.",
       "locationEn": "Chengdu_China",
       "locationFi": "Chengdu_Kiina",
       "year": 2017,
       "categories": [
-        "place-wayfinding"
+        "place-wayfinding",
+        "brand-identity"
       ],
       "leadImage": "/images/projects/qingyang_headquarters_economy_base/cover-16x9.webp",
-      "featured": false,
-      "order": 30,
       "images": [
-        "/images/projects/qingyang_headquarters_economy_base/作品集26-14.webp"
-      ]
+        "/images/projects/qingyang_headquarters_economy_base/cover-16x9.webp",
+        "/images/projects/qingyang_headquarters_economy_base/detail-001.webp",
+        "/images/projects/qingyang_headquarters_economy_base/detail-002.webp",
+        "/images/projects/qingyang_headquarters_economy_base/detail-003.webp",
+        "/images/projects/qingyang_headquarters_economy_base/detail-004.webp"
+      ],
+      "featured": false,
+      "order": 30
     },
     {
       "id": "yiqing_tech_fuel_cel_branding",
@@ -1086,11 +1084,10 @@
       "summaryFi": "Shanghai YiHydrogen Technology Co., Ltd. perustettiin vuonna 2019, ja se on korkean teknologian yritys, joka on erikoistunut kalvoelektrodituotteiden tutkimukseen, kehitykseen, valmistukseen ja teknisiin palveluihin. Kalvoelektrodit ovat vetypolttokennojen ja PEM-vetyelektrolyyserien ydinkomponentteja.",
       "leadImage": "/images/projects/yiqing_tech_fuel_cel_branding/codex-202698-031811.webp",
       "images": [
-        "/images/projects/yiqing_tech_fuel_cel_branding/logo0408036.jpeg",
         "/images/projects/yiqing_tech_fuel_cel_branding/codex-202698-031803.webp",
         "/images/projects/yiqing_tech_fuel_cel_branding/codex-202698-031524.webp"
       ],
-      "featured": true,
+      "featured": false,
       "order": 33
     },
     {
@@ -1111,12 +1108,34 @@
         "place-wayfinding",
         "cross-cultural"
       ],
+      "leadImage": "/images/projects/medical/ludaopei_medical/cover-16x9.webp",
       "featured": false,
-      "order": 25,
-      "images": [
-        "/images/projects/medical/ludaopei_medical/Codex 图像 2026年9月8日 02_56_15.webp"
+      "order": 25
+    },
+    {
+      "id": "wellem-medical-beauty-hospital",
+      "titleEn": "Wellem Medical Beauty Hospital",
+      "titleZh": "薇琳医美国际美容医院",
+      "titleFi": "Wellem Medical Beauty -sairaala",
+      "summaryEn": "A wayfinding and environmental graphics project for a high-end medical beauty hospital, shaping a more distinctive service environment.",
+      "summaryZh": "为高端医美医院提供导示系统与环境图形设计，并服务落地实施，塑造更具品牌识别的就诊空间。",
+      "summaryFi": "Korkeatasoisen lääketieteellisen kauneussairaalan opastus- ja ympäristögrafiikkaprojekti, joka rakentaa erottuvampaa palveluympäristöä.",
+      "locationEn": "Beijing, China",
+      "locationZh": "中国北京",
+      "locationFi": "Peking, Kiina",
+      "scopeEn": "Wayfinding, environmental graphics, implementation",
+      "scopeZh": "导示系统、环境图形、施工落地",
+      "scopeFi": "Opastus, ympäristögrafiikka ja toteutus",
+      "categories": [
+        "place-wayfinding",
+        "spatial-design"
       ],
-      "leadImage": "/images/projects/medical/ludaopei_medical/cover-16x9.webp"
+      "leadImage": "/images/projects/medical/wellem-medical-beauty-hospital/cover-16x9.webp",
+      "images": [
+        "/images/projects/medical/wellem-medical-beauty-hospital/weilin-optimized.webp"
+      ],
+      "featured": false,
+      "order": 22
     }
   ]
 }

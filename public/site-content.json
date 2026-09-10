@@ -534,12 +534,12 @@
         "place-wayfinding",
         "spatial-design"
       ],
-      "leadImage": "/images/projects/Wanshan Wanpu/wechatimg1291.jpeg",
+      "leadImage": "/images/projects/wanshan-wanpu/cover-16x9.webp",
       "images": [
-        "/images/projects/Wanshan Wanpu/wechatimg1290.jpeg",
-        "/images/projects/Wanshan Wanpu/wechatimg1292.jpeg",
-        "/images/projects/Wanshan Wanpu/wechatimg1293.jpeg",
-        "/images/projects/Wanshan Wanpu/wechatimg1291.jpeg"
+        "/images/projects/wanshan-wanpu/detail-001.webp",
+        "/images/projects/wanshan-wanpu/detail-002.webp",
+        "/images/projects/wanshan-wanpu/detail-003.webp",
+        "/images/projects/wanshan-wanpu/cover-16x9.webp"
       ],
       "featured": true,
       "order": 7
@@ -884,9 +884,9 @@
       "categories": [
         "place-wayfinding"
       ],
-      "leadImage": "/images/projects/JiangRong Hub/hansign17062026078.jpeg",
+      "leadImage": "/images/projects/jiangrong-hub-apartment-space/cover-16x9.webp",
       "images": [
-        "/images/projects/JiangRong Hub/hansign17062026079.jpeg"
+        "/images/projects/jiangrong-hub-apartment-space/detail-001.webp"
       ],
       "featured": false,
       "order": 17
@@ -1063,14 +1063,13 @@
         "place-wayfinding",
         "brand-identity"
       ],
-      "leadImage": "/images/projects/qingyang_headquarters_economy_base/004.jpeg",
+      "leadImage": "/images/projects/qingyang_headquarters_economy_base/cover-16x9.webp",
       "images": [
         "/images/projects/qingyang_headquarters_economy_base/cover-16x9.webp",
-        "/images/projects/qingyang_headquarters_economy_base/005.jpeg",
-        "/images/projects/qingyang_headquarters_economy_base/002.jpeg",
-        "/images/projects/qingyang_headquarters_economy_base/004.jpeg",
-        "/images/projects/qingyang_headquarters_economy_base/006.jpeg",
-        "/images/projects/qingyang_headquarters_economy_base/007.jpeg"
+        "/images/projects/qingyang_headquarters_economy_base/detail-001.webp",
+        "/images/projects/qingyang_headquarters_economy_base/detail-002.webp",
+        "/images/projects/qingyang_headquarters_economy_base/detail-003.webp",
+        "/images/projects/qingyang_headquarters_economy_base/detail-004.webp"
       ],
       "featured": false,
       "order": 30
